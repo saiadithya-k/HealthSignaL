@@ -21,9 +21,21 @@ PROHIBITED_PII_FIELDS = {
     "ssn",
     "raw_records",
     "records",
+    "raw_symptoms",
     "individual_symptoms",
     "consent_token",
-    "diagnosis"
+    "diagnosis",
+    "disease_name",
+    "disease_label",
+    "ground_truth",
+    "outbreak_scenario",
+    "outbreak_active",
+    "scenario_id",
+    "condition_id",
+    "condition_name",
+    "true_disease",
+    "individual_clinical_information",
+    "clinical_information"
 }
 
 class FederatedHandoffRecord(BaseModel):
@@ -156,6 +168,17 @@ class FederatedDataHandoffManager:
         feature_df["node_id"] = node_id
         if "data_completeness" not in feature_df.columns:
             feature_df["data_completeness"] = 1.0
+
+        # Post-transformation verification on feature matrix X
+        X = feature_df[FEATURE_COLUMNS]
+        if X.shape[1] != 13:
+            raise ValueError(f"Feature matrix dimension mismatch: expected 13, got {X.shape[1]}")
+        if list(X.columns) != FEATURE_COLUMNS:
+            raise ValueError(f"Feature matrix columns order mismatch: expected {FEATURE_COLUMNS}, got {list(X.columns)}")
+        if X.isna().any().any():
+            raise ValueError("Feature matrix contains NaN values")
+        if np.isinf(X.to_numpy()).any():
+            raise ValueError("Feature matrix contains Infinite values")
 
         handoff_metadata = {
             "node_id": node_id,

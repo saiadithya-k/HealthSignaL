@@ -104,9 +104,21 @@
     "ssn",
     "raw_records",
     "records",
+    "raw_symptoms",
     "individual_symptoms",
     "consent_token",
-    "diagnosis"
+    "diagnosis",
+    "disease_name",
+    "disease_label",
+    "ground_truth",
+    "outbreak_scenario",
+    "outbreak_active",
+    "scenario_id",
+    "condition_id",
+    "condition_name",
+    "true_disease",
+    "individual_clinical_information",
+    "clinical_information"
   ],
   "privacy_constraints": {
     "k_anonymity_threshold": 11,

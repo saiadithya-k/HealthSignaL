@@ -43,33 +43,54 @@ class HealthSignalFlowerClient(fl.client.NumPyClient):
             self.local_model.fit(self.train_df[FEATURE_COLUMNS], self.train_df["target"])
 
         vec = model_to_parameters(self.local_model)
-        return parameters_to_flwr(vec)
+        clipped_vec, was_clipped, _ = self.privacy_gate.clip_parameters(vec)
+        
+        # Privacy validation before returning
+        payload = {
+            "institution_id": self.institution_id,
+            "n_samples": len(self.train_df),
+            "coef": [float(c) for c in clipped_vec[:-1]],
+            "intercept": float(clipped_vec[-1])
+        }
+        is_valid, errors, _ = self.privacy_gate.validate_outbound_payload(payload, self.institution_id)
+        if not is_valid:
+            raise ValueError(f"PrivacyGate REJECTED parameters for {self.institution_id}: {errors}")
+
+        return parameters_to_flwr(clipped_vec)
 
     def fit(self, parameters: List[np.ndarray], config: Dict[str, Any] = None) -> Tuple[List[np.ndarray], int, Dict[str, Any]]:
         """
         Executes local training and returns outbound parameter update.
         Mandatory PrivacyGate validation occurs BEFORE returning data.
         """
-        # Fit local Ridge model on local training set
+        # 1. Fit local Ridge model on local training set
         self.local_model.fit(self.train_df[FEATURE_COLUMNS], self.train_df["target"])
         param_vec = model_to_parameters(self.local_model)
 
         # -------------------------------------------------------------
         # MANDATORY PRE-TRANSMISSION PRIVACY GATE BOUNDARY
         # -------------------------------------------------------------
+        # 2. Contribution clipping before transmission
+        clipped_vec, was_clipped, clip_details = self.privacy_gate.clip_parameters(param_vec)
+
+        # 3. Privacy validation
         payload = {
             "institution_id": self.institution_id,
             "n_samples": len(self.train_df),
-            "coef": [float(c) for c in self.local_model.model.coef_],
-            "intercept": float(self.local_model.model.intercept_)
+            "coef": [float(c) for c in clipped_vec[:-1]],
+            "intercept": float(clipped_vec[-1])
         }
 
-        is_valid, errors, privacy_events = self.privacy_gate.validate_outbound_payload(payload, self.institution_id)
+        is_valid, errors, privacy_events = self.privacy_gate.validate_outbound_payload(
+            payload,
+            self.institution_id,
+            enforce_exact_dimension=True
+        )
 
         if not is_valid:
             raise ValueError(f"PrivacyGate REJECTED outbound update for {self.institution_id}: {errors}")
 
-        flwr_params = parameters_to_flwr(param_vec)
+        flwr_params = parameters_to_flwr(clipped_vec)
         num_examples = len(self.train_df)
         metrics = {
             "institution_id": self.institution_id,

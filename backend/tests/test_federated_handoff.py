@@ -147,3 +147,112 @@ def test_downstream_flower_client_and_server_compatibility():
     report = run_federated_round(data_dir="data", forecast_horizon=7)
     assert report["status"] == "COMPLETED"
     assert len(report["participating_nodes"]) == 4
+
+
+def test_thirteen_feature_contract_exhaustive_verification(handoff_mgr):
+    """
+    TASK 2.1 EXHAUSTIVE 13-FEATURE CONTRACT TEST:
+    1. Exactly 13 features produced
+    2. Correct feature names
+    3. Correct feature ordering
+    4. All values strictly numeric
+    5. No NaN values in X
+    6. No Infinity values in X
+    7. No disease-label leakage (condition_id, disease_name, diagnosis, etc.)
+    8. No ground-truth leakage (outbreak_active, scenario_id, etc.)
+    9. No patient information / PII
+    10. All four nodes (inst-a, inst-b, inst-c, inst-d) produce the contract
+    11. Non-IID node separation is preserved (different distributions, no pooling)
+    """
+    EXPECTED_13_FEATURES = [
+        "day_of_week",
+        "day_of_month",
+        "month",
+        "week_of_year",
+        "is_weekend",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "rolling_mean_7",
+        "rolling_std_7",
+        "rolling_mean_14",
+        "pharmacy_lead_t2",
+        "data_completeness"
+    ]
+    
+    PROHIBITED_LEAKAGE_COLUMNS = {
+        "disease_name",
+        "disease_label",
+        "ground_truth",
+        "outbreak_scenario",
+        "outbreak_active",
+        "scenario_id",
+        "condition_id",
+        "condition_name",
+        "true_disease",
+        "patient_id",
+        "patient_name",
+        "name",
+        "phone",
+        "address",
+        "email",
+        "ssn",
+        "raw_symptoms",
+        "individual_symptoms",
+        "raw_records",
+        "records",
+        "individual_clinical_information",
+        "clinical_information",
+        "diagnosis"
+    }
+
+    nodes = ["inst-a", "inst-b", "inst-c", "inst-d"]
+    node_matrices = {}
+
+    for nid in nodes:
+        client = LocalInstitutionClient(nid, data_dir="data")
+        feat_df, metadata = client.get_federated_training_data(forecast_horizon=7)
+
+        # 1. Exactly 13 features produced
+        assert len(FEATURE_COLUMNS) == 13
+        X = feat_df[FEATURE_COLUMNS]
+        assert X.shape[1] == 13
+
+        # 2. Correct feature names
+        assert list(X.columns) == EXPECTED_13_FEATURES
+
+        # 3. Correct feature ordering
+        assert list(X.columns) == FEATURE_COLUMNS
+
+        # 4. All values strictly numeric
+        for col in FEATURE_COLUMNS:
+            assert np.issubdtype(X[col].dtype, np.number), f"Feature '{col}' in {nid} must be numeric"
+
+        # 5. No NaN in feature matrix
+        assert not X.isna().any().any(), f"Feature matrix in {nid} must contain 0 NaN values"
+
+        # 6. No Infinity in feature matrix
+        assert not np.isinf(X.to_numpy()).any(), f"Feature matrix in {nid} must contain 0 Inf values"
+
+        # 7, 8, 9. No disease-label, ground-truth, or patient info in feature matrix X
+        for col in X.columns:
+            assert col.lower() not in PROHIBITED_LEAKAGE_COLUMNS, f"Prohibited column '{col}' leaked in X"
+            assert "patient" not in col.lower()
+            assert "ssn" not in col.lower()
+            assert "disease" not in col.lower()
+            assert "outbreak" not in col.lower()
+
+        # Check target is distinct from X
+        assert "target" not in FEATURE_COLUMNS
+        assert "target" not in X.columns
+        assert "target" in feat_df.columns
+        assert not feat_df["target"].isna().any()
+
+        # 10. All four nodes produced valid non-empty data
+        assert len(feat_df) > 0
+        node_matrices[nid] = feat_df
+
+    # 11. Non-IID node separation is preserved (distinct statistics, no pooling)
+    assert node_matrices["inst-a"]["service_count"].mean() != node_matrices["inst-c"]["service_count"].mean()
+    assert len(node_matrices["inst-a"]) != len(node_matrices["inst-d"]) or node_matrices["inst-a"]["service_count"].std() != node_matrices["inst-b"]["service_count"].std()
+
