@@ -1,0 +1,37 @@
+{
+  "institution_id": "pooled_upper_bound",
+  "algorithm": "Ridge Regression",
+  "alpha": 1.0,
+  "forecast_horizon": 7,
+  "num_features": 12,
+  "features": [
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "rolling_mean_14",
+    "data_completeness"
+  ],
+  "coef": [
+    -0.232261,
+    0.022853,
+    1.033049,
+    -0.277141,
+    -1.106925,
+    0.099924,
+    0.286434,
+    0.24279,
+    -0.129181,
+    -0.063855,
+    0.507686,
+    0.0
+  ],
+  "intercept": 1.280958,
+  "n_samples": 3840
+}

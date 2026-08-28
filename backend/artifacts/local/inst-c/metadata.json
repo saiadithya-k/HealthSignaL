@@ -1,0 +1,37 @@
+{
+  "institution_id": "inst-c",
+  "algorithm": "Ridge Regression",
+  "alpha": 1.0,
+  "forecast_horizon": 7,
+  "num_features": 12,
+  "features": [
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "rolling_mean_14",
+    "data_completeness"
+  ],
+  "coef": [
+    0.321643,
+    -0.040579,
+    -0.589584,
+    0.110965,
+    1.132732,
+    0.02393,
+    0.068729,
+    0.056554,
+    -0.163805,
+    0.514831,
+    0.818401,
+    0.0
+  ],
+  "intercept": -0.465394,
+  "n_samples": 960
+}

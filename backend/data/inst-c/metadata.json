@@ -1,0 +1,19 @@
+{
+  "institution_id": "inst-c",
+  "institution_name": "Institution C",
+  "profile": "Rural (Low Volume, High Variance)",
+  "seed": 42,
+  "scenario": "NORMAL",
+  "start_date": "2025-01-01",
+  "end_date": "2025-12-31",
+  "total_records": 1460,
+  "syndrome_counts": {
+    "fever_flu": 5589,
+    "gastrointestinal": 1510,
+    "other": 1625,
+    "respiratory": 1631
+  },
+  "missing_rate_pct": 8.56,
+  "ground_truth_events": [],
+  "generated_at": "2026-08-28 05:31:20"
+}
