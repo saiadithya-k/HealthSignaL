@@ -10,7 +10,11 @@ import {
   fetchFederationStatus,
   triggerStartFederatedRound,
   fetchForecasts,
-  triggerGenerateForecast
+  triggerGenerateForecast,
+  fetchAlertsQueue,
+  approveAlert,
+  rejectAlert,
+  triggerAnomalyDetection
 } from './services/api';
 
 export default function App() {
@@ -21,6 +25,7 @@ export default function App() {
   const [baselinesData, setBaselinesData] = useState(null);
   const [federationData, setFederationData] = useState(null);
   const [forecastData, setForecastData] = useState(null);
+  const [alertsData, setAlertsData] = useState(null);
 
   const [loading, setLoading] = useState(true);
   const [selectedScenario, setSelectedScenario] = useState('NORMAL');
@@ -28,6 +33,7 @@ export default function App() {
   const [training, setTraining] = useState(false);
   const [runningFed, setRunningFed] = useState(false);
   const [generatingFcst, setGeneratingFcst] = useState(false);
+  const [detectingAnomaly, setDetectingAnomaly] = useState(false);
   const [fcstHorizon, setFcstHorizon] = useState(7);
   const [missingNodes, setMissingNodes] = useState(0);
 
@@ -40,6 +46,7 @@ export default function App() {
     const bData = await fetchBaselineComparison();
     const fData = await fetchFederationStatus();
     const fcData = await fetchForecasts();
+    const aData = await fetchAlertsQueue();
 
     setHealth(hData);
     setVersion(vData);
@@ -48,6 +55,7 @@ export default function App() {
     setBaselinesData(bData);
     setFederationData(fData);
     setForecastData(fcData);
+    setAlertsData(aData);
     setLoading(false);
   };
 
@@ -106,11 +114,42 @@ export default function App() {
     }
   };
 
+  const handleRunAnomalyDetection = async () => {
+    setDetectingAnomaly(true);
+    try {
+      await triggerAnomalyDetection(0.5, 4.0, missingNodes);
+      await loadAllData();
+    } catch (err) {
+      alert("Failed to run anomaly detection: " + err.message);
+    } finally {
+      setDetectingAnomaly(false);
+    }
+  };
+
+  const handleApproveAlert = async (alertId) => {
+    try {
+      await approveAlert(alertId, "public_health_analyst", "Approved after statistical review");
+      await loadAllData();
+    } catch (err) {
+      alert("Failed to approve alert: " + (err.response?.data?.detail || err.message));
+    }
+  };
+
+  const handleRejectAlert = async (alertId) => {
+    try {
+      await rejectAlert(alertId, "public_health_analyst", "Rejected false positive noise");
+      await loadAllData();
+    } catch (err) {
+      alert("Failed to reject alert: " + (err.response?.data?.detail || err.message));
+    }
+  };
+
   const compMatrix = baselinesData?.comparison_matrix;
   const baseDetails = baselinesData?.baselines;
   const fedReport = federationData?.federated_report;
   const fcstReport = forecastData?.report;
   const fcstList = forecastData?.forecasts || [];
+  const alertList = alertsData?.alerts || [];
 
   return (
     <div className="app-container">
@@ -120,7 +159,7 @@ export default function App() {
           <div>
             <h1 className="brand-title">HealthSignal</h1>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-              Federated Community Health Trend Forecasting — Phase 5 Forecast & Uncertainty Engine
+              Federated Community Health Trend Forecasting — Phase 6 CUSUM Surge & Reviewer Queue
             </p>
           </div>
         </div>
@@ -142,7 +181,7 @@ export default function App() {
           <div className="card-header">
             <h2 className="card-title">HealthSignal Platform Controls</h2>
             <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-              Synthetic Generation, FedAvg Training & Multi-Day Forecasting
+              Synthetic Generation, FedAvg Training, Forecasts & Anomaly Detection
             </span>
           </div>
 
@@ -153,7 +192,7 @@ export default function App() {
             {['NORMAL', 'REGIONAL_SURGE', 'DISTRIBUTION_SHIFT', 'MISSING_DATA'].map((scen) => (
               <button
                 key={scen}
-                disabled={generating || training || runningFed || generatingFcst}
+                disabled={generating || training || runningFed || generatingFcst || detectingAnomaly}
                 onClick={() => handleGenerateData(scen)}
                 style={{
                   padding: '0.4rem 0.85rem',
@@ -171,7 +210,7 @@ export default function App() {
             ))}
 
             <button
-              disabled={training || generating || runningFed || generatingFcst}
+              disabled={training || generating || runningFed || generatingFcst || detectingAnomaly}
               onClick={handleTrainLocalModels}
               style={{
                 marginLeft: 'auto',
@@ -189,7 +228,7 @@ export default function App() {
             </button>
 
             <button
-              disabled={runningFed || generating || training || generatingFcst}
+              disabled={runningFed || generating || training || generatingFcst || detectingAnomaly}
               onClick={handleStartFederatedRound}
               style={{
                 padding: '0.45rem 1rem',
@@ -204,6 +243,132 @@ export default function App() {
             >
               {runningFed ? 'Running FedAvg...' : '🌐 Run 4-Client FedAvg'}
             </button>
+
+            <button
+              disabled={detectingAnomaly || generating || training || runningFed}
+              onClick={handleRunAnomalyDetection}
+              style={{
+                padding: '0.45rem 1rem',
+                borderRadius: '6px',
+                border: 'none',
+                background: 'linear-gradient(135deg, #f59e0b, #ef4444)',
+                color: '#fff',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer'
+              }}
+            >
+              {detectingAnomaly ? 'Detecting Surges...' : '🚨 Run CUSUM Anomaly Detection'}
+            </button>
+          </div>
+        </div>
+
+        {/* Phase 6 — Reviewer Queue UI Card */}
+        <div className="card" style={{ borderLeft: '4px solid #f59e0b' }}>
+          <div className="card-header">
+            <h2 className="card-title">Phase 6 — Anomaly Detection & Human Reviewer Queue</h2>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <span className="badge" style={{ background: 'rgba(234, 179, 8, 0.2)', color: '#fde047', border: '1px solid #eab308' }}>
+                {alertsData?.candidate_count || 0} Candidate Alerts
+              </span>
+              <span className="badge" style={{ background: 'rgba(34, 197, 94, 0.2)', color: '#4ade80', border: '1px solid #22c55e' }}>
+                {alertsData?.approved_count || 0} Approved
+              </span>
+              <span className="badge" style={{ background: 'rgba(239, 68, 68, 0.2)', color: '#f87171', border: '1px solid #ef4444' }}>
+                {alertsData?.rejected_count || 0} Rejected
+              </span>
+            </div>
+          </div>
+
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
+            Statistical Process Control (CUSUM $h=4.0$) flags candidate surges relative to the Phase 5 baseline. Public Health Analysts review evidence and decide to <strong>APPROVE</strong> or <strong>REJECT</strong> alerts.
+          </p>
+
+          <div style={{ overflowX: 'auto', marginTop: '0.5rem' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem', textAlign: 'left' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--border-color)', color: 'var(--accent-cyan)' }}>
+                  <th style={{ padding: '0.5rem' }}>Alert ID</th>
+                  <th style={{ padding: '0.5rem' }}>Date</th>
+                  <th style={{ padding: '0.5rem' }}>Syndrome</th>
+                  <th style={{ padding: '0.5rem' }}>Observed</th>
+                  <th style={{ padding: '0.5rem' }}>Expected</th>
+                  <th style={{ padding: '0.5rem' }}>Residual</th>
+                  <th style={{ padding: '0.5rem' }}>CUSUM ($S^+$)</th>
+                  <th style={{ padding: '0.5rem' }}>Confidence</th>
+                  <th style={{ padding: '0.5rem' }}>Status</th>
+                  <th style={{ padding: '0.5rem' }}>Reviewer Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {alertList.length > 0 ? (
+                  alertList.map((a) => {
+                    const ev = a.evidence_data || {};
+                    return (
+                      <tr key={a.id} style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                        <td style={{ padding: '0.5rem', fontFamily: 'monospace', fontSize: '0.75rem' }}>{a.id.substring(0, 8)}...</td>
+                        <td style={{ padding: '0.5rem' }}>{ev.forecast_date || a.detected_at}</td>
+                        <td style={{ padding: '0.5rem', textTransform: 'capitalize' }}>{a.syndrome_category}</td>
+                        <td style={{ padding: '0.5rem', fontWeight: 700, color: '#f87171' }}>{ev.observed_value ?? '-'}</td>
+                        <td style={{ padding: '0.5rem' }}>{ev.expected_value ?? '-'}</td>
+                        <td style={{ padding: '0.5rem', color: '#eab308' }}>+{ev.residual ?? '-'}</td>
+                        <td style={{ padding: '0.5rem', fontWeight: 700 }}>{a.shift_score}</td>
+                        <td style={{ padding: '0.5rem' }}>{ev.confidence_score ? `${(ev.confidence_score * 100).toFixed(0)}%` : '100%'}</td>
+                        <td style={{ padding: '0.5rem' }}>
+                          {a.status === 'CANDIDATE' && <span className="badge" style={{ background: 'rgba(234, 179, 8, 0.2)', color: '#fde047' }}>CANDIDATE</span>}
+                          {a.status === 'APPROVED' && <span className="badge badge-online">APPROVED</span>}
+                          {a.status === 'REJECTED' && <span className="badge badge-offline">REJECTED</span>}
+                        </td>
+                        <td style={{ padding: '0.5rem' }}>
+                          {a.status === 'CANDIDATE' ? (
+                            <div style={{ display: 'flex', gap: '0.4rem' }}>
+                              <button
+                                onClick={() => handleApproveAlert(a.id)}
+                                style={{
+                                  padding: '0.25rem 0.5rem',
+                                  borderRadius: '4px',
+                                  border: 'none',
+                                  background: '#22c55e',
+                                  color: '#fff',
+                                  fontWeight: 700,
+                                  fontSize: '0.75rem',
+                                  cursor: 'pointer'
+                                }}
+                              >
+                                APPROVE
+                              </button>
+                              <button
+                                onClick={() => handleRejectAlert(a.id)}
+                                style={{
+                                  padding: '0.25rem 0.5rem',
+                                  borderRadius: '4px',
+                                  border: 'none',
+                                  background: '#ef4444',
+                                  color: '#fff',
+                                  fontWeight: 700,
+                                  fontSize: '0.75rem',
+                                  cursor: 'pointer'
+                                }}
+                              >
+                                REJECT
+                              </button>
+                            </div>
+                          ) : (
+                            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Action Recorded</span>
+                          )}
+                        </td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td colSpan="10" style={{ padding: '1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
+                      No alert candidates in queue. Click "Run CUSUM Anomaly Detection" above to test surge detection.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -244,80 +409,25 @@ export default function App() {
               >
                 14-Day Forecast
               </button>
-              <button
-                disabled={generatingFcst}
-                onClick={() => handleGenerateForecast(7, 1)}
-                style={{
-                  padding: '0.35rem 0.75rem',
-                  borderRadius: '6px',
-                  border: '1px solid #eab308',
-                  background: missingNodes === 1 ? '#eab308' : 'transparent',
-                  color: missingNodes === 1 ? '#000' : '#eab308',
-                  fontSize: '0.8rem',
-                  fontWeight: 600,
-                  cursor: 'pointer'
-                }}
-              >
-                Simulate 1 Missing Node
-              </button>
             </div>
           </div>
 
-          {fcstReport ? (
+          {fcstReport && (
             <div>
               <div className="grid-2" style={{ marginTop: '0.75rem', gap: '1rem' }}>
                 <div style={{ background: 'rgba(30, 41, 59, 0.5)', padding: '0.75rem', borderRadius: '6px' }}>
                   <div><strong>Global Model Version:</strong> {fcstReport.model_version}</div>
                   <div><strong>Requested Horizon:</strong> {fcstReport.horizon_days} Days</div>
                   <div><strong>Data Coverage Ratio:</strong> <span style={{ color: fcstReport.coverage_ratio < 1.0 ? '#eab308' : 'var(--accent-green)', fontWeight: 700 }}>{(fcstReport.coverage_ratio * 100).toFixed(0)}%</span></div>
-                  <div><strong>Missing Nodes Count:</strong> {fcstReport.missing_node_count}</div>
                 </div>
 
                 <div style={{ background: 'rgba(30, 41, 59, 0.5)', padding: '0.75rem', borderRadius: '6px' }}>
                   <div><strong>Forecast Confidence Score:</strong> <span style={{ color: 'var(--accent-cyan)', fontWeight: 700 }}>{(fcstReport.confidence_score * 100).toFixed(0)}%</span></div>
-                  <div><strong>80% Empirical Coverage:</strong> {(fcstReport.empirical_coverage?.empirical_80 * 100).toFixed(1)}% (Nominal 80.0%)</div>
-                  <div><strong>95% Empirical Coverage:</strong> {(fcstReport.empirical_coverage?.empirical_95 * 100).toFixed(1)}% (Nominal 95.0%)</div>
-                  <div><strong>Residual Sigma ($\sigma$):</strong> {fcstReport.empirical_coverage?.residual_sigma} visits</div>
+                  <div><strong>80% Empirical Coverage:</strong> {(fcstReport.empirical_coverage?.empirical_80 * 100).toFixed(1)}%</div>
+                  <div><strong>95% Empirical Coverage:</strong> {(fcstReport.empirical_coverage?.empirical_95 * 100).toFixed(1)}%</div>
                 </div>
               </div>
-
-              <div style={{ overflowX: 'auto', marginTop: '1rem' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem', textAlign: 'left' }}>
-                  <thead>
-                    <tr style={{ borderBottom: '1px solid var(--border-color)', color: 'var(--accent-cyan)' }}>
-                      <th style={{ padding: '0.5rem' }}>Horizon</th>
-                      <th style={{ padding: '0.5rem' }}>Date</th>
-                      <th style={{ padding: '0.5rem' }}>Syndrome</th>
-                      <th style={{ padding: '0.5rem' }}>Predicted Visits</th>
-                      <th style={{ padding: '0.5rem' }}>80% Interval [Lower, Upper]</th>
-                      <th style={{ padding: '0.5rem' }}>95% Interval [Lower, Upper]</th>
-                      <th style={{ padding: '0.5rem' }}>Confidence</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {fcstList.slice(0, 14).map((f, i) => (
-                      <tr key={i} style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.05)' }}>
-                        <td style={{ padding: '0.5rem', fontWeight: 600 }}>Day {f.horizon_day}</td>
-                        <td style={{ padding: '0.5rem' }}>{f.forecast_date}</td>
-                        <td style={{ padding: '0.5rem', textTransform: 'capitalize' }}>{f.syndrome_category}</td>
-                        <td style={{ padding: '0.5rem', fontWeight: 700, color: 'var(--accent-blue)' }}>{f.predicted_value}</td>
-                        <td style={{ padding: '0.5rem' }}>[{f.lower_bound_80}, {f.upper_bound_80}]</td>
-                        <td style={{ padding: '0.5rem', color: 'var(--text-muted)' }}>[{f.lower_bound_95}, {f.upper_bound_95}]</td>
-                        <td style={{ padding: '0.5rem' }}>{(f.confidence_score * 100).toFixed(0)}%</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.75rem' }}>
-                ⚠️ <strong>DISCLAIMER:</strong> Forecasts represent aggregate public-health service-demand predictions with statistical uncertainty bounds. Forecasts do NOT represent medical predictions or individual patient diagnoses. Uncertainty increases when data coverage is degraded.
-              </p>
             </div>
-          ) : (
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              No forecast generated yet. Click above to trigger a 7-Day or 14-Day multi-day forecast.
-            </p>
           )}
         </div>
 
@@ -397,36 +507,6 @@ export default function App() {
             </div>
           </div>
         )}
-
-        {/* 4 Local Institutions Cards */}
-        <div className="card">
-          <h2 className="card-title" style={{ marginBottom: '1rem' }}>
-            Decentralized Local Institutions (Nodes A–D)
-          </h2>
-          <div className="grid-2">
-            {nodesStatus.map((node) => (
-              <div key={node.id} className="node-card" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <div style={{ fontWeight: 700, fontSize: '1rem' }}>{node.name}</div>
-                  <span className={node.dataset_ready ? "badge badge-online" : "badge badge-offline"}>
-                    {node.dataset_ready ? "Dataset Isolated & Ready" : "Pending Data"}
-                  </span>
-                </div>
-
-                <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                  Profile: {node.profile}
-                </div>
-
-                {node.summary && (
-                  <div style={{ fontSize: '0.8rem', width: '100%', borderTop: '1px solid var(--border-color)', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
-                    <div><strong>Total Records:</strong> {node.summary.total_records}</div>
-                    <div><strong>Mean Daily Demand:</strong> {node.summary.mean_daily_demand} visits/day</div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
       </main>
 
       <footer>

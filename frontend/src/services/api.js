@@ -116,3 +116,44 @@ export const triggerGenerateForecast = async (horizon = 7, missingNodes = 0) => 
     throw error;
   }
 };
+
+export const fetchAlertsQueue = async (status = null) => {
+  try {
+    const url = status ? `${API_BASE}/alerts?status=${status}` : `${API_BASE}/alerts`;
+    const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    console.error("Fetch alerts queue error:", error);
+    return { alerts: [], total_alerts: 0, candidate_count: 0, approved_count: 0, rejected_count: 0 };
+  }
+};
+
+export const approveAlert = async (alertId, reviewerId = "public_health_analyst", reason = "Verified surge candidate") => {
+  try {
+    const response = await axios.post(`${API_BASE}/alerts/${alertId}/approve?reviewer_id=${reviewerId}&reason=${encodeURIComponent(reason)}`);
+    return response.data;
+  } catch (error) {
+    console.error("Approve alert error:", error);
+    throw error;
+  }
+};
+
+export const rejectAlert = async (alertId, reviewerId = "public_health_analyst", reason = "False positive noise") => {
+  try {
+    const response = await axios.post(`${API_BASE}/alerts/${alertId}/reject?reviewer_id=${reviewerId}&reason=${encodeURIComponent(reason)}`);
+    return response.data;
+  } catch (error) {
+    console.error("Reject alert error:", error);
+    throw error;
+  }
+};
+
+export const triggerAnomalyDetection = async (driftK = 0.5, thresholdH = 4.0, missingNodes = 0) => {
+  try {
+    const response = await axios.post(`${API_BASE}/alerts/detect?drift_k=${driftK}&threshold_h=${thresholdH}&missing_nodes=${missingNodes}`);
+    return response.data;
+  } catch (error) {
+    console.error("Trigger anomaly detection error:", error);
+    throw error;
+  }
+};
