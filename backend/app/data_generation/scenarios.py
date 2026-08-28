@@ -1,6 +1,8 @@
+import math
 from datetime import datetime, timedelta
-from typing import Dict, List, Tuple, Any
+from typing import Dict, List, Tuple, Any, Optional
 from app.data_generation.schemas import ScenarioType, GroundTruthEvent
+from app.core.syndrome_mapping import syndrome_service
 
 def apply_scenario_modifiers(
     scenario: ScenarioType,
@@ -8,10 +10,11 @@ def apply_scenario_modifiers(
     current_date: datetime,
     start_date: datetime,
     cat_counts: Dict[str, int],
-    base_volume: float
+    base_volume: float,
+    disease_outbreak_config: Optional[Dict[str, Any]] = None
 ) -> Tuple[Dict[str, int], float, List[GroundTruthEvent]]:
     """
-    Applies scenario-specific modifications (Surge, Shift, Missingness) to daily category counts.
+    Applies scenario-specific modifications (Surge, Shift, Missingness, Disease Outbreak) to daily category counts.
     Returns (modified_counts, data_completeness, list_of_ground_truth_events).
     """
     day_index = (current_date - start_date).days
@@ -159,6 +162,65 @@ def apply_scenario_modifiers(
                 syndrome_category=None,
                 magnitude_factor=1.70,
                 description=f"Pan-institutional multi-syndrome surge (+70% all categories) in {institution_id}"
+            ))
+
+    elif scenario == ScenarioType.DISEASE_OUTBREAK:
+        # Disease-Driven Outbreak driven by disease_reference.json condition profiles
+        cfg = disease_outbreak_config or {}
+        cond_id = cfg.get("condition_id", "C002")
+        start_day = cfg.get("start_day", 60)
+        duration_days = cfg.get("duration_days", 21)
+        intensity = cfg.get("intensity", 0.75)
+        affected_nodes = cfg.get("affected_nodes", ["inst-a", "inst-b", "inst-c", "inst-d"])
+
+        cond = syndrome_service.get_condition_by_id(cond_id)
+        if not cond:
+            raise ValueError(f"Unknown condition_id '{cond_id}' for disease outbreak scenario.")
+
+        surge_start = start_date + timedelta(days=start_day)
+        surge_end = start_date + timedelta(days=start_day + duration_days)
+
+        # Node specific delay: rural (inst-c) has 2-day reporting lag
+        node_delay_days = 2 if institution_id == "inst-c" else 0
+        node_surge_start = surge_start + timedelta(days=node_delay_days)
+        node_surge_end = surge_end + timedelta(days=node_delay_days)
+
+        if node_surge_start <= current_date <= node_surge_end and institution_id in affected_nodes:
+            target_syndromes = cond.get("syndrome_ids") or [cond.get("primary_syndrome")]
+            coarse_cats = set()
+            for syn in target_syndromes:
+                coarse = syndrome_service.map_syndrome_to_coarse_category(syn)
+                coarse_cats.add(coarse)
+
+            if not coarse_cats:
+                coarse_cats.add("other")
+
+            # Smooth bell curve factor
+            progress = (current_date - node_surge_start).days / max(1, duration_days)
+            curve_factor = max(0.2, math.sin(math.pi * min(1.0, max(0.0, progress))))
+            surge_mult = 1.0 + (intensity * curve_factor)
+
+            # Node heterogeneity: urban prompt response vs rural variance
+            if institution_id == "inst-a":
+                node_mult = surge_mult * 1.05
+            elif institution_id == "inst-c":
+                node_mult = surge_mult * 0.95
+            else:
+                node_mult = surge_mult
+
+            for cat in coarse_cats:
+                if cat in modified_counts:
+                    modified_counts[cat] = int(round(modified_counts[cat] * node_mult))
+
+            ground_truth.append(GroundTruthEvent(
+                scenario_name=ScenarioType.DISEASE_OUTBREAK,
+                affected_institution=institution_id,
+                start_date=node_surge_start.strftime("%Y-%m-%d"),
+                end_date=node_surge_end.strftime("%Y-%m-%d"),
+                condition_id=cond["condition_id"],
+                syndrome_category=",".join(sorted(list(coarse_cats))),
+                magnitude_factor=round(1.0 + intensity, 2),
+                description=f"Disease outbreak ({cond['condition_name']} - {cond['condition_id']}) with peak intensity +{int(intensity*100)}% on {','.join(sorted(list(coarse_cats)))} in {institution_id}"
             ))
 
     return modified_counts, completeness, ground_truth

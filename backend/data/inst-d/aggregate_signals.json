@@ -1,6 +1,6 @@
 [
   {
-    "record_id": "bded0300-87cb-4c11-a6a5-c9ce3172bf44",
+    "record_id": "503db040-b1f4-47dc-940c-5c6275e562d9",
     "data_source": "testing",
     "date": "2026-08-28",
     "node_id": "inst-d",
@@ -17,6 +17,6 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.953,
-    "created_at": "2026-08-28T09:30:16.769216"
+    "created_at": "2026-08-28T10:24:59.114966"
   }
 ]

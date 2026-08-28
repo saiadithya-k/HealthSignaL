@@ -78,5 +78,3545 @@
     "visit_type": "outpatient",
     "consent_token": "76a744efefeed24b",
     "_weight": 50
+  },
+  {
+    "report_id": "10aaf95d-7111-4e67-aab4-e0807b2900b8",
+    "reported_at": "2026-08-28T16:49:29.843452",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "95d194020810595d",
+    "_weight": 1
+  },
+  {
+    "report_id": "6c8b3609-a883-43a3-aaed-0a95ade7d737",
+    "reported_at": "2026-08-28T16:49:29.845605",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "9aec12f5a9b0e07c",
+    "_weight": 1
+  },
+  {
+    "report_id": "ff5f31c8-9509-47c2-ad18-62cf175da89e",
+    "reported_at": "2026-08-28T16:49:29.846768",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "6ea542e964b03be7",
+    "_weight": 1
+  },
+  {
+    "report_id": "5617dad9-97aa-4b81-9157-155e034cd6da",
+    "reported_at": "2026-08-28T16:49:29.847278",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S123",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "a217d95bf50f18da",
+    "_weight": 1
+  },
+  {
+    "report_id": "d5ec7bf6-d964-45c9-b73f-8ffd7eae78f4",
+    "reported_at": "2026-08-28T16:49:29.848300",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S117",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "fbd068d73899b00b",
+    "_weight": 1
+  },
+  {
+    "report_id": "37b46000-bdf8-4dbd-a668-28dd01d2a501",
+    "reported_at": "2026-08-28T16:49:29.848824",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117",
+      "S123",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "63ad955c19472aa4",
+    "_weight": 1
+  },
+  {
+    "report_id": "bc0fe47c-dccd-4abe-96ce-ad3906047e2e",
+    "reported_at": "2026-08-28T16:49:29.849332",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "d0ea3a9fb49aa009",
+    "_weight": 1
+  },
+  {
+    "report_id": "625adb5a-a5f8-4095-a732-ce6b292f3203",
+    "reported_at": "2026-08-28T16:49:29.849846",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "cc864102e79feab6",
+    "_weight": 1
+  },
+  {
+    "report_id": "e45db95f-4bc0-4313-b903-a3e784397090",
+    "reported_at": "2026-08-28T16:49:29.849846",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_14_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "820d782ea63545bb",
+    "_weight": 14
+  },
+  {
+    "report_id": "6f48b2be-0856-4670-a95b-f2930b4889db",
+    "reported_at": "2026-08-28T16:49:29.850353",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "a02e3715d8b6a082",
+    "_weight": 21
+  },
+  {
+    "report_id": "33509984-a346-48ef-9410-54f3c29dfd6d",
+    "reported_at": "2026-08-28T16:49:29.850863",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "11a307f6a8fc3f65",
+    "_weight": 2
+  },
+  {
+    "report_id": "ee13a1a2-7f7b-49b5-8786-c2d3896507ed",
+    "reported_at": "2026-08-28T16:49:29.874488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "8e347e9dd4462d5d",
+    "_weight": 1
+  },
+  {
+    "report_id": "27782b5b-f9f7-488d-bee0-c070a2d6afd4",
+    "reported_at": "2026-08-28T16:49:29.875481",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S117",
+      "S139"
+    ],
+    "syndromes": [
+      "febrile_arthritic",
+      "meningeal_irritation",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "a6fd0bde1c59e79c",
+    "_weight": 1
+  },
+  {
+    "report_id": "0e3396c9-6c10-41a3-895c-60643aa82f31",
+    "reported_at": "2026-08-28T16:49:29.876481",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "6ad746eb3829766c",
+    "_weight": 1
+  },
+  {
+    "report_id": "ae8aec3d-46d1-4ba4-94f0-080aeffbed28",
+    "reported_at": "2026-08-28T16:49:29.877488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "d4ba23a43e3b3fa3",
+    "_weight": 1
+  },
+  {
+    "report_id": "6dc81a0d-41ad-494c-9c45-0eeed3009881",
+    "reported_at": "2026-08-28T16:49:29.877488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S115",
+      "S117",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "1d0212afbc9357ea",
+    "_weight": 1
+  },
+  {
+    "report_id": "42386e43-c1d5-41f1-befa-733ec75ea3c2",
+    "reported_at": "2026-08-28T16:49:29.878489",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "7d59c80979f8673a",
+    "_weight": 1
+  },
+  {
+    "report_id": "285243b4-fa60-4653-9c8a-9188888bae07",
+    "reported_at": "2026-08-28T16:49:29.879483",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S117",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "9bd7c4ac7099f2e6",
+    "_weight": 1
+  },
+  {
+    "report_id": "2c59552b-bb15-4218-8cb4-27e554f28d04",
+    "reported_at": "2026-08-28T16:49:29.880491",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "8463ee2aa8d8ba29",
+    "_weight": 1
+  },
+  {
+    "report_id": "cb3900cb-56bd-46d4-acd0-eecaf008ddc6",
+    "reported_at": "2026-08-28T16:49:29.881489",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "eb1a45dc8a8c4d9b",
+    "_weight": 1
+  },
+  {
+    "report_id": "8b55130f-3834-45fa-ae59-db5551ea2759",
+    "reported_at": "2026-08-28T16:49:29.881489",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "eb1a45dc8a8c4d9b",
+    "_weight": 1
+  },
+  {
+    "report_id": "b406bb29-5cd2-4d5c-93e8-caf821e98e44",
+    "reported_at": "2026-08-28T16:49:29.882488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "bb6120e2da171804",
+    "_weight": 1
+  },
+  {
+    "report_id": "f6ddc4c2-ee42-4dfe-97aa-823fb492c1ec",
+    "reported_at": "2026-08-28T16:49:29.883480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_19_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "e76cb42127499b68",
+    "_weight": 19
+  },
+  {
+    "report_id": "15a73f33-82a6-42c3-b278-3f59992d5bb8",
+    "reported_at": "2026-08-28T16:49:29.883480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "cc1db24f065f971d",
+    "_weight": 29
+  },
+  {
+    "report_id": "71509ff0-96b4-466a-972c-58ed954754e1",
+    "reported_at": "2026-08-28T16:49:29.884488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "90135f0c68d6565a",
+    "_weight": 4
+  },
+  {
+    "report_id": "67e54695-b11b-40b4-ab26-193c5725943f",
+    "reported_at": "2026-08-28T16:49:29.930489",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "45e7308608acdf02",
+    "_weight": 1
+  },
+  {
+    "report_id": "e592fdf5-6251-4c0c-9611-7c466cc7e798",
+    "reported_at": "2026-08-28T16:49:29.931480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "2cb306ff8f601f03",
+    "_weight": 1
+  },
+  {
+    "report_id": "2efd1b2b-05f8-4f3c-a178-ec66436eb2e9",
+    "reported_at": "2026-08-28T16:49:29.932480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S117",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "4c8002e207f3ef27",
+    "_weight": 1
+  },
+  {
+    "report_id": "d318a0cb-740e-4825-90d2-db24aca6d502",
+    "reported_at": "2026-08-28T16:49:29.933480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "886cdf035c8ee7ed",
+    "_weight": 1
+  },
+  {
+    "report_id": "c8bd5182-4d42-4331-b609-482c12ee69ca",
+    "reported_at": "2026-08-28T16:49:29.934480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "96496871060ff9e8",
+    "_weight": 1
+  },
+  {
+    "report_id": "b014b032-6b17-4b61-af7e-1ce0a80c1c88",
+    "reported_at": "2026-08-28T16:49:29.935488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "290c1211a1f1c644",
+    "_weight": 1
+  },
+  {
+    "report_id": "8790b88d-6283-4e78-856a-1fcfd4ebf045",
+    "reported_at": "2026-08-28T16:49:29.936490",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "4800433286db16e9",
+    "_weight": 1
+  },
+  {
+    "report_id": "fb17bd85-ab24-4c19-8c56-d746c3521eb5",
+    "reported_at": "2026-08-28T16:49:29.937488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "328765fe65661a3a",
+    "_weight": 1
+  },
+  {
+    "report_id": "50cf1503-73e5-4b1b-91ea-46e1664a8dca",
+    "reported_at": "2026-08-28T16:49:29.939482",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "0059d448b8179b92",
+    "_weight": 1
+  },
+  {
+    "report_id": "ecd5e8f5-fd16-4753-b125-3d530c177868",
+    "reported_at": "2026-08-28T16:49:29.940482",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "34da49df958a3600",
+    "_weight": 1
+  },
+  {
+    "report_id": "d740fd33-6577-4db1-ae25-b070730ef644",
+    "reported_at": "2026-08-28T16:49:29.941482",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "8abd90d3441265b2",
+    "_weight": 1
+  },
+  {
+    "report_id": "b4a8c461-5ba5-4820-b7a6-e625f7602b3d",
+    "reported_at": "2026-08-28T16:49:29.941482",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "8abd90d3441265b2",
+    "_weight": 1
+  },
+  {
+    "report_id": "4926efd2-ded0-4783-97d3-fd1a61e0a7ec",
+    "reported_at": "2026-08-28T16:49:29.942480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "459ac00f1c1aab3d",
+    "_weight": 1
+  },
+  {
+    "report_id": "99a29d0f-2527-47a3-8f77-14653ab7b8cd",
+    "reported_at": "2026-08-28T16:49:29.943480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "6674a8e02a54a0d3",
+    "_weight": 1
+  },
+  {
+    "report_id": "08ca248a-0b50-4457-9d8a-f70a007b14b3",
+    "reported_at": "2026-08-28T16:49:29.944481",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_23_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "e3b53ae381078d9b",
+    "_weight": 23
+  },
+  {
+    "report_id": "154e25aa-7281-4e23-b244-84c26ca5d784",
+    "reported_at": "2026-08-28T16:49:29.945481",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "4f4f547cd64dc0dd",
+    "_weight": 35
+  },
+  {
+    "report_id": "088dd89d-bd02-4ce1-bfea-63f4d00c4b20",
+    "reported_at": "2026-08-28T16:49:29.946482",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "f84c3141e02a12b1",
+    "_weight": 8
+  },
+  {
+    "report_id": "0125419a-f316-4dc7-800d-f9786d95f2fd",
+    "reported_at": "2026-08-28T16:49:30.023480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "022be22990fdea85",
+    "_weight": 1
+  },
+  {
+    "report_id": "56dee8c7-d90e-4add-a325-c16b44ac8e91",
+    "reported_at": "2026-08-28T16:49:30.024480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "a7a2d6737d8ef000",
+    "_weight": 1
+  },
+  {
+    "report_id": "ab94c06f-a55c-4936-a578-9e338064a974",
+    "reported_at": "2026-08-28T16:49:30.025480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "55bdaa92a8642959",
+    "_weight": 1
+  },
+  {
+    "report_id": "3565817b-47a4-4bf5-bc63-cf67b18eeb62",
+    "reported_at": "2026-08-28T16:49:30.027480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "f4c0c7da80ca8ae9",
+    "_weight": 1
+  },
+  {
+    "report_id": "15131679-6e10-4e07-9d8c-47e8cfe72ea6",
+    "reported_at": "2026-08-28T16:49:30.028480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "13e0c7e70c1d68ad",
+    "_weight": 1
+  },
+  {
+    "report_id": "f2ecc9a1-7d01-45e9-a38f-df2516e25bcb",
+    "reported_at": "2026-08-28T16:49:30.029480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "61a07c698f183ccf",
+    "_weight": 1
+  },
+  {
+    "report_id": "3d4603e5-892e-4657-a8fd-d2cffb0a3e8c",
+    "reported_at": "2026-08-28T16:49:30.030481",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S115",
+      "S123",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "466baa745ea70cb1",
+    "_weight": 1
+  },
+  {
+    "report_id": "a61b8a5f-b25e-4947-9e66-dcce337129d5",
+    "reported_at": "2026-08-28T16:49:30.032489",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "967c83d1dafab063",
+    "_weight": 1
+  },
+  {
+    "report_id": "d6a84c92-c8d8-476f-9883-cd0913720f3e",
+    "reported_at": "2026-08-28T16:49:30.033488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "2fbbd120d5893ccc",
+    "_weight": 1
+  },
+  {
+    "report_id": "639bef13-d2ae-412e-a3f9-aab56e18b0dc",
+    "reported_at": "2026-08-28T16:49:30.035480",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "784c2c4dbae2aaed",
+    "_weight": 1
+  },
+  {
+    "report_id": "1238bcad-1ed8-4b59-ae2d-d02ff11ef6ca",
+    "reported_at": "2026-08-28T16:49:30.036481",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "3a13fd5cb7c41a7b",
+    "_weight": 1
+  },
+  {
+    "report_id": "65d721f1-6b06-4125-8d41-80e27a67f668",
+    "reported_at": "2026-08-28T16:49:30.037489",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "b731c73232cb80ef",
+    "_weight": 1
+  },
+  {
+    "report_id": "f02c9fd4-b9aa-4d89-83e0-62e8a4440173",
+    "reported_at": "2026-08-28T16:49:30.038481",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "29cb6da4e3aa070a",
+    "_weight": 1
+  },
+  {
+    "report_id": "e7523d9d-7c4b-44ac-8059-6a7d71e14273",
+    "reported_at": "2026-08-28T16:49:30.039488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "756fba78cfd3b817",
+    "_weight": 1
+  },
+  {
+    "report_id": "d6065301-4c4a-49c9-a999-dc01be00076a",
+    "reported_at": "2026-08-28T16:49:30.040488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_23_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "eeb807f7261dd9b2",
+    "_weight": 23
+  },
+  {
+    "report_id": "5e0c9e92-a1d9-486d-8378-7eec30a361c9",
+    "reported_at": "2026-08-28T16:49:30.041488",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "49e76fc24449b2e5",
+    "_weight": 35
+  },
+  {
+    "report_id": "284680d1-5b54-4526-86c3-01b6350cfa3a",
+    "reported_at": "2026-08-28T16:49:30.042482",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "306e89da19a9d02b",
+    "_weight": 8
+  },
+  {
+    "report_id": "a0b3059e-9c15-4350-acf4-6112c80247d1",
+    "reported_at": "2026-08-28T16:49:30.144918",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "fefda1ca658cfeee",
+    "_weight": 1
+  },
+  {
+    "report_id": "43fa80e6-d405-4783-8070-74b2f92b609c",
+    "reported_at": "2026-08-28T16:49:30.146877",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "a4e220c2636bfc8d",
+    "_weight": 1
+  },
+  {
+    "report_id": "ac3151fc-e6aa-4cba-934d-4dd68add9510",
+    "reported_at": "2026-08-28T16:49:30.147887",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "ff81cc49ce4ad460",
+    "_weight": 1
+  },
+  {
+    "report_id": "5fca875d-403e-4a77-a67a-5eab8a9d4592",
+    "reported_at": "2026-08-28T16:49:30.148883",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "1052dc637bba4c9b",
+    "_weight": 1
+  },
+  {
+    "report_id": "9d1e908b-8e1b-4c8b-9740-984febb0120b",
+    "reported_at": "2026-08-28T16:49:30.150858",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "40015737abcab5b7",
+    "_weight": 1
+  },
+  {
+    "report_id": "3f2bb60a-769d-473a-9f8d-9c6ce3c81f4d",
+    "reported_at": "2026-08-28T16:49:30.151854",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "4e05034a2ced8f7d",
+    "_weight": 1
+  },
+  {
+    "report_id": "4520e27e-2ade-428c-8a3b-73b8b0cf600f",
+    "reported_at": "2026-08-28T16:49:30.153861",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "beb1687d03a7d570",
+    "_weight": 1
+  },
+  {
+    "report_id": "01f76d5c-b46d-4b22-a953-8fa8ed09829e",
+    "reported_at": "2026-08-28T16:49:30.155853",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "018ae145ccdc2fb0",
+    "_weight": 1
+  },
+  {
+    "report_id": "41059473-ae3d-4edd-a25f-757f55555e6f",
+    "reported_at": "2026-08-28T16:49:30.156861",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "97ed671b20a99364",
+    "_weight": 1
+  },
+  {
+    "report_id": "07f09264-bcec-435b-91a8-27d0eb695eee",
+    "reported_at": "2026-08-28T16:49:30.157854",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "6498da01ce32307c",
+    "_weight": 1
+  },
+  {
+    "report_id": "6abee2be-10ea-4f5b-8624-fb3bb615ab50",
+    "reported_at": "2026-08-28T16:49:30.158853",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "1caa5c1f662882b9",
+    "_weight": 1
+  },
+  {
+    "report_id": "baf1c2a3-f80c-4676-a6ea-7cf67417e7eb",
+    "reported_at": "2026-08-28T16:49:30.160861",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_19_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "9394e7a46cab80d3",
+    "_weight": 19
+  },
+  {
+    "report_id": "36d64f04-d1dd-4ff0-b899-0d267daa99ac",
+    "reported_at": "2026-08-28T16:49:30.161860",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "696f3c128ea8eaaf",
+    "_weight": 29
+  },
+  {
+    "report_id": "f84a814e-2fe9-4018-907c-5dc0629632d8",
+    "reported_at": "2026-08-28T16:49:30.163853",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "358b7d01df9bb983",
+    "_weight": 4
+  },
+  {
+    "report_id": "86a51137-a7be-49c7-b7e7-be256ff6c600",
+    "reported_at": "2026-08-28T16:49:52.277238",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "ab4baa647bfe7a46",
+    "_weight": 1
+  },
+  {
+    "report_id": "f8e5092f-d996-45c7-a3a3-80e3462d8497",
+    "reported_at": "2026-08-28T16:49:52.279362",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "daab1bf348ed70f2",
+    "_weight": 1
+  },
+  {
+    "report_id": "e199da24-f069-4b8f-a148-787368d0565b",
+    "reported_at": "2026-08-28T16:49:52.283172",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "5ba1c020d54e4fa9",
+    "_weight": 1
+  },
+  {
+    "report_id": "ec9ab6f1-45cf-4464-87be-f6f5f2f75b28",
+    "reported_at": "2026-08-28T16:49:52.284828",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "813e6fa2fd7f378f",
+    "_weight": 1
+  },
+  {
+    "report_id": "18b64d52-9c0c-4ac5-864b-4241c50aa03c",
+    "reported_at": "2026-08-28T16:49:52.286417",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S123"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "2efbd64feed1aa67",
+    "_weight": 1
+  },
+  {
+    "report_id": "3558f73e-e4b3-4d3c-8d54-59e83e58b39a",
+    "reported_at": "2026-08-28T16:49:52.288431",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "7e8407082d045fb2",
+    "_weight": 1
+  },
+  {
+    "report_id": "65c27041-8634-4506-a782-6bf8f9936ed2",
+    "reported_at": "2026-08-28T16:49:52.289945",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "8064fcb90be8a841",
+    "_weight": 1
+  },
+  {
+    "report_id": "6642f4a2-2373-4cbc-a1b6-c0d33f339656",
+    "reported_at": "2026-08-28T16:49:52.290951",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "2d770e9d3acb99b5",
+    "_weight": 1
+  },
+  {
+    "report_id": "0e3d9446-d02a-406a-b55e-452ed4674913",
+    "reported_at": "2026-08-28T16:49:52.292962",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_14_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "820d782ea63545bb",
+    "_weight": 14
+  },
+  {
+    "report_id": "c0b31aef-ce33-408c-a74f-53221e2aab3e",
+    "reported_at": "2026-08-28T16:49:52.293952",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "a02e3715d8b6a082",
+    "_weight": 21
+  },
+  {
+    "report_id": "64892f49-1d2c-4c37-9005-17d56013e811",
+    "reported_at": "2026-08-28T16:49:52.295959",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "11a307f6a8fc3f65",
+    "_weight": 2
+  },
+  {
+    "report_id": "d3b403a2-cd5c-4a88-8123-f4125fa9d914",
+    "reported_at": "2026-08-28T16:49:52.396959",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "79dfba4bfebbf895",
+    "_weight": 1
+  },
+  {
+    "report_id": "9ff23a53-196e-4b80-90fe-16aabe8984fa",
+    "reported_at": "2026-08-28T16:49:52.398951",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "f7a6d0107362a892",
+    "_weight": 1
+  },
+  {
+    "report_id": "1a2ea97f-2b90-4fad-bd0f-0dd27b19128f",
+    "reported_at": "2026-08-28T16:49:52.400960",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "7b608d8ef7dec51e",
+    "_weight": 1
+  },
+  {
+    "report_id": "1796d6b6-7c20-4520-bc3f-e7f1360fbcc8",
+    "reported_at": "2026-08-28T16:49:52.402959",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S123",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "320aa18818874114",
+    "_weight": 1
+  },
+  {
+    "report_id": "20c54bdb-aa4a-4b05-888a-08b40e0ff8e5",
+    "reported_at": "2026-08-28T16:49:52.404951",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "fdb97b02b6c753de",
+    "_weight": 1
+  },
+  {
+    "report_id": "a0c344cb-ddcb-4e77-b88a-83966d3e345d",
+    "reported_at": "2026-08-28T16:49:52.406952",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "ad0edb1014645e88",
+    "_weight": 1
+  },
+  {
+    "report_id": "852a9e6d-aa59-472a-8406-8ed0ff8c07c0",
+    "reported_at": "2026-08-28T16:49:52.408952",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S117",
+      "S123"
+    ],
+    "syndromes": [
+      "febrile_arthritic",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "3fc07656ef121ac1",
+    "_weight": 1
+  },
+  {
+    "report_id": "4072a7b0-fbe3-4a77-a37c-597cbf0b1e81",
+    "reported_at": "2026-08-28T16:49:52.410952",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "3a307f6dbd1e2b97",
+    "_weight": 1
+  },
+  {
+    "report_id": "7d4376e6-82da-48d1-832e-eaf07075ebc3",
+    "reported_at": "2026-08-28T16:49:52.411952",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "9ce17b75819afe01",
+    "_weight": 1
+  },
+  {
+    "report_id": "5681eade-e2be-493a-aee6-2d39e4a22240",
+    "reported_at": "2026-08-28T16:49:52.413963",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "cabfbed72a5b863c",
+    "_weight": 1
+  },
+  {
+    "report_id": "b2de7e6f-f9fe-4f56-b951-04b25cced2de",
+    "reported_at": "2026-08-28T16:49:52.416016",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "f0a168bb887bb0ed",
+    "_weight": 1
+  },
+  {
+    "report_id": "ece7ed93-1066-4981-b096-2c7a0b70f688",
+    "reported_at": "2026-08-28T16:49:52.416973",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_19_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "e76cb42127499b68",
+    "_weight": 19
+  },
+  {
+    "report_id": "b0c1df02-32db-4e92-b38d-f6972c32ab65",
+    "reported_at": "2026-08-28T16:49:52.419057",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "cc1db24f065f971d",
+    "_weight": 29
+  },
+  {
+    "report_id": "44d31933-0bae-4086-9995-c54dcd58949d",
+    "reported_at": "2026-08-28T16:49:52.420981",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "90135f0c68d6565a",
+    "_weight": 4
+  },
+  {
+    "report_id": "2c480c4a-4dec-4893-b072-be795b8974f3",
+    "reported_at": "2026-08-28T16:49:52.565609",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "7876734050d18208",
+    "_weight": 1
+  },
+  {
+    "report_id": "e60eea00-6485-4b7d-99ff-ad1b233b707d",
+    "reported_at": "2026-08-28T16:49:52.567609",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "ca5db9afc1ad26c7",
+    "_weight": 1
+  },
+  {
+    "report_id": "eb25bea9-ef41-4cad-8c34-8cd2a9196c5a",
+    "reported_at": "2026-08-28T16:49:52.569602",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117",
+      "S123",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "e7bc3bac390e0e34",
+    "_weight": 1
+  },
+  {
+    "report_id": "a335c4a8-916c-4115-8686-4888f43a2c60",
+    "reported_at": "2026-08-28T16:49:52.572608",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "a16926429f1343a8",
+    "_weight": 1
+  },
+  {
+    "report_id": "1cd482a0-627e-4716-8b82-9519af6a81ca",
+    "reported_at": "2026-08-28T16:49:52.574608",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S123",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "16d040e5d75a37df",
+    "_weight": 1
+  },
+  {
+    "report_id": "3ba4f521-e683-44c2-b184-cbffb6944b2e",
+    "reported_at": "2026-08-28T16:49:52.576603",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S115",
+      "S117",
+      "S139"
+    ],
+    "syndromes": [
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "0aa8615d02843dbe",
+    "_weight": 1
+  },
+  {
+    "report_id": "724bcafc-fd14-49c4-a1a9-f5fb44a0edde",
+    "reported_at": "2026-08-28T16:49:52.578611",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S115",
+      "S123"
+    ],
+    "syndromes": [
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "6c37c99a902be274",
+    "_weight": 1
+  },
+  {
+    "report_id": "e12a6f98-7e8a-4da4-b465-87d61b7c3f1a",
+    "reported_at": "2026-08-28T16:49:52.580608",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "72eaa16738cf67eb",
+    "_weight": 1
+  },
+  {
+    "report_id": "51be4d03-d3da-425c-b6a2-b103f320cbd8",
+    "reported_at": "2026-08-28T16:49:52.582608",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "a93bd309d773677d",
+    "_weight": 1
+  },
+  {
+    "report_id": "7332a51a-49a6-448d-939d-534fe22227ec",
+    "reported_at": "2026-08-28T16:49:52.584618",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "612750a000ab7d3d",
+    "_weight": 1
+  },
+  {
+    "report_id": "7cbbd2ca-96f8-4d82-865d-9e9e9e999df0",
+    "reported_at": "2026-08-28T16:49:52.586610",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "9fef549b0fac72a6",
+    "_weight": 1
+  },
+  {
+    "report_id": "7cb47ab6-ca50-44f4-9e8f-63a241ad1773",
+    "reported_at": "2026-08-28T16:49:52.588600",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "a53d9ad59d53beb0",
+    "_weight": 1
+  },
+  {
+    "report_id": "31c08cc9-90a5-4f64-a7fc-590dbb2fedda",
+    "reported_at": "2026-08-28T16:49:52.589608",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "c2319c75ae54466e",
+    "_weight": 1
+  },
+  {
+    "report_id": "a1671a2a-03ab-45db-adfc-8e7f3fe94f67",
+    "reported_at": "2026-08-28T16:49:52.591609",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "aed9e7703a0fe810",
+    "_weight": 1
+  },
+  {
+    "report_id": "e43377b1-95eb-40d6-b066-b9a4c24b246b",
+    "reported_at": "2026-08-28T16:49:52.594601",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_23_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "e3b53ae381078d9b",
+    "_weight": 23
+  },
+  {
+    "report_id": "4ca947fd-77ff-41ca-b063-49e156bdb3e4",
+    "reported_at": "2026-08-28T16:49:52.596609",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "4f4f547cd64dc0dd",
+    "_weight": 35
+  },
+  {
+    "report_id": "02a92fe6-6f71-436b-a13d-d60f0028f2ce",
+    "reported_at": "2026-08-28T16:49:52.597609",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "f84c3141e02a12b1",
+    "_weight": 8
+  },
+  {
+    "report_id": "5bac9cc7-9371-433b-82bd-4716360719ea",
+    "reported_at": "2026-08-28T16:49:52.846268",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "7cee1c043b08ecf0",
+    "_weight": 1
+  },
+  {
+    "report_id": "1aae3690-97f4-4cef-b98e-395fab37ebb6",
+    "reported_at": "2026-08-28T16:49:52.849268",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115",
+      "S127",
+      "S139"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "meningeal_irritation",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "5ef9ce58b967e90e",
+    "_weight": 1
+  },
+  {
+    "report_id": "b72282df-f4d9-4d3b-8138-ecd1e012faa6",
+    "reported_at": "2026-08-28T16:49:52.851287",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "713db6bf9dcaf08a",
+    "_weight": 1
+  },
+  {
+    "report_id": "312a64b7-4f04-424b-a4f4-8acf9e4b6272",
+    "reported_at": "2026-08-28T16:49:52.854269",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "99c9801532d0c4b0",
+    "_weight": 1
+  },
+  {
+    "report_id": "e3c66699-5752-4c8b-b299-2ff723a1aa26",
+    "reported_at": "2026-08-28T16:49:52.856320",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "b472e7b5265fa9e2",
+    "_weight": 1
+  },
+  {
+    "report_id": "61601768-fa65-47cb-987e-3716e53525d4",
+    "reported_at": "2026-08-28T16:49:52.859280",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "bfcdaab9be3a4637",
+    "_weight": 1
+  },
+  {
+    "report_id": "d1d51aec-0b3c-4aa2-b73f-697e75a9c82b",
+    "reported_at": "2026-08-28T16:49:52.861268",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "7a4e73e1cb4086ce",
+    "_weight": 1
+  },
+  {
+    "report_id": "5fdc44a6-fdfc-4d12-acce-c54417029511",
+    "reported_at": "2026-08-28T16:49:52.864267",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115",
+      "S117"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "3b097918a92d0f60",
+    "_weight": 1
+  },
+  {
+    "report_id": "15be7dfc-32e5-4361-bca4-048ae7c1d089",
+    "reported_at": "2026-08-28T16:49:52.866275",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "5799ea4a09d3f7af",
+    "_weight": 1
+  },
+  {
+    "report_id": "3797ef00-07aa-486b-98ab-67751167cfd7",
+    "reported_at": "2026-08-28T16:49:52.868277",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "c8c5137fdd5561e9",
+    "_weight": 1
+  },
+  {
+    "report_id": "40d88e01-8c0f-4848-aa42-320858adfdb0",
+    "reported_at": "2026-08-28T16:49:52.870269",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "0712cc3dd3c77227",
+    "_weight": 1
+  },
+  {
+    "report_id": "ded8119b-3171-4b6e-87ec-268a2640c072",
+    "reported_at": "2026-08-28T16:49:52.872268",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "23fc08a345253a65",
+    "_weight": 1
+  },
+  {
+    "report_id": "ec51c1e8-1196-4ac7-ac93-137c1c4faf31",
+    "reported_at": "2026-08-28T16:49:52.875286",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "db546babd1d077fa",
+    "_weight": 1
+  },
+  {
+    "report_id": "81ea9113-f658-4ccb-97ff-a18fe77baaac",
+    "reported_at": "2026-08-28T16:49:52.877309",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "779e24e4333ad717",
+    "_weight": 1
+  },
+  {
+    "report_id": "01485601-f4ab-4321-9b3b-cc0598fbc270",
+    "reported_at": "2026-08-28T16:49:52.879389",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_23_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "eeb807f7261dd9b2",
+    "_weight": 23
+  },
+  {
+    "report_id": "d702864e-e485-4ccc-b918-fc530b7a27a5",
+    "reported_at": "2026-08-28T16:49:52.881293",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "49e76fc24449b2e5",
+    "_weight": 35
+  },
+  {
+    "report_id": "f76a8083-422d-438b-830a-b4d0c1043c3a",
+    "reported_at": "2026-08-28T16:49:52.883301",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "306e89da19a9d02b",
+    "_weight": 8
+  },
+  {
+    "report_id": "b74e5f8a-b257-4d51-b569-590521f95003",
+    "reported_at": "2026-08-28T16:49:53.107712",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "e4a5747a7cdf0611",
+    "_weight": 1
+  },
+  {
+    "report_id": "8e93817a-90ba-4a03-8d44-e623b4564d1c",
+    "reported_at": "2026-08-28T16:49:53.109773",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "3fade0d7e869144a",
+    "_weight": 1
+  },
+  {
+    "report_id": "d1a49905-9e37-46ee-b180-c70f2fc19756",
+    "reported_at": "2026-08-28T16:49:53.112782",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "557823c85b33bd60",
+    "_weight": 1
+  },
+  {
+    "report_id": "123330cd-406f-4ac2-9152-48c74c14796d",
+    "reported_at": "2026-08-28T16:49:53.114790",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "032dfe84331caecc",
+    "_weight": 1
+  },
+  {
+    "report_id": "76dc7ccd-73b3-4b35-978c-18b785ede0fe",
+    "reported_at": "2026-08-28T16:49:53.117799",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "72e38df72f68eaf0",
+    "_weight": 1
+  },
+  {
+    "report_id": "30491ee9-e2f7-49fc-9411-ad92f1c78581",
+    "reported_at": "2026-08-28T16:49:53.120280",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S147",
+      "S115",
+      "S117",
+      "S127"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "a2924e8432f1ab24",
+    "_weight": 1
+  },
+  {
+    "report_id": "5ac61ee9-6454-4d94-9851-5108e623aa69",
+    "reported_at": "2026-08-28T16:49:53.122786",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "c2847767be3f4c3f",
+    "_weight": 1
+  },
+  {
+    "report_id": "de7670e8-391d-40ed-8b54-b64b1eea67a2",
+    "reported_at": "2026-08-28T16:49:53.124786",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S147",
+      "S115"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "febrile_arthritic",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "viral_hemorrhagic_fever",
+      "zoonotic_leptospiral"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "10af06ee61ac5f53",
+    "_weight": 1
+  },
+  {
+    "report_id": "f22b69be-889e-472d-9fb5-6a5348d43a34",
+    "reported_at": "2026-08-28T16:49:53.127827",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "62ffdef2d3b72063",
+    "_weight": 1
+  },
+  {
+    "report_id": "02797720-85f4-44f2-a070-a3a4b103e90b",
+    "reported_at": "2026-08-28T16:49:53.129826",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "848f79f81d6d5063",
+    "_weight": 1
+  },
+  {
+    "report_id": "1263202d-5cee-4af4-a103-6714b0cdf531",
+    "reported_at": "2026-08-28T16:49:53.131835",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate_to_severe",
+    "visit_type": "walk-in",
+    "consent_token": "2ae9b442016f0ce1",
+    "_weight": 1
+  },
+  {
+    "report_id": "f818ac77-3c46-43aa-9c88-5b8121eb9a44",
+    "reported_at": "2026-08-28T16:49:53.134826",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "febrile_arthritic_19_visits"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "9394e7a46cab80d3",
+    "_weight": 19
+  },
+  {
+    "report_id": "79a77a8f-0912-46b0-8fd1-2e5d185aabae",
+    "reported_at": "2026-08-28T16:49:53.136835",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "696f3c128ea8eaaf",
+    "_weight": 29
+  },
+  {
+    "report_id": "52216509-6446-4b9d-bb7b-ba4448b8a7c8",
+    "reported_at": "2026-08-28T16:49:53.138833",
+    "node_id": "inst-c",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_dengue_ns1"
+    ],
+    "syndromes": [
+      "febrile_arthritic"
+    ],
+    "symptom_onset": "2025-06-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "358b7d01df9bb983",
+    "_weight": 4
   }
 ]

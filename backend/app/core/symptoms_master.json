@@ -3,262 +3,4990 @@
   "total_symptoms": 257,
   "description": "HealthSignal 257 Standardized Symptoms Master Catalog",
   "symptoms": [
-    { "symptom_id": "S001", "name": "Fever", "category": "General / Systemic", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_febrile_illness", "influenza_like_illness", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S002", "name": "Chills", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_febrile_illness", "vector_malaria_paroxysmal"] },
-    { "symptom_id": "S003", "name": "Feeling cold", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_febrile_illness", "environmental_hypothermia_cold"] },
-    { "symptom_id": "S004", "name": "Sweating", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_febrile_illness", "vector_malaria_paroxysmal"] },
-    { "symptom_id": "S005", "name": "Night sweats", "category": "General / Systemic", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_febrile_illness", "lower_respiratory_illness"] },
-    { "symptom_id": "S006", "name": "Fatigue", "category": "General / Systemic", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_febrile_illness", "post_infectious_asthenia"] },
-    { "symptom_id": "S007", "name": "Weakness", "category": "General / Systemic", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_febrile_illness", "acute_hemolytic_cytopenic"] },
-    { "symptom_id": "S008", "name": "Malaise", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_febrile_illness", "influenza_like_illness"] },
-    { "symptom_id": "S009", "name": "Body ache", "category": "General / Systemic", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_febrile_illness", "febrile_arthritic"] },
-    { "symptom_id": "S010", "name": "Generalized pain", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_febrile_illness"] },
-    { "symptom_id": "S011", "name": "Loss of appetite", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_jaundice_hepatitic", "gastroenteritis_emetic"] },
-    { "symptom_id": "S012", "name": "Increased appetite", "category": "General / Systemic", "severities": ["mild"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S013", "name": "Weight loss", "category": "General / Systemic", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["pediatric_malnutrition_wasting", "lower_respiratory_illness"] },
-    { "symptom_id": "S014", "name": "Weight gain", "category": "General / Systemic", "severities": ["mild"], "associated_syndromes": ["acute_heart_failure_congestive"] },
-    { "symptom_id": "S015", "name": "Dehydration", "category": "General / Systemic", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["severe_dehydration_shock", "acute_watery_diarrhea"] },
-    { "symptom_id": "S016", "name": "Dizziness", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["cardiac_arrhythmic_syncope", "severe_dehydration_shock"] },
-    { "symptom_id": "S017", "name": "Fainting", "category": "General / Systemic", "severities": ["moderate", "severe"], "associated_syndromes": ["cardiac_arrhythmic_syncope", "severe_dehydration_shock"] },
-    { "symptom_id": "S018", "name": "Feeling unwell", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_febrile_illness"] },
-    { "symptom_id": "S019", "name": "Reduced activity", "category": "General / Systemic", "severities": ["mild", "moderate"], "associated_syndromes": ["post_infectious_asthenia"] },
-    { "symptom_id": "S020", "name": "Lethargy", "category": "General / Systemic", "severities": ["moderate", "severe"], "associated_syndromes": ["systemic_inflammatory_sepsis", "acute_encephalitic"] },
-    { "symptom_id": "S021", "name": "Cough", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["upper_respiratory_infection", "influenza_like_illness", "lower_respiratory_illness"] },
-    { "symptom_id": "S022", "name": "Dry cough", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["upper_respiratory_infection", "influenza_like_illness"] },
-    { "symptom_id": "S023", "name": "Productive cough", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["lower_respiratory_illness", "severe_acute_respiratory_infection"] },
-    { "symptom_id": "S024", "name": "Cough with sputum", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["lower_respiratory_illness"] },
-    { "symptom_id": "S025", "name": "Blood in sputum (Hemoptysis)", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["lower_respiratory_illness", "viral_hemorrhagic_fever"] },
-    { "symptom_id": "S026", "name": "Shortness of breath (Dyspnea)", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["severe_acute_respiratory_infection", "bronchospastic_obstructive", "acute_heart_failure_congestive"] },
-    { "symptom_id": "S027", "name": "Difficulty breathing", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_acute_respiratory_infection", "bronchospastic_obstructive"] },
-    { "symptom_id": "S028", "name": "Rapid breathing (Tachypnea)", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_acute_respiratory_infection", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S029", "name": "Wheezing", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["bronchospastic_obstructive", "acute_allergic_anaphylactic"] },
-    { "symptom_id": "S030", "name": "Chest tightness", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["bronchospastic_obstructive", "acute_coronary_ischemic"] },
-    { "symptom_id": "S031", "name": "Chest discomfort", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "acute_coronary_ischemic"] },
-    { "symptom_id": "S032", "name": "Chest pain", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["lower_respiratory_illness", "acute_coronary_ischemic"] },
-    { "symptom_id": "S033", "name": "Nasal congestion", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S034", "name": "Stuffy nose", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S035", "name": "Runny nose (Rhinorrhea)", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "acute_fever_rash"] },
-    { "symptom_id": "S036", "name": "Sneezing", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "acute_allergic_anaphylactic"] },
-    { "symptom_id": "S037", "name": "Post-nasal drip", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S038", "name": "Sore throat", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["upper_respiratory_infection", "influenza_like_illness"] },
-    { "symptom_id": "S039", "name": "Throat irritation", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "chemical_toxic_inhalation"] },
-    { "symptom_id": "S040", "name": "Hoarse voice", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "pediatric_croup_stridor"] },
-    { "symptom_id": "S041", "name": "Loss of voice (Aphonia)", "category": "Respiratory", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S042", "name": "Exertional dyspnea", "category": "Respiratory", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_heart_failure_congestive", "lower_respiratory_illness"] },
-    { "symptom_id": "S043", "name": "Orthopnea / Rest dyspnea", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_heart_failure_congestive", "severe_acute_respiratory_infection"] },
-    { "symptom_id": "S044", "name": "Noisy breathing (Stridor)", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["pediatric_croup_stridor", "acute_allergic_anaphylactic"] },
-    { "symptom_id": "S045", "name": "Increased respiratory rate", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_acute_respiratory_infection", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S046", "name": "Oxygen saturation below 94%", "category": "Respiratory", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_acute_respiratory_infection", "lower_respiratory_illness"] },
-    { "symptom_id": "S047", "name": "Nausea", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["gastroenteritis_emetic", "acute_jaundice_hepatitic"] },
-    { "symptom_id": "S048", "name": "Vomiting", "category": "Gastrointestinal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["gastroenteritis_emetic", "foodborne_neurotoxic"] },
-    { "symptom_id": "S049", "name": "Repeated projectile vomiting", "category": "Gastrointestinal", "severities": ["moderate", "severe"], "associated_syndromes": ["gastroenteritis_emetic", "acute_encephalitic"] },
-    { "symptom_id": "S050", "name": "Diarrhea", "category": "Gastrointestinal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_watery_diarrhea", "bloody_diarrhea_dysentery", "febrile_enteric"] },
-    { "symptom_id": "S051", "name": "Loose stools", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_watery_diarrhea"] },
-    { "symptom_id": "S052", "name": "Bloody stool (Melena/Hematochezia)", "category": "Gastrointestinal", "severities": ["moderate", "severe"], "associated_syndromes": ["bloody_diarrhea_dysentery", "viral_hemorrhagic_fever"] },
-    { "symptom_id": "S053", "name": "Mucus in stool", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["bloody_diarrhea_dysentery"] },
-    { "symptom_id": "S054", "name": "Abdominal pain", "category": "Gastrointestinal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["febrile_enteric", "bloody_diarrhea_dysentery"] },
-    { "symptom_id": "S055", "name": "Abdominal cramps", "category": "Gastrointestinal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_watery_diarrhea", "bloody_diarrhea_dysentery"] },
-    { "symptom_id": "S056", "name": "Abdominal bloating", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["febrile_enteric"] },
-    { "symptom_id": "S057", "name": "Indigestion", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["gastroenteritis_emetic"] },
-    { "symptom_id": "S058", "name": "Heartburn", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S059", "name": "Constipation", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["febrile_enteric", "foodborne_neurotoxic"] },
-    { "symptom_id": "S060", "name": "Loss of appetite (Anorexia)", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_jaundice_hepatitic", "febrile_enteric"] },
-    { "symptom_id": "S061", "name": "Difficulty swallowing (Dysphagia)", "category": "Gastrointestinal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["cranial_neuropathy_dysautonomia", "oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S062", "name": "Painful swallowing (Odynophagia)", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S063", "name": "Excessive thirst (Polydipsia)", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["severe_dehydration_shock", "acute_watery_diarrhea"] },
-    { "symptom_id": "S064", "name": "Jaundice / Scleral icterus", "category": "Gastrointestinal", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_jaundice_hepatitic", "zoonotic_leptospiral"] },
-    { "symptom_id": "S065", "name": "Dark tea-colored urine", "category": "Gastrointestinal", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_jaundice_hepatitic", "acute_hemolytic_cytopenic"] },
-    { "symptom_id": "S066", "name": "Clay-colored pale stool", "category": "Gastrointestinal", "severities": ["moderate"], "associated_syndromes": ["acute_jaundice_hepatitic"] },
-    { "symptom_id": "S067", "name": "Headache", "category": "Neurological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_febrile_illness", "meningeal_irritation", "vector_malaria_paroxysmal"] },
-    { "symptom_id": "S068", "name": "Severe splitting headache", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["meningeal_irritation", "acute_encephalitic"] },
-    { "symptom_id": "S069", "name": "Migraine-like throbbing headache", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S070", "name": "Confusion", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic", "systemic_inflammatory_sepsis", "environmental_heat_stroke"] },
-    { "symptom_id": "S071", "name": "Disorientation in time/place", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic"] },
-    { "symptom_id": "S072", "name": "Drowsiness", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_encephalitic", "meningeal_irritation"] },
-    { "symptom_id": "S073", "name": "Excessive somnolence", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_encephalitic"] },
-    { "symptom_id": "S074", "name": "Difficulty concentrating", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["post_infectious_asthenia"] },
-    { "symptom_id": "S075", "name": "Memory difficulty", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["post_infectious_asthenia", "acute_encephalitic"] },
-    { "symptom_id": "S076", "name": "Loss of consciousness / Coma", "category": "Neurological", "severities": ["severe"], "associated_syndromes": ["acute_encephalitic", "severe_dehydration_shock", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S077", "name": "Syncopal attack", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["cardiac_arrhythmic_syncope"] },
-    { "symptom_id": "S078", "name": "Seizure / Convulsion", "category": "Neurological", "severities": ["severe"], "associated_syndromes": ["acute_encephalitic", "environmental_heat_stroke"] },
-    { "symptom_id": "S079", "name": "Tremor", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_encephalitic", "environmental_hypothermia_cold"] },
-    { "symptom_id": "S080", "name": "Numbness", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_flaccid_paralysis", "cranial_neuropathy_dysautonomia"] },
-    { "symptom_id": "S081", "name": "Paresthesia / Tingling", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["zoonotic_rabies_encephalopathy", "acute_flaccid_paralysis"] },
-    { "symptom_id": "S082", "name": "Limb weakness / Monoparesis", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_flaccid_paralysis"] },
-    { "symptom_id": "S083", "name": "Difficulty walking / Ataxia", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_flaccid_paralysis", "acute_encephalitic"] },
-    { "symptom_id": "S084", "name": "Loss of balance", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic"] },
-    { "symptom_id": "S085", "name": "Lightheadedness", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["cardiac_arrhythmic_syncope", "severe_dehydration_shock"] },
-    { "symptom_id": "S086", "name": "Rotational vertigo", "category": "Neurological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S087", "name": "Coordination difficulty", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic"] },
-    { "symptom_id": "S088", "name": "Speech difficulty", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["cranial_neuropathy_dysautonomia", "acute_encephalitic"] },
-    { "symptom_id": "S089", "name": "Slurred speech (Dysarthria)", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["cranial_neuropathy_dysautonomia", "environmental_hypothermia_cold"] },
-    { "symptom_id": "S090", "name": "Photophobia", "category": "Neurological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["meningeal_irritation", "acute_ophthalmic_conjunctivitis"] },
-    { "symptom_id": "S091", "name": "Phonophobia", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["meningeal_irritation"] },
-    { "symptom_id": "S092", "name": "Neck stiffness (Nuchal rigidity)", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["meningeal_irritation", "acute_encephalitic"] },
-    { "symptom_id": "S093", "name": "Altered mental status", "category": "Neurological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S094", "name": "Loss of smell (Anosmia)", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "influenza_like_illness"] },
-    { "symptom_id": "S095", "name": "Loss of taste (Ageusia)", "category": "Neurological", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "influenza_like_illness"] },
-    { "symptom_id": "S096", "name": "Reduced smell (Hyposmia)", "category": "Neurological", "severities": ["mild"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S097", "name": "Reduced taste (Hypogeusia)", "category": "Neurological", "severities": ["mild"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S098", "name": "Palpitations", "category": "Cardiovascular", "severities": ["mild", "moderate"], "associated_syndromes": ["cardiac_arrhythmic_syncope"] },
-    { "symptom_id": "S099", "name": "Rapid heartbeat (Tachycardia)", "category": "Cardiovascular", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["systemic_inflammatory_sepsis", "severe_dehydration_shock", "cardiac_arrhythmic_syncope"] },
-    { "symptom_id": "S100", "name": "Slow heartbeat (Bradycardia)", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["febrile_enteric", "cardiac_arrhythmic_syncope"] },
-    { "symptom_id": "S101", "name": "Irregular heartbeat", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["cardiac_arrhythmic_syncope"] },
-    { "symptom_id": "S102", "name": "Crushing chest pressure", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_coronary_ischemic"] },
-    { "symptom_id": "S103", "name": "Retrosternal discomfort", "category": "Cardiovascular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_coronary_ischemic"] },
-    { "symptom_id": "S104", "name": "Anginal chest pain radiating to arm/jaw", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_coronary_ischemic"] },
-    { "symptom_id": "S105", "name": "Acute pulmonary congestion dyspnea", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_heart_failure_congestive"] },
-    { "symptom_id": "S106", "name": "Breathlessness during minor exertion", "category": "Cardiovascular", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_heart_failure_congestive"] },
-    { "symptom_id": "S107", "name": "Paroxysmal nocturnal dyspnea", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_heart_failure_congestive"] },
-    { "symptom_id": "S108", "name": "Bilateral leg swelling", "category": "Cardiovascular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_heart_failure_congestive", "pediatric_malnutrition_wasting"] },
-    { "symptom_id": "S109", "name": "Pitting ankle edema", "category": "Cardiovascular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_heart_failure_congestive"] },
-    { "symptom_id": "S110", "name": "Sudden profound weakness", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_coronary_ischemic", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S111", "name": "Postural syncope", "category": "Cardiovascular", "severities": ["moderate", "severe"], "associated_syndromes": ["cardiac_arrhythmic_syncope", "severe_dehydration_shock"] },
-    { "symptom_id": "S112", "name": "Cold clammy extremities", "category": "Cardiovascular", "severities": ["mild", "moderate"], "associated_syndromes": ["severe_dehydration_shock", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S113", "name": "Central/Peripheral cyanosis", "category": "Cardiovascular", "severities": ["severe"], "associated_syndromes": ["severe_acute_respiratory_infection", "environmental_hypothermia_cold"] },
-    { "symptom_id": "S114", "name": "Poor exercise tolerance", "category": "Cardiovascular", "severities": ["mild", "moderate"], "associated_syndromes": ["post_infectious_asthenia", "acute_heart_failure_congestive"] },
-    { "symptom_id": "S115", "name": "Muscle pain (Myalgia)", "category": "Musculoskeletal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["influenza_like_illness", "zoonotic_leptospiral", "febrile_arthritic"] },
-    { "symptom_id": "S116", "name": "Muscle weakness", "category": "Musculoskeletal", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_flaccid_paralysis", "post_infectious_asthenia"] },
-    { "symptom_id": "S117", "name": "Severe joint pain (Arthralgia)", "category": "Musculoskeletal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["febrile_arthritic", "viral_hemorrhagic_fever"] },
-    { "symptom_id": "S118", "name": "Joint effusion / swelling", "category": "Musculoskeletal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["febrile_arthritic"] },
-    { "symptom_id": "S119", "name": "Morning joint stiffness", "category": "Musculoskeletal", "severities": ["mild", "moderate"], "associated_syndromes": ["febrile_arthritic"] },
-    { "symptom_id": "S120", "name": "Severe back pain", "category": "Musculoskeletal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["febrile_arthritic", "vector_malaria_paroxysmal"] },
-    { "symptom_id": "S121", "name": "Neck pain", "category": "Musculoskeletal", "severities": ["mild", "moderate"], "associated_syndromes": ["meningeal_irritation"] },
-    { "symptom_id": "S122", "name": "Limb pain", "category": "Musculoskeletal", "severities": ["mild", "moderate"], "associated_syndromes": ["febrile_arthritic"] },
-    { "symptom_id": "S123", "name": "Breakbone bone pain", "category": "Musculoskeletal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["febrile_arthritic", "viral_hemorrhagic_fever"] },
-    { "symptom_id": "S124", "name": "Intense calf muscle pain", "category": "Musculoskeletal", "severities": ["mild", "moderate"], "associated_syndromes": ["zoonotic_leptospiral", "severe_dehydration_shock"] },
-    { "symptom_id": "S125", "name": "Inability to bend joint", "category": "Musculoskeletal", "severities": ["moderate", "severe"], "associated_syndromes": ["febrile_arthritic"] },
-    { "symptom_id": "S126", "name": "Generalized polymyalgia", "category": "Musculoskeletal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["influenza_like_illness", "acute_febrile_illness"] },
-    { "symptom_id": "S127", "name": "Maculopapular skin rash", "category": "Dermatological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_fever_rash", "febrile_arthritic"] },
-    { "symptom_id": "S128", "name": "Pruritus / Itching", "category": "Dermatological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic", "acute_jaundice_hepatitic"] },
-    { "symptom_id": "S129", "name": "Erythematous skin redness", "category": "Dermatological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_fever_rash", "mucocutaneous_lymph_node"] },
-    { "symptom_id": "S130", "name": "Localized cutaneous edema", "category": "Dermatological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic", "vector_lymphatic_filarial"] },
-    { "symptom_id": "S131", "name": "Skin lesion", "category": "Dermatological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["cutaneous_ulcerative_eschar", "vesiculopustular_eruptive"] },
-    { "symptom_id": "S132", "name": "Vesicles and blisters", "category": "Dermatological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["vesiculopustular_eruptive"] },
-    { "symptom_id": "S133", "name": "Urticarial wheals (Hives)", "category": "Dermatological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S134", "name": "Desquamation / Peeling skin", "category": "Dermatological", "severities": ["mild", "moderate"], "associated_syndromes": ["mucocutaneous_lymph_node", "acute_fever_rash"] },
-    { "symptom_id": "S135", "name": "Xeroderma / Dry skin", "category": "Dermatological", "severities": ["mild"], "associated_syndromes": ["severe_dehydration_shock"] },
-    { "symptom_id": "S136", "name": "Profuse diaphoresis", "category": "Dermatological", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_febrile_illness", "vector_malaria_paroxysmal"] },
-    { "symptom_id": "S137", "name": "Hyperpigmentation / Discoloration", "category": "Dermatological", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S138", "name": "Ecchymosis / Easy bruising", "category": "Dermatological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "acute_hemolytic_cytopenic"] },
-    { "symptom_id": "S139", "name": "Petechiae (Pinpoint red spots)", "category": "Dermatological", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "meningeal_irritation"] },
-    { "symptom_id": "S140", "name": "Purpura (Large purple spots)", "category": "Dermatological", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "meningeal_irritation"] },
-    { "symptom_id": "S141", "name": "Black necrotic ulcer (Eschar)", "category": "Dermatological", "severities": ["moderate", "severe"], "associated_syndromes": ["cutaneous_ulcerative_eschar"] },
-    { "symptom_id": "S142", "name": "Umbilicated pustules", "category": "Dermatological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["vesiculopustular_eruptive"] },
-    { "symptom_id": "S143", "name": "Painful indurated lesion", "category": "Dermatological", "severities": ["moderate", "severe"], "associated_syndromes": ["cutaneous_ulcerative_eschar"] },
-    { "symptom_id": "S144", "name": "Alopecia / Hair loss", "category": "Dermatological", "severities": ["mild"], "associated_syndromes": ["post_infectious_asthenia"] },
-    { "symptom_id": "S145", "name": "Icteric skin yellowing", "category": "Dermatological", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_jaundice_hepatitic", "zoonotic_leptospiral"] },
-    { "symptom_id": "S146", "name": "Conjunctival hyperemia (Red eye)", "category": "Eye / Ocular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_ophthalmic_conjunctivitis", "acute_fever_rash"] },
-    { "symptom_id": "S147", "name": "Orbital / retro-orbital pain", "category": "Eye / Ocular", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "febrile_arthritic"] },
-    { "symptom_id": "S148", "name": "Ocular itching", "category": "Eye / Ocular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_ophthalmic_conjunctivitis", "acute_allergic_anaphylactic"] },
-    { "symptom_id": "S149", "name": "Epiphora / Watery eyes", "category": "Eye / Ocular", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "acute_ophthalmic_conjunctivitis"] },
-    { "symptom_id": "S150", "name": "Purulent eye discharge", "category": "Eye / Ocular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_ophthalmic_conjunctivitis"] },
-    { "symptom_id": "S151", "name": "Blurred vision", "category": "Eye / Ocular", "severities": ["moderate", "severe"], "associated_syndromes": ["cranial_neuropathy_dysautonomia", "foodborne_neurotoxic"] },
-    { "symptom_id": "S152", "name": "Diminished visual acuity", "category": "Eye / Ocular", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_ophthalmic_conjunctivitis"] },
-    { "symptom_id": "S153", "name": "Ocular photophobia", "category": "Eye / Ocular", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["meningeal_irritation", "acute_fever_rash"] },
-    { "symptom_id": "S154", "name": "Blepharedema / Swollen eyelids", "category": "Eye / Ocular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_ophthalmic_conjunctivitis", "acute_allergic_anaphylactic"] },
-    { "symptom_id": "S155", "name": "Xerophthalmia / Dry eyes", "category": "Eye / Ocular", "severities": ["mild"], "associated_syndromes": ["pediatric_malnutrition_wasting"] },
-    { "symptom_id": "S156", "name": "Foreign-body eye sensation", "category": "Eye / Ocular", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_ophthalmic_conjunctivitis"] },
-    { "symptom_id": "S157", "name": "Conjunctival suffusion without discharge", "category": "Eye / Ocular", "severities": ["mild", "moderate"], "associated_syndromes": ["zoonotic_leptospiral"] },
-    { "symptom_id": "S158", "name": "Otalgia / Ear pain", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S159", "name": "Otorrhea / Ear discharge", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S160", "name": "Hypoacusis / Reduced hearing", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S161", "name": "Acute sensorineural hearing loss", "category": "Ear / Nose / Throat", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S162", "name": "Tinnitus", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S163", "name": "Nasal blockage", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S164", "name": "Anterior rhinorrhea", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S165", "name": "Paroxysmal sneezing", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection", "acute_allergic_anaphylactic"] },
-    { "symptom_id": "S166", "name": "Epistaxis (Nosebleed)", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "acute_hemolytic_cytopenic"] },
-    { "symptom_id": "S167", "name": "Maxillary sinus pressure", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S168", "name": "Facial fullness / tenderness", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S169", "name": "Pharyngeal exudates / erythema", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_otolaryngologic_suppurative", "influenza_like_illness"] },
-    { "symptom_id": "S170", "name": "Pseudomembrane in pharynx", "category": "Ear / Nose / Throat", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_otolaryngologic_suppurative", "pediatric_croup_stridor"] },
-    { "symptom_id": "S171", "name": "Dysphonia / Hoarseness", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["pediatric_croup_stridor", "upper_respiratory_infection"] },
-    { "symptom_id": "S172", "name": "Trismus / Difficulty opening mouth", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S173", "name": "Parotid gland swelling", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S174", "name": "Submandibular lymphadenitis", "category": "Ear / Nose / Throat", "severities": ["mild", "moderate"], "associated_syndromes": ["mucocutaneous_lymph_node"] },
-    { "symptom_id": "S175", "name": "Dysuria / Painful urination", "category": "Urinary / Renal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S176", "name": "Urethral burning", "category": "Urinary / Renal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S177", "name": "Pollakiuria / Frequent urination", "category": "Urinary / Renal", "severities": ["mild", "moderate"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S178", "name": "Urinary urgency", "category": "Urinary / Renal", "severities": ["mild", "moderate"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S179", "name": "Oliguria (< 400ml/day)", "category": "Urinary / Renal", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_kidney_injury_oliguria", "severe_dehydration_shock"] },
-    { "symptom_id": "S180", "name": "Polyuria", "category": "Urinary / Renal", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S181", "name": "Gross hematuria (Blood in urine)", "category": "Urinary / Renal", "severities": ["moderate", "severe"], "associated_syndromes": ["urinary_tract_infection_febrile", "viral_hemorrhagic_fever"] },
-    { "symptom_id": "S182", "name": "Turbid / Pyuria (Cloudy urine)", "category": "Urinary / Renal", "severities": ["mild", "moderate"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S183", "name": "Churia / Dark brown urine", "category": "Urinary / Renal", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_hemolytic_cytopenic", "zoonotic_leptospiral"] },
-    { "symptom_id": "S184", "name": "Costovertebral angle flank pain", "category": "Urinary / Renal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S185", "name": "Suprapubic tenderness", "category": "Urinary / Renal", "severities": ["mild", "moderate"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S186", "name": "Hesitancy / Strangury", "category": "Urinary / Renal", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["urinary_tract_infection_febrile"] },
-    { "symptom_id": "S187", "name": "Complete urinary anuria", "category": "Urinary / Renal", "severities": ["severe"], "associated_syndromes": ["acute_kidney_injury_oliguria", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S188", "name": "Acute pelvic pain", "category": "Reproductive", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S189", "name": "Metrorrhagia / Abnormal bleeding", "category": "Reproductive", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever"] },
-    { "symptom_id": "S190", "name": "Purulent vaginal discharge", "category": "Reproductive", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S191", "name": "Genital ulcers", "category": "Reproductive", "severities": ["mild", "moderate"], "associated_syndromes": ["vesiculopustular_eruptive"] },
-    { "symptom_id": "S192", "name": "Genital edema / elephantiasis", "category": "Reproductive", "severities": ["mild", "moderate"], "associated_syndromes": ["vector_lymphatic_filarial"] },
-    { "symptom_id": "S193", "name": "Dyspareunia", "category": "Reproductive", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S194", "name": "Acute orchitis / Testicular pain", "category": "Reproductive", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_otolaryngologic_suppurative"] },
-    { "symptom_id": "S195", "name": "Testicular swelling / Hydrocele", "category": "Reproductive", "severities": ["moderate", "severe"], "associated_syndromes": ["vector_lymphatic_filarial"] },
-    { "symptom_id": "S196", "name": "Mastalgia", "category": "Reproductive", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S197", "name": "Breast abscess / erythema", "category": "Reproductive", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S198", "name": "Menstrual irregularity", "category": "Reproductive", "severities": ["mild", "moderate"], "associated_syndromes": ["unspecified_community_cluster"] },
-    { "symptom_id": "S199", "name": "Menorrhagia (Heavy menses)", "category": "Reproductive", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever"] },
-    { "symptom_id": "S200", "name": "Odontalgia / Severe toothache", "category": "Oral / Dental", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S201", "name": "Gingival pain", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S202", "name": "Gingival edema / Hypertrophy", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S203", "name": "Spontaneous gingival bleeding", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["viral_hemorrhagic_fever", "oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S204", "name": "Aphthous stomatitis ulcers", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["oral_ulcerative_stomatitis", "vesiculopustular_eruptive"] },
-    { "symptom_id": "S205", "name": "Burning mouth syndrome", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S206", "name": "Glossitis / Strawberry tongue", "category": "Oral / Dental", "severities": ["moderate", "severe"], "associated_syndromes": ["mucocutaneous_lymph_node"] },
-    { "symptom_id": "S207", "name": "Masticatory pain", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S208", "name": "Palatopharyngeal paralysis", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["cranial_neuropathy_dysautonomia"] },
-    { "symptom_id": "S209", "name": "Xerostomia / Severe dry mouth", "category": "Oral / Dental", "severities": ["mild"], "associated_syndromes": ["foodborne_neurotoxic", "severe_dehydration_shock"] },
-    { "symptom_id": "S210", "name": "Sialorrhea / Excessive drooling", "category": "Oral / Dental", "severities": ["mild"], "associated_syndromes": ["zoonotic_rabies_encephalopathy"] },
-    { "symptom_id": "S211", "name": "Fetid halitosis", "category": "Oral / Dental", "severities": ["mild"], "associated_syndromes": ["oral_ulcerative_stomatitis"] },
-    { "symptom_id": "S212", "name": "Metallic taste dysgeusia", "category": "Oral / Dental", "severities": ["mild", "moderate"], "associated_syndromes": ["upper_respiratory_infection"] },
-    { "symptom_id": "S213", "name": "Allergic sneezes in clusters", "category": "Allergy-Related", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S214", "name": "Clear allergic hydrorrhea", "category": "Allergy-Related", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S215", "name": "Allergic nasal obstruction", "category": "Allergy-Related", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S216", "name": "Intense nasal pruritus", "category": "Allergy-Related", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S217", "name": "Allergic shiners / eye itch", "category": "Allergy-Related", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic", "acute_ophthalmic_conjunctivitis"] },
-    { "symptom_id": "S218", "name": "Chemosis / Scleral allergy", "category": "Allergy-Related", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S219", "name": "Generalized allergic pruritus", "category": "Allergy-Related", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S220", "name": "Migrating urticarial wheals", "category": "Allergy-Related", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S221", "name": "Facial angioedema", "category": "Allergy-Related", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S222", "name": "Labial angioedema (Lip swelling)", "category": "Allergy-Related", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S223", "name": "Macroglossia / Tongue angioedema", "category": "Allergy-Related", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S224", "name": "Acute reactive bronchospasm", "category": "Allergy-Related", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_allergic_anaphylactic", "bronchospastic_obstructive"] },
-    { "symptom_id": "S225", "name": "Laryngeal edema with choking sensation", "category": "Allergy-Related", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S226", "name": "Pharyngeal constriction / Globus", "category": "Allergy-Related", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_allergic_anaphylactic"] },
-    { "symptom_id": "S227", "name": "Acute agitation / Anxiety", "category": "Mental / Behavioral", "severities": ["mild", "moderate"], "associated_syndromes": ["environmental_heat_stroke", "unspecified_community_cluster"] },
-    { "symptom_id": "S228", "name": "Motor restlessness / Akathisia", "category": "Mental / Behavioral", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_encephalitic"] },
-    { "symptom_id": "S229", "name": "Irritability in infants", "category": "Mental / Behavioral", "severities": ["mild", "moderate"], "associated_syndromes": ["meningeal_irritation", "acute_encephalitic"] },
-    { "symptom_id": "S230", "name": "Insomnia / Sleep inversion", "category": "Mental / Behavioral", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_encephalitic", "post_infectious_asthenia"] },
-    { "symptom_id": "S231", "name": "Hypersomnia / Torpor", "category": "Mental / Behavioral", "severities": ["mild", "moderate"], "associated_syndromes": ["acute_encephalitic"] },
-    { "symptom_id": "S232", "name": "Brain fog / Concentration deficit", "category": "Mental / Behavioral", "severities": ["mild", "moderate"], "associated_syndromes": ["post_infectious_asthenia"] },
-    { "symptom_id": "S233", "name": "Acute delirium", "category": "Mental / Behavioral", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic", "environmental_heat_stroke", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S234", "name": "Acute personality change", "category": "Mental / Behavioral", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic", "zoonotic_rabies_encephalopathy"] },
-    { "symptom_id": "S235", "name": "Stupor / Semicoma", "category": "Mental / Behavioral", "severities": ["moderate", "severe"], "associated_syndromes": ["acute_encephalitic", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S236", "name": "Psychomotor agitation / Hydrophobia", "category": "Mental / Behavioral", "severities": ["severe"], "associated_syndromes": ["zoonotic_rabies_encephalopathy"] },
-    { "symptom_id": "S237", "name": "Anterior/Posterior nasal hemorrhage", "category": "Bleeding / Hematological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever"] },
-    { "symptom_id": "S238", "name": "Gingivorrhagia", "category": "Bleeding / Hematological", "severities": ["mild", "moderate"], "associated_syndromes": ["viral_hemorrhagic_fever"] },
-    { "symptom_id": "S239", "name": "Spontaneous subcutaneous hematoma", "category": "Bleeding / Hematological", "severities": ["mild", "moderate"], "associated_syndromes": ["viral_hemorrhagic_fever", "acute_hemolytic_cytopenic"] },
-    { "symptom_id": "S240", "name": "Puncture site oozing", "category": "Bleeding / Hematological", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever"] },
-    { "symptom_id": "S241", "name": "Melena (Tarry black stool)", "category": "Bleeding / Hematological", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "bloody_diarrhea_dysentery"] },
-    { "symptom_id": "S242", "name": "Hematuria / Red cell casts", "category": "Bleeding / Hematological", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "zoonotic_leptospiral"] },
-    { "symptom_id": "S243", "name": "Frank hemoptysis", "category": "Bleeding / Hematological", "severities": ["moderate", "severe"], "associated_syndromes": ["lower_respiratory_illness", "viral_hemorrhagic_fever"] },
-    { "symptom_id": "S244", "name": "Hematemesis (Coffee ground vomit)", "category": "Bleeding / Hematological", "severities": ["severe"], "associated_syndromes": ["viral_hemorrhagic_fever"] },
-    { "symptom_id": "S245", "name": "Exsanguinating menorrhagia", "category": "Bleeding / Hematological", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever"] },
-    { "symptom_id": "S246", "name": "Waxy pallor / Severe anemia", "category": "Bleeding / Hematological", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["acute_hemolytic_cytopenic", "vector_malaria_paroxysmal"] },
-    { "symptom_id": "S247", "name": "Prostration from blood loss", "category": "Bleeding / Hematological", "severities": ["moderate", "severe"], "associated_syndromes": ["viral_hemorrhagic_fever", "acute_hemolytic_cytopenic"] },
-    { "symptom_id": "S248", "name": "Unquenchable thirst", "category": "Dehydration / Fluid", "severities": ["mild", "moderate", "severe"], "associated_syndromes": ["severe_dehydration_shock", "acute_watery_diarrhea"] },
-    { "symptom_id": "S249", "name": "Dry sticky buccal mucosa", "category": "Dehydration / Fluid", "severities": ["mild", "moderate"], "associated_syndromes": ["severe_dehydration_shock"] },
-    { "symptom_id": "S250", "name": "Dry parched skin", "category": "Dehydration / Fluid", "severities": ["mild", "moderate"], "associated_syndromes": ["severe_dehydration_shock"] },
-    { "symptom_id": "S251", "name": "Anuria > 12 hours", "category": "Dehydration / Fluid", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_dehydration_shock", "acute_kidney_injury_oliguria"] },
-    { "symptom_id": "S252", "name": "Highly concentrated amber urine", "category": "Dehydration / Fluid", "severities": ["mild", "moderate"], "associated_syndromes": ["severe_dehydration_shock"] },
-    { "symptom_id": "S253", "name": "Orthostatic hypotension dizziness", "category": "Dehydration / Fluid", "severities": ["mild", "moderate"], "associated_syndromes": ["severe_dehydration_shock", "cardiac_arrhythmic_syncope"] },
-    { "symptom_id": "S254", "name": "Cardiovascular collapse / Shock", "category": "Dehydration / Fluid", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_dehydration_shock", "systemic_inflammatory_sepsis"] },
-    { "symptom_id": "S255", "name": "Syncope upon sitting/standing", "category": "Dehydration / Fluid", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_dehydration_shock"] },
-    { "symptom_id": "S256", "name": "Sunken fontanelle / Sunken globes", "category": "Dehydration / Fluid", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_dehydration_shock", "acute_watery_diarrhea"] },
-    { "symptom_id": "S257", "name": "Loss of skin turgor (Pinch recoil > 2s)", "category": "Dehydration / Fluid", "severities": ["moderate", "severe"], "associated_syndromes": ["severe_dehydration_shock", "acute_watery_diarrhea"] }
+    {
+      "symptom_id": "S001",
+      "name": "Fever",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "influenza_like_illness",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "burning up",
+        "febrile",
+        "fever",
+        "high temp",
+        "high temperature",
+        "hot body",
+        "pyrexia"
+      ]
+    },
+    {
+      "symptom_id": "S002",
+      "name": "Chills",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "vector_malaria_paroxysmal"
+      ],
+      "aliases": [
+        "chills",
+        "feeling chilly",
+        "goosebumps",
+        "rigors",
+        "shivering"
+      ]
+    },
+    {
+      "symptom_id": "S003",
+      "name": "Feeling cold",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "environmental_hypothermia_cold"
+      ],
+      "aliases": [
+        "feeling chilly",
+        "feeling cold",
+        "goosebumps",
+        "rigors",
+        "shivering"
+      ]
+    },
+    {
+      "symptom_id": "S004",
+      "name": "Sweating",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "vector_malaria_paroxysmal"
+      ],
+      "aliases": [
+        "diaphoresis",
+        "night sweats",
+        "perspiration",
+        "profuse sweating",
+        "sweating"
+      ]
+    },
+    {
+      "symptom_id": "S005",
+      "name": "Night sweats",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "lower_respiratory_illness"
+      ],
+      "aliases": [
+        "diaphoresis",
+        "night sweats",
+        "perspiration",
+        "profuse sweating"
+      ]
+    },
+    {
+      "symptom_id": "S006",
+      "name": "Fatigue",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "post_infectious_asthenia"
+      ],
+      "aliases": [
+        "asthenia",
+        "exhaustion",
+        "fatigue",
+        "feeling drained",
+        "low energy",
+        "tiredness",
+        "worn out"
+      ]
+    },
+    {
+      "symptom_id": "S007",
+      "name": "Weakness",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "acute_hemolytic_cytopenic"
+      ],
+      "aliases": [
+        "asthenia",
+        "exhaustion",
+        "feeling drained",
+        "low energy",
+        "tiredness",
+        "weakness",
+        "worn out"
+      ]
+    },
+    {
+      "symptom_id": "S008",
+      "name": "Malaise",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "influenza_like_illness"
+      ],
+      "aliases": [
+        "asthenia",
+        "exhaustion",
+        "feeling drained",
+        "low energy",
+        "malaise",
+        "tiredness",
+        "worn out"
+      ]
+    },
+    {
+      "symptom_id": "S009",
+      "name": "Body ache",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "aching",
+        "body ache",
+        "generalized ache",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S010",
+      "name": "Generalized pain",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "generalized pain",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S011",
+      "name": "Loss of appetite",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_jaundice_hepatitic",
+        "gastroenteritis_emetic"
+      ],
+      "aliases": [
+        "anorexia",
+        "loss appetite",
+        "loss of appetite",
+        "loss of hunger",
+        "not eating",
+        "poor appetite"
+      ]
+    },
+    {
+      "symptom_id": "S012",
+      "name": "Increased appetite",
+      "category": "General / Systemic",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "anorexia",
+        "increased appetite",
+        "loss of hunger",
+        "not eating",
+        "poor appetite"
+      ]
+    },
+    {
+      "symptom_id": "S013",
+      "name": "Weight loss",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "pediatric_malnutrition_wasting",
+        "lower_respiratory_illness"
+      ],
+      "aliases": [
+        "rapid weight loss",
+        "slimming",
+        "unexplained weight change",
+        "weight loss"
+      ]
+    },
+    {
+      "symptom_id": "S014",
+      "name": "Weight gain",
+      "category": "General / Systemic",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive"
+      ],
+      "aliases": [
+        "rapid weight loss",
+        "slimming",
+        "unexplained weight change",
+        "weight gain"
+      ]
+    },
+    {
+      "symptom_id": "S015",
+      "name": "Dehydration",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "acute_watery_diarrhea"
+      ],
+      "aliases": [
+        "dehydration",
+        "dry mouth",
+        "extreme thirst",
+        "hypovolemia"
+      ]
+    },
+    {
+      "symptom_id": "S016",
+      "name": "Dizziness",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "cardiac_arrhythmic_syncope",
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "dizziness",
+        "lightheadedness",
+        "passing out",
+        "presyncope",
+        "syncope",
+        "vertigo",
+        "wooziness"
+      ]
+    },
+    {
+      "symptom_id": "S017",
+      "name": "Fainting",
+      "category": "General / Systemic",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cardiac_arrhythmic_syncope",
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "fainting",
+        "lightheadedness",
+        "passing out",
+        "presyncope",
+        "syncope",
+        "vertigo",
+        "wooziness"
+      ]
+    },
+    {
+      "symptom_id": "S018",
+      "name": "Feeling unwell",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "aliases": [
+        "feeling unwell"
+      ]
+    },
+    {
+      "symptom_id": "S019",
+      "name": "Reduced activity",
+      "category": "General / Systemic",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "post_infectious_asthenia"
+      ],
+      "aliases": [
+        "reduced activity"
+      ]
+    },
+    {
+      "symptom_id": "S020",
+      "name": "Lethargy",
+      "category": "General / Systemic",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "systemic_inflammatory_sepsis",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "drowsiness",
+        "lethargy",
+        "sluggishness",
+        "somnolence",
+        "unresponsive"
+      ]
+    },
+    {
+      "symptom_id": "S021",
+      "name": "Cough",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "influenza_like_illness",
+        "lower_respiratory_illness"
+      ],
+      "aliases": [
+        "chest cough",
+        "cough",
+        "dry hacking cough",
+        "hacking",
+        "productive cough",
+        "tussis"
+      ]
+    },
+    {
+      "symptom_id": "S022",
+      "name": "Dry cough",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "influenza_like_illness"
+      ],
+      "aliases": [
+        "chest cough",
+        "dry cough",
+        "dry hacking cough",
+        "hacking",
+        "productive cough",
+        "tussis"
+      ]
+    },
+    {
+      "symptom_id": "S023",
+      "name": "Productive cough",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "lower_respiratory_illness",
+        "severe_acute_respiratory_infection"
+      ],
+      "aliases": [
+        "chest cough",
+        "dry hacking cough",
+        "hacking",
+        "productive cough",
+        "tussis"
+      ]
+    },
+    {
+      "symptom_id": "S024",
+      "name": "Cough with sputum",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "lower_respiratory_illness"
+      ],
+      "aliases": [
+        "blood in spit",
+        "chest cough",
+        "cough with sputum",
+        "coughing mucus",
+        "dry hacking cough",
+        "hacking",
+        "phlegm coughing",
+        "productive cough",
+        "rusty sputum",
+        "tussis"
+      ]
+    },
+    {
+      "symptom_id": "S025",
+      "name": "Blood in sputum (Hemoptysis)",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "lower_respiratory_illness",
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "blood in spit",
+        "blood in sputum",
+        "blood sputum hemoptysis",
+        "coughing mucus",
+        "hemoptysis",
+        "phlegm coughing",
+        "rusty sputum"
+      ]
+    },
+    {
+      "symptom_id": "S026",
+      "name": "Shortness of breath (Dyspnea)",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_acute_respiratory_infection",
+        "bronchospastic_obstructive",
+        "acute_heart_failure_congestive"
+      ],
+      "aliases": [
+        "SOB",
+        "air hunger",
+        "breathlessness",
+        "dyspnea",
+        "gasping",
+        "hard to breathe",
+        "shortness breath dyspnea",
+        "shortness of breath"
+      ]
+    },
+    {
+      "symptom_id": "S027",
+      "name": "Difficulty breathing",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_acute_respiratory_infection",
+        "bronchospastic_obstructive"
+      ],
+      "aliases": [
+        "SOB",
+        "air hunger",
+        "breathlessness",
+        "difficulty breathing",
+        "gasping",
+        "hard to breathe"
+      ]
+    },
+    {
+      "symptom_id": "S028",
+      "name": "Rapid breathing (Tachypnea)",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_acute_respiratory_infection",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "fast breathing",
+        "hyperventilation",
+        "panting",
+        "rapid breathing",
+        "rapid breathing tachypnea",
+        "tachypnea"
+      ]
+    },
+    {
+      "symptom_id": "S029",
+      "name": "Wheezing",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "bronchospastic_obstructive",
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "asthma attack",
+        "stridor",
+        "wheezing",
+        "whistling breath"
+      ]
+    },
+    {
+      "symptom_id": "S030",
+      "name": "Chest tightness",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "bronchospastic_obstructive",
+        "acute_coronary_ischemic"
+      ],
+      "aliases": [
+        "angina",
+        "chest pressure",
+        "chest tightness",
+        "thoracic pain",
+        "tight chest"
+      ]
+    },
+    {
+      "symptom_id": "S031",
+      "name": "Chest discomfort",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "acute_coronary_ischemic"
+      ],
+      "aliases": [
+        "angina",
+        "chest discomfort",
+        "chest pressure",
+        "thoracic pain",
+        "tight chest"
+      ]
+    },
+    {
+      "symptom_id": "S032",
+      "name": "Chest pain",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "lower_respiratory_illness",
+        "acute_coronary_ischemic"
+      ],
+      "aliases": [
+        "aching",
+        "angina",
+        "chest pain",
+        "chest pressure",
+        "generalized ache",
+        "myalgia",
+        "soreness",
+        "thoracic pain",
+        "tight chest"
+      ]
+    },
+    {
+      "symptom_id": "S033",
+      "name": "Nasal congestion",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "nasal congestion",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S034",
+      "name": "Stuffy nose",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S035",
+      "name": "Runny nose (Rhinorrhea)",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "acute_fever_rash"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "rhinitis",
+        "rhinorrhea",
+        "runny nose",
+        "runny nose rhinorrhea",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S036",
+      "name": "Sneezing",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "rhinitis",
+        "runny nose",
+        "sneezing",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S037",
+      "name": "Post-nasal drip",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "post nasal drip",
+        "post-nasal drip",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S038",
+      "name": "Sore throat",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "influenza_like_illness"
+      ],
+      "aliases": [
+        "dysphonia",
+        "laryngitis",
+        "painful swallowing",
+        "pharyngitis",
+        "scratchy throat",
+        "sore throat"
+      ]
+    },
+    {
+      "symptom_id": "S039",
+      "name": "Throat irritation",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "chemical_toxic_inhalation"
+      ],
+      "aliases": [
+        "dysphonia",
+        "laryngitis",
+        "painful swallowing",
+        "pharyngitis",
+        "scratchy throat",
+        "throat irritation"
+      ]
+    },
+    {
+      "symptom_id": "S040",
+      "name": "Hoarse voice",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "pediatric_croup_stridor"
+      ],
+      "aliases": [
+        "dysphonia",
+        "hoarse voice",
+        "laryngitis",
+        "painful swallowing",
+        "pharyngitis",
+        "scratchy throat"
+      ]
+    },
+    {
+      "symptom_id": "S041",
+      "name": "Loss of voice (Aphonia)",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "aphonia",
+        "dysphonia",
+        "laryngitis",
+        "loss of voice",
+        "loss voice aphonia",
+        "painful swallowing",
+        "pharyngitis",
+        "scratchy throat"
+      ]
+    },
+    {
+      "symptom_id": "S042",
+      "name": "Exertional dyspnea",
+      "category": "Respiratory",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive",
+        "lower_respiratory_illness"
+      ],
+      "aliases": [
+        "SOB",
+        "air hunger",
+        "breathlessness",
+        "exertional dyspnea",
+        "gasping",
+        "hard to breathe"
+      ]
+    },
+    {
+      "symptom_id": "S043",
+      "name": "Orthopnea / Rest dyspnea",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive",
+        "severe_acute_respiratory_infection"
+      ],
+      "aliases": [
+        "SOB",
+        "air hunger",
+        "breathlessness",
+        "gasping",
+        "hard to breathe",
+        "orthopnea / rest dyspnea",
+        "orthopnea rest dyspnea"
+      ]
+    },
+    {
+      "symptom_id": "S044",
+      "name": "Noisy breathing (Stridor)",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "pediatric_croup_stridor",
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "noisy breathing",
+        "noisy breathing stridor",
+        "stridor"
+      ]
+    },
+    {
+      "symptom_id": "S045",
+      "name": "Increased respiratory rate",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_acute_respiratory_infection",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "increased respiratory rate"
+      ]
+    },
+    {
+      "symptom_id": "S046",
+      "name": "Oxygen saturation below 94%",
+      "category": "Respiratory",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_acute_respiratory_infection",
+        "lower_respiratory_illness"
+      ],
+      "aliases": [
+        "desaturation",
+        "hypoxia",
+        "low spo2",
+        "oxygen drop",
+        "oxygen saturation below 94%"
+      ]
+    },
+    {
+      "symptom_id": "S047",
+      "name": "Nausea",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "gastroenteritis_emetic",
+        "acute_jaundice_hepatitic"
+      ],
+      "aliases": [
+        "emesis",
+        "nausea",
+        "puking",
+        "queasiness",
+        "retching",
+        "throwing up",
+        "upset stomach"
+      ]
+    },
+    {
+      "symptom_id": "S048",
+      "name": "Vomiting",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "gastroenteritis_emetic",
+        "foodborne_neurotoxic"
+      ],
+      "aliases": [
+        "emesis",
+        "puking",
+        "queasiness",
+        "retching",
+        "throwing up",
+        "upset stomach",
+        "vomiting"
+      ]
+    },
+    {
+      "symptom_id": "S049",
+      "name": "Repeated projectile vomiting",
+      "category": "Gastrointestinal",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "gastroenteritis_emetic",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "emesis",
+        "puking",
+        "queasiness",
+        "repeated projectile vomiting",
+        "retching",
+        "throwing up",
+        "upset stomach"
+      ]
+    },
+    {
+      "symptom_id": "S050",
+      "name": "Diarrhea",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_watery_diarrhea",
+        "bloody_diarrhea_dysentery",
+        "febrile_enteric"
+      ],
+      "aliases": [
+        "bloody stool",
+        "bowel run",
+        "diarrhea",
+        "dysentery",
+        "loose motions",
+        "melena",
+        "watery stool"
+      ]
+    },
+    {
+      "symptom_id": "S051",
+      "name": "Loose stools",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_watery_diarrhea"
+      ],
+      "aliases": [
+        "bloody stool",
+        "bowel run",
+        "dysentery",
+        "loose motions",
+        "loose stools",
+        "melena",
+        "watery stool"
+      ]
+    },
+    {
+      "symptom_id": "S052",
+      "name": "Bloody stool (Melena/Hematochezia)",
+      "category": "Gastrointestinal",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "bloody_diarrhea_dysentery",
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "bloody stool",
+        "bloody stool melena hematochezia",
+        "bowel run",
+        "dysentery",
+        "loose motions",
+        "melena",
+        "melena/hematochezia",
+        "watery stool"
+      ]
+    },
+    {
+      "symptom_id": "S053",
+      "name": "Mucus in stool",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "bloody_diarrhea_dysentery"
+      ],
+      "aliases": [
+        "bloody stool",
+        "bowel run",
+        "dysentery",
+        "loose motions",
+        "melena",
+        "mucus in stool",
+        "mucus stool",
+        "watery stool"
+      ]
+    },
+    {
+      "symptom_id": "S054",
+      "name": "Abdominal pain",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "febrile_enteric",
+        "bloody_diarrhea_dysentery"
+      ],
+      "aliases": [
+        "abdominal pain",
+        "aching",
+        "belly pain",
+        "colic",
+        "cramps",
+        "generalized ache",
+        "myalgia",
+        "soreness",
+        "stomach spasm",
+        "tummy ache"
+      ]
+    },
+    {
+      "symptom_id": "S055",
+      "name": "Abdominal cramps",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_watery_diarrhea",
+        "bloody_diarrhea_dysentery"
+      ],
+      "aliases": [
+        "abdominal cramps",
+        "belly pain",
+        "colic",
+        "cramps",
+        "stomach spasm",
+        "tummy ache"
+      ]
+    },
+    {
+      "symptom_id": "S056",
+      "name": "Abdominal bloating",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "febrile_enteric"
+      ],
+      "aliases": [
+        "abdominal bloating",
+        "belly pain",
+        "colic",
+        "cramps",
+        "stomach spasm",
+        "tummy ache"
+      ]
+    },
+    {
+      "symptom_id": "S057",
+      "name": "Indigestion",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "gastroenteritis_emetic"
+      ],
+      "aliases": [
+        "indigestion"
+      ]
+    },
+    {
+      "symptom_id": "S058",
+      "name": "Heartburn",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "GERD",
+        "acid reflux",
+        "dyspepsia",
+        "ear discharge",
+        "earache",
+        "heartburn",
+        "indigestion",
+        "otalgia",
+        "pyrosis",
+        "ringing ear",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S059",
+      "name": "Constipation",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "febrile_enteric",
+        "foodborne_neurotoxic"
+      ],
+      "aliases": [
+        "constipation",
+        "difficulty passing stool",
+        "hard stool",
+        "obstipation"
+      ]
+    },
+    {
+      "symptom_id": "S060",
+      "name": "Loss of appetite (Anorexia)",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_jaundice_hepatitic",
+        "febrile_enteric"
+      ],
+      "aliases": [
+        "anorexia",
+        "loss appetite anorexia",
+        "loss of appetite",
+        "loss of hunger",
+        "not eating",
+        "poor appetite"
+      ]
+    },
+    {
+      "symptom_id": "S061",
+      "name": "Difficulty swallowing (Dysphagia)",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cranial_neuropathy_dysautonomia",
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "difficulty swallowing",
+        "difficulty swallowing dysphagia",
+        "dysphagia"
+      ]
+    },
+    {
+      "symptom_id": "S062",
+      "name": "Painful swallowing (Odynophagia)",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "myalgia",
+        "odynophagia",
+        "painful swallowing",
+        "painful swallowing odynophagia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S063",
+      "name": "Excessive thirst (Polydipsia)",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "acute_watery_diarrhea"
+      ],
+      "aliases": [
+        "excessive thirst",
+        "excessive thirst polydipsia",
+        "polydipsia"
+      ]
+    },
+    {
+      "symptom_id": "S064",
+      "name": "Jaundice / Scleral icterus",
+      "category": "Gastrointestinal",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_jaundice_hepatitic",
+        "zoonotic_leptospiral"
+      ],
+      "aliases": [
+        "bilirubinemia",
+        "icterus",
+        "jaundice / scleral icterus",
+        "jaundice scleral icterus",
+        "yellow eyes",
+        "yellow skin"
+      ]
+    },
+    {
+      "symptom_id": "S065",
+      "name": "Dark tea-colored urine",
+      "category": "Gastrointestinal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_jaundice_hepatitic",
+        "acute_hemolytic_cytopenic"
+      ],
+      "aliases": [
+        "burning micturition",
+        "dark tea colored urine",
+        "dark tea-colored urine",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria"
+      ]
+    },
+    {
+      "symptom_id": "S066",
+      "name": "Clay-colored pale stool",
+      "category": "Gastrointestinal",
+      "severities": [
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_jaundice_hepatitic"
+      ],
+      "aliases": [
+        "bloody stool",
+        "bowel run",
+        "clay colored pale stool",
+        "clay-colored pale stool",
+        "dysentery",
+        "loose motions",
+        "melena",
+        "watery stool"
+      ]
+    },
+    {
+      "symptom_id": "S067",
+      "name": "Headache",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "meningeal_irritation",
+        "vector_malaria_paroxysmal"
+      ],
+      "aliases": [
+        "cephalalgia",
+        "cranial pain",
+        "head pain",
+        "headache",
+        "migraine",
+        "throbbing head"
+      ]
+    },
+    {
+      "symptom_id": "S068",
+      "name": "Severe splitting headache",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "meningeal_irritation",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "cephalalgia",
+        "cranial pain",
+        "head pain",
+        "migraine",
+        "severe splitting headache",
+        "throbbing head"
+      ]
+    },
+    {
+      "symptom_id": "S069",
+      "name": "Migraine-like throbbing headache",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "cephalalgia",
+        "cranial pain",
+        "head pain",
+        "migraine",
+        "migraine like throbbing headache",
+        "migraine-like throbbing headache",
+        "throbbing head"
+      ]
+    },
+    {
+      "symptom_id": "S070",
+      "name": "Confusion",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "systemic_inflammatory_sepsis",
+        "environmental_heat_stroke"
+      ],
+      "aliases": [
+        "altered mental state",
+        "brain fog",
+        "confusion",
+        "dazed",
+        "delirium",
+        "fogginess"
+      ]
+    },
+    {
+      "symptom_id": "S071",
+      "name": "Disorientation in time/place",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "altered mental state",
+        "brain fog",
+        "dazed",
+        "delirium",
+        "disorientation in time/place",
+        "disorientation time place",
+        "fogginess"
+      ]
+    },
+    {
+      "symptom_id": "S072",
+      "name": "Drowsiness",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "meningeal_irritation"
+      ],
+      "aliases": [
+        "drowsiness"
+      ]
+    },
+    {
+      "symptom_id": "S073",
+      "name": "Excessive somnolence",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "excessive somnolence"
+      ]
+    },
+    {
+      "symptom_id": "S074",
+      "name": "Difficulty concentrating",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "post_infectious_asthenia"
+      ],
+      "aliases": [
+        "difficulty concentrating"
+      ]
+    },
+    {
+      "symptom_id": "S075",
+      "name": "Memory difficulty",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "post_infectious_asthenia",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "memory difficulty"
+      ]
+    },
+    {
+      "symptom_id": "S076",
+      "name": "Loss of consciousness / Coma",
+      "category": "Neurological",
+      "severities": [
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "severe_dehydration_shock",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "loss consciousness coma",
+        "loss of consciousness / coma"
+      ]
+    },
+    {
+      "symptom_id": "S077",
+      "name": "Syncopal attack",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cardiac_arrhythmic_syncope"
+      ],
+      "aliases": [
+        "syncopal attack"
+      ]
+    },
+    {
+      "symptom_id": "S078",
+      "name": "Seizure / Convulsion",
+      "category": "Neurological",
+      "severities": [
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "environmental_heat_stroke"
+      ],
+      "aliases": [
+        "epileptic attack",
+        "fits",
+        "seizure / convulsion",
+        "seizure convulsion",
+        "shaking fit",
+        "tremor"
+      ]
+    },
+    {
+      "symptom_id": "S079",
+      "name": "Tremor",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "environmental_hypothermia_cold"
+      ],
+      "aliases": [
+        "tremor"
+      ]
+    },
+    {
+      "symptom_id": "S080",
+      "name": "Numbness",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_flaccid_paralysis",
+        "cranial_neuropathy_dysautonomia"
+      ],
+      "aliases": [
+        "loss of sensation",
+        "numbness",
+        "paresthesia",
+        "pins and needles",
+        "stroke sign",
+        "weak limbs"
+      ]
+    },
+    {
+      "symptom_id": "S081",
+      "name": "Paresthesia / Tingling",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "zoonotic_rabies_encephalopathy",
+        "acute_flaccid_paralysis"
+      ],
+      "aliases": [
+        "loss of sensation",
+        "paresthesia",
+        "paresthesia / tingling",
+        "paresthesia tingling",
+        "pins and needles",
+        "stroke sign",
+        "weak limbs"
+      ]
+    },
+    {
+      "symptom_id": "S082",
+      "name": "Limb weakness / Monoparesis",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_flaccid_paralysis"
+      ],
+      "aliases": [
+        "asthenia",
+        "exhaustion",
+        "feeling drained",
+        "limb weakness / monoparesis",
+        "limb weakness monoparesis",
+        "low energy",
+        "tiredness",
+        "worn out"
+      ]
+    },
+    {
+      "symptom_id": "S083",
+      "name": "Difficulty walking / Ataxia",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_flaccid_paralysis",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "difficulty walking / ataxia",
+        "difficulty walking ataxia"
+      ]
+    },
+    {
+      "symptom_id": "S084",
+      "name": "Loss of balance",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "loss balance",
+        "loss of balance"
+      ]
+    },
+    {
+      "symptom_id": "S085",
+      "name": "Lightheadedness",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "cardiac_arrhythmic_syncope",
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "lightheadedness"
+      ]
+    },
+    {
+      "symptom_id": "S086",
+      "name": "Rotational vertigo",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "rotational vertigo"
+      ]
+    },
+    {
+      "symptom_id": "S087",
+      "name": "Coordination difficulty",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "coordination difficulty"
+      ]
+    },
+    {
+      "symptom_id": "S088",
+      "name": "Speech difficulty",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cranial_neuropathy_dysautonomia",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "speech difficulty"
+      ]
+    },
+    {
+      "symptom_id": "S089",
+      "name": "Slurred speech (Dysarthria)",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cranial_neuropathy_dysautonomia",
+        "environmental_hypothermia_cold"
+      ],
+      "aliases": [
+        "arthralgia",
+        "dysarthria",
+        "joint stiffness",
+        "joint swelling",
+        "rheumatism",
+        "slurred speech",
+        "slurred speech dysarthria"
+      ]
+    },
+    {
+      "symptom_id": "S090",
+      "name": "Photophobia",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "meningeal_irritation",
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "aliases": [
+        "photophobia"
+      ]
+    },
+    {
+      "symptom_id": "S091",
+      "name": "Phonophobia",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "meningeal_irritation"
+      ],
+      "aliases": [
+        "phonophobia"
+      ]
+    },
+    {
+      "symptom_id": "S092",
+      "name": "Neck stiffness (Nuchal rigidity)",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "meningeal_irritation",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "meningismus",
+        "neck stiffness",
+        "neck stiffness nuchal rigidity",
+        "nuchal rigidity"
+      ]
+    },
+    {
+      "symptom_id": "S093",
+      "name": "Altered mental status",
+      "category": "Neurological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "altered mental status"
+      ]
+    },
+    {
+      "symptom_id": "S094",
+      "name": "Loss of smell (Anosmia)",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "influenza_like_illness"
+      ],
+      "aliases": [
+        "ageusia",
+        "anosmia",
+        "loss of smell",
+        "loss smell anosmia",
+        "smell loss",
+        "taste loss"
+      ]
+    },
+    {
+      "symptom_id": "S095",
+      "name": "Loss of taste (Ageusia)",
+      "category": "Neurological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "influenza_like_illness"
+      ],
+      "aliases": [
+        "ageusia",
+        "anosmia",
+        "loss of taste",
+        "loss taste ageusia",
+        "smell loss",
+        "taste loss"
+      ]
+    },
+    {
+      "symptom_id": "S096",
+      "name": "Reduced smell (Hyposmia)",
+      "category": "Neurological",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "hyposmia",
+        "reduced smell",
+        "reduced smell hyposmia"
+      ]
+    },
+    {
+      "symptom_id": "S097",
+      "name": "Reduced taste (Hypogeusia)",
+      "category": "Neurological",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "hypogeusia",
+        "reduced taste",
+        "reduced taste hypogeusia"
+      ]
+    },
+    {
+      "symptom_id": "S098",
+      "name": "Palpitations",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "cardiac_arrhythmic_syncope"
+      ],
+      "aliases": [
+        "palpitations"
+      ]
+    },
+    {
+      "symptom_id": "S099",
+      "name": "Rapid heartbeat (Tachycardia)",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "systemic_inflammatory_sepsis",
+        "severe_dehydration_shock",
+        "cardiac_arrhythmic_syncope"
+      ],
+      "aliases": [
+        "ear discharge",
+        "earache",
+        "otalgia",
+        "rapid heartbeat",
+        "rapid heartbeat tachycardia",
+        "ringing ear",
+        "tachycardia",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S100",
+      "name": "Slow heartbeat (Bradycardia)",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "febrile_enteric",
+        "cardiac_arrhythmic_syncope"
+      ],
+      "aliases": [
+        "bradycardia",
+        "ear discharge",
+        "earache",
+        "otalgia",
+        "ringing ear",
+        "slow heartbeat",
+        "slow heartbeat bradycardia",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S101",
+      "name": "Irregular heartbeat",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cardiac_arrhythmic_syncope"
+      ],
+      "aliases": [
+        "ear discharge",
+        "earache",
+        "irregular heartbeat",
+        "otalgia",
+        "ringing ear",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S102",
+      "name": "Crushing chest pressure",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_coronary_ischemic"
+      ],
+      "aliases": [
+        "crushing chest pressure"
+      ]
+    },
+    {
+      "symptom_id": "S103",
+      "name": "Retrosternal discomfort",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_coronary_ischemic"
+      ],
+      "aliases": [
+        "retrosternal discomfort"
+      ]
+    },
+    {
+      "symptom_id": "S104",
+      "name": "Anginal chest pain radiating to arm/jaw",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_coronary_ischemic"
+      ],
+      "aliases": [
+        "aching",
+        "angina",
+        "anginal chest pain radiating arm jaw",
+        "anginal chest pain radiating to arm/jaw",
+        "chest pressure",
+        "generalized ache",
+        "myalgia",
+        "soreness",
+        "thoracic pain",
+        "tight chest"
+      ]
+    },
+    {
+      "symptom_id": "S105",
+      "name": "Acute pulmonary congestion dyspnea",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive"
+      ],
+      "aliases": [
+        "SOB",
+        "acute pulmonary congestion dyspnea",
+        "air hunger",
+        "breathlessness",
+        "gasping",
+        "hard to breathe"
+      ]
+    },
+    {
+      "symptom_id": "S106",
+      "name": "Breathlessness during minor exertion",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive"
+      ],
+      "aliases": [
+        "breathlessness during minor exertion",
+        "burning micturition",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria"
+      ]
+    },
+    {
+      "symptom_id": "S107",
+      "name": "Paroxysmal nocturnal dyspnea",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive"
+      ],
+      "aliases": [
+        "SOB",
+        "air hunger",
+        "breathlessness",
+        "gasping",
+        "hard to breathe",
+        "paroxysmal nocturnal dyspnea"
+      ]
+    },
+    {
+      "symptom_id": "S108",
+      "name": "Bilateral leg swelling",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive",
+        "pediatric_malnutrition_wasting"
+      ],
+      "aliases": [
+        "bilateral leg swelling"
+      ]
+    },
+    {
+      "symptom_id": "S109",
+      "name": "Pitting ankle edema",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_heart_failure_congestive"
+      ],
+      "aliases": [
+        "pitting ankle edema"
+      ]
+    },
+    {
+      "symptom_id": "S110",
+      "name": "Sudden profound weakness",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_coronary_ischemic",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "asthenia",
+        "exhaustion",
+        "feeling drained",
+        "low energy",
+        "sudden profound weakness",
+        "tiredness",
+        "worn out"
+      ]
+    },
+    {
+      "symptom_id": "S111",
+      "name": "Postural syncope",
+      "category": "Cardiovascular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cardiac_arrhythmic_syncope",
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "postural syncope"
+      ]
+    },
+    {
+      "symptom_id": "S112",
+      "name": "Cold clammy extremities",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "cold clammy extremities",
+        "feeling chilly",
+        "goosebumps",
+        "rigors",
+        "shivering"
+      ]
+    },
+    {
+      "symptom_id": "S113",
+      "name": "Central/Peripheral cyanosis",
+      "category": "Cardiovascular",
+      "severities": [
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_acute_respiratory_infection",
+        "environmental_hypothermia_cold"
+      ],
+      "aliases": [
+        "central peripheral cyanosis",
+        "central/peripheral cyanosis"
+      ]
+    },
+    {
+      "symptom_id": "S114",
+      "name": "Poor exercise tolerance",
+      "category": "Cardiovascular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "post_infectious_asthenia",
+        "acute_heart_failure_congestive"
+      ],
+      "aliases": [
+        "poor exercise tolerance"
+      ]
+    },
+    {
+      "symptom_id": "S115",
+      "name": "Muscle pain (Myalgia)",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "influenza_like_illness",
+        "zoonotic_leptospiral",
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "muscle cramps",
+        "muscle pain",
+        "muscle pain myalgia",
+        "muscle spasms",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S116",
+      "name": "Muscle weakness",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_flaccid_paralysis",
+        "post_infectious_asthenia"
+      ],
+      "aliases": [
+        "asthenia",
+        "exhaustion",
+        "feeling drained",
+        "low energy",
+        "muscle cramps",
+        "muscle pain",
+        "muscle spasms",
+        "muscle weakness",
+        "tiredness",
+        "worn out"
+      ]
+    },
+    {
+      "symptom_id": "S117",
+      "name": "Severe joint pain (Arthralgia)",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "febrile_arthritic",
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "aching",
+        "arthralgia",
+        "generalized ache",
+        "joint stiffness",
+        "joint swelling",
+        "myalgia",
+        "rheumatism",
+        "severe joint pain",
+        "severe joint pain arthralgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S118",
+      "name": "Joint effusion / swelling",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "arthralgia",
+        "joint effusion / swelling",
+        "joint effusion swelling",
+        "joint stiffness",
+        "joint swelling",
+        "rheumatism"
+      ]
+    },
+    {
+      "symptom_id": "S119",
+      "name": "Morning joint stiffness",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "arthralgia",
+        "joint stiffness",
+        "joint swelling",
+        "morning joint stiffness",
+        "rheumatism"
+      ]
+    },
+    {
+      "symptom_id": "S120",
+      "name": "Severe back pain",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "febrile_arthritic",
+        "vector_malaria_paroxysmal"
+      ],
+      "aliases": [
+        "aching",
+        "backache",
+        "generalized ache",
+        "lower back pain",
+        "lumbago",
+        "myalgia",
+        "severe back pain",
+        "soreness",
+        "spine pain"
+      ]
+    },
+    {
+      "symptom_id": "S121",
+      "name": "Neck pain",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "meningeal_irritation"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "myalgia",
+        "neck pain",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S122",
+      "name": "Limb pain",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "limb pain",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S123",
+      "name": "Breakbone bone pain",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "febrile_arthritic",
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "aching",
+        "breakbone bone pain",
+        "generalized ache",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S124",
+      "name": "Intense calf muscle pain",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "zoonotic_leptospiral",
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "intense calf muscle pain",
+        "muscle cramps",
+        "muscle pain",
+        "muscle spasms",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S125",
+      "name": "Inability to bend joint",
+      "category": "Musculoskeletal",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "arthralgia",
+        "inability bend joint",
+        "inability to bend joint",
+        "joint stiffness",
+        "joint swelling",
+        "rheumatism"
+      ]
+    },
+    {
+      "symptom_id": "S126",
+      "name": "Generalized polymyalgia",
+      "category": "Musculoskeletal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "influenza_like_illness",
+        "acute_febrile_illness"
+      ],
+      "aliases": [
+        "generalized polymyalgia",
+        "muscle cramps",
+        "muscle pain",
+        "muscle spasms"
+      ]
+    },
+    {
+      "symptom_id": "S127",
+      "name": "Maculopapular skin rash",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_fever_rash",
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "eruption",
+        "exanthem",
+        "hives",
+        "itching",
+        "maculopapular",
+        "maculopapular skin rash",
+        "pruritus",
+        "urticaria"
+      ]
+    },
+    {
+      "symptom_id": "S128",
+      "name": "Pruritus / Itching",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic",
+        "acute_jaundice_hepatitic"
+      ],
+      "aliases": [
+        "pruritus / itching",
+        "pruritus itching"
+      ]
+    },
+    {
+      "symptom_id": "S129",
+      "name": "Erythematous skin redness",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_fever_rash",
+        "mucocutaneous_lymph_node"
+      ],
+      "aliases": [
+        "eruption",
+        "erythematous skin redness",
+        "exanthem",
+        "hives",
+        "itching",
+        "maculopapular",
+        "pruritus",
+        "urticaria"
+      ]
+    },
+    {
+      "symptom_id": "S130",
+      "name": "Localized cutaneous edema",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic",
+        "vector_lymphatic_filarial"
+      ],
+      "aliases": [
+        "localized cutaneous edema"
+      ]
+    },
+    {
+      "symptom_id": "S131",
+      "name": "Skin lesion",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cutaneous_ulcerative_eschar",
+        "vesiculopustular_eruptive"
+      ],
+      "aliases": [
+        "bullae",
+        "eruption",
+        "exanthem",
+        "hives",
+        "itching",
+        "maculopapular",
+        "petechiae",
+        "pruritus",
+        "purpura",
+        "skin lesion",
+        "skin sores",
+        "urticaria",
+        "vesicles"
+      ]
+    },
+    {
+      "symptom_id": "S132",
+      "name": "Vesicles and blisters",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "vesiculopustular_eruptive"
+      ],
+      "aliases": [
+        "bullae",
+        "petechiae",
+        "purpura",
+        "skin sores",
+        "vesicles",
+        "vesicles and blisters"
+      ]
+    },
+    {
+      "symptom_id": "S133",
+      "name": "Urticarial wheals (Hives)",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "hives",
+        "urticarial wheals",
+        "urticarial wheals hives"
+      ]
+    },
+    {
+      "symptom_id": "S134",
+      "name": "Desquamation / Peeling skin",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "mucocutaneous_lymph_node",
+        "acute_fever_rash"
+      ],
+      "aliases": [
+        "desquamation / peeling skin",
+        "desquamation peeling skin",
+        "eruption",
+        "exanthem",
+        "hives",
+        "itching",
+        "maculopapular",
+        "pruritus",
+        "urticaria"
+      ]
+    },
+    {
+      "symptom_id": "S135",
+      "name": "Xeroderma / Dry skin",
+      "category": "Dermatological",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "eruption",
+        "exanthem",
+        "hives",
+        "itching",
+        "maculopapular",
+        "pruritus",
+        "urticaria",
+        "xeroderma / dry skin",
+        "xeroderma dry skin"
+      ]
+    },
+    {
+      "symptom_id": "S136",
+      "name": "Profuse diaphoresis",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_febrile_illness",
+        "vector_malaria_paroxysmal"
+      ],
+      "aliases": [
+        "profuse diaphoresis"
+      ]
+    },
+    {
+      "symptom_id": "S137",
+      "name": "Hyperpigmentation / Discoloration",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "hyperpigmentation / discoloration",
+        "hyperpigmentation discoloration"
+      ]
+    },
+    {
+      "symptom_id": "S138",
+      "name": "Ecchymosis / Easy bruising",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "acute_hemolytic_cytopenic"
+      ],
+      "aliases": [
+        "bleeding gums",
+        "bruising",
+        "ecchymosis",
+        "ecchymosis / easy bruising",
+        "ecchymosis easy bruising",
+        "epistaxis",
+        "nosebleed"
+      ]
+    },
+    {
+      "symptom_id": "S139",
+      "name": "Petechiae (Pinpoint red spots)",
+      "category": "Dermatological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "meningeal_irritation"
+      ],
+      "aliases": [
+        "petechiae",
+        "petechiae pinpoint red spots",
+        "pinpoint red spots"
+      ]
+    },
+    {
+      "symptom_id": "S140",
+      "name": "Purpura (Large purple spots)",
+      "category": "Dermatological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "meningeal_irritation"
+      ],
+      "aliases": [
+        "large purple spots",
+        "purpura",
+        "purpura large purple spots"
+      ]
+    },
+    {
+      "symptom_id": "S141",
+      "name": "Black necrotic ulcer (Eschar)",
+      "category": "Dermatological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cutaneous_ulcerative_eschar"
+      ],
+      "aliases": [
+        "black necrotic ulcer",
+        "black necrotic ulcer eschar",
+        "bullae",
+        "eschar",
+        "petechiae",
+        "purpura",
+        "skin sores",
+        "vesicles"
+      ]
+    },
+    {
+      "symptom_id": "S142",
+      "name": "Umbilicated pustules",
+      "category": "Dermatological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "vesiculopustular_eruptive"
+      ],
+      "aliases": [
+        "umbilicated pustules"
+      ]
+    },
+    {
+      "symptom_id": "S143",
+      "name": "Painful indurated lesion",
+      "category": "Dermatological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cutaneous_ulcerative_eschar"
+      ],
+      "aliases": [
+        "aching",
+        "bullae",
+        "generalized ache",
+        "myalgia",
+        "painful indurated lesion",
+        "petechiae",
+        "purpura",
+        "skin sores",
+        "soreness",
+        "vesicles"
+      ]
+    },
+    {
+      "symptom_id": "S144",
+      "name": "Alopecia / Hair loss",
+      "category": "Dermatological",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "post_infectious_asthenia"
+      ],
+      "aliases": [
+        "alopecia / hair loss",
+        "alopecia hair loss"
+      ]
+    },
+    {
+      "symptom_id": "S145",
+      "name": "Icteric skin yellowing",
+      "category": "Dermatological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_jaundice_hepatitic",
+        "zoonotic_leptospiral"
+      ],
+      "aliases": [
+        "bilirubinemia",
+        "eruption",
+        "exanthem",
+        "hives",
+        "icteric skin yellowing",
+        "icterus",
+        "itching",
+        "maculopapular",
+        "pruritus",
+        "urticaria",
+        "yellow eyes",
+        "yellow skin"
+      ]
+    },
+    {
+      "symptom_id": "S146",
+      "name": "Conjunctival hyperemia (Red eye)",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_ophthalmic_conjunctivitis",
+        "acute_fever_rash"
+      ],
+      "aliases": [
+        "blurred vision",
+        "conjunctival hyperemia",
+        "conjunctival hyperemia red eye",
+        "conjunctivitis",
+        "eye redness",
+        "photophobia",
+        "pink eye",
+        "red eye",
+        "watery eyes"
+      ]
+    },
+    {
+      "symptom_id": "S147",
+      "name": "Orbital / retro-orbital pain",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "febrile_arthritic"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "myalgia",
+        "orbital / retro-orbital pain",
+        "orbital retro orbital pain",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S148",
+      "name": "Ocular itching",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_ophthalmic_conjunctivitis",
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "ocular itching"
+      ]
+    },
+    {
+      "symptom_id": "S149",
+      "name": "Epiphora / Watery eyes",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "aliases": [
+        "blurred vision",
+        "conjunctivitis",
+        "epiphora / watery eyes",
+        "epiphora watery eyes",
+        "eye redness",
+        "photophobia",
+        "pink eye",
+        "watery eyes"
+      ]
+    },
+    {
+      "symptom_id": "S150",
+      "name": "Purulent eye discharge",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "aliases": [
+        "blurred vision",
+        "conjunctivitis",
+        "eye redness",
+        "photophobia",
+        "pink eye",
+        "purulent eye discharge",
+        "watery eyes"
+      ]
+    },
+    {
+      "symptom_id": "S151",
+      "name": "Blurred vision",
+      "category": "Eye / Ocular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "cranial_neuropathy_dysautonomia",
+        "foodborne_neurotoxic"
+      ],
+      "aliases": [
+        "blurred vision",
+        "conjunctivitis",
+        "eye redness",
+        "photophobia",
+        "pink eye",
+        "watery eyes"
+      ]
+    },
+    {
+      "symptom_id": "S152",
+      "name": "Diminished visual acuity",
+      "category": "Eye / Ocular",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "aliases": [
+        "diminished visual acuity"
+      ]
+    },
+    {
+      "symptom_id": "S153",
+      "name": "Ocular photophobia",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "meningeal_irritation",
+        "acute_fever_rash"
+      ],
+      "aliases": [
+        "ocular photophobia"
+      ]
+    },
+    {
+      "symptom_id": "S154",
+      "name": "Blepharedema / Swollen eyelids",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_ophthalmic_conjunctivitis",
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "blepharedema / swollen eyelids",
+        "blepharedema swollen eyelids",
+        "blurred vision",
+        "conjunctivitis",
+        "eye redness",
+        "photophobia",
+        "pink eye",
+        "watery eyes"
+      ]
+    },
+    {
+      "symptom_id": "S155",
+      "name": "Xerophthalmia / Dry eyes",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "pediatric_malnutrition_wasting"
+      ],
+      "aliases": [
+        "blurred vision",
+        "conjunctivitis",
+        "eye redness",
+        "photophobia",
+        "pink eye",
+        "watery eyes",
+        "xerophthalmia / dry eyes",
+        "xerophthalmia dry eyes"
+      ]
+    },
+    {
+      "symptom_id": "S156",
+      "name": "Foreign-body eye sensation",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "aliases": [
+        "blurred vision",
+        "conjunctivitis",
+        "eye redness",
+        "foreign body eye sensation",
+        "foreign-body eye sensation",
+        "photophobia",
+        "pink eye",
+        "watery eyes"
+      ]
+    },
+    {
+      "symptom_id": "S157",
+      "name": "Conjunctival suffusion without discharge",
+      "category": "Eye / Ocular",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "zoonotic_leptospiral"
+      ],
+      "aliases": [
+        "conjunctival suffusion without discharge"
+      ]
+    },
+    {
+      "symptom_id": "S158",
+      "name": "Otalgia / Ear pain",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "aching",
+        "ear discharge",
+        "earache",
+        "generalized ache",
+        "myalgia",
+        "otalgia",
+        "otalgia / ear pain",
+        "otalgia ear pain",
+        "ringing ear",
+        "soreness",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S159",
+      "name": "Otorrhea / Ear discharge",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "ear discharge",
+        "earache",
+        "otalgia",
+        "otorrhea / ear discharge",
+        "otorrhea ear discharge",
+        "ringing ear",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S160",
+      "name": "Hypoacusis / Reduced hearing",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "ear discharge",
+        "earache",
+        "hypoacusis / reduced hearing",
+        "hypoacusis reduced hearing",
+        "otalgia",
+        "ringing ear",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S161",
+      "name": "Acute sensorineural hearing loss",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "acute sensorineural hearing loss",
+        "ear discharge",
+        "earache",
+        "otalgia",
+        "ringing ear",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S162",
+      "name": "Tinnitus",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S163",
+      "name": "Nasal blockage",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "nasal blockage",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S164",
+      "name": "Anterior rhinorrhea",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "anterior rhinorrhea",
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S165",
+      "name": "Paroxysmal sneezing",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection",
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "paroxysmal sneezing",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S166",
+      "name": "Epistaxis (Nosebleed)",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "acute_hemolytic_cytopenic"
+      ],
+      "aliases": [
+        "bleeding gums",
+        "blocked nose",
+        "bruising",
+        "congestion",
+        "coryza",
+        "ecchymosis",
+        "epistaxis",
+        "epistaxis nosebleed",
+        "nosebleed",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S167",
+      "name": "Maxillary sinus pressure",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "maxillary sinus pressure"
+      ]
+    },
+    {
+      "symptom_id": "S168",
+      "name": "Facial fullness / tenderness",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "facial fullness / tenderness",
+        "facial fullness tenderness"
+      ]
+    },
+    {
+      "symptom_id": "S169",
+      "name": "Pharyngeal exudates / erythema",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative",
+        "influenza_like_illness"
+      ],
+      "aliases": [
+        "pharyngeal exudates / erythema",
+        "pharyngeal exudates erythema"
+      ]
+    },
+    {
+      "symptom_id": "S170",
+      "name": "Pseudomembrane in pharynx",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative",
+        "pediatric_croup_stridor"
+      ],
+      "aliases": [
+        "pseudomembrane in pharynx",
+        "pseudomembrane pharynx"
+      ]
+    },
+    {
+      "symptom_id": "S171",
+      "name": "Dysphonia / Hoarseness",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "pediatric_croup_stridor",
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "dysphonia",
+        "dysphonia / hoarseness",
+        "dysphonia hoarseness",
+        "laryngitis",
+        "painful swallowing",
+        "pharyngitis",
+        "scratchy throat"
+      ]
+    },
+    {
+      "symptom_id": "S172",
+      "name": "Trismus / Difficulty opening mouth",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "trismus / difficulty opening mouth",
+        "trismus difficulty opening mouth"
+      ]
+    },
+    {
+      "symptom_id": "S173",
+      "name": "Parotid gland swelling",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "parotid gland swelling"
+      ]
+    },
+    {
+      "symptom_id": "S174",
+      "name": "Submandibular lymphadenitis",
+      "category": "Ear / Nose / Throat",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "mucocutaneous_lymph_node"
+      ],
+      "aliases": [
+        "submandibular lymphadenitis"
+      ]
+    },
+    {
+      "symptom_id": "S175",
+      "name": "Dysuria / Painful urination",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "aching",
+        "burning micturition",
+        "dark urine",
+        "dysuria",
+        "dysuria / painful urination",
+        "dysuria painful urination",
+        "frequent urination",
+        "generalized ache",
+        "hematuria",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S176",
+      "name": "Urethral burning",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "urethral burning"
+      ]
+    },
+    {
+      "symptom_id": "S177",
+      "name": "Pollakiuria / Frequent urination",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "burning micturition",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria",
+        "pollakiuria / frequent urination",
+        "pollakiuria frequent urination"
+      ]
+    },
+    {
+      "symptom_id": "S178",
+      "name": "Urinary urgency",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "burning micturition",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria",
+        "urinary urgency"
+      ]
+    },
+    {
+      "symptom_id": "S179",
+      "name": "Oliguria (< 400ml/day)",
+      "category": "Urinary / Renal",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_kidney_injury_oliguria",
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "< 400ml/day",
+        "oliguria",
+        "oliguria 400ml day"
+      ]
+    },
+    {
+      "symptom_id": "S180",
+      "name": "Polyuria",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "polyuria"
+      ]
+    },
+    {
+      "symptom_id": "S181",
+      "name": "Gross hematuria (Blood in urine)",
+      "category": "Urinary / Renal",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile",
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "blood in urine",
+        "burning micturition",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "gross hematuria",
+        "gross hematuria blood urine",
+        "hematuria"
+      ]
+    },
+    {
+      "symptom_id": "S182",
+      "name": "Turbid / Pyuria (Cloudy urine)",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "burning micturition",
+        "cloudy urine",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria",
+        "turbid / pyuria",
+        "turbid pyuria cloudy urine"
+      ]
+    },
+    {
+      "symptom_id": "S183",
+      "name": "Churia / Dark brown urine",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_hemolytic_cytopenic",
+        "zoonotic_leptospiral"
+      ],
+      "aliases": [
+        "burning micturition",
+        "churia / dark brown urine",
+        "churia dark brown urine",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria"
+      ]
+    },
+    {
+      "symptom_id": "S184",
+      "name": "Costovertebral angle flank pain",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "aching",
+        "costovertebral angle flank pain",
+        "generalized ache",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S185",
+      "name": "Suprapubic tenderness",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "suprapubic tenderness"
+      ]
+    },
+    {
+      "symptom_id": "S186",
+      "name": "Hesitancy / Strangury",
+      "category": "Urinary / Renal",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "urinary_tract_infection_febrile"
+      ],
+      "aliases": [
+        "hesitancy / strangury",
+        "hesitancy strangury"
+      ]
+    },
+    {
+      "symptom_id": "S187",
+      "name": "Complete urinary anuria",
+      "category": "Urinary / Renal",
+      "severities": [
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_kidney_injury_oliguria",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "burning micturition",
+        "complete urinary anuria",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria"
+      ]
+    },
+    {
+      "symptom_id": "S188",
+      "name": "Acute pelvic pain",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "aching",
+        "acute pelvic pain",
+        "generalized ache",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S189",
+      "name": "Metrorrhagia / Abnormal bleeding",
+      "category": "Reproductive",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "bleeding gums",
+        "bruising",
+        "ecchymosis",
+        "epistaxis",
+        "metrorrhagia / abnormal bleeding",
+        "metrorrhagia abnormal bleeding",
+        "nosebleed"
+      ]
+    },
+    {
+      "symptom_id": "S190",
+      "name": "Purulent vaginal discharge",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "purulent vaginal discharge"
+      ]
+    },
+    {
+      "symptom_id": "S191",
+      "name": "Genital ulcers",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "vesiculopustular_eruptive"
+      ],
+      "aliases": [
+        "bullae",
+        "genital ulcers",
+        "petechiae",
+        "purpura",
+        "skin sores",
+        "vesicles"
+      ]
+    },
+    {
+      "symptom_id": "S192",
+      "name": "Genital edema / elephantiasis",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "vector_lymphatic_filarial"
+      ],
+      "aliases": [
+        "genital edema / elephantiasis",
+        "genital edema elephantiasis"
+      ]
+    },
+    {
+      "symptom_id": "S193",
+      "name": "Dyspareunia",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "dyspareunia"
+      ]
+    },
+    {
+      "symptom_id": "S194",
+      "name": "Acute orchitis / Testicular pain",
+      "category": "Reproductive",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "aliases": [
+        "aching",
+        "acute orchitis / testicular pain",
+        "acute orchitis testicular pain",
+        "generalized ache",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S195",
+      "name": "Testicular swelling / Hydrocele",
+      "category": "Reproductive",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "vector_lymphatic_filarial"
+      ],
+      "aliases": [
+        "testicular swelling / hydrocele",
+        "testicular swelling hydrocele"
+      ]
+    },
+    {
+      "symptom_id": "S196",
+      "name": "Mastalgia",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "mastalgia"
+      ]
+    },
+    {
+      "symptom_id": "S197",
+      "name": "Breast abscess / erythema",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "breast abscess / erythema",
+        "breast abscess erythema"
+      ]
+    },
+    {
+      "symptom_id": "S198",
+      "name": "Menstrual irregularity",
+      "category": "Reproductive",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "menstrual irregularity"
+      ]
+    },
+    {
+      "symptom_id": "S199",
+      "name": "Menorrhagia (Heavy menses)",
+      "category": "Reproductive",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "heavy menses",
+        "menorrhagia",
+        "menorrhagia heavy menses"
+      ]
+    },
+    {
+      "symptom_id": "S200",
+      "name": "Odontalgia / Severe toothache",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "odontalgia / severe toothache",
+        "odontalgia severe toothache"
+      ]
+    },
+    {
+      "symptom_id": "S201",
+      "name": "Gingival pain",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "gingival pain",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S202",
+      "name": "Gingival edema / Hypertrophy",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "gingival edema / hypertrophy",
+        "gingival edema hypertrophy"
+      ]
+    },
+    {
+      "symptom_id": "S203",
+      "name": "Spontaneous gingival bleeding",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "bleeding gums",
+        "bruising",
+        "ecchymosis",
+        "epistaxis",
+        "nosebleed",
+        "spontaneous gingival bleeding"
+      ]
+    },
+    {
+      "symptom_id": "S204",
+      "name": "Aphthous stomatitis ulcers",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "oral_ulcerative_stomatitis",
+        "vesiculopustular_eruptive"
+      ],
+      "aliases": [
+        "aphthous stomatitis ulcers",
+        "bullae",
+        "petechiae",
+        "purpura",
+        "skin sores",
+        "vesicles"
+      ]
+    },
+    {
+      "symptom_id": "S205",
+      "name": "Burning mouth syndrome",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "burning mouth syndrome"
+      ]
+    },
+    {
+      "symptom_id": "S206",
+      "name": "Glossitis / Strawberry tongue",
+      "category": "Oral / Dental",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "mucocutaneous_lymph_node"
+      ],
+      "aliases": [
+        "glossitis / strawberry tongue",
+        "glossitis strawberry tongue"
+      ]
+    },
+    {
+      "symptom_id": "S207",
+      "name": "Masticatory pain",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "aching",
+        "generalized ache",
+        "masticatory pain",
+        "myalgia",
+        "soreness"
+      ]
+    },
+    {
+      "symptom_id": "S208",
+      "name": "Palatopharyngeal paralysis",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "cranial_neuropathy_dysautonomia"
+      ],
+      "aliases": [
+        "loss of sensation",
+        "palatopharyngeal paralysis",
+        "paresthesia",
+        "pins and needles",
+        "stroke sign",
+        "weak limbs"
+      ]
+    },
+    {
+      "symptom_id": "S209",
+      "name": "Xerostomia / Severe dry mouth",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "foodborne_neurotoxic",
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "xerostomia / severe dry mouth",
+        "xerostomia severe dry mouth"
+      ]
+    },
+    {
+      "symptom_id": "S210",
+      "name": "Sialorrhea / Excessive drooling",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "zoonotic_rabies_encephalopathy"
+      ],
+      "aliases": [
+        "sialorrhea / excessive drooling",
+        "sialorrhea excessive drooling"
+      ]
+    },
+    {
+      "symptom_id": "S211",
+      "name": "Fetid halitosis",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild"
+      ],
+      "associated_syndromes": [
+        "oral_ulcerative_stomatitis"
+      ],
+      "aliases": [
+        "fetid halitosis"
+      ]
+    },
+    {
+      "symptom_id": "S212",
+      "name": "Metallic taste dysgeusia",
+      "category": "Oral / Dental",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "aliases": [
+        "metallic taste dysgeusia"
+      ]
+    },
+    {
+      "symptom_id": "S213",
+      "name": "Allergic sneezes in clusters",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "allergic sneezes clusters",
+        "allergic sneezes in clusters",
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S214",
+      "name": "Clear allergic hydrorrhea",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "clear allergic hydrorrhea",
+        "ear discharge",
+        "earache",
+        "otalgia",
+        "ringing ear",
+        "tinnitus"
+      ]
+    },
+    {
+      "symptom_id": "S215",
+      "name": "Allergic nasal obstruction",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "allergic nasal obstruction",
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S216",
+      "name": "Intense nasal pruritus",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "blocked nose",
+        "congestion",
+        "coryza",
+        "intense nasal pruritus",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S217",
+      "name": "Allergic shiners / eye itch",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic",
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "aliases": [
+        "allergic shiners / eye itch",
+        "allergic shiners eye itch",
+        "blurred vision",
+        "conjunctivitis",
+        "eye redness",
+        "photophobia",
+        "pink eye",
+        "watery eyes"
+      ]
+    },
+    {
+      "symptom_id": "S218",
+      "name": "Chemosis / Scleral allergy",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "chemosis / scleral allergy",
+        "chemosis scleral allergy"
+      ]
+    },
+    {
+      "symptom_id": "S219",
+      "name": "Generalized allergic pruritus",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "generalized allergic pruritus"
+      ]
+    },
+    {
+      "symptom_id": "S220",
+      "name": "Migrating urticarial wheals",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "migrating urticarial wheals"
+      ]
+    },
+    {
+      "symptom_id": "S221",
+      "name": "Facial angioedema",
+      "category": "Allergy-Related",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "facial angioedema"
+      ]
+    },
+    {
+      "symptom_id": "S222",
+      "name": "Labial angioedema (Lip swelling)",
+      "category": "Allergy-Related",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "labial angioedema",
+        "labial angioedema lip swelling",
+        "lip swelling"
+      ]
+    },
+    {
+      "symptom_id": "S223",
+      "name": "Macroglossia / Tongue angioedema",
+      "category": "Allergy-Related",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "macroglossia / tongue angioedema",
+        "macroglossia tongue angioedema"
+      ]
+    },
+    {
+      "symptom_id": "S224",
+      "name": "Acute reactive bronchospasm",
+      "category": "Allergy-Related",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic",
+        "bronchospastic_obstructive"
+      ],
+      "aliases": [
+        "acute reactive bronchospasm"
+      ]
+    },
+    {
+      "symptom_id": "S225",
+      "name": "Laryngeal edema with choking sensation",
+      "category": "Allergy-Related",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "laryngeal edema with choking sensation"
+      ]
+    },
+    {
+      "symptom_id": "S226",
+      "name": "Pharyngeal constriction / Globus",
+      "category": "Allergy-Related",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "aliases": [
+        "pharyngeal constriction / globus",
+        "pharyngeal constriction globus"
+      ]
+    },
+    {
+      "symptom_id": "S227",
+      "name": "Acute agitation / Anxiety",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "environmental_heat_stroke",
+        "unspecified_community_cluster"
+      ],
+      "aliases": [
+        "acute agitation / anxiety",
+        "acute agitation anxiety",
+        "agitation",
+        "low mood",
+        "nervousness",
+        "restlessness"
+      ]
+    },
+    {
+      "symptom_id": "S228",
+      "name": "Motor restlessness / Akathisia",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "motor restlessness / akathisia",
+        "motor restlessness akathisia"
+      ]
+    },
+    {
+      "symptom_id": "S229",
+      "name": "Irritability in infants",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "meningeal_irritation",
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "irritability in infants",
+        "irritability infants"
+      ]
+    },
+    {
+      "symptom_id": "S230",
+      "name": "Insomnia / Sleep inversion",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "post_infectious_asthenia"
+      ],
+      "aliases": [
+        "insomnia / sleep inversion",
+        "insomnia sleep inversion"
+      ]
+    },
+    {
+      "symptom_id": "S231",
+      "name": "Hypersomnia / Torpor",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic"
+      ],
+      "aliases": [
+        "hypersomnia / torpor",
+        "hypersomnia torpor"
+      ]
+    },
+    {
+      "symptom_id": "S232",
+      "name": "Brain fog / Concentration deficit",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "post_infectious_asthenia"
+      ],
+      "aliases": [
+        "brain fog / concentration deficit",
+        "brain fog concentration deficit"
+      ]
+    },
+    {
+      "symptom_id": "S233",
+      "name": "Acute delirium",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "environmental_heat_stroke",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "acute delirium"
+      ]
+    },
+    {
+      "symptom_id": "S234",
+      "name": "Acute personality change",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "zoonotic_rabies_encephalopathy"
+      ],
+      "aliases": [
+        "acute personality change"
+      ]
+    },
+    {
+      "symptom_id": "S235",
+      "name": "Stupor / Semicoma",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_encephalitic",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "stupor / semicoma",
+        "stupor semicoma"
+      ]
+    },
+    {
+      "symptom_id": "S236",
+      "name": "Psychomotor agitation / Hydrophobia",
+      "category": "Mental / Behavioral",
+      "severities": [
+        "severe"
+      ],
+      "associated_syndromes": [
+        "zoonotic_rabies_encephalopathy"
+      ],
+      "aliases": [
+        "psychomotor agitation / hydrophobia",
+        "psychomotor agitation hydrophobia"
+      ]
+    },
+    {
+      "symptom_id": "S237",
+      "name": "Anterior/Posterior nasal hemorrhage",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "anterior posterior nasal hemorrhage",
+        "anterior/posterior nasal hemorrhage",
+        "bleeding gums",
+        "blocked nose",
+        "bruising",
+        "congestion",
+        "coryza",
+        "ecchymosis",
+        "epistaxis",
+        "nosebleed",
+        "rhinitis",
+        "runny nose",
+        "stuffy nose"
+      ]
+    },
+    {
+      "symptom_id": "S238",
+      "name": "Gingivorrhagia",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "gingivorrhagia"
+      ]
+    },
+    {
+      "symptom_id": "S239",
+      "name": "Spontaneous subcutaneous hematoma",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "acute_hemolytic_cytopenic"
+      ],
+      "aliases": [
+        "spontaneous subcutaneous hematoma"
+      ]
+    },
+    {
+      "symptom_id": "S240",
+      "name": "Puncture site oozing",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "puncture site oozing"
+      ]
+    },
+    {
+      "symptom_id": "S241",
+      "name": "Melena (Tarry black stool)",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "bloody_diarrhea_dysentery"
+      ],
+      "aliases": [
+        "bloody stool",
+        "bowel run",
+        "dysentery",
+        "loose motions",
+        "melena",
+        "melena tarry black stool",
+        "tarry black stool",
+        "watery stool"
+      ]
+    },
+    {
+      "symptom_id": "S242",
+      "name": "Hematuria / Red cell casts",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "zoonotic_leptospiral"
+      ],
+      "aliases": [
+        "hematuria / red cell casts",
+        "hematuria red cell casts"
+      ]
+    },
+    {
+      "symptom_id": "S243",
+      "name": "Frank hemoptysis",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "lower_respiratory_illness",
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "blood in spit",
+        "coughing mucus",
+        "frank hemoptysis",
+        "phlegm coughing",
+        "rusty sputum"
+      ]
+    },
+    {
+      "symptom_id": "S244",
+      "name": "Hematemesis (Coffee ground vomit)",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "coffee ground vomit",
+        "emesis",
+        "hematemesis",
+        "hematemesis coffee ground vomit",
+        "puking",
+        "queasiness",
+        "retching",
+        "throwing up",
+        "upset stomach"
+      ]
+    },
+    {
+      "symptom_id": "S245",
+      "name": "Exsanguinating menorrhagia",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever"
+      ],
+      "aliases": [
+        "exsanguinating menorrhagia"
+      ]
+    },
+    {
+      "symptom_id": "S246",
+      "name": "Waxy pallor / Severe anemia",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "acute_hemolytic_cytopenic",
+        "vector_malaria_paroxysmal"
+      ],
+      "aliases": [
+        "waxy pallor / severe anemia",
+        "waxy pallor severe anemia"
+      ]
+    },
+    {
+      "symptom_id": "S247",
+      "name": "Prostration from blood loss",
+      "category": "Bleeding / Hematological",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "viral_hemorrhagic_fever",
+        "acute_hemolytic_cytopenic"
+      ],
+      "aliases": [
+        "prostration from blood loss"
+      ]
+    },
+    {
+      "symptom_id": "S248",
+      "name": "Unquenchable thirst",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "acute_watery_diarrhea"
+      ],
+      "aliases": [
+        "unquenchable thirst"
+      ]
+    },
+    {
+      "symptom_id": "S249",
+      "name": "Dry sticky buccal mucosa",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "dry sticky buccal mucosa"
+      ]
+    },
+    {
+      "symptom_id": "S250",
+      "name": "Dry parched skin",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "dry parched skin",
+        "eruption",
+        "exanthem",
+        "hives",
+        "itching",
+        "maculopapular",
+        "pruritus",
+        "urticaria"
+      ]
+    },
+    {
+      "symptom_id": "S251",
+      "name": "Anuria > 12 hours",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "acute_kidney_injury_oliguria"
+      ],
+      "aliases": [
+        "anuria > 12 hours",
+        "anuria hours"
+      ]
+    },
+    {
+      "symptom_id": "S252",
+      "name": "Highly concentrated amber urine",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "burning micturition",
+        "dark urine",
+        "dysuria",
+        "frequent urination",
+        "hematuria",
+        "highly concentrated amber urine"
+      ]
+    },
+    {
+      "symptom_id": "S253",
+      "name": "Orthostatic hypotension dizziness",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "mild",
+        "moderate"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "cardiac_arrhythmic_syncope"
+      ],
+      "aliases": [
+        "lightheadedness",
+        "orthostatic hypotension dizziness",
+        "passing out",
+        "presyncope",
+        "syncope",
+        "vertigo",
+        "wooziness"
+      ]
+    },
+    {
+      "symptom_id": "S254",
+      "name": "Cardiovascular collapse / Shock",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "systemic_inflammatory_sepsis"
+      ],
+      "aliases": [
+        "cardiovascular collapse / shock",
+        "cardiovascular collapse shock"
+      ]
+    },
+    {
+      "symptom_id": "S255",
+      "name": "Syncope upon sitting/standing",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock"
+      ],
+      "aliases": [
+        "syncope upon sitting standing",
+        "syncope upon sitting/standing"
+      ]
+    },
+    {
+      "symptom_id": "S256",
+      "name": "Sunken fontanelle / Sunken globes",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "acute_watery_diarrhea"
+      ],
+      "aliases": [
+        "sunken fontanelle / sunken globes",
+        "sunken fontanelle sunken globes"
+      ]
+    },
+    {
+      "symptom_id": "S257",
+      "name": "Loss of skin turgor (Pinch recoil > 2s)",
+      "category": "Dehydration / Fluid",
+      "severities": [
+        "moderate",
+        "severe"
+      ],
+      "associated_syndromes": [
+        "severe_dehydration_shock",
+        "acute_watery_diarrhea"
+      ],
+      "aliases": [
+        "eruption",
+        "exanthem",
+        "hives",
+        "itching",
+        "loss of skin turgor",
+        "loss skin turgor pinch recoil",
+        "maculopapular",
+        "pinch recoil > 2s",
+        "pruritus",
+        "urticaria"
+      ]
+    }
   ]
 }

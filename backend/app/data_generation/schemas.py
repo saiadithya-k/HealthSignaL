@@ -18,6 +18,7 @@ class ScenarioType(str, Enum):
     VECTOR_BORNE_OUTBREAK = "VECTOR_BORNE_OUTBREAK"
     NEUROLOGICAL_CLUSTER = "NEUROLOGICAL_CLUSTER"
     MULTI_SYNDROME_OUTBREAK = "MULTI_SYNDROME_OUTBREAK"
+    DISEASE_OUTBREAK = "DISEASE_OUTBREAK"
 
 PROHIBITED_IDENTIFYING_FIELDS = {
     "patient_id", "name", "first_name", "last_name", "ssn", "national_id",
@@ -36,6 +37,7 @@ class GroundTruthEvent(BaseModel):
     affected_institution: str
     start_date: str
     end_date: str
+    condition_id: Optional[str] = None
     syndrome_category: Optional[str] = None
     magnitude_factor: float
     description: str
