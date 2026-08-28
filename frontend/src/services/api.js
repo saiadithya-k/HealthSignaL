@@ -76,3 +76,43 @@ export const triggerTrainLocalModels = async (forecastHorizon = 7, alpha = 1.0) 
     throw error;
   }
 };
+
+export const fetchFederationStatus = async () => {
+  try {
+    const response = await axios.get(`${API_BASE}/federation/status`);
+    return response.data;
+  } catch (error) {
+    console.error("Federation status error:", error);
+    return null;
+  }
+};
+
+export const triggerStartFederatedRound = async (forecastHorizon = 7, alpha = 1.0) => {
+  try {
+    const response = await axios.post(`${API_BASE}/federation/start?forecast_horizon=${forecastHorizon}&alpha=${alpha}`);
+    return response.data;
+  } catch (error) {
+    console.error("Start federated round error:", error);
+    throw error;
+  }
+};
+
+export const fetchForecasts = async () => {
+  try {
+    const response = await axios.get(`${API_BASE}/forecasts`);
+    return response.data;
+  } catch (error) {
+    console.error("Fetch forecasts error:", error);
+    return null;
+  }
+};
+
+export const triggerGenerateForecast = async (horizon = 7, missingNodes = 0) => {
+  try {
+    const response = await axios.post(`${API_BASE}/forecasts/generate?horizon=${horizon}&missing_nodes=${missingNodes}`);
+    return response.data;
+  } catch (error) {
+    console.error("Generate forecast error:", error);
+    throw error;
+  }
+};
