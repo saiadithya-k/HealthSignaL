@@ -1,0 +1,82 @@
+[
+  {
+    "report_id": "f705282a-e0e3-4de9-8555-f75eea041117",
+    "reported_at": "2026-08-28T09:12:52.238186",
+    "node_id": "inst-c",
+    "zone_id": "zone-2",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "acute_febrile_illness_50_visits"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "76a744efefeed24b",
+    "_weight": 50
+  },
+  {
+    "report_id": "041accae-37b1-47cb-b624-20cb8aca0e2a",
+    "reported_at": "2026-08-28T09:13:27.649829",
+    "node_id": "inst-c",
+    "zone_id": "zone-2",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "acute_febrile_illness_50_visits"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "76a744efefeed24b",
+    "_weight": 50
+  },
+  {
+    "report_id": "63174dfd-c8f2-4764-943a-4bc31fa27b7d",
+    "reported_at": "2026-08-28T09:26:35.523467",
+    "node_id": "inst-c",
+    "zone_id": "zone-2",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "acute_febrile_illness_50_visits"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "76a744efefeed24b",
+    "_weight": 50
+  },
+  {
+    "report_id": "08e57a73-e266-4733-9377-55ad2bda27e0",
+    "reported_at": "2026-08-28T09:30:16.733215",
+    "node_id": "inst-c",
+    "zone_id": "zone-2",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "acute_febrile_illness_50_visits"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "76a744efefeed24b",
+    "_weight": 50
+  }
+]

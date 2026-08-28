@@ -14,6 +14,7 @@ FEATURE_COLUMNS = [
     "rolling_mean_7",
     "rolling_std_7",
     "rolling_mean_14",
+    "pharmacy_lead_t2",
     "data_completeness"
 ]
 
@@ -67,7 +68,13 @@ def build_supervised_features(
         g["rolling_std_7"] = g["service_count"].shift(1).rolling(window=7, min_periods=1).std().fillna(0.0)
         g["rolling_mean_14"] = g["service_count"].shift(1).rolling(window=14, min_periods=1).mean()
 
-        # 4. Target Variable (Demand at t + forecast_horizon)
+        # 4. Exogenous Leading Indicator Features
+        if "pharmacy_dispensed_count" in g.columns:
+            g["pharmacy_lead_t2"] = g["pharmacy_dispensed_count"].shift(2).fillna(0.0)
+        else:
+            g["pharmacy_lead_t2"] = (g["service_count"].shift(2) * 0.45).fillna(0.0)
+
+        # 5. Target Variable (Demand at t + forecast_horizon)
         g["target"] = g["service_count"].shift(-forecast_horizon)
 
         processed_groups.append(g)

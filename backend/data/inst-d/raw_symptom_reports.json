@@ -1,0 +1,82 @@
+[
+  {
+    "report_id": "8175b683-95da-4e73-9b02-16ef133632bd",
+    "reported_at": "2026-08-28T09:12:52.249194",
+    "node_id": "inst-d",
+    "zone_id": "zone-3",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "f90491679271602c",
+    "_weight": 14
+  },
+  {
+    "report_id": "6f4044f1-75a4-4823-863a-3f6c2b022c74",
+    "reported_at": "2026-08-28T09:13:27.661832",
+    "node_id": "inst-d",
+    "zone_id": "zone-3",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "f90491679271602c",
+    "_weight": 14
+  },
+  {
+    "report_id": "74116c97-e9b6-4b55-9255-05a5b3780f6f",
+    "reported_at": "2026-08-28T09:26:35.529475",
+    "node_id": "inst-d",
+    "zone_id": "zone-3",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "f90491679271602c",
+    "_weight": 14
+  },
+  {
+    "report_id": "5e3d9a2a-62e8-4b31-9d54-2aff4bbe0f90",
+    "reported_at": "2026-08-28T09:30:16.739214",
+    "node_id": "inst-d",
+    "zone_id": "zone-3",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "f90491679271602c",
+    "_weight": 14
+  }
+]

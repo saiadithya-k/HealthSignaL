@@ -1,0 +1,22 @@
+[
+  {
+    "record_id": "38e9806b-ed24-4c98-a010-a44901201d53",
+    "data_source": "clinic",
+    "date": "2026-08-28",
+    "node_id": "inst-c",
+    "zone_id": "zone-2",
+    "syndrome": "acute_febrile_illness",
+    "count": 200,
+    "severity_mild": 0,
+    "severity_moderate": 200,
+    "severity_severe": 0,
+    "growth_rate_7d": 0.0,
+    "rolling_3d_mean": 200.0,
+    "rolling_7d_mean": 200.0,
+    "rolling_7d_std": 0.0,
+    "coverage_ratio": 1.0,
+    "privacy_k": 11,
+    "data_quality_score": 0.886,
+    "created_at": "2026-08-28T09:30:16.766216"
+  }
+]

@@ -1,0 +1,367 @@
+{
+  "version": "2.0.0",
+  "total_syndromes": 45,
+  "description": "HealthSignal Standardized 45 Syndrome Categories for Community Syndromic Surveillance",
+  "syndromes": [
+    {
+      "syndrome_id": "SYN001",
+      "code": "acute_febrile_illness",
+      "name": "Acute Febrile Illness",
+      "domain": "Infectious / Systemic",
+      "description": "Fever with chills, body ache, sweating, and general malaise without localized signs",
+      "early_warning_weight": 0.85
+    },
+    {
+      "syndrome_id": "SYN002",
+      "code": "upper_respiratory_infection",
+      "name": "Upper Respiratory Infection (URI)",
+      "domain": "Respiratory",
+      "description": "Nasal congestion, rhinorrhea, sneezing, sore throat, mild cough",
+      "early_warning_weight": 0.75
+    },
+    {
+      "syndrome_id": "SYN003",
+      "code": "lower_respiratory_illness",
+      "name": "Lower Respiratory Illness (Pneumonic)",
+      "domain": "Respiratory",
+      "description": "Productive cough, chest pain, dyspnea, rapid breathing, crackles/rales",
+      "early_warning_weight": 0.90
+    },
+    {
+      "syndrome_id": "SYN004",
+      "code": "influenza_like_illness",
+      "name": "Influenza-Like Illness (ILI)",
+      "domain": "Respiratory / Febrile",
+      "description": "Fever >= 38°C with cough, sore throat, and marked myalgia/fatigue",
+      "early_warning_weight": 0.90
+    },
+    {
+      "syndrome_id": "SYN005",
+      "code": "severe_acute_respiratory_infection",
+      "name": "Severe Acute Respiratory Infection (SARI)",
+      "domain": "Respiratory",
+      "description": "Acute respiratory illness with hypoxemia, tachypnea, and hospital admission demand",
+      "early_warning_weight": 0.95
+    },
+    {
+      "syndrome_id": "SYN006",
+      "code": "bronchospastic_obstructive",
+      "name": "Bronchospastic / Airway Obstruction",
+      "domain": "Respiratory",
+      "description": "Wheezing, chest tightness, prolonged expiration, asthma/COPD exacerbation",
+      "early_warning_weight": 0.80
+    },
+    {
+      "syndrome_id": "SYN007",
+      "code": "acute_watery_diarrhea",
+      "name": "Acute Watery Diarrheal Syndrome",
+      "domain": "Enteric / Gastrointestinal",
+      "description": "Frequent watery loose stools with rapid dehydration risk (cholera-like)",
+      "early_warning_weight": 0.92
+    },
+    {
+      "syndrome_id": "SYN008",
+      "code": "bloody_diarrhea_dysentery",
+      "name": "Bloody Diarrhea / Dysenteric Syndrome",
+      "domain": "Enteric / Gastrointestinal",
+      "description": "Diarrhea with visible blood, mucus, tenesmus, and cramping abdominal pain",
+      "early_warning_weight": 0.90
+    },
+    {
+      "syndrome_id": "SYN009",
+      "code": "gastroenteritis_emetic",
+      "name": "Acute Gastroenteritis (Emetic-Predominant)",
+      "domain": "Enteric / Gastrointestinal",
+      "description": "Severe nausea, repeated vomiting, epigastric discomfort, and mild diarrhea (norovirus-like)",
+      "early_warning_weight": 0.88
+    },
+    {
+      "syndrome_id": "SYN010",
+      "code": "febrile_enteric",
+      "name": "Febrile Enteric Syndrome",
+      "domain": "Enteric / Febrile",
+      "description": "Prolonged fever, abdominal pain, hepatosplenomegaly, constipation/diarrhea (typhoid-like)",
+      "early_warning_weight": 0.86
+    },
+    {
+      "syndrome_id": "SYN011",
+      "code": "acute_jaundice_hepatitic",
+      "name": "Acute Jaundice / Hepatitic Syndrome",
+      "domain": "Hepatic / Gastrointestinal",
+      "description": "Scleral/skin icterus, dark urine, pale stools, anorexia, right upper quadrant pain",
+      "early_warning_weight": 0.88
+    },
+    {
+      "syndrome_id": "SYN012",
+      "code": "acute_encephalitic",
+      "name": "Acute Encephalitic Syndrome (AES)",
+      "domain": "Neurological",
+      "description": "Fever with altered mental status, disorientation, confusion, seizures, or coma",
+      "early_warning_weight": 0.96
+    },
+    {
+      "syndrome_id": "SYN013",
+      "code": "meningeal_irritation",
+      "name": "Meningeal Irritation Syndrome",
+      "domain": "Neurological",
+      "description": "Severe headache, neck stiffness, photophobia, fever, Kernig/Brudzinski signs",
+      "early_warning_weight": 0.95
+    },
+    {
+      "syndrome_id": "SYN014",
+      "code": "acute_flaccid_paralysis",
+      "name": "Acute Flaccid Paralysis (AFP)",
+      "domain": "Neurological",
+      "description": "Rapid onset focal weakness/paralysis, hyporeflexia, asymmetric limb weakness",
+      "early_warning_weight": 0.98
+    },
+    {
+      "syndrome_id": "SYN015",
+      "code": "cranial_neuropathy_dysautonomia",
+      "name": "Cranial Neuropathy / Neurotoxic",
+      "domain": "Neurological",
+      "description": "Ptosis, diplopia, dysphagia, dysarthria, facial weakness (botulism/paralytic)",
+      "early_warning_weight": 0.94
+    },
+    {
+      "syndrome_id": "SYN016",
+      "code": "febrile_arthritic",
+      "name": "Febrile Arthritic / Arboviral Syndrome",
+      "domain": "Vector-Borne / Rheumatologic",
+      "description": "High fever, severe polyarthralgia, joint swelling, backache (chikungunya-like)",
+      "early_warning_weight": 0.88
+    },
+    {
+      "syndrome_id": "SYN017",
+      "code": "viral_hemorrhagic_fever",
+      "name": "Viral Hemorrhagic Fever (VHF) Syndrome",
+      "domain": "Vector-Borne / Hematological",
+      "description": "Fever, petechiae, purpura, mucosal bleeding, thrombocytopenia, capillary leak",
+      "early_warning_weight": 0.99
+    },
+    {
+      "syndrome_id": "SYN018",
+      "code": "acute_fever_rash",
+      "name": "Acute Fever with Maculopapular Rash",
+      "domain": "Dermatological / Infectious",
+      "description": "Fever accompanied by generalized maculopapular rash, conjunctivitis, coryza (measles-like)",
+      "early_warning_weight": 0.90
+    },
+    {
+      "syndrome_id": "SYN019",
+      "code": "vesiculopustular_eruptive",
+      "name": "Vesiculopustular Eruptive Syndrome",
+      "domain": "Dermatological / Infectious",
+      "description": "Fever with centrifugal/centripetal vesicles, pustules, crusted lesions (chickenpox/mpox)",
+      "early_warning_weight": 0.92
+    },
+    {
+      "syndrome_id": "SYN020",
+      "code": "cutaneous_ulcerative_eschar",
+      "name": "Cutaneous Ulcerative / Eschar Syndrome",
+      "domain": "Dermatological / Zoonotic",
+      "description": "Localized painless/painful ulcer with black necrotic eschar, regional lymphadenopathy",
+      "early_warning_weight": 0.89
+    },
+    {
+      "syndrome_id": "SYN021",
+      "code": "mucocutaneous_lymph_node",
+      "name": "Mucocutaneous Lymph Node Syndrome",
+      "domain": "Dermatological / Pediatric",
+      "description": "Strawberry tongue, cracked lips, cervical lymphadenopathy, polymorphous exanthem",
+      "early_warning_weight": 0.86
+    },
+    {
+      "syndrome_id": "SYN022",
+      "code": "acute_allergic_anaphylactic",
+      "name": "Acute Allergic / Anaphylactic Syndrome",
+      "domain": "Immunological / Allergic",
+      "description": "Urticaria, angioedema, facial/tongue swelling, stridor, bronchospasm, hypotension",
+      "early_warning_weight": 0.94
+    },
+    {
+      "syndrome_id": "SYN023",
+      "code": "acute_coronary_ischemic",
+      "name": "Acute Coronary / Ischemic Syndrome",
+      "domain": "Cardiovascular",
+      "description": "Retrosternal chest pressure radiating to arm/jaw, diaphoresis, dyspnea",
+      "early_warning_weight": 0.85
+    },
+    {
+      "syndrome_id": "SYN024",
+      "code": "acute_heart_failure_congestive",
+      "name": "Congestive Heart Failure / Volume Overload",
+      "domain": "Cardiovascular",
+      "description": "Orthopnea, paroxysmal nocturnal dyspnea, bilateral pedal edema, lung base crackles",
+      "early_warning_weight": 0.82
+    },
+    {
+      "syndrome_id": "SYN025",
+      "code": "cardiac_arrhythmic_syncope",
+      "name": "Arrhythmic / Syncope Syndrome",
+      "domain": "Cardiovascular",
+      "description": "Palpitations, sudden unheralded syncope, dizziness, pulse irregularities",
+      "early_warning_weight": 0.84
+    },
+    {
+      "syndrome_id": "SYN026",
+      "code": "systemic_inflammatory_sepsis",
+      "name": "Systemic Inflammatory Response / Sepsis",
+      "domain": "Multi-System / Critical Care",
+      "description": "Fever/hypothermia, tachycardia, tachypnea, altered sensorium, oliguria, hypotension",
+      "early_warning_weight": 0.97
+    },
+    {
+      "syndrome_id": "SYN027",
+      "code": "severe_dehydration_shock",
+      "name": "Severe Dehydration / Hypovolemic Shock",
+      "domain": "Metabolic / Fluid",
+      "description": "Sunken eyes, delayed skin turgor, cold extremities, absent radial pulse, anuria",
+      "early_warning_weight": 0.94
+    },
+    {
+      "syndrome_id": "SYN028",
+      "code": "urinary_tract_infection_febrile",
+      "name": "Febrile Urinary / Pyelonephritis Syndrome",
+      "domain": "Renal / Urinary",
+      "description": "Dysuria, frequency, urgency, accompanied by high fever, chills, and flank tenderness",
+      "early_warning_weight": 0.80
+    },
+    {
+      "syndrome_id": "SYN029",
+      "code": "acute_kidney_injury_oliguria",
+      "name": "Acute Kidney Injury / Oliguric Syndrome",
+      "domain": "Renal / Urinary",
+      "description": "Marked reduction in urine output, fluid retention, nausea, periorbital edema",
+      "early_warning_weight": 0.90
+    },
+    {
+      "syndrome_id": "SYN030",
+      "code": "acute_ophthalmic_conjunctivitis",
+      "name": "Acute Epidemic Conjunctivitis",
+      "domain": "Ocular",
+      "description": "Bilateral/unilateral eye redness, purulent/serous discharge, eyelid edema, grittiness",
+      "early_warning_weight": 0.78
+    },
+    {
+      "syndrome_id": "SYN031",
+      "code": "acute_otolaryngologic_suppurative",
+      "name": "Acute Suppurative Otolaryngologic Syndrome",
+      "domain": "ENT",
+      "description": "Ear pain, otorrhea, acute tonsillopharyngeal exudates, trismus, stridor",
+      "early_warning_weight": 0.76
+    },
+    {
+      "syndrome_id": "SYN032",
+      "code": "oral_ulcerative_stomatitis",
+      "name": "Oral Ulcerative / Stomatitis Syndrome",
+      "domain": "Oral / Dental",
+      "description": "Multiple painful oral vesicles/ulcers, gingival swelling, drooling, odynophagia",
+      "early_warning_weight": 0.74
+    },
+    {
+      "syndrome_id": "SYN033",
+      "code": "pediatric_croup_stridor",
+      "name": "Pediatric Croup / Inspiratory Stridor",
+      "domain": "Pediatric / Respiratory",
+      "description": "Barking seal-like cough, inspiratory stridor, suprasternal indrawing in infants/toddlers",
+      "early_warning_weight": 0.92
+    },
+    {
+      "syndrome_id": "SYN034",
+      "code": "pediatric_malnutrition_wasting",
+      "name": "Acute Pediatric Wasting / Nutritional Crisis",
+      "domain": "Pediatric / Metabolic",
+      "description": "Rapid weight loss, visible muscle wasting, bilateral nutritional edema (kwashiorkor)",
+      "early_warning_weight": 0.88
+    },
+    {
+      "syndrome_id": "SYN035",
+      "code": "vector_malaria_paroxysmal",
+      "name": "Paroxysmal Malarial Fever Syndrome",
+      "domain": "Vector-Borne",
+      "description": "Cyclic tertian/quartan cold-hot-sweating stages, intense headache, splenomegaly",
+      "early_warning_weight": 0.91
+    },
+    {
+      "syndrome_id": "SYN036",
+      "code": "vector_lymphatic_filarial",
+      "name": "Acute Filarial Adenolymphangitis",
+      "domain": "Vector-Borne",
+      "description": "Retrograde lymphangitis, localized painful edema of extremities/scrotum, fever",
+      "early_warning_weight": 0.76
+    },
+    {
+      "syndrome_id": "SYN037",
+      "code": "zoonotic_leptospiral",
+      "name": "Weil / Zoonotic Leptospiral Syndrome",
+      "domain": "Zoonotic / Multi-System",
+      "description": "Fever, conjunctival suffusion, intense calf pain, jaundice, renal impairment",
+      "early_warning_weight": 0.93
+    },
+    {
+      "syndrome_id": "SYN038",
+      "code": "zoonotic_rabies_encephalopathy",
+      "name": "Hydrophobic / Zoonotic Encephalopathy",
+      "domain": "Zoonotic / Neurological",
+      "description": "Aerophobia, hydrophobia, localized paresthesia at bite site, agitation, autonomic storm",
+      "early_warning_weight": 0.99
+    },
+    {
+      "syndrome_id": "SYN039",
+      "code": "foodborne_neurotoxic",
+      "name": "Foodborne Neurotoxic / Paralytic",
+      "domain": "Foodborne / Toxicological",
+      "description": "Acute descending motor weakness, fixed dilated pupils, dry mouth after food exposure",
+      "early_warning_weight": 0.97
+    },
+    {
+      "syndrome_id": "SYN040",
+      "code": "environmental_heat_stroke",
+      "name": "Environmental Heat Stress / Heat Stroke",
+      "domain": "Environmental",
+      "description": "Hyperthermia > 40°C, anhidrosis/profuse sweating, delirium, ataxia during heatwave",
+      "early_warning_weight": 0.88
+    },
+    {
+      "syndrome_id": "SYN041",
+      "code": "environmental_hypothermia_cold",
+      "name": "Environmental Cold Injury / Hypothermia",
+      "domain": "Environmental",
+      "description": "Core body temperature < 35°C, slurred speech, shivering cessation, peripheral cyanosis",
+      "early_warning_weight": 0.85
+    },
+    {
+      "syndrome_id": "SYN042",
+      "code": "chemical_toxic_inhalation",
+      "name": "Toxic Gas / Irritant Inhalation Syndrome",
+      "domain": "Toxicological / Environmental",
+      "description": "Acute burning of eyes/airways, lacrimation, non-cardiogenic pulmonary edema cluster",
+      "early_warning_weight": 0.96
+    },
+    {
+      "syndrome_id": "SYN043",
+      "code": "acute_hemolytic_cytopenic",
+      "name": "Acute Hemolytic / Cytopenic Syndrome",
+      "domain": "Hematological",
+      "description": "Sudden severe pallor, fatigue, dark tea-colored urine, acute splenomegaly",
+      "early_warning_weight": 0.87
+    },
+    {
+      "syndrome_id": "SYN044",
+      "code": "post_infectious_asthenia",
+      "name": "Post-Acute Infectious Asthenia / Long-Syndrome",
+      "domain": "Post-Acute / Convalescent",
+      "description": "Persistent disabling fatigue, brain fog, autonomic tachycardia following viral illness",
+      "early_warning_weight": 0.70
+    },
+    {
+      "syndrome_id": "SYN045",
+      "code": "unspecified_community_cluster",
+      "name": "Unspecified Syndromic Cluster",
+      "domain": "Unspecified",
+      "description": "Statistical anomaly in health-seeking behavior not mapped to defined clinical syndromes",
+      "early_warning_weight": 0.75
+    }
+  ]
+}

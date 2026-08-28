@@ -3,7 +3,7 @@
   "algorithm": "Ridge Regression (FedAvg)",
   "alpha": 1.0,
   "forecast_horizon": 7,
-  "num_features": 12,
+  "num_features": 13,
   "features": [
     "day_of_week",
     "day_of_month",
@@ -16,21 +16,23 @@
     "rolling_mean_7",
     "rolling_std_7",
     "rolling_mean_14",
+    "pharmacy_lead_t2",
     "data_completeness"
   ],
   "coef": [
-    -0.074191,
-    0.022522,
-    0.963542,
-    -0.266956,
-    -1.94419,
-    0.018967,
-    0.102064,
-    0.090816,
-    -0.118645,
-    0.124983,
-    0.850438,
+    -0.050593,
+    0.022447,
+    0.958905,
+    -0.26601,
+    -2.033433,
+    0.021655,
+    0.101279,
+    0.090404,
+    -0.119715,
+    0.125419,
+    0.851502,
+    -0.0035,
     0.0
   ],
-  "intercept": 1.215847
+  "intercept": 1.176088
 }

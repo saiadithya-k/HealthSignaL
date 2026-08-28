@@ -1,0 +1,22 @@
+[
+  {
+    "record_id": "bded0300-87cb-4c11-a6a5-c9ce3172bf44",
+    "data_source": "testing",
+    "date": "2026-08-28",
+    "node_id": "inst-d",
+    "zone_id": "zone-3",
+    "syndrome": "influenza_like_illness",
+    "count": 56,
+    "severity_mild": 0,
+    "severity_moderate": 56,
+    "severity_severe": 0,
+    "growth_rate_7d": 0.0,
+    "rolling_3d_mean": 56.0,
+    "rolling_7d_mean": 56.0,
+    "rolling_7d_std": 0.0,
+    "coverage_ratio": 1.0,
+    "privacy_k": 11,
+    "data_quality_score": 0.953,
+    "created_at": "2026-08-28T09:30:16.769216"
+  }
+]

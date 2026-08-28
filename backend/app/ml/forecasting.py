@@ -148,6 +148,7 @@ def generate_multiday_forecast(
             rolling_mean_14 = float(np.mean(service_series[-14:])) if len(service_series) >= 14 else rolling_mean_7
 
             # Build single-row feature dataframe matching exact FEATURE_COLUMNS order
+            pharmacy_lead = float(service_series[-2] * 0.45) if len(service_series) >= 2 else lag_1 * 0.45
             X_dict = {
                 "day_of_week": day_of_week,
                 "day_of_month": day_of_month,
@@ -160,6 +161,7 @@ def generate_multiday_forecast(
                 "rolling_mean_7": rolling_mean_7,
                 "rolling_std_7": rolling_std_7,
                 "rolling_mean_14": rolling_mean_14,
+                "pharmacy_lead_t2": pharmacy_lead,
                 "data_completeness": 1.0
             }
             X_step = pd.DataFrame([X_dict])[FEATURE_COLUMNS]

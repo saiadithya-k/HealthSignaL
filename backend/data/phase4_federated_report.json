@@ -12,17 +12,17 @@
   "global_model_metrics": {
     "by_institution": {
       "inst-a": {
-        "mae": 4.7638,
-        "rmse": 5.996,
-        "mape": 14.3,
+        "mae": 4.7674,
+        "rmse": 6.0043,
+        "mape": 14.31,
         "sample_count": 212,
         "forecast_horizon": 7,
         "institution_id": "inst-a",
         "model_name": "federated_fedavg"
       },
       "inst-b": {
-        "mae": 3.6296,
-        "rmse": 4.8215,
+        "mae": 3.6301,
+        "rmse": 4.8206,
         "mape": 20.45,
         "sample_count": 212,
         "forecast_horizon": 7,
@@ -30,18 +30,18 @@
         "model_name": "federated_fedavg"
       },
       "inst-c": {
-        "mae": 3.43,
-        "rmse": 4.5129,
-        "mape": 85.73,
+        "mae": 3.4297,
+        "rmse": 4.5117,
+        "mape": 85.7,
         "sample_count": 212,
         "forecast_horizon": 7,
         "institution_id": "inst-c",
         "model_name": "federated_fedavg"
       },
       "inst-d": {
-        "mae": 5.3093,
-        "rmse": 6.8652,
-        "mape": 31.31,
+        "mae": 5.306,
+        "rmse": 6.8642,
+        "mape": 31.29,
         "sample_count": 212,
         "forecast_horizon": 7,
         "institution_id": "inst-d",
@@ -49,9 +49,9 @@
       }
     },
     "overall": {
-      "mae": 4.2832,
-      "rmse": 5.628,
-      "mape": 37.95,
+      "mae": 4.2833,
+      "rmse": 5.6294,
+      "mape": 37.94,
       "sample_count": 848,
       "forecast_horizon": 7,
       "institution_id": "overall",
@@ -60,19 +60,20 @@
   },
   "global_parameters": {
     "coef": [
-      -0.074191,
-      0.022522,
-      0.963542,
-      -0.266956,
-      -1.94419,
-      0.018967,
-      0.102064,
-      0.090816,
-      -0.118645,
-      0.124983,
-      0.850438,
+      -0.050593,
+      0.022447,
+      0.958905,
+      -0.26601,
+      -2.033433,
+      0.021655,
+      0.101279,
+      0.090404,
+      -0.119715,
+      0.125419,
+      0.851502,
+      -0.0035,
       0.0
     ],
-    "intercept": 1.215847
+    "intercept": 1.176088
   }
 }

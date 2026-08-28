@@ -1,0 +1,78 @@
+version: "2.0.0"
+updated_at: "2026-08-28"
+description: "Hierarchical Many-to-Many Mappings for HealthSignal 45 Syndromes, 257 Symptoms, and 100+ Reference Conditions"
+
+# 1. Source Reliability & Configurable Weights
+source_reliability:
+  testing:
+    score: 0.95
+    category: "Very High"
+    description: "Lab-confirmed diagnostic tests (PCR, Rapid Antigen, Cultures)"
+  doctor:
+    score: 0.90
+    category: "High"
+    description: "Clinician structured impressions and triage entries"
+  clinic:
+    score: 0.88
+    category: "High"
+    description: "Hospital/clinic visit and admission counts"
+  wastewater:
+    score: 0.85
+    category: "High / Leading"
+    description: "Pathogen concentration in municipal catchment nodes (4-7d lead)"
+  emergency:
+    score: 0.80
+    category: "Medium-High"
+    description: "Ambulance and emergency dispatch call categories"
+  pharmacy:
+    score: 0.75
+    category: "Medium / Leading"
+    description: "OTC antipyretic, antidiarrheal, and antibiotic dispensing (2-3d lead)"
+  community:
+    score: 0.70
+    category: "Medium"
+    description: "Citizen self-reporting forms and USSD checklist reports"
+  absenteeism:
+    score: 0.65
+    category: "Medium"
+    description: "School and workplace absence rates"
+  environmental:
+    score: 0.50
+    category: "Contextual"
+    description: "Temperature, precipitation, humidity, and AQI context"
+
+# 2. Pharmacy Drug to Syndrome Category Mappings
+pharmacy_mapping:
+  antipyretic: "acute_febrile_illness"
+  antibiotic: "acute_febrile_illness"
+  antidiarrheal: "acute_watery_diarrhea"
+  electrolyte_replacement: "severe_dehydration_shock"
+  antihistamine: "upper_respiratory_infection"
+  antiviral: "influenza_like_illness"
+  cough_suppressant: "upper_respiratory_infection"
+  bronchodilator: "bronchospastic_obstructive"
+  analgesic: "febrile_arthritic"
+  antiemetic: "gastroenteritis_emetic"
+  corticosteroid_inhaler: "bronchospastic_obstructive"
+  antimalarial: "vector_malaria_paroxysmal"
+  other: "unspecified_community_cluster"
+
+# 3. Diagnostic Test to Syndrome Proxy Mappings
+testing_mapping:
+  rapid_antigen_influenza: "influenza_like_illness"
+  rapid_antigen_covid19: "influenza_like_illness"
+  pcr_respiratory_panel: "lower_respiratory_illness"
+  stool_culture_vibrio: "acute_watery_diarrhea"
+  stool_culture_shigella: "bloody_diarrhea_dysentery"
+  stool_antigen_rotavirus: "acute_watery_diarrhea"
+  blood_culture_typhoid: "febrile_enteric"
+  rapid_dengue_ns1: "febrile_arthritic"
+  rapid_dengue_igm: "viral_hemorrhagic_fever"
+  rapid_chikungunya_igm: "febrile_arthritic"
+  rapid_malaria_pf_pv: "vector_malaria_paroxysmal"
+  leptospira_mat_elisa: "zoonotic_leptospiral"
+  csf_bacterial_panel: "meningeal_irritation"
+  csf_viral_encephalitis: "acute_encephalitic"
+  measles_igm_serology: "acute_fever_rash"
+  mpox_pcr: "vesiculopustular_eruptive"
+  other_diagnostic: "unspecified_community_cluster"

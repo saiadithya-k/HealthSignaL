@@ -1,0 +1,82 @@
+[
+  {
+    "report_id": "92d71402-b578-44c3-86d7-147fc9e28a39",
+    "reported_at": "2026-08-28T09:12:52.232191",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "walk-in",
+    "consent_token": "ee40e47a4d685403",
+    "_weight": 1
+  },
+  {
+    "report_id": "b16a0e51-f39c-4fdf-8ab7-7e0c3c083659",
+    "reported_at": "2026-08-28T09:13:27.644832",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "walk-in",
+    "consent_token": "bed006e527c5b1dc",
+    "_weight": 1
+  },
+  {
+    "report_id": "bf447265-b15d-4d52-a0cb-4e14d1fa9ad0",
+    "reported_at": "2026-08-28T09:26:35.520477",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "walk-in",
+    "consent_token": "6b53e161269fe2ec",
+    "_weight": 1
+  },
+  {
+    "report_id": "d4292317-5c09-432f-a236-fdd72bc61173",
+    "reported_at": "2026-08-28T09:30:16.731215",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "walk-in",
+    "consent_token": "73507ff1bbbe4e5c",
+    "_weight": 1
+  }
+]

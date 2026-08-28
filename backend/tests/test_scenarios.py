@@ -57,3 +57,48 @@ def test_scenario_missing_data(tmp_path):
     
     # Check completeness dropped below 1.0 on missing days
     assert (df["data_completeness"] < 1.0).any()
+
+def test_scenario_respiratory_outbreak():
+    gen = SyntheticDataGenerator(seed=42)
+    df, meta = gen.generate_institution_dataset("inst-a", days=100, scenario=ScenarioType.RESPIRATORY_OUTBREAK)
+    assert meta.scenario == ScenarioType.RESPIRATORY_OUTBREAK
+    assert len(meta.ground_truth_events) > 0
+    gt = meta.ground_truth_events[0]
+    assert gt.syndrome_category == "respiratory"
+    assert gt.magnitude_factor == 1.85
+
+def test_scenario_gastrointestinal_outbreak():
+    gen = SyntheticDataGenerator(seed=42)
+    df, meta = gen.generate_institution_dataset("inst-c", days=160, scenario=ScenarioType.GASTROINTESTINAL_OUTBREAK)
+    assert meta.scenario == ScenarioType.GASTROINTESTINAL_OUTBREAK
+    assert len(meta.ground_truth_events) > 0
+    gt = meta.ground_truth_events[0]
+    assert gt.syndrome_category == "gastrointestinal"
+    assert gt.magnitude_factor == 2.20
+
+def test_scenario_vector_borne_outbreak():
+    gen = SyntheticDataGenerator(seed=42)
+    df, meta = gen.generate_institution_dataset("inst-c", days=240, scenario=ScenarioType.VECTOR_BORNE_OUTBREAK)
+    assert meta.scenario == ScenarioType.VECTOR_BORNE_OUTBREAK
+    assert len(meta.ground_truth_events) > 0
+    gt = meta.ground_truth_events[0]
+    assert gt.syndrome_category == "fever_flu"
+    assert gt.magnitude_factor == 2.10
+
+def test_scenario_neurological_cluster():
+    gen = SyntheticDataGenerator(seed=42)
+    df, meta = gen.generate_institution_dataset("inst-a", days=180, scenario=ScenarioType.NEUROLOGICAL_CLUSTER)
+    assert meta.scenario == ScenarioType.NEUROLOGICAL_CLUSTER
+    assert len(meta.ground_truth_events) > 0
+    gt = meta.ground_truth_events[0]
+    assert gt.syndrome_category == "other"
+    assert gt.magnitude_factor == 2.50
+
+def test_scenario_multi_syndrome_outbreak():
+    gen = SyntheticDataGenerator(seed=42)
+    df, meta = gen.generate_institution_dataset("inst-b", days=140, scenario=ScenarioType.MULTI_SYNDROME_OUTBREAK)
+    assert meta.scenario == ScenarioType.MULTI_SYNDROME_OUTBREAK
+    assert len(meta.ground_truth_events) > 0
+    gt = meta.ground_truth_events[0]
+    assert gt.magnitude_factor == 1.70
+

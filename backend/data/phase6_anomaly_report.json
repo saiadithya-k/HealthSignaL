@@ -1,13 +1,13 @@
 {
   "detector_config": {
     "drift_k": 0.5,
-    "threshold_h": 3.0,
-    "residual_sigma": 5.0311
+    "threshold_h": 4.0,
+    "residual_sigma": 5.0316
   },
-  "new_candidates_generated": 32,
-  "total_candidates": 201,
-  "total_approved": 28,
-  "total_rejected": 16,
+  "new_candidates_generated": 29,
+  "total_candidates": 334,
+  "total_approved": 33,
+  "total_rejected": 18,
   "confidence_score": 0.93,
   "coverage_ratio": 1.0,
   "missing_node_count": 0,
