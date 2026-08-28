@@ -1,0 +1,36 @@
+{
+  "institution_id": "global_fedavg",
+  "algorithm": "Ridge Regression (FedAvg)",
+  "alpha": 1.0,
+  "forecast_horizon": 7,
+  "num_features": 12,
+  "features": [
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "rolling_mean_14",
+    "data_completeness"
+  ],
+  "coef": [
+    -0.074191,
+    0.022522,
+    0.963542,
+    -0.266956,
+    -1.94419,
+    0.018967,
+    0.102064,
+    0.090816,
+    -0.118645,
+    0.124983,
+    0.850438,
+    0.0
+  ],
+  "intercept": 1.215847
+}

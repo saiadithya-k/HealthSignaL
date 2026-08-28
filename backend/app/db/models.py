@@ -75,8 +75,15 @@ class Forecast(Base):
     forecast_date = Column(DateTime, nullable=False)
     horizon_day = Column(Integer, nullable=False)  # 1 to 14
     point_forecast = Column(Float, nullable=False)
-    lower_bound = Column(Float, nullable=False)
-    upper_bound = Column(Float, nullable=False)
+    lower_bound = Column(Float, nullable=False)  # Maps to 80% lower bound by default
+    upper_bound = Column(Float, nullable=False)  # Maps to 80% upper bound by default
+    lower_bound_80 = Column(Float, nullable=True)
+    upper_bound_80 = Column(Float, nullable=True)
+    lower_bound_95 = Column(Float, nullable=True)
+    upper_bound_95 = Column(Float, nullable=True)
+    confidence_score = Column(Float, nullable=True, default=1.0)
+    coverage_ratio = Column(Float, nullable=True, default=1.0)
+    missing_node_count = Column(Integer, nullable=True, default=0)
     uncertainty_score = Column(Float, nullable=False)
     generated_at = Column(DateTime, default=datetime.utcnow)
 
@@ -115,24 +122,18 @@ class PrivacyEvent(Base):
     __tablename__ = "privacy_events"
 
     id = Column(String, primary_key=True, default=generate_uuid)
-    institution_id = Column(String, nullable=True)
-    event_type = Column(String, nullable=False)  # REJECTED_TRANSMISSION, SUPPRESSION_TRIGGERED, LEAKAGE_TEST
-    severity = Column(String, nullable=False, default="HIGH")
-    description = Column(Text, nullable=False)
+    institution_id = Column(String, nullable=False)
+    event_type = Column(String, nullable=False)  # SUPPRESSION, REJECTED_UPDATE, BOUNDING_CLIPPED
+    reason = Column(Text, nullable=False)
     details = Column(JSON, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=datetime.utcnow)
 
 
 class AuditLog(Base):
     __tablename__ = "audit_logs"
 
     id = Column(String, primary_key=True, default=generate_uuid)
-    actor_type = Column(String, nullable=False)  # SYSTEM, FSA, REVIEWER, AUDITOR, NODE
-    actor_id = Column(String, nullable=False)
-    event_type = Column(String, nullable=False)
-    entity_type = Column(String, nullable=True)
-    entity_id = Column(String, nullable=True)
-    metadata_json = Column(JSON, nullable=True)
-    prev_hash = Column(String, nullable=True)
-    current_hash = Column(String, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    action = Column(String, nullable=False)
+    actor = Column(String, nullable=False)
+    details = Column(JSON, nullable=True)
+    timestamp = Column(DateTime, default=datetime.utcnow)

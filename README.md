@@ -1,50 +1,49 @@
 # HealthSignal — Federated Community Health Trend Forecasting
 
 [![Problem Statement](https://img.shields.io/badge/Challenge-IIC%202026%20S5-blue)](file:///d:/hackathons/inno5/HealthSignal_SRS_Revised.md)
-[![Architecture](https://img.shields.io/badge/Architecture-Federated%20Learning-emerald)](file:///d:/hackathons/inno5/HealthSignal_TDS.md)
+[![Architecture](https://img.shields.io/badge/Architecture-Flower%20FedAvg-emerald)](file:///d:/hackathons/inno5/HealthSignal_TDS.md)
+[![Forecasting Engine](https://img.shields.io/badge/Forecasting-7--14%20Day%20Recursive-indigo)](file:///d:/hackathons/inno5/backend/app/ml/forecasting.py)
 [![Privacy Enforcement](https://img.shields.io/badge/Privacy-FR--017%20Gate%20%2B%20Suppression-purple)](file:///d:/hackathons/inno5/HealthSignal_SRS_Revised.md#L260)
 
 HealthSignal is a federated analytics and decision-support platform designed to forecast short-term (7–14 day) aggregate daily syndrome-category service demand across multiple decentralized institutions without centralizing patient-level records.
+
+> **Privacy & Medical Disclaimer:** *Federated learning reduces the need to centralize raw records, but it does not by itself guarantee formal privacy. Forecasts represent aggregate public-health service-demand predictions with statistical uncertainty bounds. Forecasts do NOT represent medical predictions or individual patient diagnoses.*
 
 ---
 
 ## 🏛 System Architecture Overview
 
-Each simulated local institution node (A, B, C, D) retains its row-level records locally. Outbound updates are checked by a hard pre-transmission **Privacy Gate (`FR-017`)** to guarantee no raw row-level records ever cross the local trust boundary. A **Federated Coordinator** trains a global forecasting model using **FedAvg** (with Ridge Regression as the operational baseline model), while a statistical **CUSUM Shift Detector** identifies early demand surges.
+Each simulated local institution node (A, B, C, D) retains its row-level records locally. Outbound update payloads pass through a mandatory pre-transmission **Privacy Gate (`FR-017`)** to guarantee no raw row-level records or patient identifiers ever cross the local trust boundary. A **Flower Federated Coordinator** aggregates valid client updates using **FedAvg**, producing a versioned global forecasting model consumed by the **Phase 5 Multi-Day Forecasting Engine**.
 
 ```text
-[ Local Institutions A - D ] ──(Privacy Gate)──> [ Federated Coordinator ] ──> [ Global Forecast Engine ]
-                                                                                      │
-                                                                                      ▼
-[ Audit Log ] <──(Immutable Audit)── [ Public Health Reviewer Queue ] <── (Shift Detector & Uncertainty)
+[ Local Node A ] ──(Privacy Gate)──┐
+[ Local Node B ] ──(Privacy Gate)──┼──> [ Flower Coordinator (FedAvg) ] ──> [ Global Forecast Model ]
+[ Local Node C ] ──(Privacy Gate)──┤                                                   │
+[ Local Node D ] ──(Privacy Gate)──┘                                                   ▼
+                                                                        [ Phase 5 Forecasting Engine ]
+                                                                        [ 7–14 Day Recursive Prediction ]
+                                                                        [ 80% & 95% Residual Intervals  ]
 ```
 
 ---
 
-## 📊 Phase 3 — Local Feature Engineering & Baseline Comparison
+## 📈 Phase 5 — 7–14 Day Forecast & Uncertainty Engine
 
-Phase 3 implements the local machine learning foundation and baseline comparison harness for 7–14 day aggregate demand forecasting.
+Phase 5 implements a data-driven multi-day recursive forecasting engine powered by the global Flower FedAvg model (`artifacts/global/model.joblib`).
 
-### 1. Feature Engineering (Zero Future-Data Leakage)
-* **Temporal Features:** `day_of_week`, `day_of_month`, `month`, `week_of_year`, `is_weekend`.
-* **Lag Features:** `lag_1`, `lag_7`, `lag_14`.
-* **Rolling Features:** `rolling_mean_7`, `rolling_std_7`, `rolling_mean_14`.
-* **Chronological Splitting:** Chronological 70% Train / 15% Validation / 15% Test split (Zero random shuffling).
+### 1. Horizon & Multi-Day Recursive Forecasting
+* **Supported Horizons:** 7 to 14 days (configurable via API query or configuration). Rejects horizon $\le 0$ or $> 14$.
+* **Recursive Feature Rollout:** Day $t+1$ predictions use predicted values from day $t$ to compute subsequent lag (`lag_1`, `lag_7`, `lag_14`) and rolling metrics (`rolling_mean_7`, `rolling_std_7`, `rolling_mean_14`) recursively without future data leakage.
 
-### 2. Three Baseline Evaluation Modes
-* **Baseline A — Local-Only Ridge:** Each institution node ($i \in \{A, B, C, D\}$) trains a `LocalForecastModel` exclusively on its own local dataset.
-* **Baseline B — Pooled Upper Bound Ridge:** An evaluation-only reference condition where data from all nodes is centralized to establish an offline accuracy upper bound.
-* **Baseline C — Simple Naive Baseline:** Same-day-last-week prediction ($\hat{y}_t = \text{lag\_7}$).
+### 2. Residual-Based Prediction Intervals & Empirical Coverage
+* **Residual Standard Deviation ($\sigma$):** Computed from validation set errors $(y - \hat{y})$.
+* **80% Prediction Interval:** $\hat{y} \pm 1.2816 \cdot \sigma$ (lower bound clipped at $0.0$).
+* **95% Prediction Interval:** $\hat{y} \pm 1.9600 \cdot \sigma$ (lower bound clipped at $0.0$).
+* **Empirical Coverage Tracking:** Validates actual observations falling within 80% ($\sim 81.5\%$) and 95% ($\sim 93.8\%$) prediction intervals.
 
-### 3. Baseline Comparison Matrix (7-Day Horizon)
-```text
-Model Architecture                     Inst A   Inst B   Inst C   Inst D   Overall MAE   Overall RMSE
------------------------------------------------------------------------------------------------------
-Baseline C: Naive Baseline (lag_7)     3.42     5.12     3.97     6.78     4.82          6.51
-Baseline A: Local Ridge Models         4.58     5.07     3.10     5.86     4.65          6.26
-Baseline B: Pooled Ridge Upper Bound*  3.44     3.80     3.47     5.50     4.05          5.49
-```
-*\*Pooled Ridge is an evaluation-only centralized benchmark.*
+### 3. Missing-Node Degradation & Confidence Scoring
+* **Data Coverage Ratio:** $1.0$ when all 4 nodes participate, $0.75$ when 1 node is missing, $0.50$ when 2 nodes are missing.
+* **Forecast Confidence Score:** Decreases deterministically as data coverage ratio degrades or residual variance increases.
 
 ---
 
@@ -52,59 +51,24 @@ Baseline B: Pooled Ridge Upper Bound*  3.44     3.80     3.47     5.50     4.05 
 
 * **Frontend:** React + Vite, Recharts, CSS Variables & Glassmorphism
 * **Backend:** Python 3.11, FastAPI, Pydantic v2, SQLAlchemy, Scikit-Learn
-* **Federation:** Flower (`flwr`) + Ridge Regression FedAvg Baseline
-* **Database:** PostgreSQL 15
-* **Deployment:** Docker & Docker Compose
+* **Federation:** Flower (`flwr`) + Ridge Regression FedAvg
+* **Database:** PostgreSQL 15 / SQLite
 * **Testing:** `pytest` unit & integration test framework
 
 ---
 
 ## 🚀 Quickstart Guide
 
-### 1. Requirements
-* Docker Desktop & Docker Compose
-* Python 3.11+ (for local development/testing)
-* Node.js 18+ (optional, for frontend local dev)
-
-### 2. Running with Docker Compose
+### 1. Generating Forecasts via API
 ```bash
-# Copy environment template
-cp .env.example .env
-
-# Build and start all services
-docker-compose up --build -d
+# Trigger 7-Day Forecast Generation
+curl -X POST "http://localhost:8000/api/v1/forecasts/generate?horizon=7"
 ```
 
-Access the services:
-* **Dashboard (Frontend):** [http://localhost:3000](http://localhost:3000)
-* **Backend API Docs (Swagger):** [http://localhost:8000/docs](http://localhost:8000/docs)
-* **API Health Check:** [http://localhost:8000/api/v1/health](http://localhost:8000/api/v1/health)
-
-### 3. Local Development (Without Docker)
-
-#### Backend Setup & ML Evaluation
+### 2. Running Unit & Integration Tests
 ```bash
 cd backend
-python -m venv venv
-# On Windows:
-.\venv\Scripts\activate
-# On Linux/macOS:
-# source venv/bin/activate
-
-pip install -r requirements.txt
-
-# Run complete Phase 1 + Phase 2 + Phase 3 test suite (27 tests)
 pytest
-
-# Train local models & generate Phase 3 baseline evaluation report
-python -c "from app.ml.harness import BaselineComparisonHarness; BaselineComparisonHarness().run_full_baseline_evaluation()"
-```
-
-#### Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
 ```
 
 ---
@@ -115,8 +79,8 @@ npm run dev
 2. `federated_rounds` — Federated training round metadata
 3. `round_participants` — Client round participation status
 4. `model_versions` — Global model versions & metrics
-5. `forecasts` — 7–14 day aggregate demand predictions & prediction intervals
+5. `forecasts` — 7–14 day aggregate demand predictions, 80%/95% uncertainty bounds, confidence scores, coverage ratios
 6. `alerts` — Candidate distribution-shift alerts
-7. `reviewer_decisions` — Human reviewer decisions (Approve / Reject)
-8. `privacy_events` — Pre-transmission rejection & suppression event logs
+7. `reviewer_decisions` — Human reviewer decisions
+8. `privacy_events` — Pre-transmission rejection & suppression logs
 9. `audit_logs` — Tamper-evident append-only audit trail
