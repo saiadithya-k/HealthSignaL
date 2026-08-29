@@ -3,7 +3,7 @@
   "institution_name": "Institution C",
   "profile": "Rural (Low Volume, High Variance)",
   "seed": 42,
-  "scenario": "NORMAL",
+  "scenario": "RESPIRATORY_OUTBREAK",
   "start_date": "2025-01-01",
   "end_date": "2025-12-31",
   "total_records": 17885,
@@ -60,5 +60,5 @@
   },
   "missing_rate_pct": 67.76,
   "ground_truth_events": [],
-  "generated_at": "2026-08-29 06:18:08"
+  "generated_at": "2026-08-29 06:53:31"
 }

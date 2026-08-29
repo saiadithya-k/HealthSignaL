@@ -371,6 +371,8 @@ def generate_multiday_forecast(
         "horizon_days": horizon,
         "coverage_ratio": coverage_ratio,
         "missing_node_count": missing_node_count,
+        "participating_nodes_count": max(4 - missing_node_count, 1),
+        "participating_nodes": ["inst-a", "inst-b", "inst-c", "inst-d"][:max(4 - missing_node_count, 1)],
         "confidence_score": avg_conf if avg_conf > 0 else global_confidence_score,
         "empirical_coverage": coverage_info,
         "total_syndromes_evaluated": len(all_target_categories),

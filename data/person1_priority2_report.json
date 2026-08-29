@@ -1,0 +1,116 @@
+{
+  "report_name": "HealthSignal Person 1 Data Quality & Health Intelligence Validation Report",
+  "timestamp": "2026-08-29T06:23:29.029265+00:00",
+  "ontology_verification": {
+    "standardized_symptoms": 257,
+    "standardized_syndromes": 45,
+    "condition_reference_profiles": 105,
+    "symptom_mapping_deterministic": true,
+    "multi_syndrome_support": true,
+    "non_diagnostic_guarantee": true
+  },
+  "source_integration": {
+    "total_sources_supported": 7,
+    "core_sources": [
+      "community",
+      "doctor",
+      "clinic",
+      "pharmacy",
+      "testing"
+    ],
+    "contextual_sources": [
+      "wastewater",
+      "emergency_dispatch",
+      "absenteeism"
+    ],
+    "reliability_weights": {
+      "diagnostic_testing": 0.95,
+      "doctor_triage": 0.9,
+      "wastewater": 0.85,
+      "emergency_dispatch": 0.8,
+      "pharmacy_otc": 0.75,
+      "absenteeism": 0.65,
+      "community_reports": 0.5
+    }
+  },
+  "four_node_heterogeneity": {
+    "inst-a": {
+      "description": "Urban / High Volume Tertiary Medical Hub",
+      "total_records": 17885,
+      "days_covered": 365,
+      "syndromes_present": 49,
+      "annual_service_volume": 51047.0,
+      "mean_daily_volume_per_syndrome": 2.854,
+      "std_daily_volume": 5.117,
+      "completeness_mean": 1.0,
+      "non_iid_characteristics": {
+        "base_volume": 100,
+        "dominant_syndromes": [
+          "respiratory",
+          "gastrointestinal",
+          "upper_respiratory_infection"
+        ]
+      }
+    },
+    "inst-b": {
+      "description": "Semi-Urban / Enteric & Water-Vulnerable Regional Center",
+      "total_records": 17885,
+      "days_covered": 365,
+      "syndromes_present": 49,
+      "annual_service_volume": 31977.0,
+      "mean_daily_volume_per_syndrome": 1.788,
+      "std_daily_volume": 3.361,
+      "completeness_mean": 1.0,
+      "non_iid_characteristics": {
+        "base_volume": 100,
+        "dominant_syndromes": [
+          "gastrointestinal",
+          "fever_flu",
+          "respiratory"
+        ]
+      }
+    },
+    "inst-c": {
+      "description": "Rural / Dispersed Primary Care Clinics (High Dispersion)",
+      "total_records": 17885,
+      "days_covered": 365,
+      "syndromes_present": 49,
+      "annual_service_volume": 12013.0,
+      "mean_daily_volume_per_syndrome": 0.672,
+      "std_daily_volume": 1.498,
+      "completeness_mean": 1.0,
+      "non_iid_characteristics": {
+        "base_volume": 100,
+        "dominant_syndromes": [
+          "fever_flu",
+          "acute_febrile_illness",
+          "upper_respiratory_infection"
+        ]
+      }
+    },
+    "inst-d": {
+      "description": "Mixed Semi-Urban / Seasonal Vector & Flu Hub",
+      "total_records": 17885,
+      "days_covered": 365,
+      "syndromes_present": 49,
+      "annual_service_volume": 40049.0,
+      "mean_daily_volume_per_syndrome": 2.239,
+      "std_daily_volume": 3.984,
+      "completeness_mean": 1.0,
+      "non_iid_characteristics": {
+        "base_volume": 100,
+        "dominant_syndromes": [
+          "respiratory",
+          "gastrointestinal",
+          "fever_flu"
+        ]
+      }
+    }
+  },
+  "privacy_guarantees": {
+    "k_anonymity_floor": 11,
+    "spatial_privacy": "3-Node cross-institution aggregation requirement",
+    "pii_prohibition": "Deterministic rejection of all 15 direct identifiers",
+    "zero_leakage": "Future ground truth excluded from ML feature matrix"
+  }
+}

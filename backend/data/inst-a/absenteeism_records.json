@@ -1,0 +1,22 @@
+[
+  {
+    "report_id": "647ac119-b366-44e4-84e3-bd11fb32880f",
+    "reported_at": "2026-08-29T06:53:30.459552+00:00",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "absenteeism",
+    "age_band": "5-14",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "school_absence"
+    ],
+    "syndromes": [
+      "unspecified_community_cluster"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "e61a55b6d42352ea",
+    "_weight": 80
+  }
+]

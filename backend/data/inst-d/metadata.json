@@ -3,7 +3,7 @@
   "institution_name": "Institution D",
   "profile": "Mixed (Seasonal Shift)",
   "seed": 42,
-  "scenario": "NORMAL",
+  "scenario": "RESPIRATORY_OUTBREAK",
   "start_date": "2025-01-01",
   "end_date": "2025-12-31",
   "total_records": 17885,
@@ -31,11 +31,11 @@
     "environmental_hypothermia_cold": 71,
     "febrile_arthritic": 632,
     "febrile_enteric": 433,
-    "fever_flu": 4562,
+    "fever_flu": 4796,
     "foodborne_neurotoxic": 53,
     "gastroenteritis_emetic": 947,
     "gastrointestinal": 5325,
-    "influenza_like_illness": 2314,
+    "influenza_like_illness": 2586,
     "lower_respiratory_illness": 1549,
     "meningeal_irritation": 162,
     "mucocutaneous_lymph_node": 112,
@@ -44,12 +44,12 @@
     "pediatric_croup_stridor": 613,
     "pediatric_malnutrition_wasting": 127,
     "post_infectious_asthenia": 228,
-    "respiratory": 5392,
-    "severe_acute_respiratory_infection": 503,
+    "respiratory": 6005,
+    "severe_acute_respiratory_infection": 573,
     "severe_dehydration_shock": 265,
     "systemic_inflammatory_sepsis": 215,
     "unspecified_community_cluster": 202,
-    "upper_respiratory_infection": 2865,
+    "upper_respiratory_infection": 3189,
     "urinary_tract_infection_febrile": 448,
     "vector_lymphatic_filarial": 74,
     "vector_malaria_paroxysmal": 424,
@@ -59,6 +59,17 @@
     "zoonotic_rabies_encephalopathy": 14
   },
   "missing_rate_pct": 43.51,
-  "ground_truth_events": [],
-  "generated_at": "2026-08-29 06:18:08"
+  "ground_truth_events": [
+    {
+      "scenario_name": "RESPIRATORY_OUTBREAK",
+      "affected_institution": "inst-d",
+      "start_date": "2025-03-02",
+      "end_date": "2025-04-01",
+      "condition_id": null,
+      "syndrome_category": "respiratory",
+      "magnitude_factor": 1.85,
+      "description": "Multi-source respiratory epidemic surge (+85% resp, +40% fever) in inst-d"
+    }
+  ],
+  "generated_at": "2026-08-29 06:53:31"
 }

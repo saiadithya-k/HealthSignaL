@@ -1,0 +1,45 @@
+{
+  "title": "HealthSignal Reproducibility & Deterministic Seed Validation Report",
+  "generated_at": "2026-08-29T06:33:27.020434+00:00",
+  "total_seeds_tested": 4,
+  "overall_status": "REPRODUCIBLE",
+  "known_nondeterministic_factors": "None (all pseudo-random state generators are explicitly seeded)",
+  "seed_evaluations": [
+    {
+      "seed": 42,
+      "sample_records": 4410,
+      "data_checksum": "fa869bd5e9433060",
+      "dataset_deterministic": true,
+      "features_deterministic": true,
+      "model_predictions_deterministic": true,
+      "status": "PASS"
+    },
+    {
+      "seed": 123,
+      "sample_records": 4410,
+      "data_checksum": "927c119e63252d06",
+      "dataset_deterministic": true,
+      "features_deterministic": true,
+      "model_predictions_deterministic": true,
+      "status": "PASS"
+    },
+    {
+      "seed": 2024,
+      "sample_records": 4410,
+      "data_checksum": "b48cb70037dc0848",
+      "dataset_deterministic": true,
+      "features_deterministic": true,
+      "model_predictions_deterministic": true,
+      "status": "PASS"
+    },
+    {
+      "seed": 2025,
+      "sample_records": 4410,
+      "data_checksum": "249f52c66336ed93",
+      "dataset_deterministic": true,
+      "features_deterministic": true,
+      "model_predictions_deterministic": true,
+      "status": "PASS"
+    }
+  ]
+}

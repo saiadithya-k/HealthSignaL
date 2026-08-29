@@ -1,0 +1,51 @@
+{
+  "title": "HealthSignal Data Integrity & Future Leakage Final Audit",
+  "generated_at": "2026-08-29T06:33:43.949421+00:00",
+  "integrity_audit": {
+    "total_symptoms_validated": 257,
+    "total_syndromes_validated": 45,
+    "total_condition_profiles_validated": 105,
+    "duplicate_symptom_ids": false,
+    "duplicate_syndrome_ids": false,
+    "duplicate_condition_ids": false,
+    "dangling_syndrome_references": 0,
+    "status": "PASS"
+  },
+  "leakage_audit": {
+    "feature_contract_dimension": 13,
+    "features_audited": [
+      "day_of_week",
+      "day_of_month",
+      "month",
+      "week_of_year",
+      "is_weekend",
+      "lag_1",
+      "lag_7",
+      "lag_14",
+      "rolling_mean_7",
+      "rolling_std_7",
+      "rolling_mean_14",
+      "pharmacy_lead_t2",
+      "data_completeness"
+    ],
+    "disallowed_columns_scanned": [
+      "outbreak_active",
+      "scenario_id",
+      "condition_id",
+      "condition_name",
+      "true_disease",
+      "ground_truth",
+      "future_target",
+      "future_observations"
+    ],
+    "detected_leaked_columns": [],
+    "chronological_split_verified": true,
+    "status": "ZERO_LEAKAGE_VERIFIED"
+  },
+  "privacy_invariants_audited": {
+    "k_anonymity_floor": 11,
+    "spatial_aggregation_floor_nodes": 3,
+    "pii_rejection_verified": true,
+    "raw_record_transmission_prohibited": true
+  }
+}

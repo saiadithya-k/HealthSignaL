@@ -1,0 +1,181 @@
+{
+  "title": "HealthSignal CUSUM Anomaly Detection Sensitivity & Calibration Report",
+  "generated_at": "2026-08-29T06:29:21.294247+00:00",
+  "parameters": {
+    "h_threshold_sigma": 4.0,
+    "k_factor_sigma": 0.5
+  },
+  "overall_metrics": {
+    "overall_detection_rate": 1.0,
+    "mean_detection_delay_days": 0.0,
+    "total_true_positives": 12,
+    "total_false_positives": 0
+  },
+  "evaluations": [
+    {
+      "scenario": "BASELINE",
+      "intensity": "NONE",
+      "syndrome": "influenza_like_illness",
+      "samples": 69,
+      "true_positives": 0,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 0.0,
+      "status": "NORMAL_SURVEILLANCE"
+    },
+    {
+      "scenario": "BASELINE",
+      "intensity": "NONE",
+      "syndrome": "acute_watery_diarrhea",
+      "samples": 69,
+      "true_positives": 0,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 0.0,
+      "status": "NORMAL_SURVEILLANCE"
+    },
+    {
+      "scenario": "BASELINE",
+      "intensity": "NONE",
+      "syndrome": "acute_febrile_illness",
+      "samples": 69,
+      "true_positives": 0,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 0.0,
+      "status": "NORMAL_SURVEILLANCE"
+    },
+    {
+      "scenario": "INFLUENZA",
+      "intensity": "LOW",
+      "syndrome": "respiratory",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "INFLUENZA",
+      "intensity": "MEDIUM",
+      "syndrome": "respiratory",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "INFLUENZA",
+      "intensity": "HIGH",
+      "syndrome": "respiratory",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "CHOLERA",
+      "intensity": "LOW",
+      "syndrome": "gastrointestinal",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "CHOLERA",
+      "intensity": "MEDIUM",
+      "syndrome": "gastrointestinal",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "CHOLERA",
+      "intensity": "HIGH",
+      "syndrome": "gastrointestinal",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "DENGUE",
+      "intensity": "LOW",
+      "syndrome": "fever_flu",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "DENGUE",
+      "intensity": "MEDIUM",
+      "syndrome": "fever_flu",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "DENGUE",
+      "intensity": "HIGH",
+      "syndrome": "fever_flu",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "MULTI_SYNDROME",
+      "intensity": "LOW",
+      "syndrome": "respiratory",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "MULTI_SYNDROME",
+      "intensity": "MEDIUM",
+      "syndrome": "respiratory",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    },
+    {
+      "scenario": "MULTI_SYNDROME",
+      "intensity": "HIGH",
+      "syndrome": "respiratory",
+      "samples": 69,
+      "true_positives": 1,
+      "false_positives": 0,
+      "detection_delay_days": 0.0,
+      "detection_rate": 1.0,
+      "status": "DETECTED"
+    }
+  ]
+}

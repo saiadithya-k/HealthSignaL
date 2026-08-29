@@ -1,0 +1,57 @@
+{
+  "title": "HealthSignal Priority 3 System Performance & Benchmark Report",
+  "generated_at": "2026-08-29T06:32:54.793964+00:00",
+  "memory_usage_mb": 0.0,
+  "total_benchmark_time_seconds": 7.3385,
+  "benchmarks": [
+    {
+      "component": "Synthetic Data Generation (4 nodes x 365 days)",
+      "execution_time_seconds": 0.1918,
+      "records_processed": 71540,
+      "throughput_records_per_second": 372915.51,
+      "status": "OPTIMAL"
+    },
+    {
+      "component": "Local Aggregation & Privacy Gate (k=11)",
+      "execution_time_seconds": 0.0483,
+      "records_processed": 3178,
+      "throughput_records_per_second": 65734.5,
+      "status": "OPTIMAL"
+    },
+    {
+      "component": "Supervised Feature Engineering (F=13)",
+      "execution_time_seconds": 0.6896,
+      "records_processed": 67424,
+      "throughput_records_per_second": 97779.56,
+      "status": "OPTIMAL"
+    },
+    {
+      "component": "Local Ridge Model Training (4 Nodes)",
+      "execution_time_seconds": 0.6985,
+      "records_processed": 67424,
+      "throughput_records_per_second": 96522.86,
+      "status": "OPTIMAL"
+    },
+    {
+      "component": "Federated FedAvg Aggregation Round",
+      "execution_time_seconds": 0.7232,
+      "records_processed": 4,
+      "throughput_records_per_second": 5.53,
+      "status": "OPTIMAL"
+    },
+    {
+      "component": "Multi-Horizon Recursive Forecasting (7, 10, 14 Days x 45 Syndromes)",
+      "execution_time_seconds": 4.978,
+      "records_processed": 1519,
+      "throughput_records_per_second": 305.14,
+      "status": "ACCEPTABLE"
+    },
+    {
+      "component": "CUSUM Statistical Process Control Anomaly Detection",
+      "execution_time_seconds": 0.0091,
+      "records_processed": 344,
+      "throughput_records_per_second": 37915.95,
+      "status": "OPTIMAL"
+    }
+  ]
+}

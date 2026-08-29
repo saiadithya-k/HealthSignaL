@@ -1,0 +1,97 @@
+{
+  "title": "HealthSignal Prediction Interval Empirical Coverage & Calibration Report",
+  "generated_at": "2026-08-29T06:24:49.939258+00:00",
+  "overall_calibration": {
+    "total_samples": 10388,
+    "residual_sigma": 1.3219,
+    "nominal_80": 0.8,
+    "empirical_80": 0.8879,
+    "coverage_error_80": 0.0879,
+    "nominal_95": 0.95,
+    "empirical_95": 0.942,
+    "coverage_error_95": -0.008,
+    "mean_interval_width_80": 3.3882,
+    "mean_interval_width_95": 5.1817,
+    "calibration_status": "CALIBRATED"
+  },
+  "node_calibration": {
+    "inst-a": {
+      "samples": 2597,
+      "mae": 0.6763,
+      "rmse": 1.1581,
+      "sigma": 1.1414,
+      "nominal_80": 0.8,
+      "empirical_80": 0.8864,
+      "coverage_error_80": 0.0864,
+      "nominal_95": 0.95,
+      "empirical_95": 0.9369,
+      "coverage_error_95": -0.0131,
+      "mean_interval_width_80": 2.9256,
+      "mean_interval_width_95": 4.4742
+    },
+    "inst-b": {
+      "samples": 2597,
+      "mae": 0.8044,
+      "rmse": 1.3663,
+      "sigma": 1.3663,
+      "nominal_80": 0.8,
+      "empirical_80": 0.8856,
+      "coverage_error_80": 0.0856,
+      "nominal_95": 0.95,
+      "empirical_95": 0.9419,
+      "coverage_error_95": -0.0081,
+      "mean_interval_width_80": 3.5021,
+      "mean_interval_width_95": 5.3559
+    },
+    "inst-c": {
+      "samples": 2597,
+      "mae": 0.5172,
+      "rmse": 0.9515,
+      "sigma": 0.9483,
+      "nominal_80": 0.8,
+      "empirical_80": 0.8903,
+      "coverage_error_80": 0.0903,
+      "nominal_95": 0.95,
+      "empirical_95": 0.9457,
+      "coverage_error_95": -0.0043,
+      "mean_interval_width_80": 2.4306,
+      "mean_interval_width_95": 3.7172
+    },
+    "inst-d": {
+      "samples": 2597,
+      "mae": 1.0245,
+      "rmse": 1.7105,
+      "sigma": 1.7081,
+      "nominal_80": 0.8,
+      "empirical_80": 0.8829,
+      "coverage_error_80": 0.0829,
+      "nominal_95": 0.95,
+      "empirical_95": 0.9361,
+      "coverage_error_95": -0.0139,
+      "mean_interval_width_80": 4.3783,
+      "mean_interval_width_95": 6.6959
+    }
+  },
+  "baselines_comparison": {
+    "naive_lag7": {
+      "mae": 0.7262,
+      "rmse": 1.2445,
+      "samples": 2597
+    },
+    "local_ridge": {
+      "mae": 0.6439,
+      "rmse": 1.0514,
+      "samples": 2597
+    },
+    "federated_fedavg": {
+      "mae": 0.6763,
+      "rmse": 1.1581,
+      "samples": 2597
+    },
+    "centralized_pooled_upper_bound": {
+      "mae": 0.6492,
+      "rmse": 1.1234,
+      "samples": 2597
+    }
+  }
+}

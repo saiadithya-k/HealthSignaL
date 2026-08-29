@@ -4,7 +4,7 @@
   "round_id": 1,
   "algorithm": "Ridge Regression (FedAvg)",
   "aggregation": "FedAvg",
-  "forecast_horizon": 7,
+  "forecast_horizon": 14,
   "feature_count": 13,
   "parameter_count": 14,
   "expected_nodes": [
@@ -28,72 +28,72 @@
     "inst-d"
   ],
   "valid_update_count": 4,
-  "total_training_samples": 3840,
+  "total_training_samples": 46060,
   "global_model_metrics": {
     "by_institution": {
       "inst-a": {
-        "mae": 4.7674,
-        "rmse": 6.0043,
-        "mape": 14.31,
-        "sample_count": 212,
-        "forecast_horizon": 7,
+        "mae": 0.6775,
+        "rmse": 1.1735,
+        "mape": 29.42,
+        "sample_count": 2548,
+        "forecast_horizon": 14,
         "institution_id": "inst-a",
         "model_name": "federated_fedavg"
       },
       "inst-b": {
-        "mae": 3.6301,
-        "rmse": 4.8206,
-        "mape": 20.45,
-        "sample_count": 212,
-        "forecast_horizon": 7,
+        "mae": 0.809,
+        "rmse": 1.3951,
+        "mape": 43.96,
+        "sample_count": 2548,
+        "forecast_horizon": 14,
         "institution_id": "inst-b",
         "model_name": "federated_fedavg"
       },
       "inst-c": {
-        "mae": 3.4297,
-        "rmse": 4.5117,
-        "mape": 85.7,
-        "sample_count": 212,
-        "forecast_horizon": 7,
+        "mae": 0.5157,
+        "rmse": 0.9623,
+        "mape": 35.04,
+        "sample_count": 2548,
+        "forecast_horizon": 14,
         "institution_id": "inst-c",
         "model_name": "federated_fedavg"
       },
       "inst-d": {
-        "mae": 5.306,
-        "rmse": 6.8642,
-        "mape": 31.29,
-        "sample_count": 212,
-        "forecast_horizon": 7,
+        "mae": 1.0225,
+        "rmse": 1.7408,
+        "mape": 52.86,
+        "sample_count": 2548,
+        "forecast_horizon": 14,
         "institution_id": "inst-d",
         "model_name": "federated_fedavg"
       }
     },
     "overall": {
-      "mae": 4.2833,
-      "rmse": 5.6294,
-      "mape": 37.94,
-      "sample_count": 848,
-      "forecast_horizon": 7,
+      "mae": 0.7562,
+      "rmse": 1.3491,
+      "mape": 40.32,
+      "sample_count": 10192,
+      "forecast_horizon": 14,
       "institution_id": "overall",
       "model_name": "federated_fedavg"
     }
   },
   "global_parameters": {
     "coef": [
-      -0.050593,
-      0.022447,
-      0.958905,
-      -0.26601,
-      -2.033433,
-      0.021655,
-      0.101279,
-      0.090404,
-      -0.119715,
-      0.125419,
-      0.851502,
-      -0.0035,
+      -0.00802,
+      0.008164,
+      0.251996,
+      -0.062114,
+      -0.152093,
+      0.041803,
+      0.109238,
+      0.11331,
+      -0.011967,
+      0.075476,
+      0.718259,
+      -0.012902,
       0.0
     ],
-    "intercept": 1.176088
+    "intercept": -0.087543
   }
 }

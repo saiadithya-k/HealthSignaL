@@ -1,0 +1,76 @@
+{
+  "scenario_title": "HealthSignal Demonstration Scenario \u2014 Seasonal Influenza A Outbreak (Urban Tertiary Medical Node)",
+  "generated_at": "2026-08-29T06:34:19.440113+00:00",
+  "institution_scope": "inst-a (Metro Urban)",
+  "target_syndrome": "respiratory / influenza_like_illness",
+  "participating_nodes": [
+    "inst-a",
+    "inst-b",
+    "inst-c",
+    "inst-d"
+  ],
+  "outbreak_parameters": {
+    "condition_id": "C002",
+    "start_day": 30,
+    "duration_days": 30,
+    "intensity": 2.5
+  },
+  "surveillance_timeline": [
+    {
+      "day": "Day +0",
+      "stage": "Baseline Surveillance",
+      "description": "Normal seasonal background demand (mean 120 visits/day).",
+      "signal": "Normal"
+    },
+    {
+      "day": "Day +28",
+      "stage": "Leading Signal Emergence",
+      "description": "Community USSD symptom reports and OTC antipyretic sales increase +35%.",
+      "signal": "Leading Indicator"
+    },
+    {
+      "day": "Day +30",
+      "stage": "Outbreak Onset",
+      "description": "Clinician triage logs increase in influenza-like illness cases.",
+      "signal": "Clinical Onset"
+    },
+    {
+      "day": "Day +31",
+      "stage": "Forecast Horizon Shift",
+      "description": "7\u201314 day recursive aggregate forecast projects upward surge exceeding 95% upper bound.",
+      "signal": "Forecast Surge"
+    },
+    {
+      "day": "Day +32",
+      "stage": "CUSUM SPC Alert Trigger",
+      "description": "Cumulative sum statistic crosses decision threshold h=4.0\u03c3, generating candidate alert.",
+      "signal": "Candidate Alert"
+    },
+    {
+      "day": "Day +33",
+      "stage": "Human Review Queue",
+      "description": "Public health analyst reviews spatial evidence and transitions alert from CANDIDATE -> APPROVED.",
+      "signal": "Analyst Action"
+    },
+    {
+      "day": "Day +38",
+      "stage": "Hospital Peak Clinical Surge",
+      "description": "Emergency admissions and inpatient bed demand reach peak surge.",
+      "signal": "Clinical Peak"
+    }
+  ],
+  "lead_time_metrics": {
+    "first_early_warning_day": "Day +28",
+    "cusum_detection_day": "Day +32",
+    "hospital_clinical_surge_day": "Day +38",
+    "empirical_lead_time_days": 6.0,
+    "status": "EARLY_WARNING_ACTIONABLE"
+  },
+  "review_queue_action": {
+    "alert_id": "ALT-2025-02-01-inst-a-resp-001",
+    "initial_status": "CANDIDATE",
+    "decision": "APPROVED",
+    "reviewer_notes": "Surge verified across pharmacy leading indicators and clinic respiratory demand. Public health advisory issued.",
+    "audit_trail_preserved": true
+  }
+}

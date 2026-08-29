@@ -1218,5 +1218,845 @@
     "visit_type": null,
     "consent_token": "75253b745674d12a",
     "_weight": 31
+  },
+  {
+    "report_id": "c79b5cbb-f54d-4c01-b28d-3308b92f5955",
+    "reported_at": "2026-08-29T06:37:23.011312+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_294.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e9365640aab19f18",
+    "_weight": 29
+  },
+  {
+    "report_id": "0abdcdb3-fd59-4a91-9f5f-554faf9db1ee",
+    "reported_at": "2026-08-29T06:37:29.922399+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_310.8"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "613fa54b7e2870b0",
+    "_weight": 31
+  },
+  {
+    "report_id": "9288c675-1392-43f6-9fe8-639fea77a6e6",
+    "reported_at": "2026-08-29T06:37:38.091092+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_463.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "6b1bf612945d3d87",
+    "_weight": 46
+  },
+  {
+    "report_id": "d3d8d310-09dc-42fb-8601-ac988dd885d2",
+    "reported_at": "2026-08-29T06:37:47.324135+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_600.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "0aaae676a1769380",
+    "_weight": 60
+  },
+  {
+    "report_id": "dddd4711-bd4b-44b2-b93c-0af29f446476",
+    "reported_at": "2026-08-29T06:37:58.239680+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_714.9"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "5de5f2e5fc99c34f",
+    "_weight": 71
+  },
+  {
+    "report_id": "a1d16336-a54d-492b-87cb-5785d24828a9",
+    "reported_at": "2026-08-29T06:38:09.198301+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_801.0"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "d875279a76799bba",
+    "_weight": 80
+  },
+  {
+    "report_id": "9d08c806-0a10-479f-b818-d6ba6a0fa579",
+    "reported_at": "2026-08-29T06:38:20.179930+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_854.4"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "ff35d75ff66fc674",
+    "_weight": 85
+  },
+  {
+    "report_id": "7b33e7e3-7d28-47c9-a1c7-7b682d19f78c",
+    "reported_at": "2026-08-29T06:38:31.519103+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_872.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "cb71a10f20ffdef9",
+    "_weight": 87
+  },
+  {
+    "report_id": "5d7d4195-9525-446b-8367-3a04844e8e98",
+    "reported_at": "2026-08-29T06:38:43.364098+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_854.4"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "eda97a728dbc120a",
+    "_weight": 85
+  },
+  {
+    "report_id": "a6687572-e69c-4e38-b050-7f5dfe2295e5",
+    "reported_at": "2026-08-29T06:38:55.445008+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_801.0"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "d13c1524710fff3c",
+    "_weight": 80
+  },
+  {
+    "report_id": "4cb3cbb3-6fbf-42dd-977e-8c329c0f83b6",
+    "reported_at": "2026-08-29T06:39:06.287761+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_714.9"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "013cf608b354ca28",
+    "_weight": 71
+  },
+  {
+    "report_id": "3fd64bdc-8a7c-449f-8bb4-f090926264f2",
+    "reported_at": "2026-08-29T06:39:16.223690+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_600.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "1f80de1b7918362c",
+    "_weight": 60
+  },
+  {
+    "report_id": "ddf69b43-79cc-4497-bebe-c08102c86805",
+    "reported_at": "2026-08-29T06:39:23.154906+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_463.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "23f14e16c5df225f",
+    "_weight": 46
+  },
+  {
+    "report_id": "f1cb241b-d688-497c-ae9e-8cb3bc39c06e",
+    "reported_at": "2026-08-29T06:39:27.300834+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_310.8"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "75253b745674d12a",
+    "_weight": 31
+  },
+  {
+    "report_id": "869372a6-6fff-472f-b882-2de3e3b30a0f",
+    "reported_at": "2026-08-29T06:39:36.657691+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_294.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e9365640aab19f18",
+    "_weight": 29
+  },
+  {
+    "report_id": "ac009899-9f55-4d31-8645-6083deed46ea",
+    "reported_at": "2026-08-29T06:39:41.229568+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_310.8"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "613fa54b7e2870b0",
+    "_weight": 31
+  },
+  {
+    "report_id": "e6eccc50-7dfa-4e43-b1d4-ff8092a6b6bf",
+    "reported_at": "2026-08-29T06:39:46.511489+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_463.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "6b1bf612945d3d87",
+    "_weight": 46
+  },
+  {
+    "report_id": "15908b39-f2b7-4b31-b73e-9411e96bb168",
+    "reported_at": "2026-08-29T06:39:52.508441+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_600.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "0aaae676a1769380",
+    "_weight": 60
+  },
+  {
+    "report_id": "4c4f2e53-756f-4c99-adea-db491e7d072d",
+    "reported_at": "2026-08-29T06:39:58.831655+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_714.9"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "5de5f2e5fc99c34f",
+    "_weight": 71
+  },
+  {
+    "report_id": "902b78fb-b363-434a-ae06-c7684b1545b2",
+    "reported_at": "2026-08-29T06:40:05.734211+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_801.0"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "d875279a76799bba",
+    "_weight": 80
+  },
+  {
+    "report_id": "bd99ff82-57d1-41fb-b643-ce2b70271ef6",
+    "reported_at": "2026-08-29T06:40:12.465053+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_854.4"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "ff35d75ff66fc674",
+    "_weight": 85
+  },
+  {
+    "report_id": "0849caa8-6301-4477-9e87-d0006716ff9a",
+    "reported_at": "2026-08-29T06:40:19.586921+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_872.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "cb71a10f20ffdef9",
+    "_weight": 87
+  },
+  {
+    "report_id": "4fc9bafc-ebe9-4a97-9011-b73cc7a6c283",
+    "reported_at": "2026-08-29T06:40:26.805741+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_854.4"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "eda97a728dbc120a",
+    "_weight": 85
+  },
+  {
+    "report_id": "e449bf91-c759-41ba-a2e6-4db8383cb667",
+    "reported_at": "2026-08-29T06:40:33.943083+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_801.0"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "d13c1524710fff3c",
+    "_weight": 80
+  },
+  {
+    "report_id": "f94f677d-1e3a-4098-b102-0d1f278355bb",
+    "reported_at": "2026-08-29T06:40:41.439881+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_714.9"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "013cf608b354ca28",
+    "_weight": 71
+  },
+  {
+    "report_id": "9beaf3c1-d5ed-4df0-a109-02785d72d248",
+    "reported_at": "2026-08-29T06:40:48.617807+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_600.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "1f80de1b7918362c",
+    "_weight": 60
+  },
+  {
+    "report_id": "f7542338-8fce-4003-92dc-4c8ccfd389c5",
+    "reported_at": "2026-08-29T06:40:55.153797+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_463.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "23f14e16c5df225f",
+    "_weight": 46
+  },
+  {
+    "report_id": "1cdcaf63-d551-4b40-acd5-3693a7a30d15",
+    "reported_at": "2026-08-29T06:41:01.014053+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_310.8"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "75253b745674d12a",
+    "_weight": 31
+  },
+  {
+    "report_id": "60cbe8df-0191-4523-a885-d9a7387efe2a",
+    "reported_at": "2026-08-29T06:53:35.935122+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_294.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e9365640aab19f18",
+    "_weight": 29
+  },
+  {
+    "report_id": "b52acebe-8e6d-41d5-b9fc-567a9f28d220",
+    "reported_at": "2026-08-29T06:53:40.793802+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_310.8"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "613fa54b7e2870b0",
+    "_weight": 31
+  },
+  {
+    "report_id": "ca1f628e-f21b-42b2-9f8a-344205d51f21",
+    "reported_at": "2026-08-29T06:53:46.404334+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_463.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "6b1bf612945d3d87",
+    "_weight": 46
+  },
+  {
+    "report_id": "17dc2b1a-7700-427b-866d-6a6dbda69f15",
+    "reported_at": "2026-08-29T06:53:52.754156+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_600.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "0aaae676a1769380",
+    "_weight": 60
+  },
+  {
+    "report_id": "198bedac-2dda-468d-9f18-2a796d321d49",
+    "reported_at": "2026-08-29T06:53:59.454256+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_714.9"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "5de5f2e5fc99c34f",
+    "_weight": 71
+  },
+  {
+    "report_id": "ff930825-136a-4cfb-b2f6-c2ab89d5cd29",
+    "reported_at": "2026-08-29T06:54:06.771858+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_801.0"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "d875279a76799bba",
+    "_weight": 80
+  },
+  {
+    "report_id": "12e2ad9b-90c6-4733-9429-e5641b4f145e",
+    "reported_at": "2026-08-29T06:54:14.402138+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_854.4"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "ff35d75ff66fc674",
+    "_weight": 85
+  },
+  {
+    "report_id": "31a7e346-228c-4162-80e0-0b3fb26bb162",
+    "reported_at": "2026-08-29T06:54:22.301715+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_872.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "cb71a10f20ffdef9",
+    "_weight": 87
+  },
+  {
+    "report_id": "7f85f1b2-32fc-4681-a847-86273ad6a7ce",
+    "reported_at": "2026-08-29T06:54:30.151851+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_854.4"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "eda97a728dbc120a",
+    "_weight": 85
+  },
+  {
+    "report_id": "d6f57dc4-b598-4fea-9820-22a7b4e3c111",
+    "reported_at": "2026-08-29T06:54:38.003166+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_801.0"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "d13c1524710fff3c",
+    "_weight": 80
+  },
+  {
+    "report_id": "c18711b5-be87-4aec-86cd-b1c507b545ac",
+    "reported_at": "2026-08-29T06:54:45.477430+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_714.9"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "013cf608b354ca28",
+    "_weight": 71
+  },
+  {
+    "report_id": "8bc3bfdc-01b3-40f8-8041-6a4d70dbfdb6",
+    "reported_at": "2026-08-29T06:54:52.639422+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_600.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "1f80de1b7918362c",
+    "_weight": 60
+  },
+  {
+    "report_id": "db1c0f06-33ff-4c2d-96fd-6c153faddfa5",
+    "reported_at": "2026-08-29T06:54:59.115518+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_463.5"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "23f14e16c5df225f",
+    "_weight": 46
+  },
+  {
+    "report_id": "c4afb5f6-a742-43b7-b9a6-394b6254b4b2",
+    "reported_at": "2026-08-29T06:55:04.844890+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "wastewater",
+    "age_band": "all_ages",
+    "sex": "aggregate_catchment",
+    "symptoms": [
+      "Influenza-A RNA_copies_310.8"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "75253b745674d12a",
+    "_weight": 31
   }
 ]

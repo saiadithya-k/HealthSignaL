@@ -1,6 +1,6 @@
 [
   {
-    "record_id": "4427fdeb-9df5-419a-82e5-ef86ea420951",
+    "record_id": "9978f093-27ff-4285-9fee-86b864cc02c9",
     "data_source": "clinic",
     "date": "2025-06-01",
     "node_id": "inst-c",
@@ -17,10 +17,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.886,
-    "created_at": "2026-08-29T06:18:04.221051+00:00"
+    "created_at": "2026-08-29T06:55:05.116666+00:00"
   },
   {
-    "record_id": "e8cd4e20-e876-4ac0-996b-42fb862ac89c",
+    "record_id": "8e62dba7-abb6-42a3-bf3b-e6dedd4b0357",
     "data_source": "community",
     "date": "2025-06-01",
     "node_id": "inst-c",
@@ -37,10 +37,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.222057+00:00"
+    "created_at": "2026-08-29T06:55:05.117693+00:00"
   },
   {
-    "record_id": "9d9a1442-ba97-48cb-82dd-b6f5425937b0",
+    "record_id": "7988d496-28e2-4622-8c6d-bd5d62a4bfd1",
     "data_source": "community",
     "date": "2025-06-01",
     "node_id": "inst-c",
@@ -57,10 +57,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.223056+00:00"
+    "created_at": "2026-08-29T06:55:05.118698+00:00"
   },
   {
-    "record_id": "7b833e9c-e6ce-4180-9af8-6e986155fe08",
+    "record_id": "884c04f7-4ab9-422f-b7a7-fc9f759d4e49",
     "data_source": "community",
     "date": "2025-06-01",
     "node_id": "inst-c",
@@ -77,10 +77,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.224056+00:00"
+    "created_at": "2026-08-29T06:55:05.118698+00:00"
   },
   {
-    "record_id": "6c3d964f-0d4f-43e8-b038-9e4e948d4963",
+    "record_id": "ac37800d-bc92-4e96-90d5-5217a93181db",
     "data_source": "community",
     "date": "2025-06-01",
     "node_id": "inst-c",
@@ -97,10 +97,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.225056+00:00"
+    "created_at": "2026-08-29T06:55:05.119698+00:00"
   },
   {
-    "record_id": "a46f2c64-eb0b-400e-b9a6-e450ea20b8e1",
+    "record_id": "eaa2357f-b52c-4e01-baab-edba1ebcea24",
     "data_source": "community",
     "date": "2025-06-01",
     "node_id": "inst-c",
@@ -117,10 +117,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.225056+00:00"
+    "created_at": "2026-08-29T06:55:05.120689+00:00"
   },
   {
-    "record_id": "62cebd16-423a-454c-895a-578aa69d382b",
+    "record_id": "4bb01bf1-2d01-4103-a671-234ecac76707",
     "data_source": "pharmacy",
     "date": "2025-06-01",
     "node_id": "inst-c",
@@ -137,10 +137,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.762,
-    "created_at": "2026-08-29T06:18:04.226056+00:00"
+    "created_at": "2026-08-29T06:55:05.121665+00:00"
   },
   {
-    "record_id": "5e7f90d5-ab08-4c5d-a066-fa14ba991b70",
+    "record_id": "93e380da-9a09-400f-81fb-bdf119adf5c2",
     "data_source": "clinic",
     "date": "2025-06-02",
     "node_id": "inst-c",
@@ -157,10 +157,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.886,
-    "created_at": "2026-08-29T06:18:04.228567+00:00"
+    "created_at": "2026-08-29T06:55:05.122665+00:00"
   },
   {
-    "record_id": "cf9ad847-3821-4cca-a51c-5a8b3f21ae48",
+    "record_id": "729afd13-f362-45dd-8fb6-aa7851b8e708",
     "data_source": "community",
     "date": "2025-06-02",
     "node_id": "inst-c",
@@ -177,10 +177,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.229269+00:00"
+    "created_at": "2026-08-29T06:55:05.123694+00:00"
   },
   {
-    "record_id": "f2f5a994-a8b2-46e4-9c61-75727e622e74",
+    "record_id": "1298ce60-96be-4b60-a02e-3255901383fd",
     "data_source": "community",
     "date": "2025-06-02",
     "node_id": "inst-c",
@@ -197,10 +197,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.230275+00:00"
+    "created_at": "2026-08-29T06:55:05.124243+00:00"
   },
   {
-    "record_id": "98a3887c-3173-487e-9c72-06a78a023615",
+    "record_id": "5d6c8d88-1beb-4402-8e2f-7aeaf7572336",
     "data_source": "community",
     "date": "2025-06-02",
     "node_id": "inst-c",
@@ -217,10 +217,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.230275+00:00"
+    "created_at": "2026-08-29T06:55:05.124243+00:00"
   },
   {
-    "record_id": "a1613030-d700-42d9-8d5b-49e5424c9e6a",
+    "record_id": "f86c2386-39bc-4a0d-83f7-e6cb5420d74e",
     "data_source": "community",
     "date": "2025-06-02",
     "node_id": "inst-c",
@@ -237,10 +237,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.231274+00:00"
+    "created_at": "2026-08-29T06:55:05.125270+00:00"
   },
   {
-    "record_id": "bb7895b9-9d8d-43eb-baae-d30c9370f809",
+    "record_id": "77671024-a107-46dd-90fc-6f6ad52a3a3f",
     "data_source": "community",
     "date": "2025-06-02",
     "node_id": "inst-c",
@@ -257,10 +257,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.232274+00:00"
+    "created_at": "2026-08-29T06:55:05.126234+00:00"
   },
   {
-    "record_id": "7f402ab5-daeb-4a4c-ae30-03d7614367e7",
+    "record_id": "625f12c6-2fc0-4a7f-b08e-f18caca43abf",
     "data_source": "pharmacy",
     "date": "2025-06-02",
     "node_id": "inst-c",
@@ -277,10 +277,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.762,
-    "created_at": "2026-08-29T06:18:04.233274+00:00"
+    "created_at": "2026-08-29T06:55:05.128238+00:00"
   },
   {
-    "record_id": "0310675e-3c3b-4085-b30a-fc76cecfe633",
+    "record_id": "6b507f68-cfec-4dc7-9280-0ec57e14c25c",
     "data_source": "clinic",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -297,10 +297,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.886,
-    "created_at": "2026-08-29T06:18:04.234274+00:00"
+    "created_at": "2026-08-29T06:55:05.128238+00:00"
   },
   {
-    "record_id": "7929d12e-d741-4dfa-a772-6fe59490fcad",
+    "record_id": "c2e0b68d-ebd8-49e5-9114-0476588667e3",
     "data_source": "community",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -317,10 +317,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.235276+00:00"
+    "created_at": "2026-08-29T06:55:05.129233+00:00"
   },
   {
-    "record_id": "3cad0d7e-ff4a-4c6b-b875-bb1e20d9da7b",
+    "record_id": "94c2deac-23eb-4bc7-9e5b-f619f367b68c",
     "data_source": "community",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -337,10 +337,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.236274+00:00"
+    "created_at": "2026-08-29T06:55:05.130233+00:00"
   },
   {
-    "record_id": "cb442b8c-4bc1-4510-a06a-08aa6863a1ba",
+    "record_id": "03188d67-92e5-4ba7-a7f7-f7a6b8db5b10",
     "data_source": "community",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -357,10 +357,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.236274+00:00"
+    "created_at": "2026-08-29T06:55:05.131234+00:00"
   },
   {
-    "record_id": "636f203f-085b-4b3d-893c-d2ba8e954ab3",
+    "record_id": "425b531e-1328-41f3-acab-62c1f7c5a584",
     "data_source": "community",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -377,10 +377,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.237779+00:00"
+    "created_at": "2026-08-29T06:55:05.132234+00:00"
   },
   {
-    "record_id": "3f420ba7-3595-4e3d-b724-378fe35815fb",
+    "record_id": "abf1259e-95b7-46b5-9063-bf24cdd863fb",
     "data_source": "community",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -397,10 +397,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.238786+00:00"
+    "created_at": "2026-08-29T06:55:05.132234+00:00"
   },
   {
-    "record_id": "9cce18ae-1f07-439f-a248-73308bf9d1bd",
+    "record_id": "24217ed3-16cc-4afa-9fa2-3490ba752830",
     "data_source": "pharmacy",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -417,10 +417,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.762,
-    "created_at": "2026-08-29T06:18:04.240291+00:00"
+    "created_at": "2026-08-29T06:55:05.133787+00:00"
   },
   {
-    "record_id": "2b86bcfa-842a-40d1-a49c-674bae5258c3",
+    "record_id": "893b1da3-234f-4c85-9fb4-2ba5b3f7ac07",
     "data_source": "testing",
     "date": "2025-06-03",
     "node_id": "inst-c",
@@ -437,10 +437,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.953,
-    "created_at": "2026-08-29T06:18:04.241297+00:00"
+    "created_at": "2026-08-29T06:55:05.134792+00:00"
   },
   {
-    "record_id": "aba9d112-73d4-4bf8-b723-bce7acf74810",
+    "record_id": "922a6e41-1d54-453b-8fd1-7a333455b7a2",
     "data_source": "clinic",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -457,10 +457,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.886,
-    "created_at": "2026-08-29T06:18:04.241297+00:00"
+    "created_at": "2026-08-29T06:55:05.134792+00:00"
   },
   {
-    "record_id": "384e15a3-abb0-4ac3-a82b-ae9a55b56712",
+    "record_id": "eb7d7d9c-09ce-47d8-a5af-198d1eb42d3c",
     "data_source": "community",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -477,10 +477,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.242309+00:00"
+    "created_at": "2026-08-29T06:55:05.135796+00:00"
   },
   {
-    "record_id": "81dfabfc-bfbf-41d3-9369-33cccba9f0ce",
+    "record_id": "6dbc7f7c-0298-4488-97d1-010294e62b70",
     "data_source": "community",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -497,10 +497,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.244297+00:00"
+    "created_at": "2026-08-29T06:55:05.136796+00:00"
   },
   {
-    "record_id": "c609f509-63ba-458c-8832-230b9c1439a8",
+    "record_id": "4ede9ddc-88c9-41b4-b384-b954dc1c4e90",
     "data_source": "community",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -517,10 +517,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.245300+00:00"
+    "created_at": "2026-08-29T06:55:05.136796+00:00"
   },
   {
-    "record_id": "f2bafec0-e386-4173-902a-d715dc3e314a",
+    "record_id": "0fc36375-6b14-4649-a017-a5991708e86e",
     "data_source": "community",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -537,10 +537,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.246296+00:00"
+    "created_at": "2026-08-29T06:55:05.138795+00:00"
   },
   {
-    "record_id": "16a2601d-9276-489e-9c4d-2db2214d3239",
+    "record_id": "51accac9-539a-4b64-b201-aee5c1c99394",
     "data_source": "community",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -557,10 +557,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.247800+00:00"
+    "created_at": "2026-08-29T06:55:05.138795+00:00"
   },
   {
-    "record_id": "f55d64f1-d944-4505-a033-eb173bed470c",
+    "record_id": "e89bb256-07a8-4a9f-a104-0cb63014a81c",
     "data_source": "community",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -577,10 +577,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.247800+00:00"
+    "created_at": "2026-08-29T06:55:05.139796+00:00"
   },
   {
-    "record_id": "4b2d04a2-1b2a-4300-85ef-18f519d6d0f0",
+    "record_id": "905fffbf-d6fc-4e45-a73a-5ef3c768d471",
     "data_source": "pharmacy",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -597,10 +597,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.762,
-    "created_at": "2026-08-29T06:18:04.248805+00:00"
+    "created_at": "2026-08-29T06:55:05.140795+00:00"
   },
   {
-    "record_id": "44143f52-2642-4f00-adf1-c93dab3d6f93",
+    "record_id": "283f2356-92b9-4b94-99d5-b776299969da",
     "data_source": "testing",
     "date": "2025-06-04",
     "node_id": "inst-c",
@@ -617,10 +617,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.953,
-    "created_at": "2026-08-29T06:18:04.249805+00:00"
+    "created_at": "2026-08-29T06:55:05.140795+00:00"
   },
   {
-    "record_id": "5b625b43-08c5-44d7-a9f8-2dadf6ebbec9",
+    "record_id": "af93e299-20f5-4c9e-9d1e-10f7db70553d",
     "data_source": "clinic",
     "date": "2025-06-05",
     "node_id": "inst-c",
@@ -637,10 +637,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.886,
-    "created_at": "2026-08-29T06:18:04.249805+00:00"
+    "created_at": "2026-08-29T06:55:05.140795+00:00"
   },
   {
-    "record_id": "356f627a-6cae-4ec0-abdd-eb531022e407",
+    "record_id": "c139ecf6-807c-46db-b2d3-6e834ff11b04",
     "data_source": "community",
     "date": "2025-06-05",
     "node_id": "inst-c",
@@ -657,10 +657,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.250810+00:00"
+    "created_at": "2026-08-29T06:55:05.140795+00:00"
   },
   {
-    "record_id": "7e549184-f007-4cbb-87c1-3b9fd520f8e6",
+    "record_id": "889f9ec8-a6e3-4f3c-8273-6c669682a5e4",
     "data_source": "community",
     "date": "2025-06-05",
     "node_id": "inst-c",
@@ -677,10 +677,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.251810+00:00"
+    "created_at": "2026-08-29T06:55:05.142299+00:00"
   },
   {
-    "record_id": "a454c2b5-c671-4b08-9c1a-38e5099801a7",
+    "record_id": "5d807f07-a421-4f51-9735-d537b2625e77",
     "data_source": "community",
     "date": "2025-06-05",
     "node_id": "inst-c",
@@ -697,10 +697,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.252810+00:00"
+    "created_at": "2026-08-29T06:55:05.143304+00:00"
   },
   {
-    "record_id": "d1498b19-9a8c-446b-93c7-36c1701d98cf",
+    "record_id": "b6ebc367-4aaf-4ec8-8efa-17c8e0606205",
     "data_source": "community",
     "date": "2025-06-05",
     "node_id": "inst-c",
@@ -717,10 +717,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.253809+00:00"
+    "created_at": "2026-08-29T06:55:05.144534+00:00"
   },
   {
-    "record_id": "33062ddb-2428-4720-8cb9-5b411b73eb5a",
+    "record_id": "6d668829-a1de-40d4-acc5-4c4fe6383943",
     "data_source": "community",
     "date": "2025-06-05",
     "node_id": "inst-c",
@@ -737,10 +737,10 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.715,
-    "created_at": "2026-08-29T06:18:04.254817+00:00"
+    "created_at": "2026-08-29T06:55:05.145595+00:00"
   },
   {
-    "record_id": "1f6d9946-7176-4d82-b403-c6dd8f85b2d4",
+    "record_id": "2ccbe1bc-cf92-4241-8100-04cdb2099b47",
     "data_source": "pharmacy",
     "date": "2025-06-05",
     "node_id": "inst-c",
@@ -757,26 +757,26 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.762,
-    "created_at": "2026-08-29T06:18:04.255811+00:00"
+    "created_at": "2026-08-29T06:55:05.147535+00:00"
   },
   {
-    "record_id": "5af017ed-b278-4657-adbb-96e6a4fa90ec",
+    "record_id": "c035cd7a-42cf-46bc-ac1e-3ab464d1aed2",
     "data_source": "clinic",
     "date": "2026-08-28",
     "node_id": "inst-c",
     "zone_id": "zone-2",
     "syndrome": "acute_febrile_illness",
-    "count": 200,
+    "count": 250,
     "severity_mild": 0,
-    "severity_moderate": 200,
+    "severity_moderate": 250,
     "severity_severe": 0,
     "growth_rate_7d": 0.0,
-    "rolling_3d_mean": 200.0,
-    "rolling_7d_mean": 200.0,
+    "rolling_3d_mean": 250.0,
+    "rolling_7d_mean": 250.0,
     "rolling_7d_std": 0.0,
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.886,
-    "created_at": "2026-08-29T06:18:04.256810+00:00"
+    "created_at": "2026-08-29T06:55:05.148572+00:00"
   }
 ]

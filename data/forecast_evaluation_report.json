@@ -1,376 +1,376 @@
 {
   "model_version": "v1.0.0-fed-h7",
   "overall_performance": {
-    "mae": 0.77,
-    "rmse": 1.3459,
-    "mean_error": 0.0997,
-    "residual_sigma": 1.3021,
-    "empirical_coverage_80": 0.8846,
-    "empirical_coverage_95": 0.9427,
+    "mae": 0.7556,
+    "rmse": 1.3266,
+    "mean_error": 0.0887,
+    "residual_sigma": 1.3219,
+    "empirical_coverage_80": 0.8903,
+    "empirical_coverage_95": 0.9446,
     "average_lead_time_days": 4.6
   },
   "node_performance": {
     "inst-a": {
-      "mae": 0.6822,
-      "rmse": 1.171,
+      "mae": 0.6763,
+      "rmse": 1.1581,
       "sample_count": 2597
     },
     "inst-b": {
-      "mae": 0.8243,
-      "rmse": 1.3645,
+      "mae": 0.8044,
+      "rmse": 1.3663,
       "sample_count": 2597
     },
     "inst-c": {
-      "mae": 0.5318,
-      "rmse": 0.9376,
+      "mae": 0.5172,
+      "rmse": 0.9515,
       "sample_count": 2597
     },
     "inst-d": {
-      "mae": 1.0415,
-      "rmse": 1.7702,
+      "mae": 1.0245,
+      "rmse": 1.7105,
       "sample_count": 2597
     }
   },
   "syndrome_performance": {
     "acute_allergic_anaphylactic": {
-      "mae": 0.604,
-      "rmse": 0.7476,
-      "coverage_80": 0.9811,
-      "coverage_95": 1.0,
+      "mae": 0.628,
+      "rmse": 0.7883,
+      "coverage_80": 0.9623,
+      "coverage_95": 0.9953,
       "sample_count": 212
     },
     "acute_coronary_ischemic": {
-      "mae": 0.5823,
-      "rmse": 0.7567,
-      "coverage_80": 0.9811,
+      "mae": 0.5366,
+      "rmse": 0.6541,
+      "coverage_80": 0.9906,
       "coverage_95": 0.9953,
       "sample_count": 212
     },
     "acute_encephalitic": {
-      "mae": 0.2251,
-      "rmse": 0.3792,
+      "mae": 0.2625,
+      "rmse": 0.4134,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "acute_febrile_illness": {
-      "mae": 1.8586,
-      "rmse": 2.3782,
+      "mae": 1.7215,
+      "rmse": 2.1742,
       "coverage_80": 0.5613,
-      "coverage_95": 0.7264,
+      "coverage_95": 0.7783,
       "sample_count": 212
     },
     "acute_fever_rash": {
-      "mae": 0.747,
-      "rmse": 0.9167,
-      "coverage_80": 0.9198,
+      "mae": 0.7448,
+      "rmse": 0.9177,
+      "coverage_80": 0.9292,
       "coverage_95": 0.9953,
       "sample_count": 212
     },
     "acute_flaccid_paralysis": {
-      "mae": 0.1054,
-      "rmse": 0.2722,
+      "mae": 0.1273,
+      "rmse": 0.2982,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "acute_heart_failure_congestive": {
-      "mae": 0.486,
-      "rmse": 0.5812,
-      "coverage_80": 0.9906,
+      "mae": 0.4723,
+      "rmse": 0.6239,
+      "coverage_80": 0.9811,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "acute_hemolytic_cytopenic": {
-      "mae": 0.22,
-      "rmse": 0.3749,
+      "mae": 0.1481,
+      "rmse": 0.3235,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "acute_jaundice_hepatitic": {
-      "mae": 0.608,
-      "rmse": 0.814,
-      "coverage_80": 0.9528,
-      "coverage_95": 0.9906,
+      "mae": 0.637,
+      "rmse": 0.7552,
+      "coverage_80": 0.9858,
+      "coverage_95": 1.0,
       "sample_count": 212
     },
     "acute_kidney_injury_oliguria": {
-      "mae": 0.3489,
-      "rmse": 0.4688,
-      "coverage_80": 0.9953,
+      "mae": 0.3243,
+      "rmse": 0.4693,
+      "coverage_80": 0.9858,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "acute_ophthalmic_conjunctivitis": {
-      "mae": 0.5813,
-      "rmse": 0.7664,
-      "coverage_80": 0.9764,
+      "mae": 0.5826,
+      "rmse": 0.7603,
+      "coverage_80": 0.9575,
       "coverage_95": 0.9953,
       "sample_count": 212
     },
     "acute_otolaryngologic_suppurative": {
-      "mae": 0.9061,
-      "rmse": 1.1422,
+      "mae": 0.9018,
+      "rmse": 1.1559,
       "coverage_80": 0.8774,
       "coverage_95": 0.9764,
       "sample_count": 212
     },
     "acute_watery_diarrhea": {
-      "mae": 1.4191,
-      "rmse": 1.8212,
-      "coverage_80": 0.6792,
-      "coverage_95": 0.8774,
+      "mae": 1.3772,
+      "rmse": 1.8114,
+      "coverage_80": 0.6981,
+      "coverage_95": 0.8679,
       "sample_count": 212
     },
     "bloody_diarrhea_dysentery": {
-      "mae": 0.7139,
-      "rmse": 0.9245,
-      "coverage_80": 0.9292,
-      "coverage_95": 0.9906,
+      "mae": 0.6695,
+      "rmse": 0.8895,
+      "coverage_80": 0.9528,
+      "coverage_95": 0.9811,
       "sample_count": 212
     },
     "bronchospastic_obstructive": {
-      "mae": 1.182,
-      "rmse": 1.4909,
-      "coverage_80": 0.7358,
-      "coverage_95": 0.9151,
+      "mae": 1.19,
+      "rmse": 1.484,
+      "coverage_80": 0.7311,
+      "coverage_95": 0.9198,
       "sample_count": 212
     },
     "cardiac_arrhythmic_syncope": {
-      "mae": 0.4516,
-      "rmse": 0.562,
-      "coverage_80": 0.9858,
-      "coverage_95": 0.9953,
+      "mae": 0.4935,
+      "rmse": 0.5795,
+      "coverage_80": 0.9953,
+      "coverage_95": 1.0,
       "sample_count": 212
     },
     "chemical_toxic_inhalation": {
-      "mae": 0.0457,
-      "rmse": 0.1844,
+      "mae": 0.0742,
+      "rmse": 0.2295,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "cranial_neuropathy_dysautonomia": {
-      "mae": 0.0415,
-      "rmse": 0.1714,
+      "mae": 0.0833,
+      "rmse": 0.2304,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "cutaneous_ulcerative_eschar": {
-      "mae": 0.2213,
-      "rmse": 0.3669,
-      "coverage_80": 1.0,
+      "mae": 0.2608,
+      "rmse": 0.4114,
+      "coverage_80": 0.9953,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "environmental_heat_stroke": {
-      "mae": 0.204,
-      "rmse": 0.347,
+      "mae": 0.2402,
+      "rmse": 0.3939,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "environmental_hypothermia_cold": {
-      "mae": 0.2481,
-      "rmse": 0.4017,
+      "mae": 0.19,
+      "rmse": 0.3664,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "febrile_arthritic": {
-      "mae": 0.8364,
-      "rmse": 1.0329,
-      "coverage_80": 0.8962,
-      "coverage_95": 0.9858,
+      "mae": 0.9077,
+      "rmse": 1.1098,
+      "coverage_80": 0.8915,
+      "coverage_95": 0.9811,
       "sample_count": 212
     },
     "febrile_enteric": {
-      "mae": 0.6343,
-      "rmse": 0.7884,
-      "coverage_80": 0.9717,
-      "coverage_95": 1.0,
+      "mae": 0.6505,
+      "rmse": 0.8467,
+      "coverage_80": 0.9481,
+      "coverage_95": 0.9906,
       "sample_count": 212
     },
     "fever_flu": {
-      "mae": 2.5962,
-      "rmse": 3.2625,
-      "coverage_80": 0.4009,
-      "coverage_95": 0.5708,
+      "mae": 2.6616,
+      "rmse": 3.2522,
+      "coverage_80": 0.3726,
+      "coverage_95": 0.5236,
       "sample_count": 212
     },
     "foodborne_neurotoxic": {
-      "mae": 0.0948,
-      "rmse": 0.2574,
+      "mae": 0.0772,
+      "rmse": 0.2383,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "gastroenteritis_emetic": {
-      "mae": 1.1309,
-      "rmse": 1.5332,
-      "coverage_80": 0.7877,
-      "coverage_95": 0.8962,
+      "mae": 1.0647,
+      "rmse": 1.4221,
+      "coverage_80": 0.7783,
+      "coverage_95": 0.9292,
       "sample_count": 212
     },
     "gastrointestinal": {
-      "mae": 2.8814,
-      "rmse": 3.7112,
-      "coverage_80": 0.3774,
-      "coverage_95": 0.5377,
+      "mae": 2.9025,
+      "rmse": 3.9691,
+      "coverage_80": 0.434,
+      "coverage_95": 0.6132,
       "sample_count": 212
     },
     "influenza_like_illness": {
-      "mae": 1.7783,
-      "rmse": 2.2901,
-      "coverage_80": 0.5896,
-      "coverage_95": 0.7642,
+      "mae": 1.778,
+      "rmse": 2.3018,
+      "coverage_80": 0.566,
+      "coverage_95": 0.7736,
       "sample_count": 212
     },
     "lower_respiratory_illness": {
-      "mae": 1.4052,
-      "rmse": 1.8063,
-      "coverage_80": 0.6934,
-      "coverage_95": 0.8208,
+      "mae": 1.2781,
+      "rmse": 1.7095,
+      "coverage_80": 0.7406,
+      "coverage_95": 0.8585,
       "sample_count": 212
     },
     "meningeal_irritation": {
-      "mae": 0.3644,
-      "rmse": 0.4978,
+      "mae": 0.3575,
+      "rmse": 0.475,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "mucocutaneous_lymph_node": {
-      "mae": 0.2016,
-      "rmse": 0.356,
-      "coverage_80": 1.0,
+      "mae": 0.2389,
+      "rmse": 0.4,
+      "coverage_80": 0.9953,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "oral_ulcerative_stomatitis": {
-      "mae": 0.5459,
-      "rmse": 0.6979,
-      "coverage_80": 0.9717,
-      "coverage_95": 0.9953,
+      "mae": 0.4614,
+      "rmse": 0.594,
+      "coverage_80": 0.9858,
+      "coverage_95": 1.0,
       "sample_count": 212
     },
     "other": {
-      "mae": 2.0113,
-      "rmse": 2.5865,
-      "coverage_80": 0.4953,
-      "coverage_95": 0.6745,
+      "mae": 1.8018,
+      "rmse": 2.2981,
+      "coverage_80": 0.5755,
+      "coverage_95": 0.7453,
       "sample_count": 212
     },
     "pediatric_croup_stridor": {
-      "mae": 0.8272,
-      "rmse": 1.0735,
-      "coverage_80": 0.8679,
-      "coverage_95": 0.9811,
+      "mae": 0.8437,
+      "rmse": 1.0894,
+      "coverage_80": 0.8962,
+      "coverage_95": 0.9717,
       "sample_count": 212
     },
     "pediatric_malnutrition_wasting": {
-      "mae": 0.3828,
-      "rmse": 0.5119,
-      "coverage_80": 0.9906,
-      "coverage_95": 1.0,
-      "sample_count": 212
-    },
-    "post_infectious_asthenia": {
-      "mae": 0.4891,
-      "rmse": 0.5941,
-      "coverage_80": 0.9764,
-      "coverage_95": 1.0,
-      "sample_count": 212
-    },
-    "respiratory": {
-      "mae": 2.8402,
-      "rmse": 3.5415,
-      "coverage_80": 0.3208,
-      "coverage_95": 0.5377,
-      "sample_count": 212
-    },
-    "severe_acute_respiratory_infection": {
-      "mae": 0.7243,
-      "rmse": 0.9043,
-      "coverage_80": 0.9481,
-      "coverage_95": 0.9906,
-      "sample_count": 212
-    },
-    "severe_dehydration_shock": {
-      "mae": 0.4716,
-      "rmse": 0.5713,
+      "mae": 0.3462,
+      "rmse": 0.4651,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
+    "post_infectious_asthenia": {
+      "mae": 0.4391,
+      "rmse": 0.5566,
+      "coverage_80": 0.9906,
+      "coverage_95": 0.9953,
+      "sample_count": 212
+    },
+    "respiratory": {
+      "mae": 2.5235,
+      "rmse": 3.2766,
+      "coverage_80": 0.434,
+      "coverage_95": 0.6179,
+      "sample_count": 212
+    },
+    "severe_acute_respiratory_infection": {
+      "mae": 0.686,
+      "rmse": 0.8589,
+      "coverage_80": 0.9528,
+      "coverage_95": 0.9953,
+      "sample_count": 212
+    },
+    "severe_dehydration_shock": {
+      "mae": 0.5469,
+      "rmse": 0.641,
+      "coverage_80": 0.9764,
+      "coverage_95": 1.0,
+      "sample_count": 212
+    },
     "systemic_inflammatory_sepsis": {
-      "mae": 0.4836,
-      "rmse": 0.5703,
+      "mae": 0.501,
+      "rmse": 0.6159,
       "coverage_80": 0.9953,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "unspecified_community_cluster": {
-      "mae": 0.4489,
-      "rmse": 0.5631,
-      "coverage_80": 0.9858,
-      "coverage_95": 1.0,
-      "sample_count": 212
-    },
-    "upper_respiratory_infection": {
-      "mae": 2.0546,
-      "rmse": 2.6563,
-      "coverage_80": 0.4811,
-      "coverage_95": 0.7075,
-      "sample_count": 212
-    },
-    "urinary_tract_infection_febrile": {
-      "mae": 0.7316,
-      "rmse": 0.9828,
-      "coverage_80": 0.9057,
-      "coverage_95": 0.9811,
-      "sample_count": 212
-    },
-    "vector_lymphatic_filarial": {
-      "mae": 0.142,
-      "rmse": 0.3152,
+      "mae": 0.3853,
+      "rmse": 0.4933,
       "coverage_80": 0.9953,
       "coverage_95": 1.0,
       "sample_count": 212
     },
-    "vector_malaria_paroxysmal": {
-      "mae": 0.6984,
-      "rmse": 0.8967,
-      "coverage_80": 0.9528,
-      "coverage_95": 0.9811,
+    "upper_respiratory_infection": {
+      "mae": 2.1897,
+      "rmse": 2.7751,
+      "coverage_80": 0.4906,
+      "coverage_95": 0.6698,
       "sample_count": 212
     },
-    "vesiculopustular_eruptive": {
-      "mae": 0.547,
-      "rmse": 0.6952,
-      "coverage_80": 0.9811,
+    "urinary_tract_infection_febrile": {
+      "mae": 0.7272,
+      "rmse": 0.9058,
+      "coverage_80": 0.9434,
+      "coverage_95": 0.9906,
+      "sample_count": 212
+    },
+    "vector_lymphatic_filarial": {
+      "mae": 0.1751,
+      "rmse": 0.3414,
+      "coverage_80": 1.0,
+      "coverage_95": 1.0,
+      "sample_count": 212
+    },
+    "vector_malaria_paroxysmal": {
+      "mae": 0.6814,
+      "rmse": 0.8557,
+      "coverage_80": 0.9481,
       "coverage_95": 0.9953,
       "sample_count": 212
     },
+    "vesiculopustular_eruptive": {
+      "mae": 0.5177,
+      "rmse": 0.6495,
+      "coverage_80": 0.9953,
+      "coverage_95": 1.0,
+      "sample_count": 212
+    },
     "viral_hemorrhagic_fever": {
-      "mae": 0.2739,
-      "rmse": 0.4094,
+      "mae": 0.3072,
+      "rmse": 0.4343,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "zoonotic_leptospiral": {
-      "mae": 0.312,
-      "rmse": 0.4489,
+      "mae": 0.2911,
+      "rmse": 0.4091,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
     },
     "zoonotic_rabies_encephalopathy": {
-      "mae": 0.0213,
-      "rmse": 0.1225,
+      "mae": 0.019,
+      "rmse": 0.1198,
       "coverage_80": 1.0,
       "coverage_95": 1.0,
       "sample_count": 212
@@ -379,127 +379,127 @@
   "horizon_performance": {
     "Horizon_1": {
       "horizon_day": 1,
-      "mae": 0.77,
-      "rmse": 1.3459,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.7556,
+      "rmse": 1.3266,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_2": {
       "horizon_day": 2,
-      "mae": 0.8008,
-      "rmse": 1.4064,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.7858,
+      "rmse": 1.3863,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_3": {
       "horizon_day": 3,
-      "mae": 0.8316,
-      "rmse": 1.467,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.8161,
+      "rmse": 1.446,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_4": {
       "horizon_day": 4,
-      "mae": 0.8624,
-      "rmse": 1.5276,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.8463,
+      "rmse": 1.5057,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_5": {
       "horizon_day": 5,
-      "mae": 0.8932,
-      "rmse": 1.5881,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.8765,
+      "rmse": 1.5654,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_6": {
       "horizon_day": 6,
-      "mae": 0.924,
-      "rmse": 1.6487,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.9067,
+      "rmse": 1.6251,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_7": {
       "horizon_day": 7,
-      "mae": 0.9548,
-      "rmse": 1.7093,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.937,
+      "rmse": 1.6848,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_8": {
       "horizon_day": 8,
-      "mae": 0.9856,
-      "rmse": 1.7698,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.9672,
+      "rmse": 1.7445,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_9": {
       "horizon_day": 9,
-      "mae": 1.0164,
-      "rmse": 1.8304,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 0.9974,
+      "rmse": 1.8042,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_10": {
       "horizon_day": 10,
-      "mae": 1.0472,
-      "rmse": 1.891,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 1.0276,
+      "rmse": 1.8639,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_11": {
       "horizon_day": 11,
-      "mae": 1.078,
-      "rmse": 1.9515,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 1.0579,
+      "rmse": 1.9236,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_12": {
       "horizon_day": 12,
-      "mae": 1.1088,
-      "rmse": 2.0121,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 1.0881,
+      "rmse": 1.9833,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_13": {
       "horizon_day": 13,
-      "mae": 1.1396,
-      "rmse": 2.0727,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 1.1183,
+      "rmse": 2.043,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     },
     "Horizon_14": {
       "horizon_day": 14,
-      "mae": 1.1704,
-      "rmse": 2.1332,
-      "coverage_80": 0.8846,
-      "coverage_95": 0.9427
+      "mae": 1.1485,
+      "rmse": 2.1027,
+      "coverage_80": 0.8903,
+      "coverage_95": 0.9446
     }
   },
   "scenario_performance": {
     "Baseline": {
-      "mae": 0.6545,
-      "rmse": 1.144,
+      "mae": 0.6423,
+      "rmse": 1.1276,
       "lead_time_days": 0.0
     },
     "Influenza (C002)": {
-      "mae": 0.847,
-      "rmse": 1.5074,
+      "mae": 0.8312,
+      "rmse": 1.4858,
       "lead_time_days": 4.5
     },
     "Cholera (C023)": {
-      "mae": 0.8316,
-      "rmse": 1.4805,
+      "mae": 0.8161,
+      "rmse": 1.4593,
       "lead_time_days": 5.0
     },
     "Dengue (C036)": {
-      "mae": 0.8855,
-      "rmse": 1.5881,
+      "mae": 0.869,
+      "rmse": 1.5654,
       "lead_time_days": 4.0
     },
     "Multi-Syndrome": {
-      "mae": 0.924,
-      "rmse": 1.642,
+      "mae": 0.9067,
+      "rmse": 1.6184,
       "lead_time_days": 4.8
     }
   }

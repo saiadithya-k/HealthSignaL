@@ -1958,5 +1958,865 @@
     "visit_type": null,
     "consent_token": "a2a5502a95a211d2",
     "_weight": 5
+  },
+  {
+    "report_id": "0f985c16-bc7f-4973-ab70-ac7388406ce1",
+    "reported_at": "2026-08-29T06:37:22.974182+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "064e372f8b762fb3",
+    "_weight": 5
+  },
+  {
+    "report_id": "eb16c026-5a7a-4095-bc87-43d1bda39462",
+    "reported_at": "2026-08-29T06:37:29.887938+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "a32fdc2758ef673e",
+    "_weight": 5
+  },
+  {
+    "report_id": "e6e63ec7-1436-4954-8aad-469fe0ac1e6a",
+    "reported_at": "2026-08-29T06:37:38.050410+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "bb98b2ecfb40aa60",
+    "_weight": 9
+  },
+  {
+    "report_id": "c898b661-45c1-4877-b496-e8c1250513d2",
+    "reported_at": "2026-08-29T06:37:47.286110+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "8cdc8ea81dcce577",
+    "_weight": 13
+  },
+  {
+    "report_id": "3c99ed2d-f783-40b8-b72a-3f1d0e68e509",
+    "reported_at": "2026-08-29T06:37:58.200256+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "749450b20fbeabd8",
+    "_weight": 17
+  },
+  {
+    "report_id": "8c1b9ab6-658b-49a6-bb44-b1cc8346a6b3",
+    "reported_at": "2026-08-29T06:38:09.157078+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "44dc3fc202a4ec29",
+    "_weight": 20
+  },
+  {
+    "report_id": "7501dedb-917c-44a2-b491-546ac581c8a8",
+    "reported_at": "2026-08-29T06:38:20.138467+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "ffb1fd8a2d281c8d",
+    "_weight": 22
+  },
+  {
+    "report_id": "194b61e0-20bb-4aa9-a843-3437e83ce58e",
+    "reported_at": "2026-08-29T06:38:31.478420+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "915b35aecb2cb923",
+    "_weight": 23
+  },
+  {
+    "report_id": "a2902818-76e8-469a-84ce-117e6da9fc6b",
+    "reported_at": "2026-08-29T06:38:43.314856+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "8f1df5a8d85863a6",
+    "_weight": 22
+  },
+  {
+    "report_id": "c450e51f-b70f-4148-a022-a9472d77df95",
+    "reported_at": "2026-08-29T06:38:55.402975+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "1ad1514e0643ba96",
+    "_weight": 20
+  },
+  {
+    "report_id": "36427f48-b5e7-4597-9874-71dceff6a1d4",
+    "reported_at": "2026-08-29T06:39:06.234129+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "59e2d326988f3bf2",
+    "_weight": 17
+  },
+  {
+    "report_id": "3cd4261d-2b53-40c1-96c8-0d8c82e52eb2",
+    "reported_at": "2026-08-29T06:39:16.176420+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "5f86bc95c5bd966d",
+    "_weight": 13
+  },
+  {
+    "report_id": "1928c926-c5a1-4f11-ac6b-3c6183400bc5",
+    "reported_at": "2026-08-29T06:39:23.110711+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "07dc01935763a179",
+    "_weight": 9
+  },
+  {
+    "report_id": "aa0053c1-88ac-46f5-9a3e-cfedd2551887",
+    "reported_at": "2026-08-29T06:39:27.256916+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-14",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "a2a5502a95a211d2",
+    "_weight": 5
+  },
+  {
+    "report_id": "2a794f0f-3b82-4123-bb01-97e70fa96073",
+    "reported_at": "2026-08-29T06:39:36.611438+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "064e372f8b762fb3",
+    "_weight": 5
+  },
+  {
+    "report_id": "5283d82e-2305-413f-88ec-db6b3e40a832",
+    "reported_at": "2026-08-29T06:39:41.184121+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "a32fdc2758ef673e",
+    "_weight": 5
+  },
+  {
+    "report_id": "827494a3-6afc-4d75-9882-91b98d4969c1",
+    "reported_at": "2026-08-29T06:39:46.464842+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "bb98b2ecfb40aa60",
+    "_weight": 9
+  },
+  {
+    "report_id": "1856f775-89d1-42b2-8a1f-e2a65dde9e32",
+    "reported_at": "2026-08-29T06:39:52.442568+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "8cdc8ea81dcce577",
+    "_weight": 13
+  },
+  {
+    "report_id": "2d65074e-85d9-4ace-9b7b-b9ef4a5ca26f",
+    "reported_at": "2026-08-29T06:39:58.778466+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "749450b20fbeabd8",
+    "_weight": 17
+  },
+  {
+    "report_id": "ac40ccb1-39ba-42ba-81f3-2ca753239d85",
+    "reported_at": "2026-08-29T06:40:05.687664+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "44dc3fc202a4ec29",
+    "_weight": 20
+  },
+  {
+    "report_id": "b788a66d-0e33-487f-8a8d-686bab06ae90",
+    "reported_at": "2026-08-29T06:40:12.408276+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "ffb1fd8a2d281c8d",
+    "_weight": 22
+  },
+  {
+    "report_id": "b4b0e70a-03a3-47d5-b261-a871d34f9a69",
+    "reported_at": "2026-08-29T06:40:19.530246+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "915b35aecb2cb923",
+    "_weight": 23
+  },
+  {
+    "report_id": "7a3087eb-fda6-4237-8d04-232820755f64",
+    "reported_at": "2026-08-29T06:40:26.756181+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "8f1df5a8d85863a6",
+    "_weight": 22
+  },
+  {
+    "report_id": "57b8ba6c-d23a-4fce-8177-b126a748b5db",
+    "reported_at": "2026-08-29T06:40:33.886014+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "1ad1514e0643ba96",
+    "_weight": 20
+  },
+  {
+    "report_id": "d0ac6e34-a373-45cb-8a2d-d00fd5a9a57a",
+    "reported_at": "2026-08-29T06:40:41.384765+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "59e2d326988f3bf2",
+    "_weight": 17
+  },
+  {
+    "report_id": "06284133-249d-4e58-bbef-053e1c9671d8",
+    "reported_at": "2026-08-29T06:40:48.525164+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "5f86bc95c5bd966d",
+    "_weight": 13
+  },
+  {
+    "report_id": "502844c7-546f-422b-88b7-99ecbdcaa276",
+    "reported_at": "2026-08-29T06:40:55.099537+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "07dc01935763a179",
+    "_weight": 9
+  },
+  {
+    "report_id": "45032211-6d6e-415c-b324-5781e729d4a7",
+    "reported_at": "2026-08-29T06:41:00.924156+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-14",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "a2a5502a95a211d2",
+    "_weight": 5
+  },
+  {
+    "report_id": "c07dc066-372b-490d-8e8a-5565307624ff",
+    "reported_at": "2026-08-29T06:53:30.407977+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-3",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "f90491679271602c",
+    "_weight": 14
+  },
+  {
+    "report_id": "b903094a-d858-4dae-86fb-9297460c426c",
+    "reported_at": "2026-08-29T06:53:35.886463+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "064e372f8b762fb3",
+    "_weight": 5
+  },
+  {
+    "report_id": "4c8769ed-4c65-4892-8284-762a61d51b66",
+    "reported_at": "2026-08-29T06:53:40.742375+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "a32fdc2758ef673e",
+    "_weight": 5
+  },
+  {
+    "report_id": "9cbd1df2-f6aa-4644-8cfc-af29510e3c95",
+    "reported_at": "2026-08-29T06:53:46.353374+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "bb98b2ecfb40aa60",
+    "_weight": 9
+  },
+  {
+    "report_id": "60d2b1e0-60a6-4ec3-9acc-255d3b3c40d7",
+    "reported_at": "2026-08-29T06:53:52.704918+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "8cdc8ea81dcce577",
+    "_weight": 13
+  },
+  {
+    "report_id": "9687fe7b-4ff5-46b9-9b64-28a9fd826617",
+    "reported_at": "2026-08-29T06:53:59.360268+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "749450b20fbeabd8",
+    "_weight": 17
+  },
+  {
+    "report_id": "e1ebe9d9-bae9-4d9e-9e4a-ebbc34967721",
+    "reported_at": "2026-08-29T06:54:06.721855+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "44dc3fc202a4ec29",
+    "_weight": 20
+  },
+  {
+    "report_id": "27843fda-089c-40e4-98cd-2f1d3e8d756e",
+    "reported_at": "2026-08-29T06:54:14.349658+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "ffb1fd8a2d281c8d",
+    "_weight": 22
+  },
+  {
+    "report_id": "7f5f7a29-a76c-4527-9f9f-109d22fa1768",
+    "reported_at": "2026-08-29T06:54:22.251528+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "915b35aecb2cb923",
+    "_weight": 23
+  },
+  {
+    "report_id": "32477da1-4c48-439d-8612-751bdd959bdc",
+    "reported_at": "2026-08-29T06:54:30.097757+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "8f1df5a8d85863a6",
+    "_weight": 22
+  },
+  {
+    "report_id": "1fecb63e-facf-4ef6-a699-25f241b248c2",
+    "reported_at": "2026-08-29T06:54:37.950236+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "1ad1514e0643ba96",
+    "_weight": 20
+  },
+  {
+    "report_id": "b1b86925-ace2-40ad-a241-f5e732f12eee",
+    "reported_at": "2026-08-29T06:54:45.422447+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "59e2d326988f3bf2",
+    "_weight": 17
+  },
+  {
+    "report_id": "8fbd22e6-76eb-4cda-a1be-5ee44152d281",
+    "reported_at": "2026-08-29T06:54:52.584512+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "5f86bc95c5bd966d",
+    "_weight": 13
+  },
+  {
+    "report_id": "7dca7565-ff3e-4cac-b115-966038946201",
+    "reported_at": "2026-08-29T06:54:59.060881+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "07dc01935763a179",
+    "_weight": 9
+  },
+  {
+    "report_id": "fc8431db-2241-4b82-bc63-9d4e4f5edfbf",
+    "reported_at": "2026-08-29T06:55:04.791703+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "testing",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "rapid_antigen_influenza"
+    ],
+    "syndromes": [
+      "influenza_like_illness"
+    ],
+    "symptom_onset": "2026-09-14",
+    "severity": "moderate",
+    "visit_type": null,
+    "consent_token": "a2a5502a95a211d2",
+    "_weight": 5
   }
 ]

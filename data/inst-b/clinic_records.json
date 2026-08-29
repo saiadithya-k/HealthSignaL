@@ -1,0 +1,3462 @@
+[
+  {
+    "report_id": "35034643-6d36-48d8-8963-eb53fdda987f",
+    "reported_at": "2026-08-29T05:40:22.425536",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 40
+  },
+  {
+    "report_id": "808ece69-04cd-416e-a874-bd4249350519",
+    "reported_at": "2026-08-29T05:40:23.731966",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 48
+  },
+  {
+    "report_id": "37880936-d5b3-4225-8bc5-10edfe75d47b",
+    "reported_at": "2026-08-29T05:40:23.731966",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "44b264ed-500d-40a6-b7d7-a5851b6e902a",
+    "reported_at": "2026-08-29T05:40:23.897907",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 53
+  },
+  {
+    "report_id": "4b20d3aa-165b-4ca2-af73-b9708f249008",
+    "reported_at": "2026-08-29T05:40:24.147651",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 53
+  },
+  {
+    "report_id": "c8fd6632-f3e5-459c-bc0d-e6f20c708752",
+    "reported_at": "2026-08-29T05:40:24.451536",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 48
+  },
+  {
+    "report_id": "305d7789-3f37-4714-8bda-eec3df3f68db",
+    "reported_at": "2026-08-29T05:40:24.757859",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 40
+  },
+  {
+    "report_id": "06a560de-d8f2-450a-b5fd-031834bb9793",
+    "reported_at": "2026-08-29T05:40:25.802273",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "d851d659-d9b5-4e68-9640-9f994833e2a0",
+    "reported_at": "2026-08-29T05:40:26.150087",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "cf52a471-a8ba-4237-9a33-8130e0576046",
+    "reported_at": "2026-08-29T05:40:26.175089",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "6e13c123-0db3-4d1b-948f-0a8375e3bc46",
+    "reported_at": "2026-08-29T05:40:26.374369",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "7a983770-c78d-440b-bda5-703c27746797",
+    "reported_at": "2026-08-29T05:40:26.467089",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "11855147-8c33-4960-b913-9221148a1ddc",
+    "reported_at": "2026-08-29T05:40:26.664613",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "af72523a-b309-4d4b-8bd0-23d5e581b9b3",
+    "reported_at": "2026-08-29T05:40:26.924853",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "23dcc45e-6b2b-478d-9ff7-4a9f376a1fe8",
+    "reported_at": "2026-08-29T05:40:27.276919",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "2bcf8846-c40e-4cb6-aed9-22d8faf35dfe",
+    "reported_at": "2026-08-29T05:40:27.480741",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "3b3cb6e1-760a-4d53-8e84-21960842371f",
+    "reported_at": "2026-08-29T05:40:27.910234",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "e73d4e5c-88df-4643-8c5f-75f8cd457c57",
+    "reported_at": "2026-08-29T05:40:28.208102",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "fcf96520-1395-4beb-8e53-a3eb3eb8a032",
+    "reported_at": "2026-08-29T05:40:28.750788",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "64531cfd-f543-4414-9b2f-5d2fc3465d60",
+    "reported_at": "2026-08-29T05:40:28.839650",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "76b9a3af-b6fd-4af9-b28d-7086689faa3b",
+    "reported_at": "2026-08-29T05:40:29.012443",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "f5478b10-baec-4b4d-965b-0305b59b2edf",
+    "reported_at": "2026-08-29T05:40:29.015442",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "2feb774d-6339-4b4a-96a6-c0e0ddec0139",
+    "reported_at": "2026-08-29T05:40:29.137254",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "26a5cf4b-5c54-4d1d-8d7b-d385e9b111b4",
+    "reported_at": "2026-08-29T05:40:29.201254",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "e1030a5d-dcf0-46a7-ae1b-f46033f3edd9",
+    "reported_at": "2026-08-29T05:40:29.525568",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "7e64053f-2b4c-47b5-9b34-f82e37e3d307",
+    "reported_at": "2026-08-29T05:40:29.931575",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "b05afcc2-8134-42f2-bbff-6d4cabf4e112",
+    "reported_at": "2026-08-29T05:40:30.408189",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "63c81c35-b6d6-45c8-8163-e2330a7a1c86",
+    "reported_at": "2026-08-29T05:40:30.923218",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "1f152e90-9c15-45c2-9046-1e427947eb6d",
+    "reported_at": "2026-08-29T05:40:31.460493",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "04cbb8d7-21fe-4c5f-85f6-922ee26a5d14",
+    "reported_at": "2026-08-29T05:40:33.088908",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "9ef21728-65b0-4532-91e2-98c2fdd47681",
+    "reported_at": "2026-08-29T05:40:33.691423",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "b342f70c-1768-4b31-a94f-26b45033cf19",
+    "reported_at": "2026-08-29T05:40:34.438467",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "549ccd31-f86b-4c94-906b-e913cc94b9c9",
+    "reported_at": "2026-08-29T05:40:35.365828",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "308935f9-0a99-4cad-b9bf-1cab8dc320b2",
+    "reported_at": "2026-08-29T05:40:35.594161",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "ee331bce-c2fa-42a5-8056-6abb4ea2e282",
+    "reported_at": "2026-08-29T05:40:35.772731",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "3e420946-caf4-449a-874b-625d604f9606",
+    "reported_at": "2026-08-29T05:40:35.789723",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "4b6e97c4-7d78-46a5-9822-84fc4f517197",
+    "reported_at": "2026-08-29T05:40:35.923874",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "5cf45f3b-8a2f-4825-9b6e-be6fa91e2110",
+    "reported_at": "2026-08-29T05:40:35.977228",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "1cbb887d-868d-407b-8d90-4542c8001463",
+    "reported_at": "2026-08-29T05:40:36.155403",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "fdb55d81-8b8b-4773-b2e3-3ab0809887f9",
+    "reported_at": "2026-08-29T05:40:36.288395",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "4be84326-b763-4dc6-9ca2-6e92865de234",
+    "reported_at": "2026-08-29T05:40:36.537367",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "8fe67c48-f73a-47b1-9fe5-41ec7cbd8dab",
+    "reported_at": "2026-08-29T05:40:36.862858",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "7fea8de5-7574-4441-bb8e-85e832bdf064",
+    "reported_at": "2026-08-29T05:40:37.191214",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "9a105148-51e7-47dd-a219-11a3aa8a399c",
+    "reported_at": "2026-08-29T05:40:37.587380",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "725bad72-1531-4609-9ee5-54831c817133",
+    "reported_at": "2026-08-29T05:40:37.589387",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "81866ad5-a8f1-4858-82ee-5c68a4b4a8a3",
+    "reported_at": "2026-08-29T05:40:37.762092",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "8f2881fd-de40-4b25-bde9-14a4d02d899e",
+    "reported_at": "2026-08-29T05:40:37.901113",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "25759c95-fae7-4422-9632-420109bae244",
+    "reported_at": "2026-08-29T05:40:37.905113",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "943edbde-600d-46fe-8ae2-7446ce183ffe",
+    "reported_at": "2026-08-29T05:40:38.026345",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "dfec6dc4-5f30-493d-ae25-fa0e5bfddb89",
+    "reported_at": "2026-08-29T05:40:38.043345",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "42da6c69-446b-41c2-9ad7-356abdec7a59",
+    "reported_at": "2026-08-29T05:40:38.161061",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "8a90f1ad-7349-455a-b98c-dc1abd8ab54f",
+    "reported_at": "2026-08-29T05:40:38.199575",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "5dd0cd1c-3231-4bdc-b6f0-c37bf6f4e395",
+    "reported_at": "2026-08-29T05:40:38.328072",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "c55b6ead-9350-4a83-864a-7f9815159fd5",
+    "reported_at": "2026-08-29T05:40:38.436078",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "82b87a6d-d461-4848-a788-912f03be1e19",
+    "reported_at": "2026-08-29T05:40:38.750162",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "f0234608-b163-4f39-8b84-fc23872a9728",
+    "reported_at": "2026-08-29T05:40:39.089075",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "09031d75-6177-4f80-8d0b-de6ea9d1c7ae",
+    "reported_at": "2026-08-29T05:58:52.170467+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "7b6920ed-233b-425d-bf5f-cd3f364ee48f",
+    "reported_at": "2026-08-29T05:58:52.670684+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 40
+  },
+  {
+    "report_id": "448500fe-71f9-4a0b-8161-68ede7f81e89",
+    "reported_at": "2026-08-29T05:58:53.195912+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 48
+  },
+  {
+    "report_id": "716b0efd-6c77-4fe5-ac06-565cf42782bb",
+    "reported_at": "2026-08-29T05:58:53.935525+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 53
+  },
+  {
+    "report_id": "90745dcc-d03a-431e-b41a-0f03fac20634",
+    "reported_at": "2026-08-29T05:58:54.732743+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 53
+  },
+  {
+    "report_id": "39e33335-6160-4ecb-a77c-c7913acf1af6",
+    "reported_at": "2026-08-29T05:58:55.504045+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 48
+  },
+  {
+    "report_id": "55debcc2-9e0b-4092-80d9-c9714eee7f59",
+    "reported_at": "2026-08-29T05:58:56.307594+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 40
+  },
+  {
+    "report_id": "2f7820b0-ba78-48c6-8a84-e6672515834c",
+    "reported_at": "2026-08-29T05:58:57.971704+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "b62920f6-60ca-43c0-81b4-9ef2b2c4ef22",
+    "reported_at": "2026-08-29T05:58:58.870331+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "9099d299-4eaa-4e44-b448-3a1629a8cd6b",
+    "reported_at": "2026-08-29T05:59:00.182330+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "f72a17da-d9ef-438f-b8c6-0e8dfbe09edb",
+    "reported_at": "2026-08-29T05:59:01.525046+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "51cb3552-5bb9-4cd6-8ad5-1992cee0e97d",
+    "reported_at": "2026-08-29T05:59:03.115442+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "d5b49def-ff4a-46c2-a899-3fa1aa8d8bc9",
+    "reported_at": "2026-08-29T06:05:39.553309+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "ebcf0f6f-b3b7-40c6-a739-1e4b67918d42",
+    "reported_at": "2026-08-29T06:05:40.490611+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 40
+  },
+  {
+    "report_id": "e097d18f-b58a-4b36-aa36-c7486074127a",
+    "reported_at": "2026-08-29T06:05:41.684890+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 48
+  },
+  {
+    "report_id": "01e54fb9-58ab-4ffc-8779-8540708deb79",
+    "reported_at": "2026-08-29T06:05:43.381168+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 53
+  },
+  {
+    "report_id": "71c53723-5345-4cd1-823f-b62efab73e99",
+    "reported_at": "2026-08-29T06:05:44.956188+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 53
+  },
+  {
+    "report_id": "847d7b13-706d-46d7-bb77-1a6c5ceac646",
+    "reported_at": "2026-08-29T06:05:46.508041+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 48
+  },
+  {
+    "report_id": "5ae199bd-b1c1-41a8-9b5f-ed0e4e4060f9",
+    "reported_at": "2026-08-29T06:05:47.878180+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 40
+  },
+  {
+    "report_id": "08e69002-917c-4e9b-8892-56f3a10827aa",
+    "reported_at": "2026-08-29T06:05:50.292308+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "b5c91837-5cf2-4735-8d29-f0fa570415ab",
+    "reported_at": "2026-08-29T06:05:52.220936+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "b8781b94-2563-4e0a-b640-f9846af35a6b",
+    "reported_at": "2026-08-29T06:05:54.224122+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "88523d8f-6b63-4ce2-8c1a-0141ebd945d7",
+    "reported_at": "2026-08-29T06:05:56.482527+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "64db833b-77eb-4566-a9eb-3a15fb4cc25b",
+    "reported_at": "2026-08-29T06:05:59.069937+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "123f796c-617e-42d8-8c28-2134df671af8",
+    "reported_at": "2026-08-29T06:06:02.154626+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "afb83dcb-56c7-4408-9c60-cd35027a81f7",
+    "reported_at": "2026-08-29T06:06:05.240260+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "0aa4a20f-1d04-46bf-834e-6b480f2e557f",
+    "reported_at": "2026-08-29T06:06:08.726636+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "b2c3e76d-7d86-463f-9f49-137ee3216361",
+    "reported_at": "2026-08-29T06:06:12.472029+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "e0cdea44-9879-4eb1-a6d7-41ff3ccf2f82",
+    "reported_at": "2026-08-29T06:06:15.918073+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "0b941d76-3bef-4782-85d5-0812167fb5cf",
+    "reported_at": "2026-08-29T06:06:19.397579+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "259c7c28-92a2-4a3e-980a-ede0f24a54ec",
+    "reported_at": "2026-08-29T06:06:22.648265+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "6b5590c3-77a7-483a-a371-ea6550ae6c1f",
+    "reported_at": "2026-08-29T06:06:25.425725+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "23888557-efcc-471f-a975-03a92f0e47be",
+    "reported_at": "2026-08-29T06:06:27.919574+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "8b2aae10-2b03-4f14-9893-7ec36301daca",
+    "reported_at": "2026-08-29T06:06:34.906544+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "b32d0564-4e11-462b-be8f-c9d83e166251",
+    "reported_at": "2026-08-29T06:06:37.453197+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "d9a58192-0f7c-4d22-8b5e-ff48fdf1e0f1",
+    "reported_at": "2026-08-29T06:06:40.377240+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "d517486a-ee8b-4fb3-a896-b87cbb9168db",
+    "reported_at": "2026-08-29T06:06:43.760396+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "240df1a4-68ee-486a-9af2-347dd9be7232",
+    "reported_at": "2026-08-29T06:06:47.450476+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "8869b322-1d60-4391-8f31-7b8c82781987",
+    "reported_at": "2026-08-29T06:06:51.578334+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "21ba7181-c3ac-4b6c-b6cf-9529b65de46d",
+    "reported_at": "2026-08-29T06:06:55.849537+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "ef98d29c-7748-4385-97da-304894597dfe",
+    "reported_at": "2026-08-29T06:07:00.474815+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "be80a9d1-e54e-4d8f-a5ef-ba8fcb16b855",
+    "reported_at": "2026-08-29T06:07:04.991309+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "37f1ce34-a71e-41d6-a6df-42f43f76df93",
+    "reported_at": "2026-08-29T06:07:09.641108+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "250e12f6-b46b-4450-8b88-3ee9dfaadfe9",
+    "reported_at": "2026-08-29T06:07:14.077013+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "8bd64af3-4621-4c48-8275-e934a8fe6dec",
+    "reported_at": "2026-08-29T06:07:18.319314+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "71d0bb48-f9f9-4ee4-8199-5442e2218843",
+    "reported_at": "2026-08-29T06:07:22.299220+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "46b3475b-e3eb-4f7c-a869-f0f469d5b0b2",
+    "reported_at": "2026-08-29T06:07:25.824118+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "87f4deea-23df-4606-afd4-2c14a4548957",
+    "reported_at": "2026-08-29T06:14:30.016127+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "457d80e6-e1c1-4827-8ec7-fa15fad8d440",
+    "reported_at": "2026-08-29T06:14:33.184397+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 40
+  },
+  {
+    "report_id": "e36bd724-16e3-4e00-942b-e1efa8fdd6a0",
+    "reported_at": "2026-08-29T06:14:36.979913+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 48
+  },
+  {
+    "report_id": "35bcc5d2-2a21-4d4d-b295-f32b4ac93491",
+    "reported_at": "2026-08-29T06:14:41.293877+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 53
+  },
+  {
+    "report_id": "6ca2cbe6-4a6b-4106-aa6c-14fa76678259",
+    "reported_at": "2026-08-29T06:14:45.634965+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 53
+  },
+  {
+    "report_id": "609acbb5-007a-4ad8-8af5-dbff97859364",
+    "reported_at": "2026-08-29T06:14:49.746491+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 48
+  },
+  {
+    "report_id": "69e1b179-fdf0-46e2-807a-5ef821e060ee",
+    "reported_at": "2026-08-29T06:14:53.187860+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 40
+  },
+  {
+    "report_id": "41aaf4b0-f437-4831-a5e7-1bf955ea2c2c",
+    "reported_at": "2026-08-29T06:14:57.236312+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "972c7c0f-f949-449d-95df-b9d4d721b86c",
+    "reported_at": "2026-08-29T06:15:01.215855+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "f4a6958a-6dfc-40ed-bc87-913a2177e91f",
+    "reported_at": "2026-08-29T06:15:05.810835+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "ae7c718f-151e-4e14-84f7-c0bc7b17b3a7",
+    "reported_at": "2026-08-29T06:15:11.084374+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "3e9cd570-de05-4ab9-998c-cfbea58e7f74",
+    "reported_at": "2026-08-29T06:15:16.875688+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "ad37f633-d5ed-459a-a1ae-d172f944a7c8",
+    "reported_at": "2026-08-29T06:15:23.071477+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "e7e53ce1-d573-4c0a-8f55-9ae2e0916120",
+    "reported_at": "2026-08-29T06:15:29.572632+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "ff90a0fe-29c1-41ad-9c23-d41fa913d8c9",
+    "reported_at": "2026-08-29T06:15:36.429479+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "17f5e304-c1b1-40c3-afeb-472e37c716c2",
+    "reported_at": "2026-08-29T06:15:43.301128+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "daafeb89-967d-4a91-b7a3-da2277e83de6",
+    "reported_at": "2026-08-29T06:15:50.094136+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "3f8a02b0-181d-41fd-946e-6d03dcd84652",
+    "reported_at": "2026-08-29T06:15:56.634208+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "d3021dcd-4452-4b82-9935-b4285d818932",
+    "reported_at": "2026-08-29T06:16:02.947881+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "0e5f98d4-5946-426e-9e5d-e9b531167b65",
+    "reported_at": "2026-08-29T06:16:08.788774+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "3f377cd6-0774-494b-a649-5dd559d24e87",
+    "reported_at": "2026-08-29T06:16:14.019152+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "541979b3-608a-4332-97af-7985f4308c7e",
+    "reported_at": "2026-08-29T06:16:23.626736+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "1da428ed-f571-4821-9e4f-87fe7eeefb84",
+    "reported_at": "2026-08-29T06:16:28.733345+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "ed945c84-785b-41a6-8fcd-67762a11b528",
+    "reported_at": "2026-08-29T06:16:34.489143+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "0e9c4031-0911-41d6-b79c-79493ca50f2b",
+    "reported_at": "2026-08-29T06:16:41.064828+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "9a3f44bf-4a72-4b52-8771-533ec79f84e1",
+    "reported_at": "2026-08-29T06:16:48.169386+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "c9a9f481-0fee-45ee-9905-1d5da4ea175b",
+    "reported_at": "2026-08-29T06:16:55.834326+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "fbcc09f3-6979-45b8-85fe-84b9f55e3dc0",
+    "reported_at": "2026-08-29T06:17:03.770137+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "267e8515-08d5-4509-8f7f-26df6d17b60f",
+    "reported_at": "2026-08-29T06:17:12.347754+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "232ff94b-9ad2-4eb8-bd2c-e3106e29d785",
+    "reported_at": "2026-08-29T06:17:20.660619+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "15360f3d-9afa-48f9-9253-237a9675882e",
+    "reported_at": "2026-08-29T06:17:29.049799+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "40b71d22-6124-4320-824d-26f46f26082f",
+    "reported_at": "2026-08-29T06:17:37.119210+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "cdcf5d2d-cece-48ec-abb2-342183898498",
+    "reported_at": "2026-08-29T06:17:44.782767+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "deb5f6fa-a0ea-423f-917c-dda0bf2aaa68",
+    "reported_at": "2026-08-29T06:17:51.773327+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "39399171-ef6a-42b8-9e12-45992d4aeab3",
+    "reported_at": "2026-08-29T06:17:58.134524+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "0183cac8-17d3-4928-9827-b563e754fbe3",
+    "reported_at": "2026-08-29T06:36:30.846816+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "b42afea0-e695-44e4-b163-b0c56db8b698",
+    "reported_at": "2026-08-29T06:36:37.471998+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 40
+  },
+  {
+    "report_id": "09f496fa-767d-4716-a4b5-d1b5522dc688",
+    "reported_at": "2026-08-29T06:36:44.811357+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 48
+  },
+  {
+    "report_id": "894d2e72-9711-4569-96f7-2460432770e6",
+    "reported_at": "2026-08-29T06:36:53.031024+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 53
+  },
+  {
+    "report_id": "ca8f3c11-fc62-46be-8187-4ccfceb90b0a",
+    "reported_at": "2026-08-29T06:37:01.454589+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 53
+  },
+  {
+    "report_id": "ba957687-7e96-4479-b265-600a029d3047",
+    "reported_at": "2026-08-29T06:37:08.753024+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_48_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 48
+  },
+  {
+    "report_id": "80fb242a-5696-40f1-95c9-beb88daa02cd",
+    "reported_at": "2026-08-29T06:37:14.734244+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_40_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 40
+  },
+  {
+    "report_id": "5022ec72-46d5-46e0-b503-ce35ecc8040f",
+    "reported_at": "2026-08-29T06:37:21.382009+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "b71e7f8f-f7d7-4481-b5b6-cb3df198d58e",
+    "reported_at": "2026-08-29T06:37:28.160704+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "0f0e44cd-c94e-4d93-8f1c-7c30703d1f0a",
+    "reported_at": "2026-08-29T06:37:36.084249+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "a0dc7f50-17a1-4c92-bdba-94641be54342",
+    "reported_at": "2026-08-29T06:37:45.022361+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "24649257-959a-46d5-ab77-d5b3051b61ab",
+    "reported_at": "2026-08-29T06:37:55.674033+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "3cb43187-6b1e-4630-887b-4957cdfe6428",
+    "reported_at": "2026-08-29T06:38:06.504946+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "f3617984-f740-49aa-aab7-b43b46fb5e08",
+    "reported_at": "2026-08-29T06:38:17.374659+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "fde58f02-c388-4523-8368-c10120af2ec2",
+    "reported_at": "2026-08-29T06:38:28.644795+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "f2e8ed7a-35ea-459a-b5ba-be738e18ac00",
+    "reported_at": "2026-08-29T06:38:40.446515+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "52762381-c71a-4a11-981a-b26b36e6f77e",
+    "reported_at": "2026-08-29T06:38:52.482280+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "d9ac1792-db7a-46b9-a0d4-4b2000a80c0a",
+    "reported_at": "2026-08-29T06:39:03.660929+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "836fde81-84a6-4f3c-b3c7-d51b63475b8c",
+    "reported_at": "2026-08-29T06:39:13.750106+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "8e03a7aa-0961-4fbe-a7bd-4d57c156cb2d",
+    "reported_at": "2026-08-29T06:39:20.901172+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "61cbedf0-472d-4bbf-bcbb-14a738115245",
+    "reported_at": "2026-08-29T06:39:25.161168+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  },
+  {
+    "report_id": "b9769a0e-9b83-48bc-ba39-6517aefee78c",
+    "reported_at": "2026-08-29T06:39:34.479117+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "cadd60c071e01425",
+    "_weight": 35
+  },
+  {
+    "report_id": "c663e88c-9f36-4eb0-8d70-8589f7061e8f",
+    "reported_at": "2026-08-29T06:39:38.911468+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5b11405d32ffe8ae",
+    "_weight": 35
+  },
+  {
+    "report_id": "6e2ac1a7-887e-476d-8f82-5c41d4ca220f",
+    "reported_at": "2026-08-29T06:39:44.048103+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "99ad30f82951b129",
+    "_weight": 41
+  },
+  {
+    "report_id": "3459519c-4c62-425e-944f-3e03a1ad3212",
+    "reported_at": "2026-08-29T06:39:49.438880+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "5d981bfe296ca1ff",
+    "_weight": 46
+  },
+  {
+    "report_id": "a4d9be89-e01c-4285-9be8-beead8a3b150",
+    "reported_at": "2026-08-29T06:39:55.801331+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0068fcc71511563c",
+    "_weight": 50
+  },
+  {
+    "report_id": "3cd8b6e7-f24b-48e4-86d6-03bce21aa150",
+    "reported_at": "2026-08-29T06:40:02.391306+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ef46dd110cba0c24",
+    "_weight": 53
+  },
+  {
+    "report_id": "b3938388-a86b-4042-a690-4d5bf1edca42",
+    "reported_at": "2026-08-29T06:40:09.132088+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "469d88e6763f9045",
+    "_weight": 54
+  },
+  {
+    "report_id": "40906884-89a9-40dd-ada3-60fe49b5910a",
+    "reported_at": "2026-08-29T06:40:16.246955+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_55_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "0e2f9daa054a26f0",
+    "_weight": 55
+  },
+  {
+    "report_id": "eaee320e-8805-46d6-8115-86488e85e088",
+    "reported_at": "2026-08-29T06:40:23.258888+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_54_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "d4c982c020c4e4b6",
+    "_weight": 54
+  },
+  {
+    "report_id": "14faeb3c-2fac-4e50-b4d7-6543757e8e36",
+    "reported_at": "2026-08-29T06:40:30.470383+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_53_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "c70f77406f631bdf",
+    "_weight": 53
+  },
+  {
+    "report_id": "40a86dc0-afbc-4b90-a902-78bf562e0a8c",
+    "reported_at": "2026-08-29T06:40:37.858303+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_50_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "moderate",
+    "visit_type": "emergency",
+    "consent_token": "ed6a1bd503aa637f",
+    "_weight": 50
+  },
+  {
+    "report_id": "f4b07f5c-3e24-4a77-8d46-0ffe34add6a4",
+    "reported_at": "2026-08-29T06:40:45.407450+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_46_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "45a1bab322e4fff6",
+    "_weight": 46
+  },
+  {
+    "report_id": "3f6d818f-c75f-4278-b56e-697975eda371",
+    "reported_at": "2026-08-29T06:40:52.127400+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_41_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "4ef11e83a49785be",
+    "_weight": 41
+  },
+  {
+    "report_id": "6147850d-5d0a-4c82-af02-d2e667335c90",
+    "reported_at": "2026-08-29T06:40:58.158031+00:00",
+    "node_id": "inst-b",
+    "zone_id": "zone-1",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection_35_visits"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-09-13",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "b758c0bd160aba4a",
+    "_weight": 35
+  }
+]

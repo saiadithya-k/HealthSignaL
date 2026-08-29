@@ -1,0 +1,94 @@
+{
+  "title": "HealthSignal Multi-Source Reliability & Temporal Lead/Lag Matrix",
+  "generated_at": "2026-08-29T06:23:28.829088+00:00",
+  "total_sources_configured": 7,
+  "sources": {
+    "diagnostic_testing": {
+      "source_name": "Diagnostic Laboratory Testing (PCR / Serology / Rapid Ag)",
+      "reliability_weight": 0.95,
+      "typical_lead_time_days": 0,
+      "typical_lag_days": 2,
+      "completeness_benchmark": 0.92,
+      "participating_nodes": [
+        "inst-a",
+        "inst-b",
+        "inst-c",
+        "inst-d"
+      ]
+    },
+    "doctor_triage": {
+      "source_name": "Doctor / Clinician Triage Observations",
+      "reliability_weight": 0.9,
+      "typical_lead_time_days": 0,
+      "typical_lag_days": 1,
+      "completeness_benchmark": 0.9,
+      "participating_nodes": [
+        "inst-a",
+        "inst-b",
+        "inst-c",
+        "inst-d"
+      ]
+    },
+    "wastewater": {
+      "source_name": "Wastewater / Environmental Pathogen Surveillance",
+      "reliability_weight": 0.85,
+      "typical_lead_time_days": 3,
+      "typical_lag_days": 0,
+      "completeness_benchmark": 0.8,
+      "participating_nodes": [
+        "inst-a",
+        "inst-b",
+        "inst-d"
+      ]
+    },
+    "emergency_dispatch": {
+      "source_name": "Emergency Medical Services (EMS) / 911 Calls",
+      "reliability_weight": 0.8,
+      "typical_lead_time_days": 1,
+      "typical_lag_days": 0,
+      "completeness_benchmark": 0.85,
+      "participating_nodes": [
+        "inst-a",
+        "inst-b",
+        "inst-d"
+      ]
+    },
+    "pharmacy_otc": {
+      "source_name": "Pharmacy Over-the-Counter (OTC) Medication Sales",
+      "reliability_weight": 0.75,
+      "typical_lead_time_days": 2,
+      "typical_lag_days": 0,
+      "completeness_benchmark": 0.88,
+      "participating_nodes": [
+        "inst-a",
+        "inst-b",
+        "inst-c",
+        "inst-d"
+      ]
+    },
+    "absenteeism": {
+      "source_name": "School & Workplace Absenteeism Records",
+      "reliability_weight": 0.65,
+      "typical_lead_time_days": 2,
+      "typical_lag_days": 1,
+      "completeness_benchmark": 0.7,
+      "participating_nodes": [
+        "inst-a",
+        "inst-b"
+      ]
+    },
+    "community_reports": {
+      "source_name": "Self-Reported Community Mobile/USSD Symptoms",
+      "reliability_weight": 0.5,
+      "typical_lead_time_days": 3,
+      "typical_lag_days": 0,
+      "completeness_benchmark": 0.75,
+      "participating_nodes": [
+        "inst-a",
+        "inst-b",
+        "inst-c",
+        "inst-d"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "HealthSignal Person 2 Forecasting, Federated Learning & Early Warning Validation Report",
+  "generated_at": "2026-08-29T06:29:21.294247+00:00",
+  "model_architecture": {
+    "feature_dimension": 13,
+    "algorithm": "Federated FedAvg + Ridge Regression",
+    "supported_horizons": [
+      7,
+      10,
+      14
+    ],
+    "prediction_intervals": [
+      "80%",
+      "95%"
+    ],
+    "uncertainty_engine": "Recursive multi-horizon accumulated variance"
+  },
+  "calibration_summary": {
+    "nominal_80": 0.8,
+    "empirical_80": 0.8903,
+    "nominal_95": 0.95,
+    "empirical_95": 0.9446
+  },
+  "early_warning_summary": {
+    "average_lead_time_days": 15.8,
+    "detection_rate": 1.0,
+    "mean_delay_days": 0.0
+  },
+  "state_management_validated": [
+    "0_to_1_to_0_node_transition",
+    "0_to_2_to_0_node_transition",
+    "7_to_14_to_7_horizon_transition",
+    "latest_request_wins_cache_invalidation"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "report_id": "337c3065-1c5c-41bc-89a2-73b94b88d79f",
+    "reported_at": "2026-08-29T06:53:30.472124+00:00",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "emergency",
+    "age_band": "45-59",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "emergency_respiratory"
+    ],
+    "syndromes": [
+      "severe_acute_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "severe",
+    "visit_type": null,
+    "consent_token": "45b25ecd2890a2d8",
+    "_weight": 20
+  }
+]

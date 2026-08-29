@@ -1,7 +1,7 @@
 {
   "forecast_horizon": 7,
   "alpha": 1.0,
-  "evaluation_date": "2026-08-29 11:43:46",
+  "evaluation_date": "2026-08-29 12:23:22",
   "baselines": {
     "naive_lag7": {
       "by_institution": {

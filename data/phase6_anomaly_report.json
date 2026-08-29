@@ -1,14 +1,14 @@
 {
   "detector_config": {
     "drift_k": 0.5,
-    "threshold_h": 3.0,
-    "residual_sigma": 5.0316
+    "threshold_h": 4.0,
+    "residual_sigma": 1.3471
   },
-  "new_candidates_generated": 32,
-  "total_candidates": 232,
-  "total_approved": 27,
-  "total_rejected": 14,
-  "confidence_score": 0.93,
+  "new_candidates_generated": 203,
+  "total_candidates": 448,
+  "total_approved": 0,
+  "total_rejected": 0,
+  "confidence_score": 0.6828,
   "coverage_ratio": 1.0,
   "missing_node_count": 0,
   "model_version": "v1.0.0-fed-h7"

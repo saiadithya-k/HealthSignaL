@@ -3618,5 +3618,25 @@
     "visit_type": null,
     "consent_token": "358b7d01df9bb983",
     "_weight": 4
+  },
+  {
+    "report_id": "6106e53e-37b1-4540-8741-a43ea9f22417",
+    "reported_at": "2026-08-29T06:53:30.388955+00:00",
+    "node_id": "inst-c",
+    "zone_id": "zone-2",
+    "data_source": "clinic",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "acute_febrile_illness_50_visits"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "outpatient",
+    "consent_token": "76a744efefeed24b",
+    "_weight": 50
   }
 ]

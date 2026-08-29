@@ -1,7 +1,10 @@
 import os
+import sys
 import json
 import numpy as np
 import pandas as pd
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from app.core.local_node import LocalInstitutionClient
 from app.ml.features import FEATURE_COLUMNS, build_supervised_features, prepare_chronological_split
@@ -170,10 +173,13 @@ def generate_forecast_evaluation():
     for nid, data in node_evals.items():
         summary_md += f"| `{nid}` | {profiles.get(nid, 'Unknown')} | {data['mae']:.4f} | {data['rmse']:.4f} | {data['sample_count']} |\n"
 
-    with open("data/forecast_evaluation_summary.md", "w") as f:
-        f.write(summary_md)
+    for p in ["data/forecast_evaluation_summary.md", "backend/data/forecast_evaluation_summary.md"]:
+        if os.path.exists(os.path.dirname(p)) or p.startswith("data/"):
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(summary_md)
 
-    print("Successfully generated forecast evaluation reports.")
+    print("[OK] Successfully generated forecast evaluation reports.")
 
 if __name__ == "__main__":
     generate_forecast_evaluation()
