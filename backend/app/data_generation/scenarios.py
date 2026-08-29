@@ -83,9 +83,13 @@ def apply_scenario_modifiers(
         # Scenario 1: Respiratory Outbreak in Urban (inst-a), Semi-Urban (inst-b), and Mixed (inst-d)
         surge_start = start_date + timedelta(days=60)
         surge_end = start_date + timedelta(days=90)
-        if surge_start <= current_date <= surge_end and institution_id in ["inst-a", "inst-b", "inst-d"]:
+        is_surge_window = (surge_start <= current_date <= surge_end) or (day_index >= 345)
+        if is_surge_window and institution_id in ["inst-a", "inst-b", "inst-d"]:
             modified_counts["respiratory"] = int(round(modified_counts.get("respiratory", 0) * 1.85))
             modified_counts["fever_flu"] = int(round(modified_counts.get("fever_flu", 0) * 1.40))
+            for syn in ["influenza_like_illness", "upper_respiratory_infection", "severe_acute_respiratory_infection", "bronchiolitis_pediatric", "pneumonia_clinical", "acute_pharyngitis"]:
+                if syn in modified_counts:
+                    modified_counts[syn] = int(round(modified_counts[syn] * 1.85))
             ground_truth.append(GroundTruthEvent(
                 scenario_name=ScenarioType.RESPIRATORY_OUTBREAK,
                 affected_institution=institution_id,
@@ -100,9 +104,13 @@ def apply_scenario_modifiers(
         # Scenario 2: GI Outbreak in Rural (inst-c) and Semi-Urban (inst-b)
         surge_start = start_date + timedelta(days=120)
         surge_end = start_date + timedelta(days=145)
-        if surge_start <= current_date <= surge_end and institution_id in ["inst-b", "inst-c"]:
+        is_surge_window = (surge_start <= current_date <= surge_end) or (day_index >= 345)
+        if is_surge_window and institution_id in ["inst-b", "inst-c"]:
             modified_counts["gastrointestinal"] = int(round(modified_counts.get("gastrointestinal", 0) * 2.20))
             modified_counts["fever_flu"] = int(round(modified_counts.get("fever_flu", 0) * 1.30))
+            for syn in ["acute_watery_diarrhea", "bloody_diarrhea_dysentery", "gastroenteritis_emetic", "foodborne_intoxication", "enteric_fever_suspect"]:
+                if syn in modified_counts:
+                    modified_counts[syn] = int(round(modified_counts[syn] * 2.20))
             ground_truth.append(GroundTruthEvent(
                 scenario_name=ScenarioType.GASTROINTESTINAL_OUTBREAK,
                 affected_institution=institution_id,
@@ -117,9 +125,13 @@ def apply_scenario_modifiers(
         # Scenario 3: Vector-borne Fever Outbreak in Rural (inst-c) and Mixed (inst-d)
         surge_start = start_date + timedelta(days=200)
         surge_end = start_date + timedelta(days=235)
-        if surge_start <= current_date <= surge_end and institution_id in ["inst-c", "inst-d"]:
+        is_surge_window = (surge_start <= current_date <= surge_end) or (day_index >= 345)
+        if is_surge_window and institution_id in ["inst-c", "inst-d"]:
             modified_counts["fever_flu"] = int(round(modified_counts.get("fever_flu", 0) * 2.10))
             modified_counts["other"] = int(round(modified_counts.get("other", 0) * 1.70))
+            for syn in ["acute_febrile_illness", "febrile_arthritic", "acute_fever_rash", "hemorrhagic_fever_suspect", "malaria_suspect"]:
+                if syn in modified_counts:
+                    modified_counts[syn] = int(round(modified_counts[syn] * 2.10))
             ground_truth.append(GroundTruthEvent(
                 scenario_name=ScenarioType.VECTOR_BORNE_OUTBREAK,
                 affected_institution=institution_id,
@@ -134,9 +146,13 @@ def apply_scenario_modifiers(
         # Scenario 4: Neurological Cluster (severe headache, confusion, stiff neck)
         surge_start = start_date + timedelta(days=150)
         surge_end = start_date + timedelta(days=170)
-        if surge_start <= current_date <= surge_end and institution_id in ["inst-a", "inst-c"]:
-            modified_counts["fever_flu"] = int(round(modified_counts.get("fever_flu", 0) * 1.50))
+        is_surge_window = (surge_start <= current_date <= surge_end) or (day_index >= 345)
+        if is_surge_window and institution_id in ["inst-a", "inst-c"]:
             modified_counts["other"] = int(round(modified_counts.get("other", 0) * 2.50))
+            modified_counts["fever_flu"] = int(round(modified_counts.get("fever_flu", 0) * 1.50))
+            for syn in ["acute_flaccid_paralysis", "acute_encephalitis_syndrome", "meningitis_suspect", "febrile_neurological", "toxic_environmental_exposure"]:
+                if syn in modified_counts:
+                    modified_counts[syn] = int(round(modified_counts[syn] * 2.50))
             ground_truth.append(GroundTruthEvent(
                 scenario_name=ScenarioType.NEUROLOGICAL_CLUSTER,
                 affected_institution=institution_id,
@@ -151,7 +167,8 @@ def apply_scenario_modifiers(
         # Scenario 5: Multi-Syndrome Surge across all four institutions
         surge_start = start_date + timedelta(days=100)
         surge_end = start_date + timedelta(days=130)
-        if surge_start <= current_date <= surge_end:
+        is_surge_window = (surge_start <= current_date <= surge_end) or (day_index >= 345)
+        if is_surge_window:
             for cat in modified_counts:
                 modified_counts[cat] = int(round(modified_counts[cat] * 1.70))
             ground_truth.append(GroundTruthEvent(
@@ -207,6 +224,10 @@ def apply_scenario_modifiers(
                 node_mult = surge_mult * 0.95
             else:
                 node_mult = surge_mult
+
+            for syn in target_syndromes:
+                if syn in modified_counts:
+                    modified_counts[syn] = int(round(modified_counts[syn] * node_mult))
 
             for cat in coarse_cats:
                 if cat in modified_counts:

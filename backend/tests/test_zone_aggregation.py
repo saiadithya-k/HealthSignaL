@@ -3,7 +3,7 @@ import json
 import shutil
 import tempfile
 import pytest
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -75,7 +75,7 @@ def test_distinct_node_rule_1_node_suppression_even_with_high_counts(temp_zone_m
     100+ records from a single node in a zone must REMAIN SUPPRESSED because
     COUNT(DISTINCT node_id) == 1 (< 3 distinct nodes).
     """
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     # Write 500 total counts from inst-a only
     helper_create_node_aggregates(
         manager=temp_zone_manager,
@@ -92,7 +92,7 @@ def test_distinct_node_rule_1_node_suppression_even_with_high_counts(temp_zone_m
 
 def test_distinct_node_rule_2_nodes_suppressed(temp_zone_manager):
     """Verifies that a zone with only 2 distinct contributing nodes is suppressed."""
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     helper_create_node_aggregates(temp_zone_manager, "inst-a", "zone-duo-1", "acute_watery_diarrhea", "clinic", {today_str: 50})
     helper_create_node_aggregates(temp_zone_manager, "inst-b", "zone-duo-1", "acute_watery_diarrhea", "clinic", {today_str: 40})
 
@@ -102,7 +102,7 @@ def test_distinct_node_rule_2_nodes_suppressed(temp_zone_manager):
 
 def test_distinct_node_rule_3_nodes_allowed(temp_zone_manager):
     """Verifies that a zone with 3 distinct contributing nodes is exposed with aggregate statistics."""
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     helper_create_node_aggregates(temp_zone_manager, "inst-a", "zone-metro-1", "influenza_like_illness", "community", {today_str: 80})
     helper_create_node_aggregates(temp_zone_manager, "inst-b", "zone-metro-1", "influenza_like_illness", "community", {today_str: 50})
     helper_create_node_aggregates(temp_zone_manager, "inst-d", "zone-metro-1", "influenza_like_illness", "community", {today_str: 40})
@@ -122,7 +122,7 @@ def test_distinct_node_rule_3_nodes_allowed(temp_zone_manager):
 
 def test_distinct_node_rule_4_nodes_allowed(temp_zone_manager):
     """Verifies that a zone with 4 distinct contributing nodes is exposed."""
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     helper_create_node_aggregates(temp_zone_manager, "inst-a", "zone-regional-core", "acute_febrile_illness", "testing", {today_str: 45})
     helper_create_node_aggregates(temp_zone_manager, "inst-b", "zone-regional-core", "acute_febrile_illness", "testing", {today_str: 35})
     helper_create_node_aggregates(temp_zone_manager, "inst-c", "zone-regional-core", "acute_febrile_illness", "testing", {today_str: 20})
@@ -142,7 +142,7 @@ def test_seven_day_growth_calculation_and_zero_division(temp_zone_manager):
     - Previous 7-day total = 100, Current 7-day total = 125 -> +25.0%
     - Previous 7-day total = 0 -> growth = 0.0 without ZeroDivisionError
     """
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     # Current period (within last 3 days)
     t_curr = now.strftime("%Y-%m-%d")
     # Previous period (8-10 days ago)
@@ -171,7 +171,7 @@ def test_seven_day_growth_calculation_and_zero_division(temp_zone_manager):
 
 def test_syndrome_and_source_coverage(temp_zone_manager):
     """Verifies that zone aggregation generically covers multiple syndromes and all 5 data sources."""
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     syndromes_to_test = [
         ("influenza_like_illness", "community"),
         ("acute_watery_diarrhea", "pharmacy"),
@@ -199,7 +199,7 @@ def test_four_node_spatial_scenario_simulation(temp_zone_manager):
     - zone-rural-1: inst-c, inst-d (2 distinct nodes) -> SUPPRESSED
     - zone-rural-2: inst-c (1 distinct node) -> SUPPRESSED
     """
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     # zone-metro-1 (3 nodes)
     helper_create_node_aggregates(temp_zone_manager, "inst-a", "zone-metro-1", "acute_febrile_illness", "community", {today_str: 70})

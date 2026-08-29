@@ -7,7 +7,7 @@ def test_scenario_normal(tmp_path):
     gen = SyntheticDataGenerator(seed=42)
     df, meta = gen.generate_institution_dataset("inst-a", days=60, scenario=ScenarioType.NORMAL)
     assert meta.scenario == ScenarioType.NORMAL
-    assert len(df) == 60 * 4  # 60 days * 4 syndrome categories
+    assert len(df) >= 60 * 4  # 60 days * at least 4 syndrome categories
     assert len(meta.ground_truth_events) == 0
 
 def test_scenario_regional_surge(tmp_path):
@@ -175,7 +175,7 @@ def test_disease_selection_valid_and_invalid(tmp_path):
             scenario=ScenarioType.DISEASE_OUTBREAK,
             disease_outbreak_config={"condition_id": valid_id, "start_day": 5, "duration_days": 10}
         )
-        assert len(df) == 30 * 4
+        assert len(df) >= 30 * 4
 
     # Invalid condition ID raises ValueError
     with pytest.raises(ValueError, match="Unknown condition_id"):

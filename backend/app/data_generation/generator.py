@@ -2,7 +2,7 @@ import os
 import json
 import numpy as np
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Tuple, Any, Optional
 
 from app.data_generation.config import INSTITUTION_PROFILES
@@ -39,11 +39,16 @@ class SyntheticDataGenerator:
 
         profile = INSTITUTION_PROFILES[institution_id]
         base_volume = profile["base_volume"]
-        syndrome_ratios = profile["syndrome_ratios"]
+        from app.data_generation.syndrome_weights import get_institution_syndrome_weights
+        syndrome_ratios = get_institution_syndrome_weights(institution_id)
         dow_mults = profile["day_of_week_multipliers"]
         season_amp = profile["seasonality_amplitude"]
         season_phase = profile["seasonality_phase_days"]
         noise_std = profile["noise_std"]
+
+        # Deterministic node-specific RNG to ensure baseline reproducibility across calls
+        inst_idx = list(INSTITUTION_PROFILES.keys()).index(institution_id) if institution_id in INSTITUTION_PROFILES else 0
+        node_rng = np.random.RandomState(self.seed + (inst_idx * 1000))
 
         rows = []
         raw_ground_truth: List[GroundTruthEvent] = []
@@ -65,12 +70,12 @@ class SyntheticDataGenerator:
                 seasonality_phase_days=season_phase
             )
 
-            # 2. Partition across syndrome categories
+            # 2. Partition across all 45 canonical syndrome categories (and aliases)
             cat_counts = partition_demand_by_syndrome(
                 total_demand=expected_demand,
                 syndrome_ratios=syndrome_ratios,
                 noise_std=noise_std,
-                rng=self.rng
+                rng=node_rng
             )
 
             # 3. Apply Scenario Modifiers (Surge, Shift, Missingness, Disease Outbreak)
@@ -87,10 +92,8 @@ class SyntheticDataGenerator:
             if gt_events:
                 raw_ground_truth.extend(gt_events)
 
-            # Append rows per syndrome category
-            for cat_enum in SyndromeCategory:
-                cat = cat_enum.value
-                count = modified_counts.get(cat, 0)
+            # Append rows for all generated syndrome categories
+            for cat, count in modified_counts.items():
                 rows.append({
                     "date": date_str,
                     "institution_id": institution_id,
@@ -140,7 +143,7 @@ class SyntheticDataGenerator:
             syndrome_counts=syndrome_counts,
             missing_rate_pct=missing_rate_pct,
             ground_truth_events=unique_gt,
-            generated_at=datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+            generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
         )
 
         return df, metadata

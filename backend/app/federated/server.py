@@ -192,6 +192,10 @@ def run_federated_round(
     with open(report_path, "w") as f:
         json.dump(report, f, indent=2)
 
+    global_report_path = os.path.join(global_dir, "federated_report.json")
+    with open(global_report_path, "w") as f:
+        json.dump(report, f, indent=2)
+
     return report
 
 if __name__ == "__main__":
