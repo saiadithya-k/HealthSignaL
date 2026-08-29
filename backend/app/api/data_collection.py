@@ -13,6 +13,7 @@ from app.data_generation.cli import generate_and_analyze
 from app.data_generation.schemas import ScenarioType
 
 router = APIRouter(prefix="/data-collection", tags=["Data Collection & Knowledge"])
+aggregate_router = APIRouter(prefix="/aggregate", tags=["Spatial Zone Aggregates"])
 
 # -------------------------------------------------------------------------
 # Request Models
@@ -92,6 +93,21 @@ class EventSimulationRequest(BaseModel):
     scenario: ScenarioType
     seed: int = 42
     days: int = 365
+
+class MultiSymptomSimulationRequest(BaseModel):
+    node_id: str = "inst-a"
+    pattern_key: str = "respiratory"  # respiratory | severe_respiratory | gastrointestinal | vector_borne | neurological | pediatric_croup | allergic
+    count: int = 15
+    zone_id: str = "zone-1"
+
+class DiseaseOutbreakSimulationRequest(BaseModel):
+    condition_id: str = "C002"  # e.g. C002 (Influenza), C023 (Cholera), C036 (Dengue)
+    start_date: Optional[str] = None
+    duration_days: int = 14
+    affected_nodes: Optional[List[str]] = None
+    intensity: float = 0.75
+    reports_per_day_base: int = 15
+    zone_id: str = "zone-1"
 
 # -------------------------------------------------------------------------
 # Endpoints
@@ -295,11 +311,11 @@ def get_zone_rollup(
     zone_id: Optional[str] = Query(None),
     syndrome: Optional[str] = Query(None),
     data_source: Optional[str] = Query(None),
-    days_lookback: int = Query(7)
+    days_lookback: int = Query(14)
 ):
     """
-    Executes Zone-level rollup query (Part 9 SQL Capability Check).
-    Groups by zone and syndrome, calculating 7d growth and node participation.
+    Executes Privacy-Safe Zone-level rollup query.
+    MANDATORY PRIVACY RULE: Only returns zone aggregates where COUNT(DISTINCT node_id) >= 3.
     """
     rollups = data_collection_manager.query_zone_rollup(
         zone_id=zone_id,
@@ -310,9 +326,39 @@ def get_zone_rollup(
     return {
         "query_timestamp": datetime.utcnow().isoformat(),
         "days_lookback": days_lookback,
+        "privacy_rule": "COUNT(DISTINCT node_id) >= 3",
         "results_count": len(rollups),
         "zone_rollups": rollups
     }
+
+@router.get("/aggregate/zones", response_model=Dict[str, Any])
+@aggregate_router.get("/zones", response_model=Dict[str, Any])
+def get_aggregate_zones(
+    zone_id: Optional[str] = Query(None),
+    syndrome: Optional[str] = Query(None),
+    data_source: Optional[str] = Query(None),
+    days_lookback: int = Query(14)
+):
+    """
+    Returns only privacy-approved spatial zone aggregates (HAVING COUNT(DISTINCT node_id) >= 3).
+    Includes 7-day growth rate, severity breakdown, and data quality metrics without leaking raw records.
+    """
+    rollups = data_collection_manager.query_zone_rollup(
+        zone_id=zone_id,
+        syndrome=syndrome,
+        data_source=data_source,
+        days_lookback=days_lookback
+    )
+    return {
+        "status": "SUCCESS_PRIVACY_APPROVED_ZONES",
+        "query_timestamp": datetime.utcnow().isoformat(),
+        "days_lookback": days_lookback,
+        "privacy_threshold": "min_distinct_nodes >= 3",
+        "total_approved_zones": len(rollups),
+        "zones": rollups
+    }
+
+
 
 @router.post("/simulate-event", response_model=Dict[str, Any])
 def simulate_outbreak_event(req: EventSimulationRequest):
@@ -334,3 +380,53 @@ def simulate_outbreak_event(req: EventSimulationRequest):
         "total_records": results.get("total_records", 0),
         "non_iid_divergence": results.get("non_iid_divergence", {})
     }
+
+@router.post("/simulate-multi-symptoms", response_model=Dict[str, Any])
+def simulate_multi_symptom_reports(req: MultiSymptomSimulationRequest):
+    """
+    Generates realistic multi-symptom clinical combinations using the 257 symptom master catalog.
+    Supports respiratory, severe_respiratory, gastrointestinal, vector_borne, neurological,
+    pediatric_croup, and allergic patterns.
+    """
+    reports = data_collection_manager.generate_multi_symptom_batch(
+        node_id=req.node_id,
+        pattern_key=req.pattern_key,
+        count=req.count,
+        zone_id=req.zone_id
+    )
+    return {
+        "status": "SUCCESS_MULTI_SYMPTOMS_GENERATED",
+        "node_id": req.node_id,
+        "pattern_key": req.pattern_key,
+        "pattern_info": data_collection_manager.CLINICAL_SYMPTOM_PATTERNS.get(req.pattern_key, {}),
+        "reports_generated": len(reports),
+        "sample_report": reports[0].model_dump() if reports else None
+    }
+
+@router.post("/simulate-disease-outbreak", response_model=Dict[str, Any])
+def simulate_disease_outbreak(req: DiseaseOutbreakSimulationRequest):
+    """
+    Triggers a disease-reference driven outbreak simulation across multi-source streams.
+    Uses condition profiles from disease_reference.json to realistically surge symptoms, syndromes,
+    pharmacy dispensing, doctor observations, clinic visits, and test orders.
+    """
+    start_str = req.start_date or date.today().strftime("%Y-%m-%d")
+    return data_collection_manager.simulate_disease_outbreak_multisource(
+        condition_id=req.condition_id,
+        start_date_str=start_str,
+        duration_days=req.duration_days,
+        affected_nodes=req.affected_nodes,
+        intensity=req.intensity,
+        reports_per_day_base=req.reports_per_day_base,
+        zone_id=req.zone_id
+    )
+
+@router.get("/data-quality/{node_id}", response_model=Dict[str, Any])
+def get_node_data_quality(node_id: str):
+    """
+    Returns data quality and coverage metrics for a specific node across all five core streams.
+    Includes coverage_ratio, missing_rate, reporting_delay, completeness_score, and source_reliability.
+    """
+    return data_collection_manager.get_node_data_quality_metrics(node_id=node_id)
+
+

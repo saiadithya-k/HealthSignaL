@@ -31,7 +31,8 @@ import {
   fetchAlertDossier,
   triggerDailyAggregation,
   fetchZoneRollup,
-  triggerEventSimulation
+  triggerEventSimulation,
+  triggerMultiSymptomSimulation
 } from './services/api';
 
 export default function App() {
@@ -69,6 +70,12 @@ export default function App() {
     sex: 'prefer_not_to_say',
     zone_id: 'zone-metro-1',
     consent_accepted: true
+  });
+  const [formSymptomSearch, setFormSymptomSearch] = useState('');
+  const [multiSimState, setMultiSimState] = useState({
+    node_id: 'inst-a',
+    pattern_key: 'respiratory',
+    count: 15
   });
   const [doctorForm, setDoctorForm] = useState({
     node_id: 'inst-b',
@@ -369,7 +376,8 @@ export default function App() {
     return (
       (s?.name || '').toLowerCase().includes(q) ||
       (s?.category || '').toLowerCase().includes(q) ||
-      (s?.symptom_id || '').toLowerCase().includes(q)
+      (s?.symptom_id || '').toLowerCase().includes(q) ||
+      (s?.aliases || []).some(a => a.toLowerCase().includes(q))
     );
   });
 
@@ -660,7 +668,79 @@ export default function App() {
                     </div>
 
                     <div>
-                      <label className="block text-slate-400 mb-1">Reported Symptoms</label>
+                      <div className="flex items-center justify-between mb-1">
+                        <label className="block text-slate-400">Reported Symptoms (257 Catalog)</label>
+                        <span className="text-[10px] text-emerald-400 font-mono">
+                          {communityForm.symptoms.length} selected
+                        </span>
+                      </div>
+
+                      {/* Clinical Pattern Presets */}
+                      <div className="mb-2">
+                        <span className="text-[10px] text-slate-500 block mb-1">Realistic Clinical Presets:</span>
+                        <div className="flex flex-wrap gap-1">
+                          {[
+                            { label: "Respiratory (ILI)", symptoms: ["S001", "S021", "S038", "S006", "S035"], sev: "mild" },
+                            { label: "Severe Resp (SARI)", symptoms: ["S001", "S021", "S026", "S031", "S006", "S028"], sev: "severe" },
+                            { label: "Gastrointestinal", symptoms: ["S001", "S047", "S048", "S050", "S054", "S055"], sev: "moderate" },
+                            { label: "Vector-Borne", symptoms: ["S001", "S067", "S009", "S006", "S117", "S127", "S002"], sev: "moderate" },
+                            { label: "Neurological Alert", symptoms: ["S001", "S067", "S074", "S092", "S167"], sev: "severe" },
+                            { label: "Pediatric Croup", symptoms: ["S021", "S044", "S040", "S027"], sev: "moderate" },
+                            { label: "Allergic", symptoms: ["S127", "S029", "S135", "S027"], sev: "moderate" },
+                          ].map(preset => (
+                            <button
+                              key={preset.label}
+                              type="button"
+                              onClick={() => setCommunityForm({
+                                ...communityForm,
+                                symptoms: preset.symptoms,
+                                severity: preset.sev
+                              })}
+                              className="text-[9px] px-1.5 py-0.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 rounded transition"
+                            >
+                              {preset.label}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Selected Symptoms Pills */}
+                      {communityForm.symptoms.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mb-2 max-h-16 overflow-y-auto p-1.5 bg-slate-900/60 border border-slate-800 rounded">
+                          {communityForm.symptoms.map(sid => {
+                            const symInfo = (symptomMaster?.symptoms || []).find(s => s?.symptom_id === sid);
+                            return (
+                              <span
+                                key={sid}
+                                className="inline-flex items-center gap-1 text-[10px] px-1.5 py-0.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded font-medium"
+                              >
+                                {sid}: {symInfo?.name || sid}
+                                <button
+                                  type="button"
+                                  onClick={() => setCommunityForm({
+                                    ...communityForm,
+                                    symptoms: communityForm.symptoms.filter(x => x !== sid)
+                                  })}
+                                  className="hover:text-red-400 font-bold ml-0.5"
+                                >
+                                  ×
+                                </button>
+                              </span>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {/* Search Filter for 257 symptoms */}
+                      <input
+                        type="text"
+                        placeholder="Search 257 symptoms by name, ID, or alias (e.g. fever, cough, S021, breathlessness)..."
+                        value={formSymptomSearch}
+                        onChange={e => setFormSymptomSearch(e.target.value)}
+                        className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-slate-200 text-[11px] mb-1 focus:border-emerald-500 outline-none"
+                      />
+
+                      {/* Multi-select box containing full 257 symptoms catalog */}
                       <select
                         multiple
                         value={communityForm.symptoms}
@@ -668,19 +748,25 @@ export default function App() {
                           const opts = Array.from(e.target.selectedOptions, option => option.value);
                           setCommunityForm({ ...communityForm, symptoms: opts });
                         }}
-                        className="w-full bg-slate-900 border border-slate-800 rounded-lg p-2 text-slate-200 h-24"
+                        className="w-full bg-slate-900 border border-slate-800 rounded-lg p-1.5 text-slate-200 text-[11px] h-32 scrollbar-thin"
                       >
-                        <option value="S001">S001 — Fever</option>
-                        <option value="S021">S021 — Cough</option>
-                        <option value="S038">S038 — Sore throat</option>
-                        <option value="S050">S050 — Diarrhea</option>
-                        <option value="S048">S048 — Vomiting</option>
-                        <option value="S067">S067 — Headache</option>
-                        <option value="S092">S092 — Stiff neck</option>
-                        <option value="S117">S117 — Joint pain</option>
-                        <option value="S127">S127 — Skin rash</option>
+                        {(symptomMaster?.symptoms || [])
+                          .filter(s => {
+                            if (!formSymptomSearch.trim()) return true;
+                            const q = formSymptomSearch.toLowerCase();
+                            const matchesId = (s?.symptom_id || '').toLowerCase().includes(q);
+                            const matchesName = (s?.name || '').toLowerCase().includes(q);
+                            const matchesCat = (s?.category || '').toLowerCase().includes(q);
+                            const matchesAlias = (s?.aliases || []).some(a => a.toLowerCase().includes(q));
+                            return matchesId || matchesName || matchesCat || matchesAlias;
+                          })
+                          .map(s => (
+                            <option key={s?.symptom_id} value={s?.symptom_id}>
+                              {s?.symptom_id} — {s?.name} [{s?.category}]
+                            </option>
+                          ))}
                       </select>
-                      <p className="text-[10px] text-slate-500 mt-1">Hold Ctrl/Cmd to select multiple symptoms</p>
+                      <p className="text-[10px] text-slate-500 mt-1">Hold Ctrl/Cmd to select multiple symptoms from the 257 catalog</p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-2">
@@ -1401,6 +1487,8 @@ export default function App() {
                         <th className="py-2.5 px-4">Code</th>
                         <th className="py-2.5 px-4">Symptom Name</th>
                         <th className="py-2.5 px-4">Category</th>
+                        <th className="py-2.5 px-4">Severities</th>
+                        <th className="py-2.5 px-4">Clinical & Vernacular Aliases</th>
                         <th className="py-2.5 px-4">Associated 45-Syndromes (Many-to-Many)</th>
                       </tr>
                     </thead>
@@ -1410,6 +1498,12 @@ export default function App() {
                           <td className="py-2 px-4 font-bold text-emerald-400">{s?.symptom_id}</td>
                           <td className="py-2 px-4 font-sans font-medium text-slate-200">{s?.name}</td>
                           <td className="py-2 px-4 font-sans text-slate-400">{s?.category}</td>
+                          <td className="py-2 px-4 font-sans text-[11px] text-amber-300">
+                            {(s?.severities || []).join(', ')}
+                          </td>
+                          <td className="py-2 px-4 font-sans text-[11px] text-slate-400 max-w-xs truncate" title={(s?.aliases || []).join(', ')}>
+                            {(s?.aliases || []).slice(0, 4).join(', ')}{(s?.aliases || []).length > 4 ? '...' : ''}
+                          </td>
                           <td className="py-2 px-4">
                             <div className="flex flex-wrap gap-1">
                               {(s?.associated_syndromes || []).map((syn, idx) => (
@@ -1436,18 +1530,30 @@ export default function App() {
                         <th className="py-2.5 px-4">Condition Name (Simulation Reference)</th>
                         <th className="py-2.5 px-4">Etiology Domain</th>
                         <th className="py-2.5 px-4">Primary Syndrome</th>
+                        <th className="py-2.5 px-4">Severity & Duration</th>
+                        <th className="py-2.5 px-4">Transmission & Outbreak</th>
                         <th className="py-2.5 px-4">Key Symptoms</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-800/50 font-mono text-slate-300">
                       {filteredConditions.map(d => (
-                        <tr key={d?.disease_id} className="hover:bg-slate-800/20">
-                          <td className="py-2 px-4 font-bold text-amber-400">{d?.disease_id}</td>
-                          <td className="py-2 px-4 font-sans font-medium text-slate-200">{d?.name}</td>
+                        <tr key={d?.condition_id || d?.disease_id} className="hover:bg-slate-800/20">
+                          <td className="py-2 px-4 font-bold text-amber-400">{d?.condition_id || d?.disease_id}</td>
+                          <td className="py-2 px-4 font-sans font-medium text-slate-200">{d?.condition_name || d?.name}</td>
                           <td className="py-2 px-4 font-sans text-slate-400">{d?.category}</td>
                           <td className="py-2 px-4 text-indigo-400 font-semibold">{d?.primary_syndrome}</td>
-                          <td className="py-2 px-4 text-slate-400">
-                            {(d?.key_symptoms || []).join(', ')}
+                          <td className="py-2 px-4 font-sans text-[11px]">
+                            <span className="capitalize text-amber-300 font-medium">{d?.typical_severity || 'standard'}</span>
+                            <span className="text-slate-500 block text-[10px]">{d?.typical_duration_days} days</span>
+                          </td>
+                          <td className="py-2 px-4 font-sans text-[11px]">
+                            <span className="text-slate-300 block">{d?.transmission_pattern || 'environmental'}</span>
+                            <span className={`text-[10px] font-bold uppercase ${d?.outbreak_relevance === 'critical' ? 'text-rose-400' : d?.outbreak_relevance === 'high' ? 'text-amber-400' : 'text-slate-400'}`}>
+                              {d?.outbreak_relevance || 'moderate'} relevance
+                            </span>
+                          </td>
+                          <td className="py-2 px-4 text-slate-400 text-[11px]">
+                            {(d?.symptom_ids || d?.key_symptoms || []).join(', ')}
                           </td>
                         </tr>
                       ))}

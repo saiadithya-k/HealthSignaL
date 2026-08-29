@@ -1,0 +1,39 @@
+{
+  "institution_id": "pooled_upper_bound",
+  "algorithm": "Ridge Regression",
+  "alpha": 1.0,
+  "forecast_horizon": 7,
+  "num_features": 13,
+  "features": [
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "rolling_mean_14",
+    "pharmacy_lead_t2",
+    "data_completeness"
+  ],
+  "coef": [
+    -0.196316,
+    0.022105,
+    1.014891,
+    -0.272994,
+    -1.224679,
+    0.102142,
+    0.280292,
+    0.241197,
+    -0.095667,
+    -0.06331,
+    0.510426,
+    -0.068358,
+    0.0
+  ],
+  "intercept": 1.223672,
+  "n_samples": 3840
+}

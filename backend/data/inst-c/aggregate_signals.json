@@ -1,6 +1,6 @@
 [
   {
-    "record_id": "38e9806b-ed24-4c98-a010-a44901201d53",
+    "record_id": "b1f032fc-b601-4e10-b011-3e11d72dc6c1",
     "data_source": "clinic",
     "date": "2026-08-28",
     "node_id": "inst-c",
@@ -17,6 +17,6 @@
     "coverage_ratio": 1.0,
     "privacy_k": 11,
     "data_quality_score": 0.886,
-    "created_at": "2026-08-28T09:30:16.766216"
+    "created_at": "2026-08-28T10:24:59.103967"
   }
 ]

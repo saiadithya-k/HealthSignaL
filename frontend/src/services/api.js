@@ -344,3 +344,19 @@ export const triggerEventSimulation = async (scenario, seed = 42, days = 365) =>
     throw error;
   }
 };
+
+export const triggerMultiSymptomSimulation = async (nodeId = "inst-a", patternKey = "respiratory", count = 15) => {
+  try {
+    const response = await axios.post(`${API_BASE}/data-collection/simulate-multi-symptoms`, {
+      node_id: nodeId,
+      pattern_key: patternKey,
+      count: count,
+      zone_id: "zone-1"
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Multi-symptom simulation error:", error);
+    throw error;
+  }
+};
+

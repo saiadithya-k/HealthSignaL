@@ -102,3 +102,88 @@ def test_scenario_multi_syndrome_outbreak():
     gt = meta.ground_truth_events[0]
     assert gt.magnitude_factor == 1.70
 
+
+def test_disease_driven_outbreak_influenza(tmp_path):
+    gen = SyntheticDataGenerator(seed=42)
+    results = gen.generate_disease_outbreak(
+        condition_id="C002",
+        start_day=60,
+        duration_days=21,
+        affected_nodes=["inst-a", "inst-b"],
+        intensity=0.85,
+        output_dir=str(tmp_path),
+        days=120
+    )
+    assert len(results) == 4
+    df_a, meta_a = results["inst-a"]
+    assert meta_a.scenario == ScenarioType.DISEASE_OUTBREAK
+    assert len(meta_a.ground_truth_events) > 0
+    gt_a = meta_a.ground_truth_events[0]
+    assert gt_a.condition_id == "C002"
+    assert "respiratory" in gt_a.syndrome_category
+    assert gt_a.magnitude_factor == 1.85
+
+    # Check non-affected nodes (inst-c, inst-d) do not have surge ground truth
+    df_c, meta_c = results["inst-c"]
+    assert len(meta_c.ground_truth_events) == 0
+
+
+def test_disease_driven_outbreak_cholera(tmp_path):
+    gen = SyntheticDataGenerator(seed=42)
+    results = gen.generate_disease_outbreak(
+        condition_id="C023",
+        start_day=45,
+        duration_days=15,
+        affected_nodes=["inst-b", "inst-c"],
+        intensity=1.20,
+        output_dir=str(tmp_path),
+        days=90
+    )
+    df_b, meta_b = results["inst-b"]
+    gt_b = meta_b.ground_truth_events[0]
+    assert gt_b.condition_id == "C023"
+    assert "gastrointestinal" in gt_b.syndrome_category
+    assert gt_b.magnitude_factor == 2.20
+
+
+def test_disease_driven_outbreak_dengue(tmp_path):
+    gen = SyntheticDataGenerator(seed=42)
+    results = gen.generate_disease_outbreak(
+        condition_id="C036",
+        start_day=50,
+        duration_days=20,
+        affected_nodes=["inst-c", "inst-d"],
+        intensity=1.00,
+        output_dir=str(tmp_path),
+        days=100
+    )
+    df_d, meta_d = results["inst-d"]
+    gt_d = meta_d.ground_truth_events[0]
+    assert gt_d.condition_id == "C036"
+    assert "fever_flu" in gt_d.syndrome_category
+
+
+def test_disease_selection_valid_and_invalid(tmp_path):
+    import pytest
+    gen = SyntheticDataGenerator(seed=42)
+    
+    # Valid condition IDs
+    for valid_id in ["C001", "C002", "C023", "C036", "C105"]:
+        df, meta = gen.generate_institution_dataset(
+            "inst-a",
+            days=30,
+            scenario=ScenarioType.DISEASE_OUTBREAK,
+            disease_outbreak_config={"condition_id": valid_id, "start_day": 5, "duration_days": 10}
+        )
+        assert len(df) == 30 * 4
+
+    # Invalid condition ID raises ValueError
+    with pytest.raises(ValueError, match="Unknown condition_id"):
+        gen.generate_institution_dataset(
+            "inst-a",
+            days=30,
+            scenario=ScenarioType.DISEASE_OUTBREAK,
+            disease_outbreak_config={"condition_id": "C999_INVALID", "start_day": 5, "duration_days": 10}
+        )
+
+

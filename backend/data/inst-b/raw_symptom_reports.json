@@ -78,5 +78,25 @@
     "visit_type": "walk-in",
     "consent_token": "73507ff1bbbe4e5c",
     "_weight": 1
+  },
+  {
+    "report_id": "a5a743ce-d203-45c6-9b1e-382863c6ec58",
+    "reported_at": "2026-08-28T10:25:01.522115",
+    "node_id": "inst-b",
+    "zone_id": "zone-metro-1",
+    "data_source": "doctor",
+    "age_band": "30-44",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "upper_respiratory_infection"
+    ],
+    "syndromes": [
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "moderate",
+    "visit_type": "walk-in",
+    "consent_token": "e1a60b62475b3d33",
+    "_weight": 1
   }
 ]

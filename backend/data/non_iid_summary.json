@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-08-28 09:40:15",
+  "generated_at": "2026-08-28 17:21:30",
   "non_iid_demonstration": "P(inst-a) != P(inst-b) != P(inst-c) != P(inst-d)",
   "institutions": {
     "inst-a": {
-      "mean_daily_demand": 147.58,
-      "std_daily_demand": 37.66,
+      "mean_daily_demand": 141.86,
+      "std_daily_demand": 28.15,
       "min_daily_demand": 81,
-      "max_daily_demand": 276,
+      "max_daily_demand": 197,
       "syndrome_proportions": {
-        "fever_flu": 0.2,
-        "gastrointestinal": 0.24,
-        "other": 0.1445,
-        "respiratory": 0.4155
+        "fever_flu": 0.2004,
+        "gastrointestinal": 0.2497,
+        "other": 0.1503,
+        "respiratory": 0.3996
       }
     },
     "inst-b": {
-      "mean_daily_demand": 87.88,
-      "std_daily_demand": 16.91,
-      "min_daily_demand": 49,
+      "mean_daily_demand": 86.47,
+      "std_daily_demand": 17.92,
+      "min_daily_demand": 48,
       "max_daily_demand": 128,
       "syndrome_proportions": {
-        "fever_flu": 0.2503,
-        "gastrointestinal": 0.4474,
-        "other": 0.0975,
-        "respiratory": 0.2048
+        "fever_flu": 0.248,
+        "gastrointestinal": 0.4547,
+        "other": 0.0991,
+        "respiratory": 0.1982
       }
     },
     "inst-c": {
@@ -39,53 +39,53 @@
       }
     },
     "inst-d": {
-      "mean_daily_demand": 108.85,
-      "std_daily_demand": 26.6,
+      "mean_daily_demand": 105.45,
+      "std_daily_demand": 22.77,
       "min_daily_demand": 55,
-      "max_daily_demand": 221,
+      "max_daily_demand": 171,
       "syndrome_proportions": {
-        "fever_flu": 0.244,
-        "gastrointestinal": 0.2904,
-        "other": 0.146,
-        "respiratory": 0.3196
+        "fever_flu": 0.2432,
+        "gastrointestinal": 0.2998,
+        "other": 0.1507,
+        "respiratory": 0.3063
       }
     }
   },
   "pairwise_tests": {
     "inst-a_vs_inst-b": {
-      "ks_statistic": 0.7644,
-      "p_value": 4.739992469465973e-105,
-      "wasserstein_distance": 59.69,
+      "ks_statistic": 0.7589,
+      "p_value": 2.563731663618213e-103,
+      "wasserstein_distance": 55.39,
       "statistically_significantly_different": true
     },
     "inst-a_vs_inst-c": {
       "ks_statistic": 1.0,
       "p_value": 1.1995083084452661e-218,
-      "wasserstein_distance": 119.21,
+      "wasserstein_distance": 113.49,
       "statistically_significantly_different": true
     },
     "inst-a_vs_inst-d": {
-      "ks_statistic": 0.4795,
-      "p_value": 2.3750160826942643e-38,
-      "wasserstein_distance": 38.72,
+      "ks_statistic": 0.5151,
+      "p_value": 1.672735792353518e-44,
+      "wasserstein_distance": 36.41,
       "statistically_significantly_different": true
     },
     "inst-b_vs_inst-c": {
-      "ks_statistic": 0.9808,
-      "p_value": 2.5544775844929618e-202,
-      "wasserstein_distance": 59.51,
+      "ks_statistic": 0.9699,
+      "p_value": 8.740175848408824e-195,
+      "wasserstein_distance": 58.1,
       "statistically_significantly_different": true
     },
     "inst-b_vs_inst-d": {
-      "ks_statistic": 0.3589,
-      "p_value": 2.8139323473500766e-21,
-      "wasserstein_distance": 20.97,
+      "ks_statistic": 0.337,
+      "p_value": 9.306346320231452e-19,
+      "wasserstein_distance": 18.98,
       "statistically_significantly_different": true
     },
     "inst-c_vs_inst-d": {
       "ks_statistic": 0.989,
       "p_value": 1.4076937985394097e-208,
-      "wasserstein_distance": 80.48,
+      "wasserstein_distance": 77.08,
       "statistically_significantly_different": true
     }
   }

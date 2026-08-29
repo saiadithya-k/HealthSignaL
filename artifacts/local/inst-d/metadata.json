@@ -1,0 +1,39 @@
+{
+  "institution_id": "inst-d",
+  "algorithm": "Ridge Regression",
+  "alpha": 1.0,
+  "forecast_horizon": 7,
+  "num_features": 13,
+  "features": [
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "rolling_mean_14",
+    "pharmacy_lead_t2",
+    "data_completeness"
+  ],
+  "coef": [
+    0.359209,
+    0.16605,
+    5.179512,
+    -1.3187,
+    -7.105258,
+    0.074849,
+    0.101754,
+    0.020173,
+    -0.398083,
+    -0.063029,
+    1.191523,
+    -0.012426,
+    0.0
+  ],
+  "intercept": 0.052287,
+  "n_samples": 960
+}
