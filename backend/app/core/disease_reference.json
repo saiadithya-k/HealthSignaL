@@ -1,112 +1,4603 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "total_conditions": 105,
-  "description": "HealthSignal 100+ Reference Disease/Condition Knowledge Base for Simulation & Knowledge Mapping (Non-Diagnostic)",
+  "description": "HealthSignal Standardized 100+ Reference Disease/Condition Dataset for Synthetic Scenario & Multi-Symptom Pattern Modeling (Non-Diagnostic Reference Only)",
   "conditions": [
-    { "disease_id": "D001", "name": "Common Cold (Rhinovirus/Coronavirus)", "category": "Respiratory / Airborne", "primary_syndrome": "upper_respiratory_infection", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S033", "S035", "S036", "S038", "S021"] },
-    { "disease_id": "D002", "name": "Seasonal Influenza A/B", "category": "Respiratory / Airborne", "primary_syndrome": "influenza_like_illness", "secondary_syndromes": ["lower_respiratory_illness", "acute_febrile_illness"], "key_symptoms": ["S001", "S002", "S006", "S009", "S021", "S038", "S067"] },
-    { "disease_id": "D003", "name": "COVID-19 (SARS-CoV-2)", "category": "Respiratory / Airborne", "primary_syndrome": "influenza_like_illness", "secondary_syndromes": ["severe_acute_respiratory_infection", "post_infectious_asthenia"], "key_symptoms": ["S001", "S021", "S026", "S094", "S095", "S006", "S046"] },
-    { "disease_id": "D004", "name": "Respiratory Syncytial Virus (RSV)", "category": "Respiratory / Airborne", "primary_syndrome": "lower_respiratory_illness", "secondary_syndromes": ["pediatric_croup_stridor", "bronchospastic_obstructive"], "key_symptoms": ["S021", "S029", "S028", "S044", "S001"] },
-    { "disease_id": "D005", "name": "Adenoviral Pharyngoconjunctival Fever", "category": "Respiratory / Ocular", "primary_syndrome": "upper_respiratory_infection", "secondary_syndromes": ["acute_ophthalmic_conjunctivitis", "acute_febrile_illness"], "key_symptoms": ["S001", "S038", "S146", "S149", "S021"] },
-    { "disease_id": "D006", "name": "Human Metapneumovirus Infection", "category": "Respiratory / Airborne", "primary_syndrome": "lower_respiratory_illness", "secondary_syndromes": ["upper_respiratory_infection"], "key_symptoms": ["S021", "S026", "S029", "S001"] },
-    { "disease_id": "D007", "name": "Parainfluenza Viral Croup", "category": "Respiratory / Pediatric", "primary_syndrome": "pediatric_croup_stridor", "secondary_syndromes": ["upper_respiratory_infection"], "key_symptoms": ["S040", "S044", "S021", "S001", "S028"] },
-    { "disease_id": "D008", "name": "Acute Viral Bronchitis", "category": "Respiratory", "primary_syndrome": "upper_respiratory_infection", "secondary_syndromes": ["bronchospastic_obstructive"], "key_symptoms": ["S021", "S024", "S030", "S006"] },
-    { "disease_id": "D009", "name": "Community-Acquired Bacterial Pneumonia", "category": "Respiratory", "primary_syndrome": "lower_respiratory_illness", "secondary_syndromes": ["severe_acute_respiratory_infection", "systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S002", "S023", "S032", "S026", "S046"] },
-    { "disease_id": "D010", "name": "Atypical Mycoplasma Pneumonia", "category": "Respiratory", "primary_syndrome": "lower_respiratory_illness", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S022", "S067", "S038", "S006", "S001"] },
-    { "disease_id": "D011", "name": "Pulmonary Tuberculosis", "category": "Respiratory / Chronic", "primary_syndrome": "lower_respiratory_illness", "secondary_syndromes": ["acute_febrile_illness", "post_infectious_asthenia"], "key_symptoms": ["S021", "S025", "S005", "S013", "S001", "S006"] },
-    { "disease_id": "D012", "name": "Bordetella Pertussis (Whooping Cough)", "category": "Respiratory", "primary_syndrome": "lower_respiratory_illness", "secondary_syndromes": ["pediatric_croup_stridor"], "key_symptoms": ["S021", "S044", "S048", "S028"] },
-    { "disease_id": "D013", "name": "Respiratory Diphtheria", "category": "Respiratory", "primary_syndrome": "pediatric_croup_stridor", "secondary_syndromes": ["acute_otolaryngologic_suppurative", "cranial_neuropathy_dysautonomia"], "key_symptoms": ["S170", "S038", "S044", "S174", "S001"] },
-    { "disease_id": "D014", "name": "Acute Bacterial Sinusitis", "category": "ENT", "primary_syndrome": "acute_otolaryngologic_suppurative", "secondary_syndromes": ["upper_respiratory_infection"], "key_symptoms": ["S167", "S168", "S033", "S067", "S001"] },
-    { "disease_id": "D015", "name": "Streptococcal Pharyngotonsillitis", "category": "ENT", "primary_syndrome": "acute_otolaryngologic_suppurative", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S001", "S038", "S169", "S174", "S062"] },
-    { "disease_id": "D016", "name": "Acute Viral Laryngitis", "category": "ENT", "primary_syndrome": "upper_respiratory_infection", "secondary_syndromes": ["pediatric_croup_stridor"], "key_symptoms": ["S040", "S041", "S038", "S021"] },
-    { "disease_id": "D017", "name": "Acute Otitis Media", "category": "ENT", "primary_syndrome": "acute_otolaryngologic_suppurative", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S158", "S159", "S160", "S001", "S229"] },
-    { "disease_id": "D018", "name": "Acute Bronchial Asthma Exacerbation", "category": "Respiratory / Allergic", "primary_syndrome": "bronchospastic_obstructive", "secondary_syndromes": ["acute_allergic_anaphylactic"], "key_symptoms": ["S029", "S026", "S030", "S021", "S046"] },
-    { "disease_id": "D019", "name": "COPD Acute Exacerbation", "category": "Respiratory", "primary_syndrome": "bronchospastic_obstructive", "secondary_syndromes": ["severe_acute_respiratory_infection"], "key_symptoms": ["S026", "S023", "S029", "S046", "S006"] },
-    { "disease_id": "D020", "name": "Seasonal Allergic Rhinitis", "category": "Allergic", "primary_syndrome": "acute_allergic_anaphylactic", "secondary_syndromes": ["upper_respiratory_infection"], "key_symptoms": ["S213", "S214", "S215", "S216", "S217"] },
-    { "disease_id": "D021", "name": "Acute Rotaviral Gastroenteritis", "category": "Enteric / Pediatric", "primary_syndrome": "acute_watery_diarrhea", "secondary_syndromes": ["severe_dehydration_shock", "gastroenteritis_emetic"], "key_symptoms": ["S001", "S048", "S050", "S055", "S015", "S256"] },
-    { "disease_id": "D022", "name": "Epidemic Noroviral Gastroenteritis", "category": "Enteric / Foodborne", "primary_syndrome": "gastroenteritis_emetic", "secondary_syndromes": ["acute_watery_diarrhea"], "key_symptoms": ["S048", "S049", "S047", "S050", "S054", "S009"] },
-    { "disease_id": "D023", "name": "Vibrio Cholerae (Cholera)", "category": "Enteric / Waterborne", "primary_syndrome": "acute_watery_diarrhea", "secondary_syndromes": ["severe_dehydration_shock", "acute_kidney_injury_oliguria"], "key_symptoms": ["S050", "S051", "S048", "S248", "S256", "S257", "S112"] },
-    { "disease_id": "D024", "name": "Shigella Sonnei / Flexneri (Bacillary Dysentery)", "category": "Enteric / Foodborne", "primary_syndrome": "bloody_diarrhea_dysentery", "secondary_syndromes": ["febrile_enteric", "acute_febrile_illness"], "key_symptoms": ["S001", "S052", "S053", "S054", "S055"] },
-    { "disease_id": "D025", "name": "Salmonella Enterica (Non-Typhoidal)", "category": "Enteric / Foodborne", "primary_syndrome": "gastroenteritis_emetic", "secondary_syndromes": ["acute_febrile_illness", "acute_watery_diarrhea"], "key_symptoms": ["S001", "S048", "S050", "S054", "S067"] },
-    { "disease_id": "D026", "name": "Enterotoxigenic E. Coli (Traveler's Diarrhea)", "category": "Enteric", "primary_syndrome": "acute_watery_diarrhea", "secondary_syndromes": ["gastroenteritis_emetic"], "key_symptoms": ["S050", "S055", "S047", "S006"] },
-    { "disease_id": "D027", "name": "Campylobacter Jejuni Enteritis", "category": "Enteric / Foodborne", "primary_syndrome": "bloody_diarrhea_dysentery", "secondary_syndromes": ["acute_flaccid_paralysis", "febrile_enteric"], "key_symptoms": ["S001", "S054", "S050", "S052", "S009"] },
-    { "disease_id": "D028", "name": "Salmonella Typhi (Typhoid Fever)", "category": "Enteric / Febrile", "primary_syndrome": "febrile_enteric", "secondary_syndromes": ["acute_febrile_illness", "systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S054", "S067", "S100", "S056", "S059", "S020"] },
-    { "disease_id": "D029", "name": "Giardia Lamblia (Giardiasis)", "category": "Enteric / Waterborne", "primary_syndrome": "acute_watery_diarrhea", "secondary_syndromes": ["pediatric_malnutrition_wasting"], "key_symptoms": ["S050", "S056", "S055", "S057", "S013"] },
-    { "disease_id": "D030", "name": "Entamoeba Histolytica (Amebiasis)", "category": "Enteric / Waterborne", "primary_syndrome": "bloody_diarrhea_dysentery", "secondary_syndromes": ["acute_jaundice_hepatitic"], "key_symptoms": ["S052", "S053", "S054", "S055", "S001"] },
-    { "disease_id": "D031", "name": "Hepatitis A Virus", "category": "Hepatic / Waterborne", "primary_syndrome": "acute_jaundice_hepatitic", "secondary_syndromes": ["acute_febrile_illness", "gastroenteritis_emetic"], "key_symptoms": ["S064", "S065", "S066", "S001", "S047", "S011", "S054"] },
-    { "disease_id": "D032", "name": "Hepatitis E Virus", "category": "Hepatic / Waterborne", "primary_syndrome": "acute_jaundice_hepatitic", "secondary_syndromes": ["systemic_inflammatory_sepsis"], "key_symptoms": ["S064", "S065", "S001", "S047", "S054", "S006"] },
-    { "disease_id": "D033", "name": "Staphylococcal Enterotoxin Food Poisoning", "category": "Foodborne / Toxic", "primary_syndrome": "gastroenteritis_emetic", "secondary_syndromes": ["severe_dehydration_shock"], "key_symptoms": ["S048", "S049", "S055", "S050", "S007"] },
-    { "disease_id": "D034", "name": "Bacillus Cereus Emetic Syndrome", "category": "Foodborne / Toxic", "primary_syndrome": "gastroenteritis_emetic", "secondary_syndromes": ["unspecified_community_cluster"], "key_symptoms": ["S048", "S047", "S055"] },
-    { "disease_id": "D035", "name": "Clostridium Botulinum (Foodborne Botulism)", "category": "Foodborne / Neurotoxic", "primary_syndrome": "foodborne_neurotoxic", "secondary_syndromes": ["cranial_neuropathy_dysautonomia", "acute_flaccid_paralysis"], "key_symptoms": ["S151", "S061", "S088", "S082", "S209", "S027"] },
-    { "disease_id": "D036", "name": "Dengue Fever (Breakbone Fever)", "category": "Vector-Borne / Arboviral", "primary_syndrome": "febrile_arthritic", "secondary_syndromes": ["viral_hemorrhagic_fever", "acute_fever_rash"], "key_symptoms": ["S001", "S147", "S115", "S117", "S123", "S127", "S139"] },
-    { "disease_id": "D037", "name": "Dengue Hemorrhagic Fever / Shock Syndrome", "category": "Vector-Borne", "primary_syndrome": "viral_hemorrhagic_fever", "secondary_syndromes": ["severe_dehydration_shock", "systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S139", "S140", "S166", "S241", "S054", "S112"] },
-    { "disease_id": "D038", "name": "Chikungunya Virus Infection", "category": "Vector-Borne / Arboviral", "primary_syndrome": "febrile_arthritic", "secondary_syndromes": ["acute_fever_rash", "post_infectious_asthenia"], "key_symptoms": ["S001", "S117", "S118", "S125", "S127", "S067", "S009"] },
-    { "disease_id": "D039", "name": "Zika Virus Disease", "category": "Vector-Borne / Arboviral", "primary_syndrome": "acute_fever_rash", "secondary_syndromes": ["febrile_arthritic", "acute_ophthalmic_conjunctivitis"], "key_symptoms": ["S001", "S127", "S117", "S146", "S067"] },
-    { "disease_id": "D040", "name": "Plasmodium Falciparum Malaria", "category": "Vector-Borne / Parasitic", "primary_syndrome": "vector_malaria_paroxysmal", "secondary_syndromes": ["acute_encephalitic", "acute_hemolytic_cytopenic"], "key_symptoms": ["S001", "S002", "S004", "S067", "S048", "S246", "S070"] },
-    { "disease_id": "D041", "name": "Plasmodium Vivax Malaria", "category": "Vector-Borne / Parasitic", "primary_syndrome": "vector_malaria_paroxysmal", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S001", "S002", "S004", "S067", "S115", "S006"] },
-    { "disease_id": "D042", "name": "Japanese Encephalitis Virus", "category": "Vector-Borne / Neurotropic", "primary_syndrome": "acute_encephalitic", "secondary_syndromes": ["meningeal_irritation", "acute_flaccid_paralysis"], "key_symptoms": ["S001", "S068", "S070", "S078", "S092", "S082"] },
-    { "disease_id": "D043", "name": "West Nile Virus Neuroinvasive Disease", "category": "Vector-Borne", "primary_syndrome": "acute_encephalitic", "secondary_syndromes": ["acute_flaccid_paralysis", "meningeal_irritation"], "key_symptoms": ["S001", "S068", "S070", "S082", "S079", "S092"] },
-    { "disease_id": "D044", "name": "Yellow Fever Virus", "category": "Vector-Borne", "primary_syndrome": "viral_hemorrhagic_fever", "secondary_syndromes": ["acute_jaundice_hepatitic", "acute_kidney_injury_oliguria"], "key_symptoms": ["S001", "S064", "S100", "S244", "S139", "S179"] },
-    { "disease_id": "D045", "name": "Lymphatic Filariasis (Wuchereria Bancrofti)", "category": "Vector-Borne / Parasitic", "primary_syndrome": "vector_lymphatic_filarial", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S192", "S195", "S130", "S001", "S117"] },
-    { "disease_id": "D046", "name": "Orientia Tsutsugamushi (Scrub Typhus)", "category": "Vector-Borne / Rickettsial", "primary_syndrome": "cutaneous_ulcerative_eschar", "secondary_syndromes": ["acute_febrile_illness", "acute_encephalitic"], "key_symptoms": ["S141", "S001", "S067", "S146", "S127", "S174"] },
-    { "disease_id": "D047", "name": "Leptospira Interrogans (Leptospirosis / Weil's Disease)", "category": "Zoonotic / Waterborne", "primary_syndrome": "zoonotic_leptospiral", "secondary_syndromes": ["acute_kidney_injury_oliguria", "acute_jaundice_hepatitic"], "key_symptoms": ["S001", "S124", "S157", "S064", "S181", "S179", "S067"] },
-    { "disease_id": "D048", "name": "Rabies Lyssavirus", "category": "Zoonotic / Neurotropic", "primary_syndrome": "zoonotic_rabies_encephalopathy", "secondary_syndromes": ["acute_encephalitic"], "key_symptoms": ["S081", "S236", "S210", "S070", "S001", "S078"] },
-    { "disease_id": "D049", "name": "Brucellosis (Brucella Melitensis)", "category": "Zoonotic", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["febrile_arthritic", "post_infectious_asthenia"], "key_symptoms": ["S001", "S004", "S005", "S117", "S120", "S194"] },
-    { "disease_id": "D050", "name": "Cutaneous Anthrax (Bacillus Anthracis)", "category": "Zoonotic", "primary_syndrome": "cutaneous_ulcerative_eschar", "secondary_syndromes": ["systemic_inflammatory_sepsis"], "key_symptoms": ["S141", "S130", "S001", "S174"] },
-    { "disease_id": "D051", "name": "Measles (Rubeola Virus)", "category": "Exanthematous / Airborne", "primary_syndrome": "acute_fever_rash", "secondary_syndromes": ["upper_respiratory_infection", "acute_ophthalmic_conjunctivitis"], "key_symptoms": ["S001", "S127", "S021", "S035", "S146", "S153"] },
-    { "disease_id": "D052", "name": "Rubella (German Measles)", "category": "Exanthematous", "primary_syndrome": "acute_fever_rash", "secondary_syndromes": ["febrile_arthritic"], "key_symptoms": ["S001", "S127", "S174", "S117"] },
-    { "disease_id": "D053", "name": "Varicella Zoster Virus (Chickenpox)", "category": "Exanthematous", "primary_syndrome": "vesiculopustular_eruptive", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S001", "S132", "S128", "S006"] },
-    { "disease_id": "D054", "name": "Mpox Virus (Monkeypox)", "category": "Exanthematous / Zoonotic", "primary_syndrome": "vesiculopustular_eruptive", "secondary_syndromes": ["acute_febrile_illness", "cutaneous_ulcerative_eschar"], "key_symptoms": ["S001", "S142", "S174", "S067", "S009", "S191"] },
-    { "disease_id": "D055", "name": "Hand, Foot, and Mouth Disease (Coxsackievirus A16/EV71)", "category": "Exanthematous / Pediatric", "primary_syndrome": "oral_ulcerative_stomatitis", "secondary_syndromes": ["vesiculopustular_eruptive", "acute_encephalitic"], "key_symptoms": ["S001", "S204", "S132", "S062", "S011"] },
-    { "disease_id": "D056", "name": "Mumps Virus Infection", "category": "Viral / Pediatric", "primary_syndrome": "acute_otolaryngologic_suppurative", "secondary_syndromes": ["acute_febrile_illness", "meningeal_irritation"], "key_symptoms": ["S173", "S001", "S067", "S194", "S062"] },
-    { "disease_id": "D057", "name": "Neisseria Meningitidis (Meningococcal Meningitis)", "category": "Neurological / Invasive", "primary_syndrome": "meningeal_irritation", "secondary_syndromes": ["viral_hemorrhagic_fever", "systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S068", "S092", "S090", "S139", "S140", "S070"] },
-    { "disease_id": "D058", "name": "Streptococcus Pneumoniae Meningitis", "category": "Neurological / Invasive", "primary_syndrome": "meningeal_irritation", "secondary_syndromes": ["acute_encephalitic"], "key_symptoms": ["S001", "S068", "S092", "S070", "S078", "S048"] },
-    { "disease_id": "D059", "name": "Herpes Simplex Virus Encephalitis", "category": "Neurological", "primary_syndrome": "acute_encephalitic", "secondary_syndromes": ["meningeal_irritation"], "key_symptoms": ["S001", "S070", "S234", "S078", "S088", "S068"] },
-    { "disease_id": "D060", "name": "Poliovirus Infection (Acute Poliomyelitis)", "category": "Neurological / Enteric", "primary_syndrome": "acute_flaccid_paralysis", "secondary_syndromes": ["acute_febrile_illness", "meningeal_irritation"], "key_symptoms": ["S082", "S083", "S001", "S092", "S115"] },
-    { "disease_id": "D061", "name": "Guillain-Barré Syndrome (Post-Infectious)", "category": "Neurological / Autoimmune", "primary_syndrome": "acute_flaccid_paralysis", "secondary_syndromes": ["cranial_neuropathy_dysautonomia"], "key_symptoms": ["S082", "S080", "S081", "S083", "S027"] },
-    { "disease_id": "D062", "name": "Clostridium Tetani (Tetanus)", "category": "Neurological / Toxin", "primary_syndrome": "cranial_neuropathy_dysautonomia", "secondary_syndromes": ["pediatric_croup_stridor"], "key_symptoms": ["S172", "S124", "S027", "S078"] },
-    { "disease_id": "D063", "name": "Kawasaki Disease", "category": "Pediatric / Vasculitis", "primary_syndrome": "mucocutaneous_lymph_node", "secondary_syndromes": ["acute_fever_rash", "acute_coronary_ischemic"], "key_symptoms": ["S001", "S146", "S206", "S134", "S174", "S127"] },
-    { "disease_id": "D064", "name": "Severe Acute Malnutrition (Kwashiorkor / Marasmus)", "category": "Pediatric / Nutritional", "primary_syndrome": "pediatric_malnutrition_wasting", "secondary_syndromes": ["acute_watery_diarrhea", "systemic_inflammatory_sepsis"], "key_symptoms": ["S013", "S108", "S134", "S155", "S020"] },
-    { "disease_id": "D065", "name": "Acute Pyelonephritis (E. Coli / Klebsiella)", "category": "Renal / Urinary", "primary_syndrome": "urinary_tract_infection_febrile", "secondary_syndromes": ["systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S002", "S184", "S175", "S177", "S048"] },
-    { "disease_id": "D066", "name": "Acute Cystitis", "category": "Renal / Urinary", "primary_syndrome": "urinary_tract_infection_febrile", "secondary_syndromes": ["unspecified_community_cluster"], "key_symptoms": ["S175", "S176", "S177", "S178", "S185", "S181"] },
-    { "disease_id": "D067", "name": "Heat Stroke / Severe Environmental Hyperthermia", "category": "Environmental", "primary_syndrome": "environmental_heat_stroke", "secondary_syndromes": ["acute_encephalitic", "severe_dehydration_shock"], "key_symptoms": ["S001", "S233", "S070", "S076", "S136", "S017"] },
-    { "disease_id": "D068", "name": "Accidental Hypothermia Crisis", "category": "Environmental", "primary_syndrome": "environmental_hypothermia_cold", "secondary_syndromes": ["cardiac_arrhythmic_syncope"], "key_symptoms": ["S003", "S079", "S089", "S070", "S113", "S100"] },
-    { "disease_id": "D069", "name": "Chlorine / Industrial Gas Inhalation Exposure", "category": "Toxicological", "primary_syndrome": "chemical_toxic_inhalation", "secondary_syndromes": ["severe_acute_respiratory_infection"], "key_symptoms": ["S039", "S149", "S021", "S026", "S030", "S046"] },
-    { "disease_id": "D070", "name": "Anaphylaxis (Food / Insect Stings / Drugs)", "category": "Allergic / Emergency", "primary_syndrome": "acute_allergic_anaphylactic", "secondary_syndromes": ["severe_dehydration_shock", "bronchospastic_obstructive"], "key_symptoms": ["S220", "S221", "S223", "S225", "S029", "S017"] },
-    { "disease_id": "D071", "name": "ST-Elevation Myocardial Infarction (STEMI)", "category": "Cardiovascular", "primary_syndrome": "acute_coronary_ischemic", "secondary_syndromes": ["acute_heart_failure_congestive", "cardiac_arrhythmic_syncope"], "key_symptoms": ["S102", "S104", "S105", "S004", "S047", "S110"] },
-    { "disease_id": "D072", "name": "Decompensated Acute Heart Failure", "category": "Cardiovascular", "primary_syndrome": "acute_heart_failure_congestive", "secondary_syndromes": ["acute_coronary_ischemic"], "key_symptoms": ["S105", "S107", "S108", "S109", "S028", "S046"] },
-    { "disease_id": "D073", "name": "Bacterial Sepsis with Septic Shock", "category": "Critical Care", "primary_syndrome": "systemic_inflammatory_sepsis", "secondary_syndromes": ["acute_kidney_injury_oliguria", "acute_encephalitic"], "key_symptoms": ["S001", "S099", "S028", "S070", "S179", "S112"] },
-    { "disease_id": "D074", "name": "Infectious Mononucleosis (EBV)", "category": "Viral / Lymphatic", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["upper_respiratory_infection", "acute_jaundice_hepatitic"], "key_symptoms": ["S001", "S038", "S169", "S174", "S006", "S009"] },
-    { "disease_id": "D075", "name": "Cytomegalovirus Mononucleosis-like Syndrome", "category": "Viral", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["acute_jaundice_hepatitic"], "key_symptoms": ["S001", "S006", "S115", "S064"] },
-    { "disease_id": "D076", "name": "Acute Epidemic Hemorrhagic Conjunctivitis (EV70/CA24)", "category": "Ocular / Viral", "primary_syndrome": "acute_ophthalmic_conjunctivitis", "secondary_syndromes": ["upper_respiratory_infection"], "key_symptoms": ["S146", "S147", "S149", "S154", "S139"] },
-    { "disease_id": "D077", "name": "Trachoma (Chlamydia Trachomatis)", "category": "Ocular / Chronic", "primary_syndrome": "acute_ophthalmic_conjunctivitis", "secondary_syndromes": ["unspecified_community_cluster"], "key_symptoms": ["S146", "S150", "S153", "S156"] },
-    { "disease_id": "D078", "name": "Scabies Infestation (Sarcoptes Scabiei)", "category": "Dermatological / Parasitic", "primary_syndrome": "vesiculopustular_eruptive", "secondary_syndromes": ["unspecified_community_cluster"], "key_symptoms": ["S128", "S131", "S132"] },
-    { "disease_id": "D079", "name": "Impetigo Contagiosa (Staph/Strep)", "category": "Dermatological / Bacterial", "primary_syndrome": "vesiculopustular_eruptive", "secondary_syndromes": ["unspecified_community_cluster"], "key_symptoms": ["S132", "S142", "S134"] },
-    { "disease_id": "D080", "name": "Erysipelas / Cellulitis", "category": "Dermatological / Bacterial", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S129", "S130", "S143"] },
-    { "disease_id": "D081", "name": "Ebola / Marburg Filovirus Hemorrhagic Fever", "category": "Viral / Hemorrhagic", "primary_syndrome": "viral_hemorrhagic_fever", "secondary_syndromes": ["acute_watery_diarrhea", "systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S006", "S048", "S050", "S139", "S244", "S166"] },
-    { "disease_id": "D082", "name": "Lassa Fever (Arenavirus)", "category": "Viral / Hemorrhagic", "primary_syndrome": "viral_hemorrhagic_fever", "secondary_syndromes": ["acute_otolaryngologic_suppurative"], "key_symptoms": ["S001", "S038", "S154", "S166", "S161", "S054"] },
-    { "disease_id": "D083", "name": "Crimean-Congo Hemorrhagic Fever (CCHF)", "category": "Vector-Borne / Zoonotic", "primary_syndrome": "viral_hemorrhagic_fever", "secondary_syndromes": ["acute_jaundice_hepatitic"], "key_symptoms": ["S001", "S009", "S147", "S139", "S140", "S166", "S064"] },
-    { "disease_id": "D084", "name": "Rift Valley Fever", "category": "Vector-Borne / Zoonotic", "primary_syndrome": "viral_hemorrhagic_fever", "secondary_syndromes": ["acute_ophthalmic_conjunctivitis", "acute_encephalitic"], "key_symptoms": ["S001", "S115", "S067", "S151", "S064", "S139"] },
-    { "disease_id": "D085", "name": "Hantavirus Pulmonary Syndrome (HPS)", "category": "Zoonotic / Rodent-borne", "primary_syndrome": "severe_acute_respiratory_infection", "secondary_syndromes": ["systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S115", "S026", "S028", "S046", "S112"] },
-    { "disease_id": "D086", "name": "Hemorrhagic Fever with Renal Syndrome (HFRS)", "category": "Zoonotic / Rodent-borne", "primary_syndrome": "viral_hemorrhagic_fever", "secondary_syndromes": ["acute_kidney_injury_oliguria"], "key_symptoms": ["S001", "S184", "S139", "S179", "S181", "S102"] },
-    { "disease_id": "D087", "name": "Plague (Yersinia Pestis - Bubonic)", "category": "Vector-Borne / Zoonotic", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S002", "S174", "S143", "S020"] },
-    { "disease_id": "D088", "name": "Pneumonic Plague (Yersinia Pestis)", "category": "Respiratory / Zoonotic", "primary_syndrome": "severe_acute_respiratory_infection", "secondary_syndromes": ["systemic_inflammatory_sepsis"], "key_symptoms": ["S001", "S023", "S025", "S026", "S032", "S046"] },
-    { "disease_id": "D089", "name": "Q Fever (Coxiella Burnetii)", "category": "Zoonotic", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["lower_respiratory_illness", "acute_jaundice_hepatitic"], "key_symptoms": ["S001", "S068", "S005", "S021", "S054"] },
-    { "disease_id": "D090", "name": "Tularemia (Francisella Tularensis)", "category": "Zoonotic", "primary_syndrome": "cutaneous_ulcerative_eschar", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S001", "S141", "S174", "S002", "S067"] },
-    { "disease_id": "D091", "name": "Leishmaniasis (Visceral / Kala-Azar)", "category": "Vector-Borne / Parasitic", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["acute_hemolytic_cytopenic", "pediatric_malnutrition_wasting"], "key_symptoms": ["S001", "S013", "S246", "S056", "S138"] },
-    { "disease_id": "D092", "name": "Cutaneous Leishmaniasis", "category": "Vector-Borne / Parasitic", "primary_syndrome": "cutaneous_ulcerative_eschar", "secondary_syndromes": ["unspecified_community_cluster"], "key_symptoms": ["S141", "S143", "S131"] },
-    { "disease_id": "D093", "name": "African Trypanosomiasis (Sleeping Sickness)", "category": "Vector-Borne", "primary_syndrome": "acute_encephalitic", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S001", "S231", "S230", "S070", "S084"] },
-    { "disease_id": "D094", "name": "Chagas Disease (Trypanosoma Cruzi - Acute)", "category": "Vector-Borne", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["acute_heart_failure_congestive", "cardiac_arrhythmic_syncope"], "key_symptoms": ["S001", "S154", "S108", "S099", "S056"] },
-    { "disease_id": "D095", "name": "Schistosomiasis (Acute Katayama Fever)", "category": "Waterborne / Parasitic", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["acute_allergic_anaphylactic", "bloody_diarrhea_dysentery"], "key_symptoms": ["S001", "S220", "S021", "S054", "S052", "S181"] },
-    { "disease_id": "D096", "name": "Hydatid Disease / Echinococcosis", "category": "Zoonotic / Parasitic", "primary_syndrome": "acute_allergic_anaphylactic", "secondary_syndromes": ["acute_jaundice_hepatitic"], "key_symptoms": ["S054", "S220", "S064", "S026"] },
-    { "disease_id": "D097", "name": "Post-Viral Chronic Fatigue Syndrome (ME/CFS)", "category": "Post-Acute", "primary_syndrome": "post_infectious_asthenia", "secondary_syndromes": ["unspecified_community_cluster"], "key_symptoms": ["S006", "S232", "S115", "S230", "S114"] },
-    { "disease_id": "D098", "name": "Post-COVID-19 Condition (Long COVID)", "category": "Post-Acute", "primary_syndrome": "post_infectious_asthenia", "secondary_syndromes": ["bronchospastic_obstructive", "cardiac_arrhythmic_syncope"], "key_symptoms": ["S006", "S026", "S232", "S098", "S094", "S095"] },
-    { "disease_id": "D099", "name": "Streptococcal Toxic Shock Syndrome (STSS)", "category": "Bacterial / Toxin", "primary_syndrome": "systemic_inflammatory_sepsis", "secondary_syndromes": ["severe_dehydration_shock", "acute_fever_rash"], "key_symptoms": ["S001", "S112", "S129", "S134", "S179", "S070"] },
-    { "disease_id": "D100", "name": "Staphylococcal Toxic Shock Syndrome (TSS)", "category": "Bacterial / Toxin", "primary_syndrome": "systemic_inflammatory_sepsis", "secondary_syndromes": ["acute_fever_rash", "gastroenteritis_emetic"], "key_symptoms": ["S001", "S129", "S048", "S050", "S112", "S134"] },
-    { "disease_id": "D101", "name": "Acute Myocarditis (Viral)", "category": "Cardiovascular", "primary_syndrome": "acute_heart_failure_congestive", "secondary_syndromes": ["cardiac_arrhythmic_syncope", "acute_coronary_ischemic"], "key_symptoms": ["S104", "S098", "S105", "S006", "S017"] },
-    { "disease_id": "D102", "name": "Acute Pericarditis", "category": "Cardiovascular", "primary_syndrome": "acute_coronary_ischemic", "secondary_syndromes": ["acute_febrile_illness"], "key_symptoms": ["S104", "S001", "S026", "S098"] },
-    { "disease_id": "D103", "name": "Infective Endocarditis", "category": "Cardiovascular / Invasive", "primary_syndrome": "acute_febrile_illness", "secondary_syndromes": ["systemic_inflammatory_sepsis", "viral_hemorrhagic_fever"], "key_symptoms": ["S001", "S005", "S006", "S139", "S181", "S105"] },
-    { "disease_id": "D104", "name": "Acute Epidemic Polyarthritis", "category": "Rheumatologic / Viral", "primary_syndrome": "febrile_arthritic", "secondary_syndromes": ["acute_fever_rash"], "key_symptoms": ["S001", "S117", "S118", "S127", "S115"] },
-    { "disease_id": "D105", "name": "Acute Glomerulonephritis (Post-Streptococcal)", "category": "Renal / Post-Infectious", "primary_syndrome": "acute_kidney_injury_oliguria", "secondary_syndromes": ["acute_heart_failure_congestive"], "key_symptoms": ["S181", "S183", "S179", "S108", "S154", "S001"] }
+    {
+      "condition_id": "C001",
+      "disease_id": "C001",
+      "condition_name": "Common Cold (Rhinovirus/Coronavirus)",
+      "name": "Common Cold (Rhinovirus/Coronavirus)",
+      "category": "Respiratory / Airborne",
+      "symptom_ids": [
+        "S033",
+        "S035",
+        "S036",
+        "S038",
+        "S021"
+      ],
+      "key_symptoms": [
+        "S033",
+        "S035",
+        "S036",
+        "S038",
+        "S021"
+      ],
+      "syndrome_ids": [
+        "upper_respiratory_infection",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "upper_respiratory_infection",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild",
+      "seasonality": "seasonal_winter",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "3-7",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C002",
+      "disease_id": "C002",
+      "condition_name": "Seasonal Influenza A/B",
+      "name": "Seasonal Influenza A/B",
+      "category": "Respiratory / Airborne",
+      "symptom_ids": [
+        "S001",
+        "S002",
+        "S006",
+        "S009",
+        "S021",
+        "S038",
+        "S067"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S002",
+        "S006",
+        "S009",
+        "S021",
+        "S038",
+        "S067"
+      ],
+      "syndrome_ids": [
+        "influenza_like_illness",
+        "acute_febrile_illness",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "influenza_like_illness",
+      "secondary_syndromes": [
+        "lower_respiratory_illness",
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_winter",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C003",
+      "disease_id": "C003",
+      "condition_name": "COVID-19 (SARS-CoV-2)",
+      "name": "COVID-19 (SARS-CoV-2)",
+      "category": "Respiratory / Airborne",
+      "symptom_ids": [
+        "S001",
+        "S021",
+        "S026",
+        "S094",
+        "S095",
+        "S006",
+        "S046"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S021",
+        "S026",
+        "S094",
+        "S095",
+        "S006",
+        "S046"
+      ],
+      "syndrome_ids": [
+        "influenza_like_illness",
+        "severe_acute_respiratory_infection",
+        "post_infectious_asthenia"
+      ],
+      "primary_syndrome": "influenza_like_illness",
+      "secondary_syndromes": [
+        "severe_acute_respiratory_infection",
+        "post_infectious_asthenia"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C004",
+      "disease_id": "C004",
+      "condition_name": "Respiratory Syncytial Virus (RSV)",
+      "name": "Respiratory Syncytial Virus (RSV)",
+      "category": "Respiratory / Airborne",
+      "symptom_ids": [
+        "S021",
+        "S029",
+        "S028",
+        "S044",
+        "S001"
+      ],
+      "key_symptoms": [
+        "S021",
+        "S029",
+        "S028",
+        "S044",
+        "S001"
+      ],
+      "syndrome_ids": [
+        "bronchospastic_obstructive",
+        "pediatric_croup_stridor",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "lower_respiratory_illness",
+      "secondary_syndromes": [
+        "pediatric_croup_stridor",
+        "bronchospastic_obstructive"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_winter",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C005",
+      "disease_id": "C005",
+      "condition_name": "Adenoviral Pharyngoconjunctival Fever",
+      "name": "Adenoviral Pharyngoconjunctival Fever",
+      "category": "Respiratory / Ocular",
+      "symptom_ids": [
+        "S001",
+        "S038",
+        "S146",
+        "S149",
+        "S021"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S038",
+        "S146",
+        "S149",
+        "S021"
+      ],
+      "syndrome_ids": [
+        "acute_ophthalmic_conjunctivitis",
+        "upper_respiratory_infection",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "upper_respiratory_infection",
+      "secondary_syndromes": [
+        "acute_ophthalmic_conjunctivitis",
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C006",
+      "disease_id": "C006",
+      "condition_name": "Human Metapneumovirus Infection",
+      "name": "Human Metapneumovirus Infection",
+      "category": "Respiratory / Airborne",
+      "symptom_ids": [
+        "S021",
+        "S026",
+        "S029",
+        "S001"
+      ],
+      "key_symptoms": [
+        "S021",
+        "S026",
+        "S029",
+        "S001"
+      ],
+      "syndrome_ids": [
+        "upper_respiratory_infection",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "lower_respiratory_illness",
+      "secondary_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C007",
+      "disease_id": "C007",
+      "condition_name": "Parainfluenza Viral Croup",
+      "name": "Parainfluenza Viral Croup",
+      "category": "Respiratory / Pediatric",
+      "symptom_ids": [
+        "S040",
+        "S044",
+        "S021",
+        "S001",
+        "S028"
+      ],
+      "key_symptoms": [
+        "S040",
+        "S044",
+        "S021",
+        "S001",
+        "S028"
+      ],
+      "syndrome_ids": [
+        "upper_respiratory_infection",
+        "pediatric_croup_stridor"
+      ],
+      "primary_syndrome": "pediatric_croup_stridor",
+      "secondary_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "seasonal_winter",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "3-7",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C008",
+      "disease_id": "C008",
+      "condition_name": "Acute Viral Bronchitis",
+      "name": "Acute Viral Bronchitis",
+      "category": "Respiratory",
+      "symptom_ids": [
+        "S021",
+        "S024",
+        "S030",
+        "S006"
+      ],
+      "key_symptoms": [
+        "S021",
+        "S024",
+        "S030",
+        "S006"
+      ],
+      "syndrome_ids": [
+        "upper_respiratory_infection",
+        "bronchospastic_obstructive"
+      ],
+      "primary_syndrome": "upper_respiratory_infection",
+      "secondary_syndromes": [
+        "bronchospastic_obstructive"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C009",
+      "disease_id": "C009",
+      "condition_name": "Community-Acquired Bacterial Pneumonia",
+      "name": "Community-Acquired Bacterial Pneumonia",
+      "category": "Respiratory",
+      "symptom_ids": [
+        "S001",
+        "S002",
+        "S023",
+        "S032",
+        "S026",
+        "S046"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S002",
+        "S023",
+        "S032",
+        "S026",
+        "S046"
+      ],
+      "syndrome_ids": [
+        "severe_acute_respiratory_infection",
+        "systemic_inflammatory_sepsis",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "lower_respiratory_illness",
+      "secondary_syndromes": [
+        "severe_acute_respiratory_infection",
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "seasonal_winter",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C010",
+      "disease_id": "C010",
+      "condition_name": "Atypical Mycoplasma Pneumonia",
+      "name": "Atypical Mycoplasma Pneumonia",
+      "category": "Respiratory",
+      "symptom_ids": [
+        "S022",
+        "S067",
+        "S038",
+        "S006",
+        "S001"
+      ],
+      "key_symptoms": [
+        "S022",
+        "S067",
+        "S038",
+        "S006",
+        "S001"
+      ],
+      "syndrome_ids": [
+        "acute_febrile_illness",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "lower_respiratory_illness",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "seasonal_winter",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C011",
+      "disease_id": "C011",
+      "condition_name": "Pulmonary Tuberculosis",
+      "name": "Pulmonary Tuberculosis",
+      "category": "Respiratory / Chronic",
+      "symptom_ids": [
+        "S021",
+        "S025",
+        "S005",
+        "S013",
+        "S001",
+        "S006"
+      ],
+      "key_symptoms": [
+        "S021",
+        "S025",
+        "S005",
+        "S013",
+        "S001",
+        "S006"
+      ],
+      "syndrome_ids": [
+        "post_infectious_asthenia",
+        "acute_febrile_illness",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "lower_respiratory_illness",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "post_infectious_asthenia"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "14-90+",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C012",
+      "disease_id": "C012",
+      "condition_name": "Bordetella Pertussis (Whooping Cough)",
+      "name": "Bordetella Pertussis (Whooping Cough)",
+      "category": "Respiratory",
+      "symptom_ids": [
+        "S021",
+        "S044",
+        "S048",
+        "S028"
+      ],
+      "key_symptoms": [
+        "S021",
+        "S044",
+        "S048",
+        "S028"
+      ],
+      "syndrome_ids": [
+        "pediatric_croup_stridor",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "lower_respiratory_illness",
+      "secondary_syndromes": [
+        "pediatric_croup_stridor"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C013",
+      "disease_id": "C013",
+      "condition_name": "Respiratory Diphtheria",
+      "name": "Respiratory Diphtheria",
+      "category": "Respiratory",
+      "symptom_ids": [
+        "S170",
+        "S038",
+        "S044",
+        "S174",
+        "S001"
+      ],
+      "key_symptoms": [
+        "S170",
+        "S038",
+        "S044",
+        "S174",
+        "S001"
+      ],
+      "syndrome_ids": [
+        "cranial_neuropathy_dysautonomia",
+        "acute_otolaryngologic_suppurative",
+        "pediatric_croup_stridor"
+      ],
+      "primary_syndrome": "pediatric_croup_stridor",
+      "secondary_syndromes": [
+        "acute_otolaryngologic_suppurative",
+        "cranial_neuropathy_dysautonomia"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C014",
+      "disease_id": "C014",
+      "condition_name": "Acute Bacterial Sinusitis",
+      "name": "Acute Bacterial Sinusitis",
+      "category": "ENT",
+      "symptom_ids": [
+        "S167",
+        "S168",
+        "S033",
+        "S067",
+        "S001"
+      ],
+      "key_symptoms": [
+        "S167",
+        "S168",
+        "S033",
+        "S067",
+        "S001"
+      ],
+      "syndrome_ids": [
+        "upper_respiratory_infection",
+        "acute_otolaryngologic_suppurative"
+      ],
+      "primary_syndrome": "acute_otolaryngologic_suppurative",
+      "secondary_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "typical_severity": "mild",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C015",
+      "disease_id": "C015",
+      "condition_name": "Streptococcal Pharyngotonsillitis",
+      "name": "Streptococcal Pharyngotonsillitis",
+      "category": "ENT",
+      "symptom_ids": [
+        "S001",
+        "S038",
+        "S169",
+        "S174",
+        "S062"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S038",
+        "S169",
+        "S174",
+        "S062"
+      ],
+      "syndrome_ids": [
+        "acute_otolaryngologic_suppurative",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_otolaryngologic_suppurative",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C016",
+      "disease_id": "C016",
+      "condition_name": "Acute Viral Laryngitis",
+      "name": "Acute Viral Laryngitis",
+      "category": "ENT",
+      "symptom_ids": [
+        "S040",
+        "S041",
+        "S038",
+        "S021"
+      ],
+      "key_symptoms": [
+        "S040",
+        "S041",
+        "S038",
+        "S021"
+      ],
+      "syndrome_ids": [
+        "upper_respiratory_infection",
+        "pediatric_croup_stridor"
+      ],
+      "primary_syndrome": "upper_respiratory_infection",
+      "secondary_syndromes": [
+        "pediatric_croup_stridor"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C017",
+      "disease_id": "C017",
+      "condition_name": "Acute Otitis Media",
+      "name": "Acute Otitis Media",
+      "category": "ENT",
+      "symptom_ids": [
+        "S158",
+        "S159",
+        "S160",
+        "S001",
+        "S229"
+      ],
+      "key_symptoms": [
+        "S158",
+        "S159",
+        "S160",
+        "S001",
+        "S229"
+      ],
+      "syndrome_ids": [
+        "acute_otolaryngologic_suppurative",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_otolaryngologic_suppurative",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C018",
+      "disease_id": "C018",
+      "condition_name": "Acute Bronchial Asthma Exacerbation",
+      "name": "Acute Bronchial Asthma Exacerbation",
+      "category": "Respiratory / Allergic",
+      "symptom_ids": [
+        "S029",
+        "S026",
+        "S030",
+        "S021",
+        "S046"
+      ],
+      "key_symptoms": [
+        "S029",
+        "S026",
+        "S030",
+        "S021",
+        "S046"
+      ],
+      "syndrome_ids": [
+        "acute_allergic_anaphylactic",
+        "bronchospastic_obstructive"
+      ],
+      "primary_syndrome": "bronchospastic_obstructive",
+      "secondary_syndromes": [
+        "acute_allergic_anaphylactic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_spring_autumn",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C019",
+      "disease_id": "C019",
+      "condition_name": "COPD Acute Exacerbation",
+      "name": "COPD Acute Exacerbation",
+      "category": "Respiratory",
+      "symptom_ids": [
+        "S026",
+        "S023",
+        "S029",
+        "S046",
+        "S006"
+      ],
+      "key_symptoms": [
+        "S026",
+        "S023",
+        "S029",
+        "S046",
+        "S006"
+      ],
+      "syndrome_ids": [
+        "severe_acute_respiratory_infection",
+        "bronchospastic_obstructive"
+      ],
+      "primary_syndrome": "bronchospastic_obstructive",
+      "secondary_syndromes": [
+        "severe_acute_respiratory_infection"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C020",
+      "disease_id": "C020",
+      "condition_name": "Seasonal Allergic Rhinitis",
+      "name": "Seasonal Allergic Rhinitis",
+      "category": "Allergic",
+      "symptom_ids": [
+        "S213",
+        "S214",
+        "S215",
+        "S216",
+        "S217"
+      ],
+      "key_symptoms": [
+        "S213",
+        "S214",
+        "S215",
+        "S216",
+        "S217"
+      ],
+      "syndrome_ids": [
+        "acute_allergic_anaphylactic",
+        "upper_respiratory_infection"
+      ],
+      "primary_syndrome": "acute_allergic_anaphylactic",
+      "secondary_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "typical_severity": "mild",
+      "seasonality": "seasonal_spring_autumn",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "3-7",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C021",
+      "disease_id": "C021",
+      "condition_name": "Acute Rotaviral Gastroenteritis",
+      "name": "Acute Rotaviral Gastroenteritis",
+      "category": "Enteric / Pediatric",
+      "symptom_ids": [
+        "S001",
+        "S048",
+        "S050",
+        "S055",
+        "S015",
+        "S256"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S048",
+        "S050",
+        "S055",
+        "S015",
+        "S256"
+      ],
+      "syndrome_ids": [
+        "gastroenteritis_emetic",
+        "acute_watery_diarrhea",
+        "severe_dehydration_shock"
+      ],
+      "primary_syndrome": "acute_watery_diarrhea",
+      "secondary_syndromes": [
+        "severe_dehydration_shock",
+        "gastroenteritis_emetic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C022",
+      "disease_id": "C022",
+      "condition_name": "Epidemic Noroviral Gastroenteritis",
+      "name": "Epidemic Noroviral Gastroenteritis",
+      "category": "Enteric / Foodborne",
+      "symptom_ids": [
+        "S048",
+        "S049",
+        "S047",
+        "S050",
+        "S054",
+        "S009"
+      ],
+      "key_symptoms": [
+        "S048",
+        "S049",
+        "S047",
+        "S050",
+        "S054",
+        "S009"
+      ],
+      "syndrome_ids": [
+        "acute_watery_diarrhea",
+        "gastroenteritis_emetic"
+      ],
+      "primary_syndrome": "gastroenteritis_emetic",
+      "secondary_syndromes": [
+        "acute_watery_diarrhea"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C023",
+      "disease_id": "C023",
+      "condition_name": "Vibrio Cholerae (Cholera)",
+      "name": "Vibrio Cholerae (Cholera)",
+      "category": "Enteric / Waterborne",
+      "symptom_ids": [
+        "S050",
+        "S051",
+        "S048",
+        "S248",
+        "S256",
+        "S257",
+        "S112"
+      ],
+      "key_symptoms": [
+        "S050",
+        "S051",
+        "S048",
+        "S248",
+        "S256",
+        "S257",
+        "S112"
+      ],
+      "syndrome_ids": [
+        "acute_kidney_injury_oliguria",
+        "acute_watery_diarrhea",
+        "severe_dehydration_shock"
+      ],
+      "primary_syndrome": "acute_watery_diarrhea",
+      "secondary_syndromes": [
+        "severe_dehydration_shock",
+        "acute_kidney_injury_oliguria"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "1-3",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C024",
+      "disease_id": "C024",
+      "condition_name": "Shigella Sonnei / Flexneri (Bacillary Dysentery)",
+      "name": "Shigella Sonnei / Flexneri (Bacillary Dysentery)",
+      "category": "Enteric / Foodborne",
+      "symptom_ids": [
+        "S001",
+        "S052",
+        "S053",
+        "S054",
+        "S055"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S052",
+        "S053",
+        "S054",
+        "S055"
+      ],
+      "syndrome_ids": [
+        "bloody_diarrhea_dysentery",
+        "acute_febrile_illness",
+        "febrile_enteric"
+      ],
+      "primary_syndrome": "bloody_diarrhea_dysentery",
+      "secondary_syndromes": [
+        "febrile_enteric",
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C025",
+      "disease_id": "C025",
+      "condition_name": "Salmonella Enterica (Non-Typhoidal)",
+      "name": "Salmonella Enterica (Non-Typhoidal)",
+      "category": "Enteric / Foodborne",
+      "symptom_ids": [
+        "S001",
+        "S048",
+        "S050",
+        "S054",
+        "S067"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S048",
+        "S050",
+        "S054",
+        "S067"
+      ],
+      "syndrome_ids": [
+        "acute_watery_diarrhea",
+        "acute_febrile_illness",
+        "gastroenteritis_emetic"
+      ],
+      "primary_syndrome": "gastroenteritis_emetic",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "acute_watery_diarrhea"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C026",
+      "disease_id": "C026",
+      "condition_name": "Enterotoxigenic E. Coli (Traveler's Diarrhea)",
+      "name": "Enterotoxigenic E. Coli (Traveler's Diarrhea)",
+      "category": "Enteric",
+      "symptom_ids": [
+        "S050",
+        "S055",
+        "S047",
+        "S006"
+      ],
+      "key_symptoms": [
+        "S050",
+        "S055",
+        "S047",
+        "S006"
+      ],
+      "syndrome_ids": [
+        "acute_watery_diarrhea",
+        "gastroenteritis_emetic"
+      ],
+      "primary_syndrome": "acute_watery_diarrhea",
+      "secondary_syndromes": [
+        "gastroenteritis_emetic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C027",
+      "disease_id": "C027",
+      "condition_name": "Campylobacter Jejuni Enteritis",
+      "name": "Campylobacter Jejuni Enteritis",
+      "category": "Enteric / Foodborne",
+      "symptom_ids": [
+        "S001",
+        "S054",
+        "S050",
+        "S052",
+        "S009"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S054",
+        "S050",
+        "S052",
+        "S009"
+      ],
+      "syndrome_ids": [
+        "bloody_diarrhea_dysentery",
+        "acute_flaccid_paralysis",
+        "febrile_enteric"
+      ],
+      "primary_syndrome": "bloody_diarrhea_dysentery",
+      "secondary_syndromes": [
+        "acute_flaccid_paralysis",
+        "febrile_enteric"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C028",
+      "disease_id": "C028",
+      "condition_name": "Salmonella Typhi (Typhoid Fever)",
+      "name": "Salmonella Typhi (Typhoid Fever)",
+      "category": "Enteric / Febrile",
+      "symptom_ids": [
+        "S001",
+        "S054",
+        "S067",
+        "S100",
+        "S056",
+        "S059",
+        "S020"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S054",
+        "S067",
+        "S100",
+        "S056",
+        "S059",
+        "S020"
+      ],
+      "syndrome_ids": [
+        "acute_febrile_illness",
+        "systemic_inflammatory_sepsis",
+        "febrile_enteric"
+      ],
+      "primary_syndrome": "febrile_enteric",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C029",
+      "disease_id": "C029",
+      "condition_name": "Giardia Lamblia (Giardiasis)",
+      "name": "Giardia Lamblia (Giardiasis)",
+      "category": "Enteric / Waterborne",
+      "symptom_ids": [
+        "S050",
+        "S056",
+        "S055",
+        "S057",
+        "S013"
+      ],
+      "key_symptoms": [
+        "S050",
+        "S056",
+        "S055",
+        "S057",
+        "S013"
+      ],
+      "syndrome_ids": [
+        "pediatric_malnutrition_wasting",
+        "acute_watery_diarrhea"
+      ],
+      "primary_syndrome": "acute_watery_diarrhea",
+      "secondary_syndromes": [
+        "pediatric_malnutrition_wasting"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C030",
+      "disease_id": "C030",
+      "condition_name": "Entamoeba Histolytica (Amebiasis)",
+      "name": "Entamoeba Histolytica (Amebiasis)",
+      "category": "Enteric / Waterborne",
+      "symptom_ids": [
+        "S052",
+        "S053",
+        "S054",
+        "S055",
+        "S001"
+      ],
+      "key_symptoms": [
+        "S052",
+        "S053",
+        "S054",
+        "S055",
+        "S001"
+      ],
+      "syndrome_ids": [
+        "bloody_diarrhea_dysentery",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "bloody_diarrhea_dysentery",
+      "secondary_syndromes": [
+        "acute_jaundice_hepatitic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C031",
+      "disease_id": "C031",
+      "condition_name": "Hepatitis A Virus",
+      "name": "Hepatitis A Virus",
+      "category": "Hepatic / Waterborne",
+      "symptom_ids": [
+        "S064",
+        "S065",
+        "S066",
+        "S001",
+        "S047",
+        "S011",
+        "S054"
+      ],
+      "key_symptoms": [
+        "S064",
+        "S065",
+        "S066",
+        "S001",
+        "S047",
+        "S011",
+        "S054"
+      ],
+      "syndrome_ids": [
+        "gastroenteritis_emetic",
+        "acute_febrile_illness",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "acute_jaundice_hepatitic",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "gastroenteritis_emetic"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C032",
+      "disease_id": "C032",
+      "condition_name": "Hepatitis E Virus",
+      "name": "Hepatitis E Virus",
+      "category": "Hepatic / Waterborne",
+      "symptom_ids": [
+        "S064",
+        "S065",
+        "S001",
+        "S047",
+        "S054",
+        "S006"
+      ],
+      "key_symptoms": [
+        "S064",
+        "S065",
+        "S001",
+        "S047",
+        "S054",
+        "S006"
+      ],
+      "syndrome_ids": [
+        "systemic_inflammatory_sepsis",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "acute_jaundice_hepatitic",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C033",
+      "disease_id": "C033",
+      "condition_name": "Staphylococcal Enterotoxin Food Poisoning",
+      "name": "Staphylococcal Enterotoxin Food Poisoning",
+      "category": "Foodborne / Toxic",
+      "symptom_ids": [
+        "S048",
+        "S049",
+        "S055",
+        "S050",
+        "S007"
+      ],
+      "key_symptoms": [
+        "S048",
+        "S049",
+        "S055",
+        "S050",
+        "S007"
+      ],
+      "syndrome_ids": [
+        "severe_dehydration_shock",
+        "gastroenteritis_emetic"
+      ],
+      "primary_syndrome": "gastroenteritis_emetic",
+      "secondary_syndromes": [
+        "severe_dehydration_shock"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_summer",
+      "transmission_pattern": "foodborne_ingestion",
+      "typical_duration_days": "1-3",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C034",
+      "disease_id": "C034",
+      "condition_name": "Bacillus Cereus Emetic Syndrome",
+      "name": "Bacillus Cereus Emetic Syndrome",
+      "category": "Foodborne / Toxic",
+      "symptom_ids": [
+        "S048",
+        "S047",
+        "S055"
+      ],
+      "key_symptoms": [
+        "S048",
+        "S047",
+        "S055"
+      ],
+      "syndrome_ids": [
+        "unspecified_community_cluster",
+        "gastroenteritis_emetic"
+      ],
+      "primary_syndrome": "gastroenteritis_emetic",
+      "secondary_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "foodborne_ingestion",
+      "typical_duration_days": "1-3",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C035",
+      "disease_id": "C035",
+      "condition_name": "Clostridium Botulinum (Foodborne Botulism)",
+      "name": "Clostridium Botulinum (Foodborne Botulism)",
+      "category": "Foodborne / Neurotoxic",
+      "symptom_ids": [
+        "S151",
+        "S061",
+        "S088",
+        "S082",
+        "S209",
+        "S027"
+      ],
+      "key_symptoms": [
+        "S151",
+        "S061",
+        "S088",
+        "S082",
+        "S209",
+        "S027"
+      ],
+      "syndrome_ids": [
+        "acute_flaccid_paralysis",
+        "cranial_neuropathy_dysautonomia",
+        "foodborne_neurotoxic"
+      ],
+      "primary_syndrome": "foodborne_neurotoxic",
+      "secondary_syndromes": [
+        "cranial_neuropathy_dysautonomia",
+        "acute_flaccid_paralysis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "foodborne_ingestion",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C036",
+      "disease_id": "C036",
+      "condition_name": "Dengue Fever (Breakbone Fever)",
+      "name": "Dengue Fever (Breakbone Fever)",
+      "category": "Vector-Borne / Arboviral",
+      "symptom_ids": [
+        "S001",
+        "S147",
+        "S115",
+        "S117",
+        "S123",
+        "S127",
+        "S139"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S147",
+        "S115",
+        "S117",
+        "S123",
+        "S127",
+        "S139"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "febrile_arthritic",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "febrile_arthritic",
+      "secondary_syndromes": [
+        "viral_hemorrhagic_fever",
+        "acute_fever_rash"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C037",
+      "disease_id": "C037",
+      "condition_name": "Dengue Hemorrhagic Fever / Shock Syndrome",
+      "name": "Dengue Hemorrhagic Fever / Shock Syndrome",
+      "category": "Vector-Borne",
+      "symptom_ids": [
+        "S001",
+        "S139",
+        "S140",
+        "S166",
+        "S241",
+        "S054",
+        "S112"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S139",
+        "S140",
+        "S166",
+        "S241",
+        "S054",
+        "S112"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "systemic_inflammatory_sepsis",
+        "severe_dehydration_shock"
+      ],
+      "primary_syndrome": "viral_hemorrhagic_fever",
+      "secondary_syndromes": [
+        "severe_dehydration_shock",
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C038",
+      "disease_id": "C038",
+      "condition_name": "Chikungunya Virus Infection",
+      "name": "Chikungunya Virus Infection",
+      "category": "Vector-Borne / Arboviral",
+      "symptom_ids": [
+        "S001",
+        "S117",
+        "S118",
+        "S125",
+        "S127",
+        "S067",
+        "S009"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S117",
+        "S118",
+        "S125",
+        "S127",
+        "S067",
+        "S009"
+      ],
+      "syndrome_ids": [
+        "post_infectious_asthenia",
+        "febrile_arthritic",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "febrile_arthritic",
+      "secondary_syndromes": [
+        "acute_fever_rash",
+        "post_infectious_asthenia"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C039",
+      "disease_id": "C039",
+      "condition_name": "Zika Virus Disease",
+      "name": "Zika Virus Disease",
+      "category": "Vector-Borne / Arboviral",
+      "symptom_ids": [
+        "S001",
+        "S127",
+        "S117",
+        "S146",
+        "S067"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S127",
+        "S117",
+        "S146",
+        "S067"
+      ],
+      "syndrome_ids": [
+        "acute_ophthalmic_conjunctivitis",
+        "febrile_arthritic",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "acute_fever_rash",
+      "secondary_syndromes": [
+        "febrile_arthritic",
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C040",
+      "disease_id": "C040",
+      "condition_name": "Plasmodium Falciparum Malaria",
+      "name": "Plasmodium Falciparum Malaria",
+      "category": "Vector-Borne / Parasitic",
+      "symptom_ids": [
+        "S001",
+        "S002",
+        "S004",
+        "S067",
+        "S048",
+        "S246",
+        "S070"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S002",
+        "S004",
+        "S067",
+        "S048",
+        "S246",
+        "S070"
+      ],
+      "syndrome_ids": [
+        "acute_hemolytic_cytopenic",
+        "acute_encephalitic",
+        "vector_malaria_paroxysmal"
+      ],
+      "primary_syndrome": "vector_malaria_paroxysmal",
+      "secondary_syndromes": [
+        "acute_encephalitic",
+        "acute_hemolytic_cytopenic"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C041",
+      "disease_id": "C041",
+      "condition_name": "Plasmodium Vivax Malaria",
+      "name": "Plasmodium Vivax Malaria",
+      "category": "Vector-Borne / Parasitic",
+      "symptom_ids": [
+        "S001",
+        "S002",
+        "S004",
+        "S067",
+        "S115",
+        "S006"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S002",
+        "S004",
+        "S067",
+        "S115",
+        "S006"
+      ],
+      "syndrome_ids": [
+        "vector_malaria_paroxysmal",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "vector_malaria_paroxysmal",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C042",
+      "disease_id": "C042",
+      "condition_name": "Japanese Encephalitis Virus",
+      "name": "Japanese Encephalitis Virus",
+      "category": "Vector-Borne / Neurotropic",
+      "symptom_ids": [
+        "S001",
+        "S068",
+        "S070",
+        "S078",
+        "S092",
+        "S082"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S068",
+        "S070",
+        "S078",
+        "S092",
+        "S082"
+      ],
+      "syndrome_ids": [
+        "acute_flaccid_paralysis",
+        "acute_encephalitic",
+        "meningeal_irritation"
+      ],
+      "primary_syndrome": "acute_encephalitic",
+      "secondary_syndromes": [
+        "meningeal_irritation",
+        "acute_flaccid_paralysis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C043",
+      "disease_id": "C043",
+      "condition_name": "West Nile Virus Neuroinvasive Disease",
+      "name": "West Nile Virus Neuroinvasive Disease",
+      "category": "Vector-Borne",
+      "symptom_ids": [
+        "S001",
+        "S068",
+        "S070",
+        "S082",
+        "S079",
+        "S092"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S068",
+        "S070",
+        "S082",
+        "S079",
+        "S092"
+      ],
+      "syndrome_ids": [
+        "acute_flaccid_paralysis",
+        "acute_encephalitic",
+        "meningeal_irritation"
+      ],
+      "primary_syndrome": "acute_encephalitic",
+      "secondary_syndromes": [
+        "acute_flaccid_paralysis",
+        "meningeal_irritation"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C044",
+      "disease_id": "C044",
+      "condition_name": "Yellow Fever Virus",
+      "name": "Yellow Fever Virus",
+      "category": "Vector-Borne",
+      "symptom_ids": [
+        "S001",
+        "S064",
+        "S100",
+        "S244",
+        "S139",
+        "S179"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S064",
+        "S100",
+        "S244",
+        "S139",
+        "S179"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "acute_kidney_injury_oliguria",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "viral_hemorrhagic_fever",
+      "secondary_syndromes": [
+        "acute_jaundice_hepatitic",
+        "acute_kidney_injury_oliguria"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C045",
+      "disease_id": "C045",
+      "condition_name": "Lymphatic Filariasis (Wuchereria Bancrofti)",
+      "name": "Lymphatic Filariasis (Wuchereria Bancrofti)",
+      "category": "Vector-Borne / Parasitic",
+      "symptom_ids": [
+        "S192",
+        "S195",
+        "S130",
+        "S001",
+        "S117"
+      ],
+      "key_symptoms": [
+        "S192",
+        "S195",
+        "S130",
+        "S001",
+        "S117"
+      ],
+      "syndrome_ids": [
+        "vector_lymphatic_filarial",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "vector_lymphatic_filarial",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "14-90+",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C046",
+      "disease_id": "C046",
+      "condition_name": "Orientia Tsutsugamushi (Scrub Typhus)",
+      "name": "Orientia Tsutsugamushi (Scrub Typhus)",
+      "category": "Vector-Borne / Rickettsial",
+      "symptom_ids": [
+        "S141",
+        "S001",
+        "S067",
+        "S146",
+        "S127",
+        "S174"
+      ],
+      "key_symptoms": [
+        "S141",
+        "S001",
+        "S067",
+        "S146",
+        "S127",
+        "S174"
+      ],
+      "syndrome_ids": [
+        "acute_encephalitic",
+        "acute_febrile_illness",
+        "cutaneous_ulcerative_eschar"
+      ],
+      "primary_syndrome": "cutaneous_ulcerative_eschar",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "acute_encephalitic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C047",
+      "disease_id": "C047",
+      "condition_name": "Leptospira Interrogans (Leptospirosis / Weil's Disease)",
+      "name": "Leptospira Interrogans (Leptospirosis / Weil's Disease)",
+      "category": "Zoonotic / Waterborne",
+      "symptom_ids": [
+        "S001",
+        "S124",
+        "S157",
+        "S064",
+        "S181",
+        "S179",
+        "S067"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S124",
+        "S157",
+        "S064",
+        "S181",
+        "S179",
+        "S067"
+      ],
+      "syndrome_ids": [
+        "zoonotic_leptospiral",
+        "acute_kidney_injury_oliguria",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "zoonotic_leptospiral",
+      "secondary_syndromes": [
+        "acute_kidney_injury_oliguria",
+        "acute_jaundice_hepatitic"
+      ],
+      "typical_severity": "moderate_to_severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C048",
+      "disease_id": "C048",
+      "condition_name": "Rabies Lyssavirus",
+      "name": "Rabies Lyssavirus",
+      "category": "Zoonotic / Neurotropic",
+      "symptom_ids": [
+        "S081",
+        "S236",
+        "S210",
+        "S070",
+        "S001",
+        "S078"
+      ],
+      "key_symptoms": [
+        "S081",
+        "S236",
+        "S210",
+        "S070",
+        "S001",
+        "S078"
+      ],
+      "syndrome_ids": [
+        "zoonotic_rabies_encephalopathy",
+        "acute_encephalitic"
+      ],
+      "primary_syndrome": "zoonotic_rabies_encephalopathy",
+      "secondary_syndromes": [
+        "acute_encephalitic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C049",
+      "disease_id": "C049",
+      "condition_name": "Brucellosis (Brucella Melitensis)",
+      "name": "Brucellosis (Brucella Melitensis)",
+      "category": "Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S004",
+        "S005",
+        "S117",
+        "S120",
+        "S194"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S004",
+        "S005",
+        "S117",
+        "S120",
+        "S194"
+      ],
+      "syndrome_ids": [
+        "febrile_arthritic",
+        "acute_febrile_illness",
+        "post_infectious_asthenia"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "febrile_arthritic",
+        "post_infectious_asthenia"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C050",
+      "disease_id": "C050",
+      "condition_name": "Cutaneous Anthrax (Bacillus Anthracis)",
+      "name": "Cutaneous Anthrax (Bacillus Anthracis)",
+      "category": "Zoonotic",
+      "symptom_ids": [
+        "S141",
+        "S130",
+        "S001",
+        "S174"
+      ],
+      "key_symptoms": [
+        "S141",
+        "S130",
+        "S001",
+        "S174"
+      ],
+      "syndrome_ids": [
+        "systemic_inflammatory_sepsis",
+        "cutaneous_ulcerative_eschar"
+      ],
+      "primary_syndrome": "cutaneous_ulcerative_eschar",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C051",
+      "disease_id": "C051",
+      "condition_name": "Measles (Rubeola Virus)",
+      "name": "Measles (Rubeola Virus)",
+      "category": "Exanthematous / Airborne",
+      "symptom_ids": [
+        "S001",
+        "S127",
+        "S021",
+        "S035",
+        "S146",
+        "S153"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S127",
+        "S021",
+        "S035",
+        "S146",
+        "S153"
+      ],
+      "syndrome_ids": [
+        "acute_ophthalmic_conjunctivitis",
+        "upper_respiratory_infection",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "acute_fever_rash",
+      "secondary_syndromes": [
+        "upper_respiratory_infection",
+        "acute_ophthalmic_conjunctivitis"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C052",
+      "disease_id": "C052",
+      "condition_name": "Rubella (German Measles)",
+      "name": "Rubella (German Measles)",
+      "category": "Exanthematous",
+      "symptom_ids": [
+        "S001",
+        "S127",
+        "S174",
+        "S117"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S127",
+        "S174",
+        "S117"
+      ],
+      "syndrome_ids": [
+        "febrile_arthritic",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "acute_fever_rash",
+      "secondary_syndromes": [
+        "febrile_arthritic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C053",
+      "disease_id": "C053",
+      "condition_name": "Varicella Zoster Virus (Chickenpox)",
+      "name": "Varicella Zoster Virus (Chickenpox)",
+      "category": "Exanthematous",
+      "symptom_ids": [
+        "S001",
+        "S132",
+        "S128",
+        "S006"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S132",
+        "S128",
+        "S006"
+      ],
+      "syndrome_ids": [
+        "acute_febrile_illness",
+        "vesiculopustular_eruptive"
+      ],
+      "primary_syndrome": "vesiculopustular_eruptive",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C054",
+      "disease_id": "C054",
+      "condition_name": "Mpox Virus (Monkeypox)",
+      "name": "Mpox Virus (Monkeypox)",
+      "category": "Exanthematous / Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S142",
+        "S174",
+        "S067",
+        "S009",
+        "S191"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S142",
+        "S174",
+        "S067",
+        "S009",
+        "S191"
+      ],
+      "syndrome_ids": [
+        "cutaneous_ulcerative_eschar",
+        "acute_febrile_illness",
+        "vesiculopustular_eruptive"
+      ],
+      "primary_syndrome": "vesiculopustular_eruptive",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "cutaneous_ulcerative_eschar"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C055",
+      "disease_id": "C055",
+      "condition_name": "Hand, Foot, and Mouth Disease (Coxsackievirus A16/EV71)",
+      "name": "Hand, Foot, and Mouth Disease (Coxsackievirus A16/EV71)",
+      "category": "Exanthematous / Pediatric",
+      "symptom_ids": [
+        "S001",
+        "S204",
+        "S132",
+        "S062",
+        "S011"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S204",
+        "S132",
+        "S062",
+        "S011"
+      ],
+      "syndrome_ids": [
+        "oral_ulcerative_stomatitis",
+        "acute_encephalitic",
+        "vesiculopustular_eruptive"
+      ],
+      "primary_syndrome": "oral_ulcerative_stomatitis",
+      "secondary_syndromes": [
+        "vesiculopustular_eruptive",
+        "acute_encephalitic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C056",
+      "disease_id": "C056",
+      "condition_name": "Mumps Virus Infection",
+      "name": "Mumps Virus Infection",
+      "category": "Viral / Pediatric",
+      "symptom_ids": [
+        "S173",
+        "S001",
+        "S067",
+        "S194",
+        "S062"
+      ],
+      "key_symptoms": [
+        "S173",
+        "S001",
+        "S067",
+        "S194",
+        "S062"
+      ],
+      "syndrome_ids": [
+        "acute_otolaryngologic_suppurative",
+        "meningeal_irritation",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_otolaryngologic_suppurative",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "meningeal_irritation"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C057",
+      "disease_id": "C057",
+      "condition_name": "Neisseria Meningitidis (Meningococcal Meningitis)",
+      "name": "Neisseria Meningitidis (Meningococcal Meningitis)",
+      "category": "Neurological / Invasive",
+      "symptom_ids": [
+        "S001",
+        "S068",
+        "S092",
+        "S090",
+        "S139",
+        "S140",
+        "S070"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S068",
+        "S092",
+        "S090",
+        "S139",
+        "S140",
+        "S070"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "meningeal_irritation",
+        "systemic_inflammatory_sepsis"
+      ],
+      "primary_syndrome": "meningeal_irritation",
+      "secondary_syndromes": [
+        "viral_hemorrhagic_fever",
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C058",
+      "disease_id": "C058",
+      "condition_name": "Streptococcus Pneumoniae Meningitis",
+      "name": "Streptococcus Pneumoniae Meningitis",
+      "category": "Neurological / Invasive",
+      "symptom_ids": [
+        "S001",
+        "S068",
+        "S092",
+        "S070",
+        "S078",
+        "S048"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S068",
+        "S092",
+        "S070",
+        "S078",
+        "S048"
+      ],
+      "syndrome_ids": [
+        "acute_encephalitic",
+        "meningeal_irritation"
+      ],
+      "primary_syndrome": "meningeal_irritation",
+      "secondary_syndromes": [
+        "acute_encephalitic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_winter",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "7-14",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C059",
+      "disease_id": "C059",
+      "condition_name": "Herpes Simplex Virus Encephalitis",
+      "name": "Herpes Simplex Virus Encephalitis",
+      "category": "Neurological",
+      "symptom_ids": [
+        "S001",
+        "S070",
+        "S234",
+        "S078",
+        "S088",
+        "S068"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S070",
+        "S234",
+        "S078",
+        "S088",
+        "S068"
+      ],
+      "syndrome_ids": [
+        "acute_encephalitic",
+        "meningeal_irritation"
+      ],
+      "primary_syndrome": "acute_encephalitic",
+      "secondary_syndromes": [
+        "meningeal_irritation"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C060",
+      "disease_id": "C060",
+      "condition_name": "Poliovirus Infection (Acute Poliomyelitis)",
+      "name": "Poliovirus Infection (Acute Poliomyelitis)",
+      "category": "Neurological / Enteric",
+      "symptom_ids": [
+        "S082",
+        "S083",
+        "S001",
+        "S092",
+        "S115"
+      ],
+      "key_symptoms": [
+        "S082",
+        "S083",
+        "S001",
+        "S092",
+        "S115"
+      ],
+      "syndrome_ids": [
+        "acute_flaccid_paralysis",
+        "meningeal_irritation",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_flaccid_paralysis",
+      "secondary_syndromes": [
+        "acute_febrile_illness",
+        "meningeal_irritation"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C061",
+      "disease_id": "C061",
+      "condition_name": "Guillain-Barr\u00e9 Syndrome (Post-Infectious)",
+      "name": "Guillain-Barr\u00e9 Syndrome (Post-Infectious)",
+      "category": "Neurological / Autoimmune",
+      "symptom_ids": [
+        "S082",
+        "S080",
+        "S081",
+        "S083",
+        "S027"
+      ],
+      "key_symptoms": [
+        "S082",
+        "S080",
+        "S081",
+        "S083",
+        "S027"
+      ],
+      "syndrome_ids": [
+        "acute_flaccid_paralysis",
+        "cranial_neuropathy_dysautonomia"
+      ],
+      "primary_syndrome": "acute_flaccid_paralysis",
+      "secondary_syndromes": [
+        "cranial_neuropathy_dysautonomia"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C062",
+      "disease_id": "C062",
+      "condition_name": "Clostridium Tetani (Tetanus)",
+      "name": "Clostridium Tetani (Tetanus)",
+      "category": "Neurological / Toxin",
+      "symptom_ids": [
+        "S172",
+        "S124",
+        "S027",
+        "S078"
+      ],
+      "key_symptoms": [
+        "S172",
+        "S124",
+        "S027",
+        "S078"
+      ],
+      "syndrome_ids": [
+        "cranial_neuropathy_dysautonomia",
+        "pediatric_croup_stridor"
+      ],
+      "primary_syndrome": "cranial_neuropathy_dysautonomia",
+      "secondary_syndromes": [
+        "pediatric_croup_stridor"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "foodborne_ingestion",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C063",
+      "disease_id": "C063",
+      "condition_name": "Kawasaki Disease",
+      "name": "Kawasaki Disease",
+      "category": "Pediatric / Vasculitis",
+      "symptom_ids": [
+        "S001",
+        "S146",
+        "S206",
+        "S134",
+        "S174",
+        "S127"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S146",
+        "S206",
+        "S134",
+        "S174",
+        "S127"
+      ],
+      "syndrome_ids": [
+        "acute_coronary_ischemic",
+        "mucocutaneous_lymph_node",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "mucocutaneous_lymph_node",
+      "secondary_syndromes": [
+        "acute_fever_rash",
+        "acute_coronary_ischemic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C064",
+      "disease_id": "C064",
+      "condition_name": "Severe Acute Malnutrition (Kwashiorkor / Marasmus)",
+      "name": "Severe Acute Malnutrition (Kwashiorkor / Marasmus)",
+      "category": "Pediatric / Nutritional",
+      "symptom_ids": [
+        "S013",
+        "S108",
+        "S134",
+        "S155",
+        "S020"
+      ],
+      "key_symptoms": [
+        "S013",
+        "S108",
+        "S134",
+        "S155",
+        "S020"
+      ],
+      "syndrome_ids": [
+        "pediatric_malnutrition_wasting",
+        "systemic_inflammatory_sepsis",
+        "acute_watery_diarrhea"
+      ],
+      "primary_syndrome": "pediatric_malnutrition_wasting",
+      "secondary_syndromes": [
+        "acute_watery_diarrhea",
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C065",
+      "disease_id": "C065",
+      "condition_name": "Acute Pyelonephritis (E. Coli / Klebsiella)",
+      "name": "Acute Pyelonephritis (E. Coli / Klebsiella)",
+      "category": "Renal / Urinary",
+      "symptom_ids": [
+        "S001",
+        "S002",
+        "S184",
+        "S175",
+        "S177",
+        "S048"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S002",
+        "S184",
+        "S175",
+        "S177",
+        "S048"
+      ],
+      "syndrome_ids": [
+        "systemic_inflammatory_sepsis",
+        "urinary_tract_infection_febrile"
+      ],
+      "primary_syndrome": "urinary_tract_infection_febrile",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C066",
+      "disease_id": "C066",
+      "condition_name": "Acute Cystitis",
+      "name": "Acute Cystitis",
+      "category": "Renal / Urinary",
+      "symptom_ids": [
+        "S175",
+        "S176",
+        "S177",
+        "S178",
+        "S185",
+        "S181"
+      ],
+      "key_symptoms": [
+        "S175",
+        "S176",
+        "S177",
+        "S178",
+        "S185",
+        "S181"
+      ],
+      "syndrome_ids": [
+        "unspecified_community_cluster",
+        "urinary_tract_infection_febrile"
+      ],
+      "primary_syndrome": "urinary_tract_infection_febrile",
+      "secondary_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C067",
+      "disease_id": "C067",
+      "condition_name": "Heat Stroke / Severe Environmental Hyperthermia",
+      "name": "Heat Stroke / Severe Environmental Hyperthermia",
+      "category": "Environmental",
+      "symptom_ids": [
+        "S001",
+        "S233",
+        "S070",
+        "S076",
+        "S136",
+        "S017"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S233",
+        "S070",
+        "S076",
+        "S136",
+        "S017"
+      ],
+      "syndrome_ids": [
+        "environmental_heat_stroke",
+        "acute_encephalitic",
+        "severe_dehydration_shock"
+      ],
+      "primary_syndrome": "environmental_heat_stroke",
+      "secondary_syndromes": [
+        "acute_encephalitic",
+        "severe_dehydration_shock"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_summer",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C068",
+      "disease_id": "C068",
+      "condition_name": "Accidental Hypothermia Crisis",
+      "name": "Accidental Hypothermia Crisis",
+      "category": "Environmental",
+      "symptom_ids": [
+        "S003",
+        "S079",
+        "S089",
+        "S070",
+        "S113",
+        "S100"
+      ],
+      "key_symptoms": [
+        "S003",
+        "S079",
+        "S089",
+        "S070",
+        "S113",
+        "S100"
+      ],
+      "syndrome_ids": [
+        "cardiac_arrhythmic_syncope",
+        "environmental_hypothermia_cold"
+      ],
+      "primary_syndrome": "environmental_hypothermia_cold",
+      "secondary_syndromes": [
+        "cardiac_arrhythmic_syncope"
+      ],
+      "typical_severity": "mild",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C069",
+      "disease_id": "C069",
+      "condition_name": "Chlorine / Industrial Gas Inhalation Exposure",
+      "name": "Chlorine / Industrial Gas Inhalation Exposure",
+      "category": "Toxicological",
+      "symptom_ids": [
+        "S039",
+        "S149",
+        "S021",
+        "S026",
+        "S030",
+        "S046"
+      ],
+      "key_symptoms": [
+        "S039",
+        "S149",
+        "S021",
+        "S026",
+        "S030",
+        "S046"
+      ],
+      "syndrome_ids": [
+        "chemical_toxic_inhalation",
+        "severe_acute_respiratory_infection"
+      ],
+      "primary_syndrome": "chemical_toxic_inhalation",
+      "secondary_syndromes": [
+        "severe_acute_respiratory_infection"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C070",
+      "disease_id": "C070",
+      "condition_name": "Anaphylaxis (Food / Insect Stings / Drugs)",
+      "name": "Anaphylaxis (Food / Insect Stings / Drugs)",
+      "category": "Allergic / Emergency",
+      "symptom_ids": [
+        "S220",
+        "S221",
+        "S223",
+        "S225",
+        "S029",
+        "S017"
+      ],
+      "key_symptoms": [
+        "S220",
+        "S221",
+        "S223",
+        "S225",
+        "S029",
+        "S017"
+      ],
+      "syndrome_ids": [
+        "acute_allergic_anaphylactic",
+        "bronchospastic_obstructive",
+        "severe_dehydration_shock"
+      ],
+      "primary_syndrome": "acute_allergic_anaphylactic",
+      "secondary_syndromes": [
+        "severe_dehydration_shock",
+        "bronchospastic_obstructive"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_spring_autumn",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C071",
+      "disease_id": "C071",
+      "condition_name": "ST-Elevation Myocardial Infarction (STEMI)",
+      "name": "ST-Elevation Myocardial Infarction (STEMI)",
+      "category": "Cardiovascular",
+      "symptom_ids": [
+        "S102",
+        "S104",
+        "S105",
+        "S004",
+        "S047",
+        "S110"
+      ],
+      "key_symptoms": [
+        "S102",
+        "S104",
+        "S105",
+        "S004",
+        "S047",
+        "S110"
+      ],
+      "syndrome_ids": [
+        "cardiac_arrhythmic_syncope",
+        "acute_heart_failure_congestive",
+        "acute_coronary_ischemic"
+      ],
+      "primary_syndrome": "acute_coronary_ischemic",
+      "secondary_syndromes": [
+        "acute_heart_failure_congestive",
+        "cardiac_arrhythmic_syncope"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C072",
+      "disease_id": "C072",
+      "condition_name": "Decompensated Acute Heart Failure",
+      "name": "Decompensated Acute Heart Failure",
+      "category": "Cardiovascular",
+      "symptom_ids": [
+        "S105",
+        "S107",
+        "S108",
+        "S109",
+        "S028",
+        "S046"
+      ],
+      "key_symptoms": [
+        "S105",
+        "S107",
+        "S108",
+        "S109",
+        "S028",
+        "S046"
+      ],
+      "syndrome_ids": [
+        "acute_heart_failure_congestive",
+        "acute_coronary_ischemic"
+      ],
+      "primary_syndrome": "acute_heart_failure_congestive",
+      "secondary_syndromes": [
+        "acute_coronary_ischemic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C073",
+      "disease_id": "C073",
+      "condition_name": "Bacterial Sepsis with Septic Shock",
+      "name": "Bacterial Sepsis with Septic Shock",
+      "category": "Critical Care",
+      "symptom_ids": [
+        "S001",
+        "S099",
+        "S028",
+        "S070",
+        "S179",
+        "S112"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S099",
+        "S028",
+        "S070",
+        "S179",
+        "S112"
+      ],
+      "syndrome_ids": [
+        "acute_encephalitic",
+        "acute_kidney_injury_oliguria",
+        "systemic_inflammatory_sepsis"
+      ],
+      "primary_syndrome": "systemic_inflammatory_sepsis",
+      "secondary_syndromes": [
+        "acute_kidney_injury_oliguria",
+        "acute_encephalitic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C074",
+      "disease_id": "C074",
+      "condition_name": "Infectious Mononucleosis (EBV)",
+      "name": "Infectious Mononucleosis (EBV)",
+      "category": "Viral / Lymphatic",
+      "symptom_ids": [
+        "S001",
+        "S038",
+        "S169",
+        "S174",
+        "S006",
+        "S009"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S038",
+        "S169",
+        "S174",
+        "S006",
+        "S009"
+      ],
+      "syndrome_ids": [
+        "upper_respiratory_infection",
+        "acute_febrile_illness",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "upper_respiratory_infection",
+        "acute_jaundice_hepatitic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C075",
+      "disease_id": "C075",
+      "condition_name": "Cytomegalovirus Mononucleosis-like Syndrome",
+      "name": "Cytomegalovirus Mononucleosis-like Syndrome",
+      "category": "Viral",
+      "symptom_ids": [
+        "S001",
+        "S006",
+        "S115",
+        "S064"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S006",
+        "S115",
+        "S064"
+      ],
+      "syndrome_ids": [
+        "acute_febrile_illness",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "acute_jaundice_hepatitic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C076",
+      "disease_id": "C076",
+      "condition_name": "Acute Epidemic Hemorrhagic Conjunctivitis (EV70/CA24)",
+      "name": "Acute Epidemic Hemorrhagic Conjunctivitis (EV70/CA24)",
+      "category": "Ocular / Viral",
+      "symptom_ids": [
+        "S146",
+        "S147",
+        "S149",
+        "S154",
+        "S139"
+      ],
+      "key_symptoms": [
+        "S146",
+        "S147",
+        "S149",
+        "S154",
+        "S139"
+      ],
+      "syndrome_ids": [
+        "acute_ophthalmic_conjunctivitis",
+        "upper_respiratory_infection"
+      ],
+      "primary_syndrome": "acute_ophthalmic_conjunctivitis",
+      "secondary_syndromes": [
+        "upper_respiratory_infection"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C077",
+      "disease_id": "C077",
+      "condition_name": "Trachoma (Chlamydia Trachomatis)",
+      "name": "Trachoma (Chlamydia Trachomatis)",
+      "category": "Ocular / Chronic",
+      "symptom_ids": [
+        "S146",
+        "S150",
+        "S153",
+        "S156"
+      ],
+      "key_symptoms": [
+        "S146",
+        "S150",
+        "S153",
+        "S156"
+      ],
+      "syndrome_ids": [
+        "acute_ophthalmic_conjunctivitis",
+        "unspecified_community_cluster"
+      ],
+      "primary_syndrome": "acute_ophthalmic_conjunctivitis",
+      "secondary_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C078",
+      "disease_id": "C078",
+      "condition_name": "Scabies Infestation (Sarcoptes Scabiei)",
+      "name": "Scabies Infestation (Sarcoptes Scabiei)",
+      "category": "Dermatological / Parasitic",
+      "symptom_ids": [
+        "S128",
+        "S131",
+        "S132"
+      ],
+      "key_symptoms": [
+        "S128",
+        "S131",
+        "S132"
+      ],
+      "syndrome_ids": [
+        "unspecified_community_cluster",
+        "vesiculopustular_eruptive"
+      ],
+      "primary_syndrome": "vesiculopustular_eruptive",
+      "secondary_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C079",
+      "disease_id": "C079",
+      "condition_name": "Impetigo Contagiosa (Staph/Strep)",
+      "name": "Impetigo Contagiosa (Staph/Strep)",
+      "category": "Dermatological / Bacterial",
+      "symptom_ids": [
+        "S132",
+        "S142",
+        "S134"
+      ],
+      "key_symptoms": [
+        "S132",
+        "S142",
+        "S134"
+      ],
+      "syndrome_ids": [
+        "unspecified_community_cluster",
+        "vesiculopustular_eruptive"
+      ],
+      "primary_syndrome": "vesiculopustular_eruptive",
+      "secondary_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C080",
+      "disease_id": "C080",
+      "condition_name": "Erysipelas / Cellulitis",
+      "name": "Erysipelas / Cellulitis",
+      "category": "Dermatological / Bacterial",
+      "symptom_ids": [
+        "S001",
+        "S129",
+        "S130",
+        "S143"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S129",
+        "S130",
+        "S143"
+      ],
+      "syndrome_ids": [
+        "systemic_inflammatory_sepsis",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C081",
+      "disease_id": "C081",
+      "condition_name": "Ebola / Marburg Filovirus Hemorrhagic Fever",
+      "name": "Ebola / Marburg Filovirus Hemorrhagic Fever",
+      "category": "Viral / Hemorrhagic",
+      "symptom_ids": [
+        "S001",
+        "S006",
+        "S048",
+        "S050",
+        "S139",
+        "S244",
+        "S166"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S006",
+        "S048",
+        "S050",
+        "S139",
+        "S244",
+        "S166"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "systemic_inflammatory_sepsis",
+        "acute_watery_diarrhea"
+      ],
+      "primary_syndrome": "viral_hemorrhagic_fever",
+      "secondary_syndromes": [
+        "acute_watery_diarrhea",
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C082",
+      "disease_id": "C082",
+      "condition_name": "Lassa Fever (Arenavirus)",
+      "name": "Lassa Fever (Arenavirus)",
+      "category": "Viral / Hemorrhagic",
+      "symptom_ids": [
+        "S001",
+        "S038",
+        "S154",
+        "S166",
+        "S161",
+        "S054"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S038",
+        "S154",
+        "S166",
+        "S161",
+        "S054"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "acute_otolaryngologic_suppurative"
+      ],
+      "primary_syndrome": "viral_hemorrhagic_fever",
+      "secondary_syndromes": [
+        "acute_otolaryngologic_suppurative"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C083",
+      "disease_id": "C083",
+      "condition_name": "Crimean-Congo Hemorrhagic Fever (CCHF)",
+      "name": "Crimean-Congo Hemorrhagic Fever (CCHF)",
+      "category": "Vector-Borne / Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S009",
+        "S147",
+        "S139",
+        "S140",
+        "S166",
+        "S064"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S009",
+        "S147",
+        "S139",
+        "S140",
+        "S166",
+        "S064"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "viral_hemorrhagic_fever",
+      "secondary_syndromes": [
+        "acute_jaundice_hepatitic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C084",
+      "disease_id": "C084",
+      "condition_name": "Rift Valley Fever",
+      "name": "Rift Valley Fever",
+      "category": "Vector-Borne / Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S115",
+        "S067",
+        "S151",
+        "S064",
+        "S139"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S115",
+        "S067",
+        "S151",
+        "S064",
+        "S139"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "acute_ophthalmic_conjunctivitis",
+        "acute_encephalitic"
+      ],
+      "primary_syndrome": "viral_hemorrhagic_fever",
+      "secondary_syndromes": [
+        "acute_ophthalmic_conjunctivitis",
+        "acute_encephalitic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C085",
+      "disease_id": "C085",
+      "condition_name": "Hantavirus Pulmonary Syndrome (HPS)",
+      "name": "Hantavirus Pulmonary Syndrome (HPS)",
+      "category": "Zoonotic / Rodent-borne",
+      "symptom_ids": [
+        "S001",
+        "S115",
+        "S026",
+        "S028",
+        "S046",
+        "S112"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S115",
+        "S026",
+        "S028",
+        "S046",
+        "S112"
+      ],
+      "syndrome_ids": [
+        "severe_acute_respiratory_infection",
+        "systemic_inflammatory_sepsis"
+      ],
+      "primary_syndrome": "severe_acute_respiratory_infection",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C086",
+      "disease_id": "C086",
+      "condition_name": "Hemorrhagic Fever with Renal Syndrome (HFRS)",
+      "name": "Hemorrhagic Fever with Renal Syndrome (HFRS)",
+      "category": "Zoonotic / Rodent-borne",
+      "symptom_ids": [
+        "S001",
+        "S184",
+        "S139",
+        "S179",
+        "S181",
+        "S102"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S184",
+        "S139",
+        "S179",
+        "S181",
+        "S102"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "acute_kidney_injury_oliguria"
+      ],
+      "primary_syndrome": "viral_hemorrhagic_fever",
+      "secondary_syndromes": [
+        "acute_kidney_injury_oliguria"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C087",
+      "disease_id": "C087",
+      "condition_name": "Plague (Yersinia Pestis - Bubonic)",
+      "name": "Plague (Yersinia Pestis - Bubonic)",
+      "category": "Vector-Borne / Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S002",
+        "S174",
+        "S143",
+        "S020"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S002",
+        "S174",
+        "S143",
+        "S020"
+      ],
+      "syndrome_ids": [
+        "systemic_inflammatory_sepsis",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C088",
+      "disease_id": "C088",
+      "condition_name": "Pneumonic Plague (Yersinia Pestis)",
+      "name": "Pneumonic Plague (Yersinia Pestis)",
+      "category": "Respiratory / Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S023",
+        "S025",
+        "S026",
+        "S032",
+        "S046"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S023",
+        "S025",
+        "S026",
+        "S032",
+        "S046"
+      ],
+      "syndrome_ids": [
+        "severe_acute_respiratory_infection",
+        "systemic_inflammatory_sepsis"
+      ],
+      "primary_syndrome": "severe_acute_respiratory_infection",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C089",
+      "disease_id": "C089",
+      "condition_name": "Q Fever (Coxiella Burnetii)",
+      "name": "Q Fever (Coxiella Burnetii)",
+      "category": "Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S068",
+        "S005",
+        "S021",
+        "S054"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S068",
+        "S005",
+        "S021",
+        "S054"
+      ],
+      "syndrome_ids": [
+        "acute_jaundice_hepatitic",
+        "acute_febrile_illness",
+        "lower_respiratory_illness"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "lower_respiratory_illness",
+        "acute_jaundice_hepatitic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C090",
+      "disease_id": "C090",
+      "condition_name": "Tularemia (Francisella Tularensis)",
+      "name": "Tularemia (Francisella Tularensis)",
+      "category": "Zoonotic",
+      "symptom_ids": [
+        "S001",
+        "S141",
+        "S174",
+        "S002",
+        "S067"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S141",
+        "S174",
+        "S002",
+        "S067"
+      ],
+      "syndrome_ids": [
+        "acute_febrile_illness",
+        "cutaneous_ulcerative_eschar"
+      ],
+      "primary_syndrome": "cutaneous_ulcerative_eschar",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C091",
+      "disease_id": "C091",
+      "condition_name": "Leishmaniasis (Visceral / Kala-Azar)",
+      "name": "Leishmaniasis (Visceral / Kala-Azar)",
+      "category": "Vector-Borne / Parasitic",
+      "symptom_ids": [
+        "S001",
+        "S013",
+        "S246",
+        "S056",
+        "S138"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S013",
+        "S246",
+        "S056",
+        "S138"
+      ],
+      "syndrome_ids": [
+        "pediatric_malnutrition_wasting",
+        "acute_hemolytic_cytopenic",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "acute_hemolytic_cytopenic",
+        "pediatric_malnutrition_wasting"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C092",
+      "disease_id": "C092",
+      "condition_name": "Cutaneous Leishmaniasis",
+      "name": "Cutaneous Leishmaniasis",
+      "category": "Vector-Borne / Parasitic",
+      "symptom_ids": [
+        "S141",
+        "S143",
+        "S131"
+      ],
+      "key_symptoms": [
+        "S141",
+        "S143",
+        "S131"
+      ],
+      "syndrome_ids": [
+        "unspecified_community_cluster",
+        "cutaneous_ulcerative_eschar"
+      ],
+      "primary_syndrome": "cutaneous_ulcerative_eschar",
+      "secondary_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C093",
+      "disease_id": "C093",
+      "condition_name": "African Trypanosomiasis (Sleeping Sickness)",
+      "name": "African Trypanosomiasis (Sleeping Sickness)",
+      "category": "Vector-Borne",
+      "symptom_ids": [
+        "S001",
+        "S231",
+        "S230",
+        "S070",
+        "S084"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S231",
+        "S230",
+        "S070",
+        "S084"
+      ],
+      "syndrome_ids": [
+        "acute_encephalitic",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_encephalitic",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C094",
+      "disease_id": "C094",
+      "condition_name": "Chagas Disease (Trypanosoma Cruzi - Acute)",
+      "name": "Chagas Disease (Trypanosoma Cruzi - Acute)",
+      "category": "Vector-Borne",
+      "symptom_ids": [
+        "S001",
+        "S154",
+        "S108",
+        "S099",
+        "S056"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S154",
+        "S108",
+        "S099",
+        "S056"
+      ],
+      "syndrome_ids": [
+        "cardiac_arrhythmic_syncope",
+        "acute_heart_failure_congestive",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "acute_heart_failure_congestive",
+        "cardiac_arrhythmic_syncope"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "seasonal_monsoon",
+      "transmission_pattern": "vector_borne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C095",
+      "disease_id": "C095",
+      "condition_name": "Schistosomiasis (Acute Katayama Fever)",
+      "name": "Schistosomiasis (Acute Katayama Fever)",
+      "category": "Waterborne / Parasitic",
+      "symptom_ids": [
+        "S001",
+        "S220",
+        "S021",
+        "S054",
+        "S052",
+        "S181"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S220",
+        "S021",
+        "S054",
+        "S052",
+        "S181"
+      ],
+      "syndrome_ids": [
+        "bloody_diarrhea_dysentery",
+        "acute_allergic_anaphylactic",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "acute_allergic_anaphylactic",
+        "bloody_diarrhea_dysentery"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "fecal_oral_waterborne",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C096",
+      "disease_id": "C096",
+      "condition_name": "Hydatid Disease / Echinococcosis",
+      "name": "Hydatid Disease / Echinococcosis",
+      "category": "Zoonotic / Parasitic",
+      "symptom_ids": [
+        "S054",
+        "S220",
+        "S064",
+        "S026"
+      ],
+      "key_symptoms": [
+        "S054",
+        "S220",
+        "S064",
+        "S026"
+      ],
+      "syndrome_ids": [
+        "acute_allergic_anaphylactic",
+        "acute_jaundice_hepatitic"
+      ],
+      "primary_syndrome": "acute_allergic_anaphylactic",
+      "secondary_syndromes": [
+        "acute_jaundice_hepatitic"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "zoonotic_direct_contact",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "high",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C097",
+      "disease_id": "C097",
+      "condition_name": "Post-Viral Chronic Fatigue Syndrome (ME/CFS)",
+      "name": "Post-Viral Chronic Fatigue Syndrome (ME/CFS)",
+      "category": "Post-Acute",
+      "symptom_ids": [
+        "S006",
+        "S232",
+        "S115",
+        "S230",
+        "S114"
+      ],
+      "key_symptoms": [
+        "S006",
+        "S232",
+        "S115",
+        "S230",
+        "S114"
+      ],
+      "syndrome_ids": [
+        "unspecified_community_cluster",
+        "post_infectious_asthenia"
+      ],
+      "primary_syndrome": "post_infectious_asthenia",
+      "secondary_syndromes": [
+        "unspecified_community_cluster"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "14-90+",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C098",
+      "disease_id": "C098",
+      "condition_name": "Post-COVID-19 Condition (Long COVID)",
+      "name": "Post-COVID-19 Condition (Long COVID)",
+      "category": "Post-Acute",
+      "symptom_ids": [
+        "S006",
+        "S026",
+        "S232",
+        "S098",
+        "S094",
+        "S095"
+      ],
+      "key_symptoms": [
+        "S006",
+        "S026",
+        "S232",
+        "S098",
+        "S094",
+        "S095"
+      ],
+      "syndrome_ids": [
+        "cardiac_arrhythmic_syncope",
+        "bronchospastic_obstructive",
+        "post_infectious_asthenia"
+      ],
+      "primary_syndrome": "post_infectious_asthenia",
+      "secondary_syndromes": [
+        "bronchospastic_obstructive",
+        "cardiac_arrhythmic_syncope"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "respiratory_droplet",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "critical",
+      "associated_signal_sources": [
+        "absenteeism",
+        "clinic",
+        "community",
+        "doctor",
+        "emergency",
+        "pharmacy",
+        "testing",
+        "wastewater"
+      ]
+    },
+    {
+      "condition_id": "C099",
+      "disease_id": "C099",
+      "condition_name": "Streptococcal Toxic Shock Syndrome (STSS)",
+      "name": "Streptococcal Toxic Shock Syndrome (STSS)",
+      "category": "Bacterial / Toxin",
+      "symptom_ids": [
+        "S001",
+        "S112",
+        "S129",
+        "S134",
+        "S179",
+        "S070"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S112",
+        "S129",
+        "S134",
+        "S179",
+        "S070"
+      ],
+      "syndrome_ids": [
+        "acute_fever_rash",
+        "systemic_inflammatory_sepsis",
+        "severe_dehydration_shock"
+      ],
+      "primary_syndrome": "systemic_inflammatory_sepsis",
+      "secondary_syndromes": [
+        "severe_dehydration_shock",
+        "acute_fever_rash"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "foodborne_ingestion",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C100",
+      "disease_id": "C100",
+      "condition_name": "Staphylococcal Toxic Shock Syndrome (TSS)",
+      "name": "Staphylococcal Toxic Shock Syndrome (TSS)",
+      "category": "Bacterial / Toxin",
+      "symptom_ids": [
+        "S001",
+        "S129",
+        "S048",
+        "S050",
+        "S112",
+        "S134"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S129",
+        "S048",
+        "S050",
+        "S112",
+        "S134"
+      ],
+      "syndrome_ids": [
+        "systemic_inflammatory_sepsis",
+        "gastroenteritis_emetic",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "systemic_inflammatory_sepsis",
+      "secondary_syndromes": [
+        "acute_fever_rash",
+        "gastroenteritis_emetic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "foodborne_ingestion",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C101",
+      "disease_id": "C101",
+      "condition_name": "Acute Myocarditis (Viral)",
+      "name": "Acute Myocarditis (Viral)",
+      "category": "Cardiovascular",
+      "symptom_ids": [
+        "S104",
+        "S098",
+        "S105",
+        "S006",
+        "S017"
+      ],
+      "key_symptoms": [
+        "S104",
+        "S098",
+        "S105",
+        "S006",
+        "S017"
+      ],
+      "syndrome_ids": [
+        "cardiac_arrhythmic_syncope",
+        "acute_heart_failure_congestive",
+        "acute_coronary_ischemic"
+      ],
+      "primary_syndrome": "acute_heart_failure_congestive",
+      "secondary_syndromes": [
+        "cardiac_arrhythmic_syncope",
+        "acute_coronary_ischemic"
+      ],
+      "typical_severity": "severe",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C102",
+      "disease_id": "C102",
+      "condition_name": "Acute Pericarditis",
+      "name": "Acute Pericarditis",
+      "category": "Cardiovascular",
+      "symptom_ids": [
+        "S104",
+        "S001",
+        "S026",
+        "S098"
+      ],
+      "key_symptoms": [
+        "S104",
+        "S001",
+        "S026",
+        "S098"
+      ],
+      "syndrome_ids": [
+        "acute_febrile_illness",
+        "acute_coronary_ischemic"
+      ],
+      "primary_syndrome": "acute_coronary_ischemic",
+      "secondary_syndromes": [
+        "acute_febrile_illness"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C103",
+      "disease_id": "C103",
+      "condition_name": "Infective Endocarditis",
+      "name": "Infective Endocarditis",
+      "category": "Cardiovascular / Invasive",
+      "symptom_ids": [
+        "S001",
+        "S005",
+        "S006",
+        "S139",
+        "S181",
+        "S105"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S005",
+        "S006",
+        "S139",
+        "S181",
+        "S105"
+      ],
+      "syndrome_ids": [
+        "viral_hemorrhagic_fever",
+        "systemic_inflammatory_sepsis",
+        "acute_febrile_illness"
+      ],
+      "primary_syndrome": "acute_febrile_illness",
+      "secondary_syndromes": [
+        "systemic_inflammatory_sepsis",
+        "viral_hemorrhagic_fever"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C104",
+      "disease_id": "C104",
+      "condition_name": "Acute Epidemic Polyarthritis",
+      "name": "Acute Epidemic Polyarthritis",
+      "category": "Rheumatologic / Viral",
+      "symptom_ids": [
+        "S001",
+        "S117",
+        "S118",
+        "S127",
+        "S115"
+      ],
+      "key_symptoms": [
+        "S001",
+        "S117",
+        "S118",
+        "S127",
+        "S115"
+      ],
+      "syndrome_ids": [
+        "febrile_arthritic",
+        "acute_fever_rash"
+      ],
+      "primary_syndrome": "febrile_arthritic",
+      "secondary_syndromes": [
+        "acute_fever_rash"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "14-90+",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    },
+    {
+      "condition_id": "C105",
+      "disease_id": "C105",
+      "condition_name": "Acute Glomerulonephritis (Post-Streptococcal)",
+      "name": "Acute Glomerulonephritis (Post-Streptococcal)",
+      "category": "Renal / Post-Infectious",
+      "symptom_ids": [
+        "S181",
+        "S183",
+        "S179",
+        "S108",
+        "S154",
+        "S001"
+      ],
+      "key_symptoms": [
+        "S181",
+        "S183",
+        "S179",
+        "S108",
+        "S154",
+        "S001"
+      ],
+      "syndrome_ids": [
+        "acute_kidney_injury_oliguria",
+        "acute_heart_failure_congestive"
+      ],
+      "primary_syndrome": "acute_kidney_injury_oliguria",
+      "secondary_syndromes": [
+        "acute_heart_failure_congestive"
+      ],
+      "typical_severity": "mild_to_moderate",
+      "seasonality": "year_round",
+      "transmission_pattern": "non_communicable_environmental",
+      "typical_duration_days": "5-10",
+      "outbreak_relevance": "moderate",
+      "associated_signal_sources": [
+        "clinic",
+        "community",
+        "doctor",
+        "pharmacy",
+        "testing"
+      ]
+    }
   ]
 }

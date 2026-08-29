@@ -97,9 +97,17 @@ export const triggerStartFederatedRound = async (forecastHorizon = 7, alpha = 1.
   }
 };
 
-export const fetchForecasts = async () => {
+export const fetchForecasts = async (params = {}) => {
   try {
-    const response = await axios.get(`${API_BASE}/forecasts`);
+    const query = new URLSearchParams();
+    if (params.horizon_days) query.append("horizon_days", params.horizon_days);
+    if (params.horizon) query.append("horizon", params.horizon);
+    if (params.missing_nodes !== undefined && params.missing_nodes !== null) query.append("missing_nodes", params.missing_nodes);
+    if (params.syndrome_category) query.append("syndrome_category", params.syndrome_category);
+    if (params.institution_id) query.append("institution_id", params.institution_id);
+    const qs = query.toString();
+    const url = qs ? `${API_BASE}/forecasts?${qs}` : `${API_BASE}/forecasts`;
+    const response = await axios.get(url);
     return response.data;
   } catch (error) {
     console.error("Fetch forecasts error:", error);
@@ -107,9 +115,12 @@ export const fetchForecasts = async () => {
   }
 };
 
-export const triggerGenerateForecast = async (horizon = 7, missingNodes = 0) => {
+export const triggerGenerateForecast = async (horizon = 7, missingNodes = 0, reqId = null) => {
   try {
-    const response = await axios.post(`${API_BASE}/forecasts/generate?horizon=${horizon}&missing_nodes=${missingNodes}`);
+    const url = reqId
+      ? `${API_BASE}/forecasts/generate?horizon=${horizon}&missing_nodes=${missingNodes}&request_id=${reqId}`
+      : `${API_BASE}/forecasts/generate?horizon=${horizon}&missing_nodes=${missingNodes}`;
+    const response = await axios.post(url);
     return response.data;
   } catch (error) {
     console.error("Generate forecast error:", error);
@@ -344,3 +355,19 @@ export const triggerEventSimulation = async (scenario, seed = 42, days = 365) =>
     throw error;
   }
 };
+
+export const triggerMultiSymptomSimulation = async (nodeId = "inst-a", patternKey = "respiratory", count = 15) => {
+  try {
+    const response = await axios.post(`${API_BASE}/data-collection/simulate-multi-symptoms`, {
+      node_id: nodeId,
+      pattern_key: patternKey,
+      count: count,
+      zone_id: "zone-1"
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Multi-symptom simulation error:", error);
+    throw error;
+  }
+};
+

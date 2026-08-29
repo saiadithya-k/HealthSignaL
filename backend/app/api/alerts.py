@@ -3,14 +3,19 @@ import json
 import numpy as np
 import pandas as pd
 from typing import Dict, Any, Optional, List
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
 from app.db.database import get_db
 from app.db.models import Alert, ReviewerDecision
 from app.ml.anomaly import CUSUMDetector
-from app.ml.forecasting import load_global_model, generate_multiday_forecast, compute_validation_residuals
+from app.ml.forecasting import (
+    load_global_model,
+    generate_multiday_forecast,
+    compute_validation_residuals,
+    compute_syndrome_validation_residuals
+)
 from app.core.local_node import LocalInstitutionClient
 
 router = APIRouter()
@@ -132,7 +137,7 @@ def export_alert_dossier(alert_id: str, db: Session = Depends(get_db)):
         "status": alert.status,
         "shift_score": alert.shift_score,
         "dossier_markdown": dossier_markdown.strip(),
-        "exported_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+        "exported_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     }
 
 @router.post("/{alert_id}/approve", tags=["Alerts"])
@@ -205,6 +210,153 @@ def reject_alert(
         "new_status": alert.status
     }
 
+def execute_cusum_detection(
+    db: Session,
+    drift_k: float = 0.5,
+    threshold_h: float = 4.0,
+    missing_nodes: int = 0
+) -> Dict[str, Any]:
+    """
+    Executes Phase 6 CUSUM anomaly detection comparing forecast vs observed signals.
+    Generates CANDIDATE alerts for qualifying threshold crossings without auto-approving.
+    """
+    try:
+        global_model = load_global_model()
+    except Exception:
+        from app.federated.server import run_federated_round
+        run_federated_round(data_dir="data", forecast_horizon=7, min_valid_clients=1)
+        global_model = load_global_model()
+
+    detector = CUSUMDetector(drift_k=drift_k, threshold_h=threshold_h)
+    sigma, _ = compute_validation_residuals(global_model, data_dir="data")
+    syndrome_residuals = compute_syndrome_validation_residuals(global_model, data_dir="data")
+
+    # Load aggregate historical data
+    dfs = []
+    for inst_id in ["inst-a", "inst-b", "inst-c", "inst-d"]:
+        client = LocalInstitutionClient(inst_id, data_dir="data")
+        try:
+            df, _ = client.load_local_data()
+            dfs.append(df)
+        except Exception:
+            continue
+
+    if not dfs:
+        raise HTTPException(status_code=400, detail="No historical node datasets found for anomaly detection")
+
+    combined_df = pd.concat(dfs, ignore_index=True)
+    agg_df = combined_df.groupby(["date", "syndrome_category"])["service_count"].sum().reset_index()
+    agg_df["data_completeness"] = 1.0
+    agg_df["date"] = pd.to_datetime(agg_df["date"])
+    agg_df.sort_values(by="date", inplace=True)
+
+    unique_dates = sorted(agg_df["date"].unique())
+    if len(unique_dates) < 28:
+        raise HTTPException(status_code=400, detail="Insufficient history for anomaly detection (minimum 28 days required)")
+
+    cutoff_date = unique_dates[-14]
+    history_df = agg_df[agg_df["date"] < cutoff_date].copy()
+    eval_df = agg_df[agg_df["date"] >= cutoff_date].copy()
+
+    # Generate 14-day forecast using history prior to cutoff
+    fcst_res = generate_multiday_forecast(
+        history_df=history_df,
+        model=global_model,
+        horizon=14,
+        missing_node_count=missing_nodes,
+        data_dir="data"
+    )
+
+    expected_by_cat: Dict[str, List[float]] = {}
+    dates_by_cat: Dict[str, List[str]] = {}
+    for f in fcst_res["forecasts"]:
+        cat = f["syndrome_category"]
+        if cat not in expected_by_cat:
+            expected_by_cat[cat] = []
+            dates_by_cat[cat] = []
+        expected_by_cat[cat].append(f["predicted_value"])
+        dates_by_cat[cat].append(f["forecast_date"])
+
+    all_created_alerts = []
+
+    for cat in expected_by_cat:
+        cat_obs_df = eval_df[eval_df["syndrome_category"] == cat].sort_values(by="date")
+        obs_vals = cat_obs_df["service_count"].values
+        exp_vals = np.array(expected_by_cat[cat][:len(obs_vals)])
+
+        # Per-syndrome calibrated residual sigma
+        cat_sigma = syndrome_residuals.get(cat, (sigma, {}))[0]
+        cat_sigma = max(cat_sigma, 0.5)
+
+        if len(obs_vals) == len(exp_vals) and len(obs_vals) > 0:
+            res = detector.detect_series(
+                observed_series=obs_vals,
+                expected_series=exp_vals,
+                sigma=cat_sigma,
+                dates=dates_by_cat[cat][:len(obs_vals)],
+                syndrome_category=cat,
+                confidence_score=fcst_res["confidence_score"],
+                coverage_ratio=fcst_res["coverage_ratio"],
+                missing_node_count=missing_nodes,
+                model_version=fcst_res["model_version"]
+            )
+
+            for cand in res["candidate_alerts"]:
+                alert = Alert(
+                    institution_scope="REGIONAL",
+                    syndrome_category=cand["syndrome_category"],
+                    detected_at=datetime.now(timezone.utc),
+                    shift_score=cand["cusum_statistic"],
+                    status="CANDIDATE",
+                    evidence_data={
+                        "forecast_date": cand["forecast_date"],
+                        "observed_value": cand["observed_value"],
+                        "expected_value": cand["expected_value"],
+                        "residual": cand["residual"],
+                        "cusum_statistic": cand["cusum_statistic"],
+                        "threshold": cand["threshold"],
+                        "confidence_score": cand["confidence_score"],
+                        "coverage_ratio": cand["coverage_ratio"],
+                        "missing_node_count": cand["missing_node_count"],
+                        "model_version": cand["model_version"]
+                    },
+                    forecast_reference=cand["model_version"]
+                )
+                db.add(alert)
+                all_created_alerts.append(alert)
+
+    db.commit()
+
+    candidates_count = db.query(Alert).filter(Alert.status == "CANDIDATE").count()
+    approved_count = db.query(Alert).filter(Alert.status == "APPROVED").count()
+    rejected_count = db.query(Alert).filter(Alert.status == "REJECTED").count()
+
+    anomaly_report = {
+        "detector_config": {
+            "drift_k": drift_k,
+            "threshold_h": threshold_h,
+            "residual_sigma": round(sigma, 4)
+        },
+        "new_candidates_generated": len(all_created_alerts),
+        "total_candidates": candidates_count,
+        "total_approved": approved_count,
+        "total_rejected": rejected_count,
+        "confidence_score": fcst_res["confidence_score"],
+        "coverage_ratio": fcst_res["coverage_ratio"],
+        "missing_node_count": missing_nodes,
+        "model_version": fcst_res["model_version"]
+    }
+
+    report_path = os.path.join("data", "phase6_anomaly_report.json")
+    with open(report_path, "w") as f:
+        json.dump(anomaly_report, f, indent=2)
+
+    return {
+        "status": "success",
+        "message": f"Successfully executed CUSUM surge detection. Generated {len(all_created_alerts)} candidate alerts.",
+        "report": anomaly_report
+    }
+
 @router.post("/detect", tags=["Alerts"])
 def trigger_anomaly_detection(
     drift_k: float = Query(0.5, ge=0.0),
@@ -212,131 +364,13 @@ def trigger_anomaly_detection(
     missing_nodes: int = Query(0, ge=0, le=3),
     db: Session = Depends(get_db)
 ):
-    """
-    Executes Phase 6 CUSUM anomaly detection comparing forecast vs observed signals.
-    Generates CANDIDATE alerts for qualifying threshold crossings without auto-approving.
-    """
     try:
-        global_model = load_global_model()
-        detector = CUSUMDetector(drift_k=drift_k, threshold_h=threshold_h)
-        sigma, _ = compute_validation_residuals(global_model, data_dir="data")
-
-        # Load aggregate historical data
-        dfs = []
-        for inst_id in ["inst-a", "inst-b", "inst-c", "inst-d"]:
-            client = LocalInstitutionClient(inst_id, data_dir="data")
-            df, _ = client.load_local_data()
-            dfs.append(df)
-
-        combined_df = pd.concat(dfs, ignore_index=True)
-        agg_df = combined_df.groupby(["date", "syndrome_category"])["service_count"].sum().reset_index()
-        agg_df["data_completeness"] = 1.0
-        agg_df["date"] = pd.to_datetime(agg_df["date"])
-        agg_df.sort_values(by="date", inplace=True)
-
-        unique_dates = sorted(agg_df["date"].unique())
-        if len(unique_dates) < 28:
-            raise HTTPException(status_code=400, detail="Insufficient history for anomaly detection (minimum 28 days required)")
-
-        cutoff_date = unique_dates[-14]
-        history_df = agg_df[agg_df["date"] < cutoff_date].copy()
-        eval_df = agg_df[agg_df["date"] >= cutoff_date].copy()
-
-        # Generate 14-day forecast using history prior to cutoff
-        fcst_res = generate_multiday_forecast(
-            history_df=history_df,
-            model=global_model,
-            horizon=14,
-            missing_node_count=missing_nodes,
-            data_dir="data"
+        return execute_cusum_detection(
+            db=db,
+            drift_k=drift_k,
+            threshold_h=threshold_h,
+            missing_nodes=missing_nodes
         )
-
-        expected_by_cat: Dict[str, List[float]] = {}
-        dates_by_cat: Dict[str, List[str]] = {}
-        for f in fcst_res["forecasts"]:
-            cat = f["syndrome_category"]
-            if cat not in expected_by_cat:
-                expected_by_cat[cat] = []
-                dates_by_cat[cat] = []
-            expected_by_cat[cat].append(f["predicted_value"])
-            dates_by_cat[cat].append(f["forecast_date"])
-
-        all_created_alerts = []
-
-        for cat in expected_by_cat:
-            cat_obs_df = eval_df[eval_df["syndrome_category"] == cat].sort_values(by="date")
-            obs_vals = cat_obs_df["service_count"].values
-            exp_vals = np.array(expected_by_cat[cat][:len(obs_vals)])
-
-            if len(obs_vals) == len(exp_vals) and len(obs_vals) > 0:
-                res = detector.detect_series(
-                    observed_series=obs_vals,
-                    expected_series=exp_vals,
-                    sigma=sigma,
-                    dates=dates_by_cat[cat][:len(obs_vals)],
-                    syndrome_category=cat,
-                    confidence_score=fcst_res["confidence_score"],
-                    coverage_ratio=fcst_res["coverage_ratio"],
-                    missing_node_count=missing_nodes,
-                    model_version=fcst_res["model_version"]
-                )
-
-                for cand in res["candidate_alerts"]:
-                    alert = Alert(
-                        institution_scope="REGIONAL",
-                        syndrome_category=cand["syndrome_category"],
-                        detected_at=datetime.utcnow(),
-                        shift_score=cand["cusum_statistic"],
-                        status="CANDIDATE",
-                        evidence_data={
-                            "forecast_date": cand["forecast_date"],
-                            "observed_value": cand["observed_value"],
-                            "expected_value": cand["expected_value"],
-                            "residual": cand["residual"],
-                            "cusum_statistic": cand["cusum_statistic"],
-                            "threshold": cand["threshold"],
-                            "confidence_score": cand["confidence_score"],
-                            "coverage_ratio": cand["coverage_ratio"],
-                            "missing_node_count": cand["missing_node_count"],
-                            "model_version": cand["model_version"]
-                        },
-                        forecast_reference=cand["model_version"]
-                    )
-                    db.add(alert)
-                    all_created_alerts.append(alert)
-
-        db.commit()
-
-        candidates_count = db.query(Alert).filter(Alert.status == "CANDIDATE").count()
-        approved_count = db.query(Alert).filter(Alert.status == "APPROVED").count()
-        rejected_count = db.query(Alert).filter(Alert.status == "REJECTED").count()
-
-        anomaly_report = {
-            "detector_config": {
-                "drift_k": drift_k,
-                "threshold_h": threshold_h,
-                "residual_sigma": round(sigma, 4)
-            },
-            "new_candidates_generated": len(all_created_alerts),
-            "total_candidates": candidates_count,
-            "total_approved": approved_count,
-            "total_rejected": rejected_count,
-            "confidence_score": fcst_res["confidence_score"],
-            "coverage_ratio": fcst_res["coverage_ratio"],
-            "missing_node_count": missing_nodes,
-            "model_version": fcst_res["model_version"]
-        }
-
-        report_path = os.path.join("data", "phase6_anomaly_report.json")
-        with open(report_path, "w") as f:
-            json.dump(anomaly_report, f, indent=2)
-
-        return {
-            "status": "success",
-            "message": f"Successfully executed CUSUM surge detection. Generated {len(all_created_alerts)} candidate alerts.",
-            "report": anomaly_report
-        }
-
     except Exception as e:
         import traceback
         traceback.print_exc()

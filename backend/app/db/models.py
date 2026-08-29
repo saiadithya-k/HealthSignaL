@@ -1,5 +1,5 @@
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import (
     Column, String, Integer, Float, DateTime, ForeignKey, Text, JSON, Boolean
 )
@@ -9,6 +9,9 @@ from app.db.database import Base
 def generate_uuid():
     return str(uuid.uuid4())
 
+def utcnow():
+    return datetime.now(timezone.utc)
+
 class Institution(Base):
     __tablename__ = "institutions"
 
@@ -17,7 +20,7 @@ class Institution(Base):
     profile = Column(String, nullable=False)  # Urban, Semi-urban, Rural, Mixed
     status = Column(String, nullable=False, default="ACTIVE")  # ACTIVE, DISCONNECTED, DEGRADED
     model_version = Column(String, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
 
     participants = relationship("RoundParticipant", back_populates="institution")
     forecasts = relationship("Forecast", back_populates="institution")
@@ -28,7 +31,7 @@ class FederatedRound(Base):
 
     round_id = Column(String, primary_key=True, default=generate_uuid)
     global_model_version = Column(String, nullable=False)
-    started_at = Column(DateTime, default=datetime.utcnow)
+    started_at = Column(DateTime, default=utcnow)
     completed_at = Column(DateTime, nullable=True)
     status = Column(String, nullable=False, default="IN_PROGRESS")  # IN_PROGRESS, COMPLETED, INCOMPLETE, FAILED
     expected_clients = Column(Integer, default=4)
@@ -47,7 +50,7 @@ class RoundParticipant(Base):
     status = Column(String, nullable=False, default="INVITED")  # INVITED, SUBMITTED, FAILED, TIMEOUT
     update_status = Column(String, nullable=True)  # VALIDATED, REJECTED
     failure_reason = Column(String, nullable=True)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=utcnow)
 
     round = relationship("FederatedRound", back_populates="participants")
     institution = relationship("Institution", back_populates="participants")
@@ -61,7 +64,7 @@ class ModelVersion(Base):
     parent_version = Column(String, nullable=True)
     algorithm = Column(String, nullable=False, default="Ridge Regression (FedAvg)")
     metrics = Column(JSON, nullable=True)  # e.g., {"mae": 3.42, "wape": 0.08}
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
     artifact_reference = Column(String, nullable=True)
 
 
@@ -85,7 +88,7 @@ class Forecast(Base):
     coverage_ratio = Column(Float, nullable=True, default=1.0)
     missing_node_count = Column(Integer, nullable=True, default=0)
     uncertainty_score = Column(Float, nullable=False)
-    generated_at = Column(DateTime, default=datetime.utcnow)
+    generated_at = Column(DateTime, default=utcnow)
 
     institution = relationship("Institution", back_populates="forecasts")
 
@@ -96,7 +99,7 @@ class Alert(Base):
     id = Column(String, primary_key=True, default=generate_uuid)
     institution_scope = Column(String, nullable=False)  # Institution ID or 'REGIONAL'
     syndrome_category = Column(String, nullable=False)
-    detected_at = Column(DateTime, default=datetime.utcnow)
+    detected_at = Column(DateTime, default=utcnow)
     shift_score = Column(Float, nullable=False)
     status = Column(String, nullable=False, default="CANDIDATE")  # CANDIDATE, UNDER_REVIEW, APPROVED, REJECTED
     evidence_data = Column(JSON, nullable=True)
@@ -113,7 +116,7 @@ class ReviewerDecision(Base):
     reviewer_id = Column(String, nullable=False)
     decision = Column(String, nullable=False)  # APPROVED, REJECTED, REQUEST_MORE_EVIDENCE
     reason = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
 
     alert = relationship("Alert", back_populates="decisions")
 
@@ -126,7 +129,7 @@ class PrivacyEvent(Base):
     event_type = Column(String, nullable=False)  # SUPPRESSION, REJECTED_UPDATE, BOUNDING_CLIPPED
     reason = Column(Text, nullable=False)
     details = Column(JSON, nullable=True)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=utcnow)
 
 
 class AuditLog(Base):
@@ -136,4 +139,4 @@ class AuditLog(Base):
     action = Column(String, nullable=False)
     actor = Column(String, nullable=False)
     details = Column(JSON, nullable=True)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=utcnow)

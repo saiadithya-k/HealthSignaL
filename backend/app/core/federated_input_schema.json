@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HealthSignal Federated Learning Data Handoff Contract",
+  "description": "Formal contract defining privacy-approved aggregate training features handed from Person 1 (Data Layer) to Person 2 (Federated Learning Layer). Raw patient records and PII are strictly prohibited.",
+  "type": "object",
+  "required": [
+    "date",
+    "node_id",
+    "syndrome_category",
+    "service_count"
+  ],
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Observation date in YYYY-MM-DD format."
+    },
+    "node_id": {
+      "type": "string",
+      "enum": ["inst-a", "inst-b", "inst-c", "inst-d"],
+      "description": "Participating non-IID institution node identifier."
+    },
+    "syndrome_category": {
+      "type": "string",
+      "description": "Standardized syndrome category code referencing syndrome_master.json (45 standardized categories).",
+      "examples": ["respiratory", "gastrointestinal", "fever_flu", "influenza_like_illness", "acute_watery_diarrhea", "acute_febrile_illness"]
+    },
+    "data_source": {
+      "type": "string",
+      "enum": ["all", "community", "doctor", "clinic", "pharmacy", "testing", "wastewater", "absenteeism", "emergency"],
+      "default": "all",
+      "description": "Health signal stream source."
+    },
+    "service_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Aggregated daily count. Mandatory privacy rule: Any cell with 1 <= service_count < 11 is suppressed to 0 or omitted."
+    },
+    "rolling_3d_mean": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "3-day rolling mean of past aggregate counts."
+    },
+    "rolling_7d_mean": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "7-day rolling mean of past aggregate counts."
+    },
+    "rolling_7d_std": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "7-day rolling standard deviation of past aggregate counts."
+    },
+    "lag_1": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Service demand lagged by 1 day (t-1)."
+    },
+    "lag_7": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Service demand lagged by 7 days (t-7)."
+    },
+    "lag_14": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Service demand lagged by 14 days (t-14)."
+    },
+    "growth_rate_7d": {
+      "type": "number",
+      "description": "7-day demand growth percentage calculated with zero-division safety."
+    },
+    "pharmacy_lead_t2": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Exogenous leading pharmacy OTC dispensing demand lagged by 2 days (t-2)."
+    },
+    "coverage_ratio": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Data completeness and reporting coverage ratio for the node."
+    },
+    "data_completeness": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Completeness score indicating whether cell was unsuppressed (1.0) or suppressed (0.0)."
+    },
+    "source_reliability": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Pre-configured stream reliability weight."
+    }
+  },
+  "prohibited_fields": [
+    "patient_id",
+    "patient_name",
+    "name",
+    "phone",
+    "email",
+    "address",
+    "ssn",
+    "raw_records",
+    "records",
+    "raw_symptoms",
+    "individual_symptoms",
+    "consent_token",
+    "diagnosis",
+    "disease_name",
+    "disease_label",
+    "ground_truth",
+    "outbreak_scenario",
+    "outbreak_active",
+    "scenario_id",
+    "condition_id",
+    "condition_name",
+    "true_disease",
+    "individual_clinical_information",
+    "clinical_information"
+  ],
+  "privacy_constraints": {
+    "k_anonymity_threshold": 11,
+    "zone_distinct_nodes_threshold": 3,
+    "raw_record_transmission": "STRICTLY_PROHIBITED",
+    "pii_transmission": "STRICTLY_PROHIBITED"
+  }
+}

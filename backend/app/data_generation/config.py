@@ -1,10 +1,18 @@
-from typing import Dict, Any
+from typing import Dict, Any, List
+
+NODE_ZONE_MAPPING: Dict[str, List[str]] = {
+    "inst-a": ["zone-metro-1", "zone-metro-2"],
+    "inst-b": ["zone-metro-1", "zone-semiurban-1"],
+    "inst-c": ["zone-rural-1", "zone-rural-2"],
+    "inst-d": ["zone-metro-1", "zone-mixed-1", "zone-rural-1"]
+}
 
 INSTITUTION_PROFILES: Dict[str, Dict[str, Any]] = {
     "inst-a": {
         "id": "inst-a",
         "name": "Institution A",
         "profile": "Urban (High Volume)",
+        "zones": ["zone-metro-1", "zone-metro-2"],
         "base_volume": 140.0,
         "syndrome_ratios": {
             "respiratory": 0.40,
@@ -29,6 +37,7 @@ INSTITUTION_PROFILES: Dict[str, Dict[str, Any]] = {
         "id": "inst-b",
         "name": "Institution B",
         "profile": "Semi-urban (Moderate Volume)",
+        "zones": ["zone-metro-1", "zone-semiurban-1"],
         "base_volume": 85.0,
         "syndrome_ratios": {
             "respiratory": 0.20,
@@ -53,6 +62,7 @@ INSTITUTION_PROFILES: Dict[str, Dict[str, Any]] = {
         "id": "inst-c",
         "name": "Institution C",
         "profile": "Rural (Low Volume, High Variance)",
+        "zones": ["zone-rural-1", "zone-rural-2"],
         "base_volume": 28.0,
         "syndrome_ratios": {
             "respiratory": 0.15,
@@ -77,6 +87,7 @@ INSTITUTION_PROFILES: Dict[str, Dict[str, Any]] = {
         "id": "inst-d",
         "name": "Institution D",
         "profile": "Mixed (Seasonal Shift)",
+        "zones": ["zone-metro-1", "zone-mixed-1", "zone-rural-1"],
         "base_volume": 105.0,
         "syndrome_ratios": {
             "respiratory": 0.30,

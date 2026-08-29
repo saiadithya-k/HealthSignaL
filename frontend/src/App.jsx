@@ -1,4 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import {
+  ResponsiveContainer,
+  AreaChart,
+  Area,
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  Legend
+} from 'recharts';
 import {
   fetchHealthStatus,
   fetchVersionInfo,
@@ -31,7 +43,8 @@ import {
   fetchAlertDossier,
   triggerDailyAggregation,
   fetchZoneRollup,
-  triggerEventSimulation
+  triggerEventSimulation,
+  triggerMultiSymptomSimulation
 } from './services/api';
 
 export default function App() {
@@ -48,6 +61,7 @@ export default function App() {
   const [forecastData, setForecastData] = useState(null);
   const [alertsData, setAlertsData] = useState(null);
   const [weatherData, setWeatherData] = useState(null);
+  const [lastSimulationResult, setLastSimulationResult] = useState(null);
 
   // Multi-source & ontology state
   const [symptomMaster, setSymptomMaster] = useState({ symptoms: [], total_symptoms: 0 });
@@ -69,6 +83,12 @@ export default function App() {
     sex: 'prefer_not_to_say',
     zone_id: 'zone-metro-1',
     consent_accepted: true
+  });
+  const [formSymptomSearch, setFormSymptomSearch] = useState('');
+  const [multiSimState, setMultiSimState] = useState({
+    node_id: 'inst-a',
+    pattern_key: 'respiratory',
+    count: 15
   });
   const [doctorForm, setDoctorForm] = useState({
     node_id: 'inst-b',
@@ -119,8 +139,12 @@ export default function App() {
   const [selectedScenario, setSelectedScenario] = useState('RESPIRATORY_OUTBREAK');
   const [fcstHorizon, setFcstHorizon] = useState(7);
   const [missingNodes, setMissingNodes] = useState(0);
+  const [selectedSyndrome, setSelectedSyndrome] = useState('respiratory');
+  const [forecastLoading, setForecastLoading] = useState(false);
+  const [forecastError, setForecastError] = useState(null);
+  const latestForecastRequestIdRef = useRef('');
 
-  const loadAllData = async () => {
+  const loadAllData = async (skipForecasts = false) => {
     try {
       const [hData, vData, nData, niData, bData, fData, fcData, aData, sData, synData, dData, swData, zData, wData] = await Promise.all([
         fetchHealthStatus().catch(() => null),
@@ -129,7 +153,7 @@ export default function App() {
         fetchNonIidSummary().catch(() => null),
         fetchBaselineComparison().catch(() => null),
         fetchFederationStatus().catch(() => null),
-        fetchForecasts().catch(() => null),
+        skipForecasts ? Promise.resolve(null) : fetchForecasts({ horizon_days: fcstHorizon, missing_nodes: missingNodes }).catch(() => null),
         fetchAlertsQueue().catch(() => null),
         fetchSymptomMaster().catch(() => ({ symptoms: [] })),
         fetchSyndromeMaster().catch(() => ({ syndromes: [] })),
@@ -145,7 +169,7 @@ export default function App() {
       setNonIidData(niData);
       setBaselinesData(bData);
       setFederationData(fData);
-      setForecastData(fcData);
+      if (fcData && !skipForecasts) setForecastData(fcData);
       setAlertsData(aData);
       if (sData) setSymptomMaster(sData);
       if (synData) setSyndromeMaster(synData);
@@ -162,6 +186,8 @@ export default function App() {
 
   useEffect(() => {
     loadAllData();
+    const interval = setInterval(() => loadAllData(true), 30000);
+    return () => clearInterval(interval);
   }, []);
 
   const handleCommunitySubmit = async (e) => {
@@ -170,7 +196,7 @@ export default function App() {
     try {
       const res = await submitCommunitySymptomReport(communityForm);
       setActionMessage(`✅ Community report logged locally in ${res?.node_id || 'node'}. Mapped syndromes: ${(res?.mapped_syndromes || []).join(', ')}`);
-      await loadAllData();
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -184,7 +210,7 @@ export default function App() {
     try {
       const res = await submitDoctorObservation(doctorForm);
       setActionMessage(`✅ Clinician observation logged locally in ${res?.node_id || 'node'}. Syndrome: ${res?.syndrome}`);
-      await loadAllData();
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -198,7 +224,7 @@ export default function App() {
     try {
       const res = await submitPharmacyDemand(pharmacyForm);
       setActionMessage(`✅ Pharmacy dispensing recorded in ${res?.node_id || 'node'}. Mapped leading indicator: ${res?.mapped_syndrome}`);
-      await loadAllData();
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -212,7 +238,7 @@ export default function App() {
     try {
       const res = await submitAbsenteeism(absenteeForm);
       setActionMessage(`✅ Absenteeism logged for ${res?.institution_name || 'facility'}: ${res?.absent_count} absent (${((res?.absentee_rate || 0)*100).toFixed(1)}%)`);
-      await loadAllData();
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -225,8 +251,8 @@ export default function App() {
     setActionLoading(true);
     try {
       const res = await submitEmergencyCalls(emergencyForm);
-      setActionMessage(`✅ Emergency dispatch logged: ${res?.calls_dispatched} units dispatched (${res?.call_category})`);
-      await loadAllData();
+      setActionMessage(`✅ Emergency calls logged for ${res?.node_id || 'node'}: ${res?.calls_received} received, ${res?.calls_dispatched} dispatched.`);
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -239,8 +265,8 @@ export default function App() {
     setActionLoading(true);
     try {
       const res = await submitWastewater(wastewaterForm);
-      setActionMessage(`✅ Genomic wastewater sample recorded at ${res?.sample_site || 'site'}: ${res?.copies_per_ul} copies/μL`);
-      await loadAllData();
+      setActionMessage(`✅ Wastewater surveillance logged: ${res?.pathogen_marker} (${res?.copies_per_ul} copies/uL) at ${res?.sample_site}.`);
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -253,7 +279,7 @@ export default function App() {
     try {
       const res = await triggerDailyAggregation(null, 11);
       setActionMessage(`✅ Daily aggregation completed with k=11 suppression across all nodes. ${res?.aggregate_records_produced || 0} records generated.`);
-      await loadAllData();
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -265,9 +291,11 @@ export default function App() {
     setSelectedScenario(scenario);
     setActionLoading(true);
     try {
-      await triggerEventSimulation(scenario, 42, 365);
-      setActionMessage(`✅ Outbreak event simulation '${scenario}' generated with multi-source ground truth events!`);
-      await loadAllData();
+      const res = await triggerEventSimulation(scenario, 42, 365);
+      setLastSimulationResult(res);
+      const alertsGen = res?.new_candidates_generated ?? 0;
+      setActionMessage(`✅ Outbreak event simulation '${scenario}' generated across participating nodes! (CUSUM Candidates: ${alertsGen})`);
+      await loadAllData(false);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -280,7 +308,7 @@ export default function App() {
     try {
       await triggerStartFederatedRound(fcstHorizon, 1.0);
       setActionMessage(`✅ Flower FedAvg round executed successfully. Global model v1.0.0 updated.`);
-      await loadAllData();
+      await loadAllData(true);
     } catch (err) {
       setActionMessage(`❌ Error: ${err.message}`);
     } finally {
@@ -288,16 +316,31 @@ export default function App() {
     }
   };
 
-  const handleGenerateForecast = async () => {
+  const handleGenerateForecast = async (customHorizon = null, customMissing = null) => {
+    const h = customHorizon !== null ? customHorizon : fcstHorizon;
+    const m = customMissing !== null ? customMissing : missingNodes;
+    const reqId = Date.now() + "_" + Math.random().toString(36).substring(2, 9);
+    latestForecastRequestIdRef.current = reqId;
+
     setActionLoading(true);
+    setForecastLoading(true);
+    setForecastError(null);
     try {
-      await triggerGenerateForecast(fcstHorizon, missingNodes);
-      setActionMessage(`✅ ${fcstHorizon}-Day recursive forecast generated with 80% & 95% prediction intervals.`);
-      await loadAllData();
+      const res = await triggerGenerateForecast(h, m, reqId);
+      if (latestForecastRequestIdRef.current === reqId && res) {
+        setForecastData(res);
+        setActionMessage(`✅ ${h}-Day recursive forecast generated for ${res.participating_nodes_count || (4 - m)}/4 participating nodes.`);
+      }
     } catch (err) {
-      setActionMessage(`❌ Error: ${err.message}`);
+      if (latestForecastRequestIdRef.current === reqId) {
+        setForecastError(err?.message || "Unable to fetch the latest forecast. Please try again.");
+        setActionMessage(`❌ Error generating forecast: ${err.message}`);
+      }
     } finally {
-      setActionLoading(false);
+      if (latestForecastRequestIdRef.current === reqId) {
+        setActionLoading(false);
+        setForecastLoading(false);
+      }
     }
   };
 
@@ -369,7 +412,8 @@ export default function App() {
     return (
       (s?.name || '').toLowerCase().includes(q) ||
       (s?.category || '').toLowerCase().includes(q) ||
-      (s?.symptom_id || '').toLowerCase().includes(q)
+      (s?.symptom_id || '').toLowerCase().includes(q) ||
+      (s?.aliases || []).some(a => a.toLowerCase().includes(q))
     );
   });
 
@@ -660,7 +704,79 @@ export default function App() {
                     </div>
 
                     <div>
-                      <label className="block text-slate-400 mb-1">Reported Symptoms</label>
+                      <div className="flex items-center justify-between mb-1">
+                        <label className="block text-slate-400">Reported Symptoms (257 Catalog)</label>
+                        <span className="text-[10px] text-emerald-400 font-mono">
+                          {communityForm.symptoms.length} selected
+                        </span>
+                      </div>
+
+                      {/* Clinical Pattern Presets */}
+                      <div className="mb-2">
+                        <span className="text-[10px] text-slate-500 block mb-1">Realistic Clinical Presets:</span>
+                        <div className="flex flex-wrap gap-1">
+                          {[
+                            { label: "Respiratory (ILI)", symptoms: ["S001", "S021", "S038", "S006", "S035"], sev: "mild" },
+                            { label: "Severe Resp (SARI)", symptoms: ["S001", "S021", "S026", "S031", "S006", "S028"], sev: "severe" },
+                            { label: "Gastrointestinal", symptoms: ["S001", "S047", "S048", "S050", "S054", "S055"], sev: "moderate" },
+                            { label: "Vector-Borne", symptoms: ["S001", "S067", "S009", "S006", "S117", "S127", "S002"], sev: "moderate" },
+                            { label: "Neurological Alert", symptoms: ["S001", "S067", "S074", "S092", "S167"], sev: "severe" },
+                            { label: "Pediatric Croup", symptoms: ["S021", "S044", "S040", "S027"], sev: "moderate" },
+                            { label: "Allergic", symptoms: ["S127", "S029", "S135", "S027"], sev: "moderate" },
+                          ].map(preset => (
+                            <button
+                              key={preset.label}
+                              type="button"
+                              onClick={() => setCommunityForm({
+                                ...communityForm,
+                                symptoms: preset.symptoms,
+                                severity: preset.sev
+                              })}
+                              className="text-[9px] px-1.5 py-0.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 rounded transition"
+                            >
+                              {preset.label}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Selected Symptoms Pills */}
+                      {communityForm.symptoms.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mb-2 max-h-16 overflow-y-auto p-1.5 bg-slate-900/60 border border-slate-800 rounded">
+                          {communityForm.symptoms.map(sid => {
+                            const symInfo = (symptomMaster?.symptoms || []).find(s => s?.symptom_id === sid);
+                            return (
+                              <span
+                                key={sid}
+                                className="inline-flex items-center gap-1 text-[10px] px-1.5 py-0.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded font-medium"
+                              >
+                                {sid}: {symInfo?.name || sid}
+                                <button
+                                  type="button"
+                                  onClick={() => setCommunityForm({
+                                    ...communityForm,
+                                    symptoms: communityForm.symptoms.filter(x => x !== sid)
+                                  })}
+                                  className="hover:text-red-400 font-bold ml-0.5"
+                                >
+                                  ×
+                                </button>
+                              </span>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {/* Search Filter for 257 symptoms */}
+                      <input
+                        type="text"
+                        placeholder="Search 257 symptoms by name, ID, or alias (e.g. fever, cough, S021, breathlessness)..."
+                        value={formSymptomSearch}
+                        onChange={e => setFormSymptomSearch(e.target.value)}
+                        className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2 py-1 text-slate-200 text-[11px] mb-1 focus:border-emerald-500 outline-none"
+                      />
+
+                      {/* Multi-select box containing full 257 symptoms catalog */}
                       <select
                         multiple
                         value={communityForm.symptoms}
@@ -668,19 +784,25 @@ export default function App() {
                           const opts = Array.from(e.target.selectedOptions, option => option.value);
                           setCommunityForm({ ...communityForm, symptoms: opts });
                         }}
-                        className="w-full bg-slate-900 border border-slate-800 rounded-lg p-2 text-slate-200 h-24"
+                        className="w-full bg-slate-900 border border-slate-800 rounded-lg p-1.5 text-slate-200 text-[11px] h-32 scrollbar-thin"
                       >
-                        <option value="S001">S001 — Fever</option>
-                        <option value="S021">S021 — Cough</option>
-                        <option value="S038">S038 — Sore throat</option>
-                        <option value="S050">S050 — Diarrhea</option>
-                        <option value="S048">S048 — Vomiting</option>
-                        <option value="S067">S067 — Headache</option>
-                        <option value="S092">S092 — Stiff neck</option>
-                        <option value="S117">S117 — Joint pain</option>
-                        <option value="S127">S127 — Skin rash</option>
+                        {(symptomMaster?.symptoms || [])
+                          .filter(s => {
+                            if (!formSymptomSearch.trim()) return true;
+                            const q = formSymptomSearch.toLowerCase();
+                            const matchesId = (s?.symptom_id || '').toLowerCase().includes(q);
+                            const matchesName = (s?.name || '').toLowerCase().includes(q);
+                            const matchesCat = (s?.category || '').toLowerCase().includes(q);
+                            const matchesAlias = (s?.aliases || []).some(a => a.toLowerCase().includes(q));
+                            return matchesId || matchesName || matchesCat || matchesAlias;
+                          })
+                          .map(s => (
+                            <option key={s?.symptom_id} value={s?.symptom_id}>
+                              {s?.symptom_id} — {s?.name} [{s?.category}]
+                            </option>
+                          ))}
                       </select>
-                      <p className="text-[10px] text-slate-500 mt-1">Hold Ctrl/Cmd to select multiple symptoms</p>
+                      <p className="text-[10px] text-slate-500 mt-1">Hold Ctrl/Cmd to select multiple symptoms from the 257 catalog</p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-2">
@@ -1021,9 +1143,29 @@ export default function App() {
               <h2 className="text-lg font-bold text-slate-100 mb-2 flex items-center gap-2">
                 <span>🗺️</span> Zone-Level Rollup Aggregation (Part 9 Verification)
               </h2>
-              <p className="text-xs text-slate-400 mb-6">
-                Executing SQL Capability Check: <code className="bg-slate-950 px-2 py-0.5 rounded text-emerald-400">HAVING COUNT(DISTINCT node_id) &gt;= 3</code> cross-node verification.
-              </p>
+              <div className="flex justify-between items-center mb-4">
+                <p className="text-xs text-slate-400">
+                  Executing SQL Capability Check: <code className="bg-slate-950 px-2 py-0.5 rounded text-emerald-400">HAVING COUNT(DISTINCT node_id) &gt;= 3</code> cross-node verification.
+                </p>
+                <button
+                  onClick={async () => {
+                    setActionLoading(true);
+                    try {
+                      const res = await triggerDailyAggregation();
+                      setActionMessage(`✅ Daily Aggregation executed across all nodes. Total records aggregated: ${res?.total_aggregated ?? res?.status ?? 'Success'}`);
+                      await loadAllData(true);
+                    } catch (err) {
+                      setActionMessage(`❌ Aggregation error: ${err.message}`);
+                    } finally {
+                      setActionLoading(false);
+                    }
+                  }}
+                  disabled={actionLoading}
+                  className="px-3 py-1.5 bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-300 border border-emerald-500/40 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors disabled:opacity-50"
+                >
+                  <span>🔄</span> Run Daily Aggregation (k=11)
+                </button>
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 {(zoneRollups || []).map((z, idx) => (
@@ -1035,12 +1177,12 @@ export default function App() {
                       </span>
                     </div>
                     <div className="text-2xl font-bold font-mono text-slate-100">
-                      {(z?.total_reports ?? 0).toLocaleString()} <span className="text-xs font-normal text-slate-400">reports</span>
+                      {(z?.count ?? z?.total_reports ?? 0).toLocaleString()} <span className="text-xs font-normal text-slate-400">reports</span>
                     </div>
                     <p className="text-xs text-slate-300 italic">{z?.summary || 'Standard aggregate signal volume'}</p>
                     <div className="flex justify-between items-center text-xs pt-2 border-t border-slate-800/60">
-                      <span className="text-slate-500">Nodes Reporting: <strong className="text-slate-300 font-mono">{z?.nodes_reporting ?? 4}</strong></span>
-                      <span className="text-emerald-400 font-mono font-bold">+{Math.round((z?.avg_growth_rate || 0) * 100)}% 7d Growth</span>
+                      <span className="text-slate-500">Nodes Reporting: <strong className="text-emerald-400 font-mono">{z?.node_count ?? z?.nodes_reporting ?? 4}</strong></span>
+                      <span className="text-emerald-400 font-mono font-bold">{z?.growth_7d != null ? (z.growth_7d >= 0 ? `+${z.growth_7d}%` : `${z.growth_7d}%`) : (z?.avg_growth_rate != null ? `+${Math.round(z.avg_growth_rate * 100)}%` : '+0%')} 7d Growth</span>
                     </div>
                   </div>
                 ))}
@@ -1151,93 +1293,300 @@ export default function App() {
                   </div>
                 ))}
               </div>
+
+              {/* Live Outbreak Simulation Telemetry */}
+              {lastSimulationResult && (
+                <div className="mt-8 p-5 bg-slate-950 border border-amber-500/30 rounded-xl space-y-4">
+                  <div className="flex flex-wrap justify-between items-center border-b border-slate-800 pb-3">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+                      <h3 className="font-bold text-sm text-slate-200">
+                        Outbreak Simulation Telemetry: {lastSimulationResult.scenario}
+                      </h3>
+                    </div>
+                    <span className="text-xs px-2.5 py-1 bg-amber-500/10 text-amber-400 font-mono font-bold rounded-md">
+                      Status: {lastSimulationResult.status}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                    <div className="p-3 bg-slate-900/80 rounded-lg border border-slate-800">
+                      <span className="text-slate-400 block text-[11px]">Total Records Generated</span>
+                      <span className="text-base font-bold text-emerald-400 font-mono">
+                        {lastSimulationResult.total_records?.toLocaleString() || '5,840'}
+                      </span>
+                    </div>
+                    <div className="p-3 bg-slate-900/80 rounded-lg border border-slate-800">
+                      <span className="text-slate-400 block text-[11px]">CUSUM Alerts Generated</span>
+                      <span className="text-base font-bold text-amber-400 font-mono">
+                        {lastSimulationResult.new_candidates_generated ?? 0}
+                      </span>
+                    </div>
+                    <div className="p-3 bg-slate-900/80 rounded-lg border border-slate-800">
+                      <span className="text-slate-400 block text-[11px]">Community Reports</span>
+                      <span className="text-base font-bold text-cyan-400 font-mono">
+                        {lastSimulationResult.signal_metrics?.community_reports_logged ?? 0}
+                      </span>
+                    </div>
+                    <div className="p-3 bg-slate-900/80 rounded-lg border border-slate-800">
+                      <span className="text-slate-400 block text-[11px]">Pharmacy Dispensing</span>
+                      <span className="text-base font-bold text-purple-400 font-mono">
+                        {lastSimulationResult.signal_metrics?.pharmacy_records_logged ?? 0}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-3 text-xs">
+                    <div className="p-2.5 bg-slate-900/50 rounded-lg border border-slate-800/80">
+                      <span className="text-slate-500 block text-[10px]">Clinic Demand Records</span>
+                      <span className="font-bold text-slate-300 font-mono">
+                        {lastSimulationResult.signal_metrics?.clinic_records_logged ?? 0}
+                      </span>
+                    </div>
+                    <div className="p-2.5 bg-slate-900/50 rounded-lg border border-slate-800/80">
+                      <span className="text-slate-500 block text-[10px]">Lab Tests Logged</span>
+                      <span className="font-bold text-slate-300 font-mono">
+                        {lastSimulationResult.signal_metrics?.testing_records_logged ?? 0}
+                      </span>
+                    </div>
+                    <div className="p-2.5 bg-slate-900/50 rounded-lg border border-slate-800/80">
+                      <span className="text-slate-500 block text-[10px]">Wastewater Samples</span>
+                      <span className="font-bold text-teal-400 font-mono">
+                        {lastSimulationResult.signal_metrics?.wastewater_records_logged ?? 0}
+                      </span>
+                    </div>
+                  </div>
+
+                  {lastSimulationResult.non_iid_divergence && Object.keys(lastSimulationResult.non_iid_divergence).length > 0 && (
+                    <div className="p-3 bg-slate-900/60 rounded-lg border border-slate-800 space-y-2">
+                      <span className="text-[11px] font-bold text-slate-300 block">
+                        Non-IID Distribution Divergence (KS-Test & Wasserstein):
+                      </span>
+                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[10px] font-mono">
+                        {Object.entries(lastSimulationResult.non_iid_divergence).slice(0, 6).map(([pair, stats]) => (
+                          <div key={pair} className="p-1.5 bg-slate-950/80 rounded border border-slate-800/80 text-slate-300 flex justify-between">
+                            <span className="text-slate-400">{pair.replace(/_vs_/g, ' ↔ ')}:</span>
+                            <span className="text-amber-300 font-bold">W={stats.wasserstein_distance ?? 0}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="pt-2 flex justify-between items-center text-xs">
+                    <span className="text-slate-400 text-[11px]">
+                      Small-group suppression (k=11) applied across local nodes.
+                    </span>
+                    <button
+                      onClick={() => setActiveTab('alerts')}
+                      className="px-3 py-1.5 bg-amber-600/20 hover:bg-amber-600/30 text-amber-300 border border-amber-500/40 rounded-lg font-bold text-[11px] transition"
+                    >
+                      Review Candidate Alerts Queue →
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         )}
 
         {/* TAB 5: 7-14 DAY FORECASTER */}
-        {activeTab === 'forecast' && (
-          <div className="space-y-6">
-            <div className="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 shadow-sm">
-              <div className="flex flex-wrap justify-between items-center gap-4 mb-6">
-                <div>
-                  <h2 className="text-lg font-bold text-slate-100 flex items-center gap-2">
-                    <span>📈</span> Multi-Horizon Forecaster & Uncertainty Engine
-                  </h2>
-                  <p className="text-xs text-slate-400">
-                    Recursive 7–14 day forecast with calibrated 80% & 95% prediction intervals and node degradation.
-                  </p>
+        {activeTab === 'forecast' && (() => {
+          const allForecasts = forecastData?.forecasts || [];
+          const uniqueSyndromes = Array.from(new Set(allForecasts.map(f => f?.syndrome_category).filter(Boolean)));
+          
+          const displayedForecasts = selectedSyndrome && selectedSyndrome !== 'ALL'
+            ? allForecasts.filter(f => f?.syndrome_category === selectedSyndrome)
+            : allForecasts.filter(f => f?.syndrome_category === (uniqueSyndromes[0] || 'respiratory'));
+
+          const chartData = displayedForecasts.slice(0, fcstHorizon).map((f, i) => ({
+            day: `Day +${f?.horizon_day || (i + 1)}`,
+            point: Math.round(f?.point_forecast ?? f?.predicted_value ?? 0),
+            lower80: Math.round(f?.lower_bound_80 ?? f?.lower_bound ?? 0),
+            upper80: Math.round(f?.upper_bound_80 ?? f?.upper_bound ?? 0),
+            lower95: Math.round(f?.lower_bound_95 ?? (f?.lower_bound ? f.lower_bound * 0.9 : 0)),
+            upper95: Math.round(f?.upper_bound_95 ?? (f?.upper_bound ? f.upper_bound * 1.1 : 0)),
+            confidence: Math.round(((f?.confidence_score ?? 0.93)) * 100)
+          }));
+
+          return (
+            <div className="space-y-6">
+              <div className="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-wrap justify-between items-center gap-4 mb-6">
+                  <div>
+                    <h2 className="text-lg font-bold text-slate-100 flex items-center gap-2">
+                      <span>📈</span> Multi-Horizon Forecaster & Uncertainty Engine
+                    </h2>
+                    <p className="text-xs text-slate-400 mb-2">
+                      Recursive 1–14 day forecast with calibrated 80% & 95% prediction intervals and node degradation.
+                    </p>
+                    <div className="flex flex-wrap items-center gap-2 text-[11px]">
+                      <span className="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-indigo-400 font-mono">
+                        Horizon: {forecastData?.horizon_days || fcstHorizon}d
+                      </span>
+                      <span className="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-amber-400 font-mono">
+                        Missing: {forecastData?.missing_nodes ?? missingNodes}
+                      </span>
+                      <span className="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-emerald-400 font-mono">
+                        Nodes: {forecastData?.participating_nodes_count || (4 - missingNodes)}/4 ({forecastData?.participating_nodes?.join(', ') || 'All'})
+                      </span>
+                      <span className="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-400 font-mono">
+                        Req: {forecastData?.request_id ? forecastData.request_id.substring(0, 8) : 'sync'}
+                      </span>
+                      <span className={`px-2 py-0.5 rounded border font-mono ${forecastLoading ? 'bg-amber-950/60 border-amber-800 text-amber-300' : 'bg-slate-950 border-slate-800 text-slate-400'}`}>
+                        {forecastLoading ? '⚡ Generating...' : '● Synchronized'}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap items-center gap-3">
+                    {/* Syndrome Selector */}
+                    <select
+                      value={selectedSyndrome}
+                      onChange={e => setSelectedSyndrome(e.target.value)}
+                      className="bg-slate-950 border border-slate-800 text-xs rounded-xl px-3 py-2 text-slate-200"
+                    >
+                      <option value="respiratory">Syndrome: Respiratory</option>
+                      <option value="gastrointestinal">Syndrome: Gastrointestinal</option>
+                      <option value="fever_flu">Syndrome: Fever / Flu</option>
+                      <option value="other">Syndrome: Other</option>
+                      {uniqueSyndromes.filter(s => !['respiratory', 'gastrointestinal', 'fever_flu', 'other'].includes(s)).map(s => (
+                        <option key={s} value={s}>Syndrome: {s.replace(/_/g, ' ')}</option>
+                      ))}
+                    </select>
+
+                    {/* Horizon Selector: 1 to 14 Days */}
+                    <select
+                      value={fcstHorizon}
+                      onChange={e => {
+                        const newH = parseInt(e.target.value);
+                        setFcstHorizon(newH);
+                        handleGenerateForecast(newH, missingNodes);
+                      }}
+                      className="bg-slate-950 border border-slate-800 text-xs rounded-xl px-3 py-2 text-slate-200 font-mono"
+                    >
+                      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(h => (
+                        <option key={h} value={h}>Horizon: {h} Day{h > 1 ? 's' : ''}</option>
+                      ))}
+                    </select>
+
+                    {/* Missing Nodes */}
+                    <select
+                      value={missingNodes}
+                      onChange={e => {
+                        const newM = parseInt(e.target.value);
+                        setMissingNodes(newM);
+                        handleGenerateForecast(fcstHorizon, newM);
+                      }}
+                      className="bg-slate-950 border border-slate-800 text-xs rounded-xl px-3 py-2 text-slate-200"
+                    >
+                      <option value={0}>0 Missing Nodes (All 4 Online)</option>
+                      <option value={1}>1 Missing Node (3 Nodes Online)</option>
+                      <option value={2}>2 Missing Nodes (2 Nodes Online)</option>
+                    </select>
+
+                    <button
+                      onClick={() => handleGenerateForecast(fcstHorizon, missingNodes)}
+                      disabled={actionLoading || forecastLoading}
+                      className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white font-bold rounded-xl text-xs transition"
+                    >
+                      {forecastLoading ? 'Generating...' : 'Generate Forecast'}
+                    </button>
+
+                    <button
+                      onClick={handleStartFederatedRound}
+                      disabled={actionLoading || forecastLoading}
+                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-slate-950 font-bold rounded-xl text-xs transition"
+                    >
+                      Run FedAvg Round
+                    </button>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <select
-                    value={fcstHorizon}
-                    onChange={e => setFcstHorizon(parseInt(e.target.value))}
-                    className="bg-slate-950 border border-slate-800 text-xs rounded-xl px-3 py-2 text-slate-200"
-                  >
-                    <option value={7}>Horizon: 7 Days</option>
-                    <option value={10}>Horizon: 10 Days</option>
-                    <option value={14}>Horizon: 14 Days</option>
-                  </select>
+                {forecastError && (
+                  <div className="mb-4 p-3 bg-rose-950/60 border border-rose-800 text-rose-300 rounded-xl text-xs flex justify-between items-center">
+                    <span>⚠️ {forecastError}</span>
+                    <button onClick={() => handleGenerateForecast(fcstHorizon, missingNodes)} className="px-3 py-1 bg-rose-800 hover:bg-rose-700 text-white font-bold rounded-lg text-[11px]">Retry</button>
+                  </div>
+                )}
 
-                  <select
-                    value={missingNodes}
-                    onChange={e => setMissingNodes(parseInt(e.target.value))}
-                    className="bg-slate-950 border border-slate-800 text-xs rounded-xl px-3 py-2 text-slate-200"
-                  >
-                    <option value={0}>0 Missing Nodes (100% Conf)</option>
-                    <option value={1}>1 Missing Node (75% Conf)</option>
-                    <option value={2}>2 Missing Nodes (50% Conf)</option>
-                  </select>
+                {/* Multi-Horizon Visual Projection Chart */}
+                {chartData.length > 0 && (
+                  <div className="mb-6 p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">
+                        {fcstHorizon}-Day Recursive Projection — {selectedSyndrome.replace(/_/g, ' ')}
+                      </span>
+                      <div className="flex items-center gap-4 text-[11px]">
+                        <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Point Forecast</span>
+                        <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded bg-cyan-500/40"></span> 80% Interval</span>
+                        <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded bg-indigo-500/30"></span> 95% Interval</span>
+                      </div>
+                    </div>
+                    <div className="h-56 w-full">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <AreaChart data={chartData} margin={{ top: 10, right: 20, left: -20, bottom: 0 }}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
+                          <XAxis dataKey="day" stroke="#64748b" tick={{ fontSize: 11 }} />
+                          <YAxis stroke="#64748b" tick={{ fontSize: 11 }} />
+                          <Tooltip
+                            contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155', borderRadius: '0.75rem', fontSize: '12px' }}
+                            formatter={(val, name) => [val, name]}
+                          />
+                          <Area type="monotone" dataKey="upper95" stroke="#6366f1" fill="#6366f1" fillOpacity={0.15} name="95% Upper" />
+                          <Area type="monotone" dataKey="upper80" stroke="#06b6d4" fill="#06b6d4" fillOpacity={0.25} name="80% Upper" />
+                          <Line type="monotone" dataKey="point" stroke="#34d399" strokeWidth={3} dot={{ r: 4, fill: '#34d399' }} name="Point Forecast" />
+                          <Area type="monotone" dataKey="lower80" stroke="#06b6d4" fill="#06b6d4" fillOpacity={0.25} name="80% Lower" />
+                          <Area type="monotone" dataKey="lower95" stroke="#6366f1" fill="#6366f1" fillOpacity={0.15} name="95% Lower" />
+                        </AreaChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+                )}
 
-                  <button
-                    onClick={handleGenerateForecast}
-                    disabled={actionLoading}
-                    className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl text-xs transition"
-                  >
-                    Generate Forecast
-                  </button>
-
-                  <button
-                    onClick={handleStartFederatedRound}
-                    disabled={actionLoading}
-                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold rounded-xl text-xs transition"
-                  >
-                    Run FedAvg Round
-                  </button>
-                </div>
-              </div>
-
-              {/* Forecasts Table */}
-              <div className="overflow-x-auto">
-                <table className="w-full text-left text-xs">
-                  <thead className="bg-slate-950/60 text-slate-400 border-b border-slate-800">
-                    <tr>
-                      <th className="py-2.5 px-4">Horizon Day</th>
-                      <th className="py-2.5 px-4">Syndrome</th>
-                      <th className="py-2.5 px-4">Point Forecast</th>
-                      <th className="py-2.5 px-4 text-cyan-400">80% Interval</th>
-                      <th className="py-2.5 px-4 text-indigo-400">95% Interval</th>
-                      <th className="py-2.5 px-4">Confidence Score</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-800/60 font-mono text-slate-300">
-                    {(forecastData?.forecasts || []).slice(0, 14).map((f, i) => (
-                      <tr key={i} className="hover:bg-slate-800/20">
-                        <td className="py-2.5 px-4 font-bold text-slate-200">Day +{f?.horizon_day || (i + 1)}</td>
-                        <td className="py-2.5 px-4 font-sans capitalize">{f?.syndrome_category || 'respiratory'}</td>
-                        <td className="py-2.5 px-4 text-emerald-400 font-extrabold text-sm">{Math.round(f?.point_forecast || 0)}</td>
-                        <td className="py-2.5 px-4 text-cyan-300">[{Math.round(f?.lower_bound_80 ?? f?.lower_bound ?? 0)} – {Math.round(f?.upper_bound_80 ?? f?.upper_bound ?? 0)}]</td>
-                        <td className="py-2.5 px-4 text-indigo-300">[{Math.round(f?.lower_bound_95 ?? (f?.lower_bound ? f.lower_bound * 0.9 : 0))} – {Math.round(f?.upper_bound_95 ?? (f?.upper_bound ? f.upper_bound * 1.1 : 0))}]</td>
-                        <td className="py-2.5 px-4 font-bold">{(((f?.confidence_score ?? 0.93)) * 100).toFixed(0)}%</td>
+                {/* Forecasts Table */}
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-xs">
+                    <thead className="bg-slate-950/60 text-slate-400 border-b border-slate-800">
+                      <tr>
+                        <th className="py-2.5 px-4">Horizon Day</th>
+                        <th className="py-2.5 px-4">Syndrome</th>
+                        <th className="py-2.5 px-4">Point Forecast</th>
+                        <th className="py-2.5 px-4 text-cyan-400">80% Interval</th>
+                        <th className="py-2.5 px-4 text-indigo-400">95% Interval</th>
+                        <th className="py-2.5 px-4">Confidence Score</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-slate-800/60 font-mono text-slate-300">
+                      {displayedForecasts.slice(0, fcstHorizon).map((f, i) => (
+                        <tr key={i} className="hover:bg-slate-800/20">
+                          <td className="py-2.5 px-4 font-bold text-slate-200">Day +{f?.horizon_day || (i + 1)}</td>
+                          <td className="py-2.5 px-4 font-sans capitalize">{f?.syndrome_category || 'respiratory'}</td>
+                          <td className="py-2.5 px-4 text-emerald-400 font-extrabold text-sm">
+                            {f?.status === 'INSUFFICIENT_HISTORY' ? (
+                              <span className="text-[10px] font-normal text-slate-500 italic">Insufficient data</span>
+                            ) : (
+                              Math.round(f?.point_forecast ?? f?.predicted_value ?? 0)
+                            )}
+                          </td>
+                          <td className="py-2.5 px-4 text-cyan-300">
+                            {f?.status === 'INSUFFICIENT_HISTORY' ? '—' : `[${Math.round(f?.lower_bound_80 ?? f?.lower_bound ?? 0)} – ${Math.round(f?.upper_bound_80 ?? f?.upper_bound ?? 0)}]`}
+                          </td>
+                          <td className="py-2.5 px-4 text-indigo-300">
+                            {f?.status === 'INSUFFICIENT_HISTORY' ? '—' : `[${Math.round(f?.lower_bound_95 ?? (f?.lower_bound ? f.lower_bound * 0.9 : 0))} – ${Math.round(f?.upper_bound_95 ?? (f?.upper_bound ? f.upper_bound * 1.1 : 0))}]`}
+                          </td>
+                          <td className="py-2.5 px-4 font-bold text-amber-300">
+                            {f?.status === 'INSUFFICIENT_HISTORY' ? '—' : `${(((f?.confidence_score ?? 0.93)) * 100).toFixed(1)}%`}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* TAB 6: CUSUM ALERTS & REVIEWER QUEUE */}
         {activeTab === 'alerts' && (
@@ -1401,6 +1750,8 @@ export default function App() {
                         <th className="py-2.5 px-4">Code</th>
                         <th className="py-2.5 px-4">Symptom Name</th>
                         <th className="py-2.5 px-4">Category</th>
+                        <th className="py-2.5 px-4">Severities</th>
+                        <th className="py-2.5 px-4">Clinical & Vernacular Aliases</th>
                         <th className="py-2.5 px-4">Associated 45-Syndromes (Many-to-Many)</th>
                       </tr>
                     </thead>
@@ -1410,6 +1761,12 @@ export default function App() {
                           <td className="py-2 px-4 font-bold text-emerald-400">{s?.symptom_id}</td>
                           <td className="py-2 px-4 font-sans font-medium text-slate-200">{s?.name}</td>
                           <td className="py-2 px-4 font-sans text-slate-400">{s?.category}</td>
+                          <td className="py-2 px-4 font-sans text-[11px] text-amber-300">
+                            {(s?.severities || []).join(', ')}
+                          </td>
+                          <td className="py-2 px-4 font-sans text-[11px] text-slate-400 max-w-xs truncate" title={(s?.aliases || []).join(', ')}>
+                            {(s?.aliases || []).slice(0, 4).join(', ')}{(s?.aliases || []).length > 4 ? '...' : ''}
+                          </td>
                           <td className="py-2 px-4">
                             <div className="flex flex-wrap gap-1">
                               {(s?.associated_syndromes || []).map((syn, idx) => (
@@ -1436,18 +1793,30 @@ export default function App() {
                         <th className="py-2.5 px-4">Condition Name (Simulation Reference)</th>
                         <th className="py-2.5 px-4">Etiology Domain</th>
                         <th className="py-2.5 px-4">Primary Syndrome</th>
+                        <th className="py-2.5 px-4">Severity & Duration</th>
+                        <th className="py-2.5 px-4">Transmission & Outbreak</th>
                         <th className="py-2.5 px-4">Key Symptoms</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-800/50 font-mono text-slate-300">
                       {filteredConditions.map(d => (
-                        <tr key={d?.disease_id} className="hover:bg-slate-800/20">
-                          <td className="py-2 px-4 font-bold text-amber-400">{d?.disease_id}</td>
-                          <td className="py-2 px-4 font-sans font-medium text-slate-200">{d?.name}</td>
+                        <tr key={d?.condition_id || d?.disease_id} className="hover:bg-slate-800/20">
+                          <td className="py-2 px-4 font-bold text-amber-400">{d?.condition_id || d?.disease_id}</td>
+                          <td className="py-2 px-4 font-sans font-medium text-slate-200">{d?.condition_name || d?.name}</td>
                           <td className="py-2 px-4 font-sans text-slate-400">{d?.category}</td>
                           <td className="py-2 px-4 text-indigo-400 font-semibold">{d?.primary_syndrome}</td>
-                          <td className="py-2 px-4 text-slate-400">
-                            {(d?.key_symptoms || []).join(', ')}
+                          <td className="py-2 px-4 font-sans text-[11px]">
+                            <span className="capitalize text-amber-300 font-medium">{d?.typical_severity || 'standard'}</span>
+                            <span className="text-slate-500 block text-[10px]">{d?.typical_duration_days} days</span>
+                          </td>
+                          <td className="py-2 px-4 font-sans text-[11px]">
+                            <span className="text-slate-300 block">{d?.transmission_pattern || 'environmental'}</span>
+                            <span className={`text-[10px] font-bold uppercase ${d?.outbreak_relevance === 'critical' ? 'text-rose-400' : d?.outbreak_relevance === 'high' ? 'text-amber-400' : 'text-slate-400'}`}>
+                              {d?.outbreak_relevance || 'moderate'} relevance
+                            </span>
+                          </td>
+                          <td className="py-2 px-4 text-slate-400 text-[11px]">
+                            {(d?.symptom_ids || d?.key_symptoms || []).join(', ')}
                           </td>
                         </tr>
                       ))}

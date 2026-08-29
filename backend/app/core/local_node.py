@@ -58,6 +58,17 @@ class LocalInstitutionClient:
         
         return df
 
+    def get_federated_training_data(self, forecast_horizon: int = 7) -> Tuple[pd.DataFrame, Dict[str, Any]]:
+        """
+        Retrieves privacy-gate validated supervised features for local model training.
+        Guarantees that raw patient rows and sub-threshold counts are rejected/suppressed before handoff.
+        """
+        from app.core.federated_handoff import federated_handoff_manager
+        return federated_handoff_manager.prepare_local_federated_features(
+            node_id=self.institution_id,
+            forecast_horizon=forecast_horizon
+        )
+
     def get_local_summary(self) -> Dict[str, Any]:
         """
         Returns SAFE AGGREGATE METADATA only.

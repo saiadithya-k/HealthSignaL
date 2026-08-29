@@ -2,7 +2,7 @@ import os
 import json
 import scipy.stats as stats
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any
 
 from app.data_generation.schemas import ScenarioType
@@ -28,6 +28,11 @@ def analyze_non_iid_properties(data_dir: str = "data") -> Dict[str, Any]:
         syndrome_totals = df.groupby("syndrome_category")["service_count"].sum()
         total_demand = syndrome_totals.sum()
         syndrome_props = {cat: round(count / total_demand, 4) for cat, count in syndrome_totals.items()} if total_demand > 0 else {}
+        legacy_cats = ["respiratory", "gastrointestinal", "fever_flu", "other"]
+        legacy_sum = sum(syndrome_totals.get(c, 0) for c in legacy_cats)
+        if legacy_sum > 0:
+            for c in legacy_cats:
+                syndrome_props[c] = round(syndrome_totals.get(c, 0) / legacy_sum, 4)
         
         node_data[inst_id] = {
             "mean_daily_demand": float(round(daily_total.mean(), 2)),
@@ -58,9 +63,12 @@ def analyze_non_iid_properties(data_dir: str = "data") -> Dict[str, Any]:
             }
 
     # Clean output dictionary for export
+    total_recs = sum(len(pd.read_csv(os.path.join(data_dir, inst, "data.csv"))) for inst in inst_ids if os.path.exists(os.path.join(data_dir, inst, "data.csv")))
     summary_report = {
-        "generated_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+        "total_records": total_recs,
         "non_iid_demonstration": "P(inst-a) != P(inst-b) != P(inst-c) != P(inst-d)",
+        "non_iid_divergence": pairwise_distances,
         "institutions": {
             inst_id: {
                 "mean_daily_demand": info["mean_daily_demand"],

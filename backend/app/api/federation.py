@@ -15,20 +15,33 @@ def get_federation_status(db: Session = Depends(get_db)):
     latest_round = db.query(FederatedRound).order_by(FederatedRound.started_at.desc()).first()
     
     report_path = os.path.join("data", "phase4_federated_report.json")
+    alt_report_path = os.path.join("artifacts", "global", "federated_report.json")
     report = None
     if os.path.exists(report_path):
-        with open(report_path, "r") as f:
-            report = json.load(f)
+        try:
+            with open(report_path, "r") as f:
+                report = json.load(f)
+        except Exception:
+            report = None
+    elif os.path.exists(alt_report_path):
+        try:
+            with open(alt_report_path, "r") as f:
+                report = json.load(f)
+        except Exception:
+            report = None
+
+    status_str = latest_round.status if latest_round else (report.get("status", "NOT_STARTED") if report else "NOT_STARTED")
+    round_dict = {
+        "round_id": latest_round.round_id if latest_round else (str(report.get("round_id", 1)) if report else None),
+        "version": latest_round.global_model_version if latest_round else (report.get("model_version", "v1.0.0-fed-r1") if report else None),
+        "expected_clients": 4,
+        "successful_clients": latest_round.successful_clients if latest_round else (len(report.get("successful_nodes", [])) if report else 0),
+        "failed_clients": latest_round.failed_clients if latest_round else (len(report.get("rejected_nodes", [])) if report else 0),
+    } if (latest_round or report) else None
 
     return {
-        "status": latest_round.status if latest_round else "NOT_STARTED",
-        "latest_round": {
-            "round_id": latest_round.round_id if latest_round else None,
-            "version": latest_round.global_model_version if latest_round else None,
-            "expected_clients": 4,
-            "successful_clients": latest_round.successful_clients if latest_round else 0,
-            "failed_clients": latest_round.failed_clients if latest_round else 0,
-        } if latest_round else None,
+        "status": status_str,
+        "latest_round": round_dict,
         "federated_report": report
     }
 
@@ -56,6 +69,15 @@ def start_federated_round(
             ))
         else:
             existing.metrics = report["global_model_metrics"]["overall"]
+
+        # Also persist round in DB
+        db.add(FederatedRound(
+            global_model_version=report.get("model_version", version_str),
+            status="COMPLETED",
+            expected_clients=len(report.get("expected_nodes", [])),
+            successful_clients=len(report.get("successful_nodes", [])),
+            failed_clients=len(report.get("rejected_nodes", []))
+        ))
             
         db.commit()
 

@@ -9,4 +9,5 @@ api_router.include_router(federation.router, prefix="/federation")
 api_router.include_router(forecasts.router, prefix="/forecasts")
 api_router.include_router(alerts.router, prefix="/alerts")
 api_router.include_router(data_collection.router)
+api_router.include_router(data_collection.aggregate_router)
 

@@ -1,5 +1,5 @@
 import math
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from typing import Dict, Any, Optional
 import urllib.request
 import json
@@ -20,7 +20,7 @@ def fetch_regional_weather(node_id: str = "inst-a", query_date: Optional[str] = 
     coord = NODE_COORDINATES.get(node_id, NODE_COORDINATES["inst-a"])
     lat = coord["latitude"]
     lon = coord["longitude"]
-    target_date = query_date or datetime.utcnow().strftime("%Y-%m-%d")
+    target_date = query_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     # Try querying Open-Meteo forecast/archive API
     try:
@@ -48,7 +48,7 @@ def fetch_regional_weather(node_id: str = "inst-a", query_date: Optional[str] = 
         pass
 
     # High-fidelity deterministic seasonal fallback
-    d = datetime.strptime(target_date, "%Y-%m-%d") if query_date else datetime.utcnow()
+    d = datetime.strptime(target_date, "%Y-%m-%d") if query_date else datetime.now(timezone.utc)
     day_of_year = d.timetuple().tm_yday
     
     # Base temp cycle

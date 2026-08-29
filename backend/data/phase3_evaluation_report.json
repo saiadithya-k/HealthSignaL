@@ -1,52 +1,52 @@
 {
   "forecast_horizon": 7,
   "alpha": 1.0,
-  "evaluation_date": "2026-08-28 15:00:15",
+  "evaluation_date": "2026-08-29 11:43:46",
   "baselines": {
     "naive_lag7": {
       "by_institution": {
         "inst-a": {
-          "mae": 3.4198,
-          "rmse": 4.4948,
-          "mape": 11.57,
-          "sample_count": 212,
+          "mae": 0.7262,
+          "rmse": 1.2445,
+          "mape": 34.17,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-a",
           "model_name": "naive_lag7"
         },
         "inst-b": {
-          "mae": 5.1179,
-          "rmse": 6.6853,
-          "mape": 28.86,
-          "sample_count": 212,
+          "mae": 1.0308,
+          "rmse": 1.8103,
+          "mape": 53.03,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-b",
           "model_name": "naive_lag7"
         },
         "inst-c": {
-          "mae": 3.967,
-          "rmse": 5.6037,
-          "mape": 113.67,
-          "sample_count": 212,
+          "mae": 0.6257,
+          "rmse": 1.2539,
+          "mape": 43.54,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-c",
           "model_name": "naive_lag7"
         },
         "inst-d": {
-          "mae": 6.7783,
-          "rmse": 8.6611,
-          "mape": 40.6,
-          "sample_count": 212,
+          "mae": 1.2784,
+          "rmse": 2.2379,
+          "mape": 64.99,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-d",
           "model_name": "naive_lag7"
         }
       },
       "overall": {
-        "mae": 4.8208,
-        "rmse": 6.5443,
-        "mape": 48.67,
-        "sample_count": 848,
+        "mae": 0.9153,
+        "rmse": 1.6887,
+        "mape": 48.93,
+        "sample_count": 10388,
         "forecast_horizon": 7,
         "institution_id": "overall",
         "model_name": "naive_lag7"
@@ -55,47 +55,47 @@
     "local_ridge": {
       "by_institution": {
         "inst-a": {
-          "mae": 4.5892,
-          "rmse": 5.4732,
-          "mape": 15.4,
-          "sample_count": 212,
+          "mae": 0.6439,
+          "rmse": 1.0514,
+          "mape": 30.14,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-a",
           "model_name": "local_ridge"
         },
         "inst-b": {
-          "mae": 5.0534,
-          "rmse": 6.1058,
-          "mape": 32.3,
-          "sample_count": 212,
+          "mae": 0.8532,
+          "rmse": 1.3917,
+          "mape": 50.26,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-b",
           "model_name": "local_ridge"
         },
         "inst-c": {
-          "mae": 3.0972,
-          "rmse": 4.0866,
-          "mape": 82.48,
-          "sample_count": 212,
+          "mae": 0.5293,
+          "rmse": 0.94,
+          "mape": 37.35,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-c",
           "model_name": "local_ridge"
         },
         "inst-d": {
-          "mae": 5.8571,
-          "rmse": 7.519,
-          "mape": 32.03,
-          "sample_count": 212,
+          "mae": 1.008,
+          "rmse": 1.713,
+          "mape": 51.18,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "inst-d",
           "model_name": "local_ridge"
         }
       },
       "overall": {
-        "mae": 4.6492,
-        "rmse": 5.9261,
-        "mape": 40.55,
-        "sample_count": 848,
+        "mae": 0.7586,
+        "rmse": 1.3096,
+        "mape": 42.23,
+        "sample_count": 10388,
         "forecast_horizon": 7,
         "institution_id": "overall",
         "model_name": "local_ridge"
@@ -104,47 +104,47 @@
     "pooled_ridge_upper_bound": {
       "by_institution": {
         "inst-a": {
-          "mae": 3.4488,
-          "rmse": 4.4854,
-          "mape": 10.94,
-          "sample_count": 212,
+          "mae": 0.6499,
+          "rmse": 1.0908,
+          "mape": 29.87,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "pooled_upper_bound",
           "model_name": "pooled_ridge"
         },
         "inst-b": {
-          "mae": 3.8168,
-          "rmse": 4.9771,
-          "mape": 21.81,
-          "sample_count": 212,
+          "mae": 0.8182,
+          "rmse": 1.3892,
+          "mape": 44.98,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "pooled_upper_bound",
           "model_name": "pooled_ridge"
         },
         "inst-c": {
-          "mae": 3.4728,
-          "rmse": 4.6146,
-          "mape": 85.12,
-          "sample_count": 212,
+          "mae": 0.5268,
+          "rmse": 0.9611,
+          "mape": 37.11,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "pooled_upper_bound",
           "model_name": "pooled_ridge"
         },
         "inst-d": {
-          "mae": 5.4968,
-          "rmse": 7.0054,
-          "mape": 32.6,
-          "sample_count": 212,
+          "mae": 1.0323,
+          "rmse": 1.7151,
+          "mape": 54.2,
+          "sample_count": 2597,
           "forecast_horizon": 7,
           "institution_id": "pooled_upper_bound",
           "model_name": "pooled_ridge"
         }
       },
       "overall": {
-        "mae": 4.0588,
-        "rmse": 5.368,
-        "mape": 37.62,
-        "sample_count": 848,
+        "mae": 0.7568,
+        "rmse": 1.3215,
+        "mape": 41.54,
+        "sample_count": 10388,
         "forecast_horizon": 7,
         "institution_id": "overall",
         "model_name": "pooled_ridge"
@@ -154,29 +154,29 @@
   },
   "comparison_matrix": {
     "inst-a": {
-      "naive_mae": 3.4198,
-      "local_ridge_mae": 4.5892,
-      "pooled_ridge_mae": 3.4488
+      "naive_mae": 0.7262,
+      "local_ridge_mae": 0.6439,
+      "pooled_ridge_mae": 0.6499
     },
     "inst-b": {
-      "naive_mae": 5.1179,
-      "local_ridge_mae": 5.0534,
-      "pooled_ridge_mae": 3.8168
+      "naive_mae": 1.0308,
+      "local_ridge_mae": 0.8532,
+      "pooled_ridge_mae": 0.8182
     },
     "inst-c": {
-      "naive_mae": 3.967,
-      "local_ridge_mae": 3.0972,
-      "pooled_ridge_mae": 3.4728
+      "naive_mae": 0.6257,
+      "local_ridge_mae": 0.5293,
+      "pooled_ridge_mae": 0.5268
     },
     "inst-d": {
-      "naive_mae": 6.7783,
-      "local_ridge_mae": 5.8571,
-      "pooled_ridge_mae": 5.4968
+      "naive_mae": 1.2784,
+      "local_ridge_mae": 1.008,
+      "pooled_ridge_mae": 1.0323
     },
     "overall": {
-      "naive_mae": 4.8208,
-      "local_ridge_mae": 4.6492,
-      "pooled_ridge_mae": 4.0588
+      "naive_mae": 0.9153,
+      "local_ridge_mae": 0.7586,
+      "pooled_ridge_mae": 0.7568
     }
   }
 }

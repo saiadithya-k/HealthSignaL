@@ -1,0 +1,2151 @@
+[
+  {
+    "report_id": "6eb7de60-abb7-49ef-9560-987e9cd3abd6",
+    "reported_at": "2026-08-28T17:55:07.078533",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "15cd592c758b7d59",
+    "_weight": 1
+  },
+  {
+    "report_id": "9dc72127-a095-4e88-9f5c-1191361186d4",
+    "reported_at": "2026-08-28T17:55:09.999545",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "911e3f3892cb5bf4",
+    "_weight": 1
+  },
+  {
+    "report_id": "7d9b2cc6-6c71-4d5e-88c7-033e95cdeb41",
+    "reported_at": "2026-08-28T17:55:10.003459",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S035",
+      "S001",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "684c56405a8101f0",
+    "_weight": 1
+  },
+  {
+    "report_id": "4b49d71e-f70d-4ed4-aa73-1d57dbbc1151",
+    "reported_at": "2026-08-28T17:55:10.018596",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021",
+      "S038",
+      "S035",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8ecd6d080fb19330",
+    "_weight": 1
+  },
+  {
+    "report_id": "ff80d419-7ebe-4dc4-9aae-12b27ca14339",
+    "reported_at": "2026-08-28T17:55:10.037303",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S006",
+      "S001",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "69667b9d8f402332",
+    "_weight": 1
+  },
+  {
+    "report_id": "2e6b9d9c-caef-4221-99a5-71fc410ce909",
+    "reported_at": "2026-08-28T17:55:10.065589",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S035",
+      "S001",
+      "S006",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "736211cf19189c47",
+    "_weight": 1
+  },
+  {
+    "report_id": "1adf226c-2adf-4ebe-a8bb-0f461c7d17c4",
+    "reported_at": "2026-08-28T17:55:10.109141",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S021",
+      "S006",
+      "S001",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "0db879b7e0357d87",
+    "_weight": 1
+  },
+  {
+    "report_id": "a352d3bb-2c4f-436b-9b1c-6e3b6a3f93f8",
+    "reported_at": "2026-08-28T17:55:10.141262",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S038",
+      "S006",
+      "S001",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "b8bb6c34e7363272",
+    "_weight": 1
+  },
+  {
+    "report_id": "469fe75b-9b34-4bc1-8aca-3b3542df35ba",
+    "reported_at": "2026-08-28T17:55:10.173958",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S006",
+      "S035",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "aa3d86663e87895b",
+    "_weight": 1
+  },
+  {
+    "report_id": "26256aaa-6a75-4ebc-9ae2-4a6e18116798",
+    "reported_at": "2026-08-28T17:55:10.204092",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S038",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "a45318df517bab3b",
+    "_weight": 1
+  },
+  {
+    "report_id": "898248e3-ab23-4735-871a-699eb3d6cf56",
+    "reported_at": "2026-08-28T17:55:10.221289",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S035",
+      "S021",
+      "S001",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "381299af5f852da0",
+    "_weight": 1
+  },
+  {
+    "report_id": "1a463760-4951-4dd3-9da6-8ef2b640cc14",
+    "reported_at": "2026-08-28T18:24:55.639559",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "214a1ab80c72f594",
+    "_weight": 1
+  },
+  {
+    "report_id": "472e9793-4346-4cf6-b17c-38dad1df874c",
+    "reported_at": "2026-08-28T18:24:57.536823",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S035",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "eb7f47ce09346ffe",
+    "_weight": 1
+  },
+  {
+    "report_id": "5023fa54-1a0d-4730-9f0e-3f87e6b3234b",
+    "reported_at": "2026-08-28T18:24:57.539130",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S035",
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "bf1184c38c114958",
+    "_weight": 1
+  },
+  {
+    "report_id": "28b19ec4-e0df-4055-b7b5-3b0d83efb3b7",
+    "reported_at": "2026-08-28T18:24:57.580463",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S006",
+      "S038",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "19b5a185fdf30c70",
+    "_weight": 1
+  },
+  {
+    "report_id": "b48d2dab-46c0-4cb0-9b5b-9178bf5becc8",
+    "reported_at": "2026-08-28T18:24:57.630648",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "616485802f666d56",
+    "_weight": 1
+  },
+  {
+    "report_id": "dc4bcec4-f269-4b6c-b9f2-75fcd812339b",
+    "reported_at": "2026-08-28T18:24:57.680290",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S006",
+      "S038",
+      "S021",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "eff621465dc8807c",
+    "_weight": 1
+  },
+  {
+    "report_id": "f00f15d0-2645-4c9e-832a-50f745578827",
+    "reported_at": "2026-08-28T18:24:57.735419",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S006",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "4ea413e467d4ba34",
+    "_weight": 1
+  },
+  {
+    "report_id": "865d7ef5-98c6-4351-8d87-2a8e3d198a6b",
+    "reported_at": "2026-08-28T18:24:57.800148",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S006",
+      "S038",
+      "S035",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "592088ee6315d4ff",
+    "_weight": 1
+  },
+  {
+    "report_id": "fac4ebd7-ec80-4768-a6da-dc88b70766b3",
+    "reported_at": "2026-08-28T18:24:57.857061",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S001",
+      "S006",
+      "S035",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "34d0246fa2fce98c",
+    "_weight": 1
+  },
+  {
+    "report_id": "5ff8a236-0ec2-4cd0-a7f7-3182b5b833a5",
+    "reported_at": "2026-08-28T18:24:57.916184",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S021",
+      "S001",
+      "S038",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "54bab9c345c25c23",
+    "_weight": 1
+  },
+  {
+    "report_id": "91fd746d-b1b0-49af-b4d1-16a60ffa7b55",
+    "reported_at": "2026-08-28T18:24:57.942099",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021",
+      "S035",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1ce6fa6eaf485fa9",
+    "_weight": 1
+  },
+  {
+    "report_id": "941945f8-5e01-4a73-9faf-a279b3da210c",
+    "reported_at": "2026-08-28T18:52:32.992455",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "0624bcd7e5dda734",
+    "_weight": 1
+  },
+  {
+    "report_id": "1572f1bc-18f7-42a4-a5a7-44cd57125e04",
+    "reported_at": "2026-08-28T18:52:35.089783",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S001",
+      "S021",
+      "S035",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "7f9099ec7efd80f2",
+    "_weight": 1
+  },
+  {
+    "report_id": "5a9b0f64-fd3b-485f-8feb-7594031ef07b",
+    "reported_at": "2026-08-28T18:52:35.129565",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S038",
+      "S021",
+      "S006",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "96e67aaeb6a3a6bf",
+    "_weight": 1
+  },
+  {
+    "report_id": "16a2b1b0-a88c-44d0-927b-2a3fc605b088",
+    "reported_at": "2026-08-28T18:52:35.170617",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S006",
+      "S035",
+      "S038",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1cda5dd9e5ea093b",
+    "_weight": 1
+  },
+  {
+    "report_id": "5336fb5b-5637-4169-b86a-046a9c6e0318",
+    "reported_at": "2026-08-28T18:52:35.213968",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S038",
+      "S035",
+      "S006",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "de5d86ad7ff106b0",
+    "_weight": 1
+  },
+  {
+    "report_id": "c146d977-5e14-4233-828d-6580ac688719",
+    "reported_at": "2026-08-28T18:52:35.251156",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S021",
+      "S001",
+      "S035",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "b39fb8176a70b0c2",
+    "_weight": 1
+  },
+  {
+    "report_id": "72ddff02-277d-4ba5-af2a-5fde0e7b2348",
+    "reported_at": "2026-08-28T18:52:35.299866",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S006",
+      "S001",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "dd78a849189349a6",
+    "_weight": 1
+  },
+  {
+    "report_id": "eeb8fce3-f85d-43bc-bbf7-208d3811516e",
+    "reported_at": "2026-08-28T18:52:35.336084",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S021",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "79ba9c850c9b80d1",
+    "_weight": 1
+  },
+  {
+    "report_id": "abc6ad06-45d4-4fe8-8c46-2f317c5d5371",
+    "reported_at": "2026-08-28T18:52:35.380388",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S035",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "94b29828c727a328",
+    "_weight": 1
+  },
+  {
+    "report_id": "485abc28-e616-43e8-96a3-ef272026cd7d",
+    "reported_at": "2026-08-28T18:52:35.420491",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S006",
+      "S035",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "f13ee0f895000f29",
+    "_weight": 1
+  },
+  {
+    "report_id": "e9f4a9d9-40a3-44e5-aa1b-5d0dd0923c55",
+    "reported_at": "2026-08-28T18:52:35.470414",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S038",
+      "S035",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "63f67c1edc294c84",
+    "_weight": 1
+  },
+  {
+    "report_id": "db5b299a-87ee-4ccc-bcf2-0e8cc9c71589",
+    "reported_at": "2026-08-28T19:03:44.217209",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "73c0f2f21ef5e768",
+    "_weight": 1
+  },
+  {
+    "report_id": "c96ab2bd-a71a-4b71-9ccf-93a9c9b2edc2",
+    "reported_at": "2026-08-28T19:03:46.723151",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S021",
+      "S038",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e863f4f457b1ddeb",
+    "_weight": 1
+  },
+  {
+    "report_id": "dc27f71d-879d-4ee9-9c7c-29d52543f71e",
+    "reported_at": "2026-08-28T19:03:46.757434",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "057c9d5c4c380093",
+    "_weight": 1
+  },
+  {
+    "report_id": "1bd9666f-cba3-4410-9a70-eefea7019962",
+    "reported_at": "2026-08-28T19:03:46.802665",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S038",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "aee0f45aa88b4f74",
+    "_weight": 1
+  },
+  {
+    "report_id": "a445b0e9-8a5b-4ad0-9c70-c08a9d0a02c2",
+    "reported_at": "2026-08-28T19:03:46.844795",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S001",
+      "S021",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "da5f8a2c8e4a2659",
+    "_weight": 1
+  },
+  {
+    "report_id": "d94883aa-7675-415b-9252-1a7a014ecd60",
+    "reported_at": "2026-08-28T19:03:46.892137",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S038",
+      "S035",
+      "S006",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "f447ff35354aab2f",
+    "_weight": 1
+  },
+  {
+    "report_id": "97ce68a1-f13b-4081-9506-88fa59a1c494",
+    "reported_at": "2026-08-28T19:03:46.945908",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S035",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "a4f237beb2605aaa",
+    "_weight": 1
+  },
+  {
+    "report_id": "99749713-d79d-4282-8b8f-67321665ab3a",
+    "reported_at": "2026-08-28T19:03:46.992662",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S038",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8a6901552e9444d6",
+    "_weight": 1
+  },
+  {
+    "report_id": "695dd9e8-8d62-4c7d-9706-e7d9cf7940a8",
+    "reported_at": "2026-08-28T19:03:47.063175",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S035",
+      "S006",
+      "S038",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "54b306658fa83ecd",
+    "_weight": 1
+  },
+  {
+    "report_id": "89007b66-e032-4aa2-b641-b3b29ccddd02",
+    "reported_at": "2026-08-28T19:03:47.109607",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S021",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5a3d082d4185d039",
+    "_weight": 1
+  },
+  {
+    "report_id": "4c659278-1200-459d-a8d8-90088b5bd7e5",
+    "reported_at": "2026-08-28T19:03:47.153294",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S001",
+      "S021",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "ecc7253ea60b732d",
+    "_weight": 1
+  },
+  {
+    "report_id": "074afc38-99f4-4239-9845-726e8f7c58bf",
+    "reported_at": "2026-08-28T19:15:21.470219",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "b05fd8d14c72af31",
+    "_weight": 1
+  },
+  {
+    "report_id": "bd7d44d4-7f3b-4e09-8210-3f38a49d17ef",
+    "reported_at": "2026-08-28T19:15:23.869101",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S021",
+      "S035",
+      "S006",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "4d782af13b5c2e44",
+    "_weight": 1
+  },
+  {
+    "report_id": "b006188a-3925-4d56-b79f-54e7eb93bdd8",
+    "reported_at": "2026-08-28T19:15:23.922162",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "6a9cbc890eaf3df5",
+    "_weight": 1
+  },
+  {
+    "report_id": "c35e3619-6ee9-4ac1-b0e2-32f64e9010af",
+    "reported_at": "2026-08-28T19:15:23.977457",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S001",
+      "S035",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "d3a670961878b48a",
+    "_weight": 1
+  },
+  {
+    "report_id": "e2c9af62-3eff-4e41-990e-0c49956ae1ca",
+    "reported_at": "2026-08-28T19:15:24.032336",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S035",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "ab85e010653da500",
+    "_weight": 1
+  },
+  {
+    "report_id": "74058a73-a381-4ac5-a28d-e89f3c546c4b",
+    "reported_at": "2026-08-28T19:15:24.085393",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S038",
+      "S035",
+      "S021",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "2be31e749fc135a6",
+    "_weight": 1
+  },
+  {
+    "report_id": "aa8aeeb4-b9d8-4c5f-b955-4780233eb5ac",
+    "reported_at": "2026-08-28T19:15:24.144833",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S038",
+      "S001",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "0a8c65c0f3de33d2",
+    "_weight": 1
+  },
+  {
+    "report_id": "572fa6c5-fd79-40c4-a9b6-5ffe7afdeab7",
+    "reported_at": "2026-08-28T19:15:24.204264",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S021",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "40e7f01666080290",
+    "_weight": 1
+  },
+  {
+    "report_id": "6e105fa2-e19d-4f9d-86b0-ba13e20e5588",
+    "reported_at": "2026-08-28T19:15:24.264491",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021",
+      "S038",
+      "S006",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "07074311275550a0",
+    "_weight": 1
+  },
+  {
+    "report_id": "b2b3359b-66a4-4c60-bc27-67d1bcdb69c9",
+    "reported_at": "2026-08-28T19:15:24.316437",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S021",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "7ac22d6aec145a1e",
+    "_weight": 1
+  },
+  {
+    "report_id": "3df1ec56-62f4-4282-aff0-ca5f7a85d12a",
+    "reported_at": "2026-08-28T19:15:24.357590",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S035",
+      "S038",
+      "S006",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "12c33d308a51787b",
+    "_weight": 1
+  },
+  {
+    "report_id": "c5f12eb6-4d06-494a-8ab8-8acc835a3e16",
+    "reported_at": "2026-08-28T19:28:43.899757",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "6d56000fde2fa525",
+    "_weight": 1
+  },
+  {
+    "report_id": "dd2d8bdf-11e1-4e4d-b259-5af6ac461268",
+    "reported_at": "2026-08-28T19:28:46.996284",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S006",
+      "S001",
+      "S035",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "ee4d14ac342e07bf",
+    "_weight": 1
+  },
+  {
+    "report_id": "92625088-870a-464c-9f44-90064a966717",
+    "reported_at": "2026-08-28T19:28:47.041553",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S035",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5e813c2ca9228797",
+    "_weight": 1
+  },
+  {
+    "report_id": "af98ddbe-a372-4b50-ac3f-b7c2bf87a29f",
+    "reported_at": "2026-08-28T19:28:47.083667",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S038",
+      "S035",
+      "S006",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "405fe43a84faf5b9",
+    "_weight": 1
+  },
+  {
+    "report_id": "6202d1d1-2f99-45f1-8ef6-11bcf7bc9ff5",
+    "reported_at": "2026-08-28T19:28:47.117126",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S001",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "46691a376a2acdf3",
+    "_weight": 1
+  },
+  {
+    "report_id": "10c6edb9-7672-4daf-9cb8-58617fb3e4a2",
+    "reported_at": "2026-08-28T19:28:47.160465",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S006",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "6ac666b53446ff6e",
+    "_weight": 1
+  },
+  {
+    "report_id": "8a608f6d-cbaa-45c8-8dec-7f0a6fd6cb23",
+    "reported_at": "2026-08-28T19:28:47.207771",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S021",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "73fad23858bb5e5f",
+    "_weight": 1
+  },
+  {
+    "report_id": "c0e2d40a-732b-431b-b38f-adf3b02cfdeb",
+    "reported_at": "2026-08-28T19:28:47.240693",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S006",
+      "S035"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "dcd4e68d1e34b7e4",
+    "_weight": 1
+  },
+  {
+    "report_id": "03e004ec-1dc7-4847-b0bf-d9d6b95b5e2b",
+    "reported_at": "2026-08-28T19:28:47.288230",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S006",
+      "S038",
+      "S035",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "c7c23a8d89b1623e",
+    "_weight": 1
+  },
+  {
+    "report_id": "edca1e98-2f6d-43a9-84c2-6b1b5a957e10",
+    "reported_at": "2026-08-28T19:28:47.334925",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S006",
+      "S035",
+      "S021",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "b55abd08b52f0aaa",
+    "_weight": 1
+  },
+  {
+    "report_id": "543ac419-9ba6-4d1e-87fa-9c278b52a7dc",
+    "reported_at": "2026-08-28T19:28:47.376599",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S038",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "953d37106bfb8192",
+    "_weight": 1
+  },
+  {
+    "report_id": "b8cfd748-69dc-4fae-96da-d62165841113",
+    "reported_at": "2026-08-28T19:46:06.793931",
+    "node_id": "inst-a",
+    "zone_id": "zone-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-28",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "ece84aecb8f5bacd",
+    "_weight": 1
+  },
+  {
+    "report_id": "ba3be16f-958c-4f5a-8a2c-7e3e4fecfd04",
+    "reported_at": "2026-08-28T19:46:10.188813",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S035",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "d9c65cf7a00dbbd9",
+    "_weight": 1
+  },
+  {
+    "report_id": "6c7e1682-d5cf-41e0-84a5-57a63a677678",
+    "reported_at": "2026-08-28T19:46:10.275816",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S038",
+      "S021",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8ddc5263b273d4ef",
+    "_weight": 1
+  },
+  {
+    "report_id": "b6f82451-c881-40ba-8b35-9e9ef71d9921",
+    "reported_at": "2026-08-28T19:46:10.354847",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S021",
+      "S006"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "a75eae2c37000732",
+    "_weight": 1
+  },
+  {
+    "report_id": "75831bec-473d-4758-8371-5f05e0379e1c",
+    "reported_at": "2026-08-28T19:46:10.435806",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S035",
+      "S001",
+      "S006",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "0edea035f0151737",
+    "_weight": 1
+  },
+  {
+    "report_id": "33745d22-26d0-42b3-873b-b4f859e5798e",
+    "reported_at": "2026-08-28T19:46:10.556721",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S021",
+      "S006",
+      "S001"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "b347a8afa628a3b6",
+    "_weight": 1
+  },
+  {
+    "report_id": "3c936094-1bfb-4b4e-8a74-1b191715adef",
+    "reported_at": "2026-08-28T19:46:10.659704",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S035",
+      "S001",
+      "S038",
+      "S006",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "7d105d544290b7ba",
+    "_weight": 1
+  },
+  {
+    "report_id": "5311abd2-7a86-48cc-9612-78af71471032",
+    "reported_at": "2026-08-28T19:46:10.744096",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S021",
+      "S001",
+      "S035",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "667529263155d278",
+    "_weight": 1
+  },
+  {
+    "report_id": "2e104f92-bf87-4b0b-bc6d-78a7975cbeff",
+    "reported_at": "2026-08-28T19:46:11.027117",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S006",
+      "S038",
+      "S021"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "272ab9dcdf56d8ea",
+    "_weight": 1
+  },
+  {
+    "report_id": "a2967875-6ef9-4b79-a62f-8f6deca47b3f",
+    "reported_at": "2026-08-28T19:46:11.134206",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S006",
+      "S021",
+      "S001",
+      "S035",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "acute_fever_rash",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "c4fa259d4c534c25",
+    "_weight": 1
+  },
+  {
+    "report_id": "e3c0b014-50a5-4922-82ee-c8b81506cfaa",
+    "reported_at": "2026-08-28T19:46:11.227185",
+    "node_id": "inst-a",
+    "zone_id": "zone-metro-1",
+    "data_source": "community",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "S001",
+      "S021",
+      "S006",
+      "S038"
+    ],
+    "syndromes": [
+      "acute_febrile_illness",
+      "influenza_like_illness",
+      "lower_respiratory_illness",
+      "post_infectious_asthenia",
+      "systemic_inflammatory_sepsis",
+      "upper_respiratory_infection"
+    ],
+    "symptom_onset": "2026-08-29",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "985607d7b68ee3b0",
+    "_weight": 1
+  }
+]
