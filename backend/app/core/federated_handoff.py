@@ -1,6 +1,6 @@
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any, List, Tuple, Optional
 import pandas as pd
 import numpy as np
@@ -188,7 +188,7 @@ class FederatedDataHandoffManager:
             "feature_columns": FEATURE_COLUMNS,
             "total_training_samples": len(feature_df),
             "forecast_horizon": forecast_horizon,
-            "created_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+            "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
         }
 
         return feature_df, handoff_metadata

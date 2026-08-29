@@ -1,0 +1,1462 @@
+[
+  {
+    "report_id": "83cebafa-7b38-4961-895e-d0c00cfc5ec7",
+    "reported_at": "2026-08-29T05:40:37.799092",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "3849bfed60d6929b",
+    "_weight": 101
+  },
+  {
+    "report_id": "d77aed62-c4f1-47e4-b4ae-f216a7b4f1b1",
+    "reported_at": "2026-08-29T05:40:37.799092",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1410e638e1d597d9",
+    "_weight": 106
+  },
+  {
+    "report_id": "0ea39e08-006f-451b-bde8-71b27a650d7e",
+    "reported_at": "2026-08-29T05:40:37.934114",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "173a59c7a1feb05e",
+    "_weight": 94
+  },
+  {
+    "report_id": "c9ae8b8b-331b-4977-9395-a287590c78b4",
+    "reported_at": "2026-08-29T05:40:37.939114",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "52a40fd72a6070bc",
+    "_weight": 105
+  },
+  {
+    "report_id": "f54cb307-0786-42a7-8a4f-58d34b7ca6aa",
+    "reported_at": "2026-08-29T05:40:38.058346",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "37086dfbc3445eb6",
+    "_weight": 86
+  },
+  {
+    "report_id": "5662a4cd-69c8-41d1-abcd-44da9a941057",
+    "reported_at": "2026-08-29T05:40:38.077840",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "3849bfed60d6929b",
+    "_weight": 101
+  },
+  {
+    "report_id": "869c09d7-a280-4eae-b1de-105d44f25f67",
+    "reported_at": "2026-08-29T05:40:38.204575",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "466e937210de59a8",
+    "_weight": 76
+  },
+  {
+    "report_id": "7aa1a247-bca7-4434-ac26-83846348cdbe",
+    "reported_at": "2026-08-29T05:40:38.249070",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "173a59c7a1feb05e",
+    "_weight": 94
+  },
+  {
+    "report_id": "b134bc79-96cb-4e30-b130-8d31683f407a",
+    "reported_at": "2026-08-29T05:40:38.382071",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e4a500e2ee059a18",
+    "_weight": 64
+  },
+  {
+    "report_id": "847c03be-3c4e-40f8-8d70-c4c5a5b715d9",
+    "reported_at": "2026-08-29T05:40:38.520089",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "37086dfbc3445eb6",
+    "_weight": 86
+  },
+  {
+    "report_id": "2437d31a-2dfb-41f5-a9a6-b68ae3180bf2",
+    "reported_at": "2026-08-29T05:40:38.841905",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "466e937210de59a8",
+    "_weight": 76
+  },
+  {
+    "report_id": "481722ed-5e50-40d4-a2a7-b89e1dce079c",
+    "reported_at": "2026-08-29T05:40:39.183075",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e4a500e2ee059a18",
+    "_weight": 64
+  },
+  {
+    "report_id": "8f1d3dbb-137f-43b3-aede-590af833a991",
+    "reported_at": "2026-08-29T05:58:58.112604+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5eb539003702f4bf",
+    "_weight": 63
+  },
+  {
+    "report_id": "edbe7a5c-21df-4bbe-b3b8-917190b3a87e",
+    "reported_at": "2026-08-29T05:58:59.014663+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "437373027c35e51e",
+    "_weight": 64
+  },
+  {
+    "report_id": "0c39328f-563d-4aeb-ba93-1cf0e4214830",
+    "reported_at": "2026-08-29T05:59:00.357857+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5cfbd1896aa11363",
+    "_weight": 76
+  },
+  {
+    "report_id": "ce2a41bf-b9ed-4002-8e89-46f8b0a3ec58",
+    "reported_at": "2026-08-29T05:59:01.730493+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8e82a4925992339a",
+    "_weight": 86
+  },
+  {
+    "report_id": "dfce00c8-2fa5-47a6-8038-714fe610a108",
+    "reported_at": "2026-08-29T05:59:03.375738+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "d9d7c367996caaa0",
+    "_weight": 94
+  },
+  {
+    "report_id": "f20a98c5-d3ca-4547-a7bb-f2cc7df0e8d0",
+    "reported_at": "2026-08-29T06:05:50.525339+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5eb539003702f4bf",
+    "_weight": 63
+  },
+  {
+    "report_id": "f682ce17-b148-4f9f-8e36-2bcda777e69f",
+    "reported_at": "2026-08-29T06:05:52.542223+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "437373027c35e51e",
+    "_weight": 64
+  },
+  {
+    "report_id": "c9ac9651-fea9-44b9-b90a-1de492718d4c",
+    "reported_at": "2026-08-29T06:05:54.556934+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5cfbd1896aa11363",
+    "_weight": 76
+  },
+  {
+    "report_id": "1dd40163-9d26-41e4-b863-3f9883d4e65a",
+    "reported_at": "2026-08-29T06:05:56.888436+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8e82a4925992339a",
+    "_weight": 86
+  },
+  {
+    "report_id": "8d48cdb1-7dee-495a-aa75-5cc5bd7b18a7",
+    "reported_at": "2026-08-29T06:05:59.514359+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "d9d7c367996caaa0",
+    "_weight": 94
+  },
+  {
+    "report_id": "c4fda864-6d9f-49cc-9c07-e2577bca72e8",
+    "reported_at": "2026-08-29T06:06:02.644164+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "93df859c21d4fa06",
+    "_weight": 101
+  },
+  {
+    "report_id": "118a6e9a-8b5b-4e6a-af4f-17dd242995e8",
+    "reported_at": "2026-08-29T06:06:05.756118+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1ec0df16949e8176",
+    "_weight": 105
+  },
+  {
+    "report_id": "c13655e1-7783-43ca-85a8-16fa82488d17",
+    "reported_at": "2026-08-29T06:06:09.368809+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1410e638e1d597d9",
+    "_weight": 106
+  },
+  {
+    "report_id": "bb94b74c-ce82-485e-9855-04555440684f",
+    "reported_at": "2026-08-29T06:06:13.067958+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "52a40fd72a6070bc",
+    "_weight": 105
+  },
+  {
+    "report_id": "82b03f95-871c-4724-8ada-95e58d3118c4",
+    "reported_at": "2026-08-29T06:06:16.580818+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "3849bfed60d6929b",
+    "_weight": 101
+  },
+  {
+    "report_id": "ef195cf9-184b-403f-b2f4-69483d33641a",
+    "reported_at": "2026-08-29T06:06:20.001537+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "173a59c7a1feb05e",
+    "_weight": 94
+  },
+  {
+    "report_id": "ee9809e4-ddc1-4474-a6a5-2a23f0e042b9",
+    "reported_at": "2026-08-29T06:06:23.147839+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "37086dfbc3445eb6",
+    "_weight": 86
+  },
+  {
+    "report_id": "6ac5a34e-40e0-4d0d-8e34-44197c507a8d",
+    "reported_at": "2026-08-29T06:06:25.902870+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "466e937210de59a8",
+    "_weight": 76
+  },
+  {
+    "report_id": "045ee264-8d86-450d-ad46-1496c2c4ff24",
+    "reported_at": "2026-08-29T06:06:28.344141+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e4a500e2ee059a18",
+    "_weight": 64
+  },
+  {
+    "report_id": "599c575e-6d3e-4529-91d9-3db20198d2e3",
+    "reported_at": "2026-08-29T06:06:35.343812+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5eb539003702f4bf",
+    "_weight": 63
+  },
+  {
+    "report_id": "e8356d88-2857-41c4-a280-55b82738ce18",
+    "reported_at": "2026-08-29T06:06:37.943276+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "437373027c35e51e",
+    "_weight": 64
+  },
+  {
+    "report_id": "24a55acf-875c-418a-adfa-274e09be33d8",
+    "reported_at": "2026-08-29T06:06:40.925414+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5cfbd1896aa11363",
+    "_weight": 76
+  },
+  {
+    "report_id": "e1683285-36a1-4424-9b8d-6f05bfc1af5e",
+    "reported_at": "2026-08-29T06:06:44.365427+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8e82a4925992339a",
+    "_weight": 86
+  },
+  {
+    "report_id": "efdbcb14-d278-4a15-9ea3-34798bea913a",
+    "reported_at": "2026-08-29T06:06:48.165229+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "d9d7c367996caaa0",
+    "_weight": 94
+  },
+  {
+    "report_id": "926f65e8-70a5-4931-b43b-e8b778f5435a",
+    "reported_at": "2026-08-29T06:06:52.335238+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "93df859c21d4fa06",
+    "_weight": 101
+  },
+  {
+    "report_id": "f669b159-b2d3-41a6-8115-02ae6825d2ba",
+    "reported_at": "2026-08-29T06:06:56.680061+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1ec0df16949e8176",
+    "_weight": 105
+  },
+  {
+    "report_id": "d84d469b-a730-4356-8578-9d8a2796b62e",
+    "reported_at": "2026-08-29T06:07:01.286745+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1410e638e1d597d9",
+    "_weight": 106
+  },
+  {
+    "report_id": "7122dce7-4aec-4851-a1bf-f90a93ea17ef",
+    "reported_at": "2026-08-29T06:07:05.833886+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "52a40fd72a6070bc",
+    "_weight": 105
+  },
+  {
+    "report_id": "0ba04cfe-1afd-4e8b-a9e4-a3461f714409",
+    "reported_at": "2026-08-29T06:07:10.493872+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "3849bfed60d6929b",
+    "_weight": 101
+  },
+  {
+    "report_id": "08b5ab24-4356-41e0-9c7d-f777b7e2be32",
+    "reported_at": "2026-08-29T06:07:14.945212+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "173a59c7a1feb05e",
+    "_weight": 94
+  },
+  {
+    "report_id": "3e8ad13a-eec9-4e43-91e1-9e611dceaeb7",
+    "reported_at": "2026-08-29T06:07:19.098315+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "37086dfbc3445eb6",
+    "_weight": 86
+  },
+  {
+    "report_id": "98c2dd80-6388-4813-85b2-15b8236f20cf",
+    "reported_at": "2026-08-29T06:07:23.022612+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "466e937210de59a8",
+    "_weight": 76
+  },
+  {
+    "report_id": "2a701408-54fb-4d8c-874e-df5ca5a3f623",
+    "reported_at": "2026-08-29T06:07:26.478646+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e4a500e2ee059a18",
+    "_weight": 64
+  },
+  {
+    "report_id": "ddd094e3-f235-4d49-b599-b6ed69f15220",
+    "reported_at": "2026-08-29T06:14:57.900521+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5eb539003702f4bf",
+    "_weight": 63
+  },
+  {
+    "report_id": "986f19c4-5c62-455b-91f6-80d0ac088e69",
+    "reported_at": "2026-08-29T06:15:01.965919+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "437373027c35e51e",
+    "_weight": 64
+  },
+  {
+    "report_id": "6b0de243-4981-4778-80fe-d0ba5c0d3873",
+    "reported_at": "2026-08-29T06:15:06.657709+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5cfbd1896aa11363",
+    "_weight": 76
+  },
+  {
+    "report_id": "4c33da48-4c0e-4802-b054-8e89881e2a84",
+    "reported_at": "2026-08-29T06:15:12.074953+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8e82a4925992339a",
+    "_weight": 86
+  },
+  {
+    "report_id": "867e5026-6c65-420b-8d01-437e112fc3a5",
+    "reported_at": "2026-08-29T06:15:17.959533+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "d9d7c367996caaa0",
+    "_weight": 94
+  },
+  {
+    "report_id": "9098963a-58c8-4310-9420-b3c63284c901",
+    "reported_at": "2026-08-29T06:15:24.229345+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "93df859c21d4fa06",
+    "_weight": 101
+  },
+  {
+    "report_id": "6fe82fa0-da74-4b78-9a71-965d4ca73434",
+    "reported_at": "2026-08-29T06:15:30.848157+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1ec0df16949e8176",
+    "_weight": 105
+  },
+  {
+    "report_id": "e0740dfc-81cd-4bd7-a7f1-de6982efe181",
+    "reported_at": "2026-08-29T06:15:37.706415+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1410e638e1d597d9",
+    "_weight": 106
+  },
+  {
+    "report_id": "ead6b33c-eee6-4f43-a57d-5c7f19305131",
+    "reported_at": "2026-08-29T06:15:44.584018+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "52a40fd72a6070bc",
+    "_weight": 105
+  },
+  {
+    "report_id": "0b274564-d4fb-42c0-a952-fc869a453c2a",
+    "reported_at": "2026-08-29T06:15:51.397905+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "3849bfed60d6929b",
+    "_weight": 101
+  },
+  {
+    "report_id": "285b3553-4d29-4e72-a99f-6b8df8d42f34",
+    "reported_at": "2026-08-29T06:15:57.787216+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "173a59c7a1feb05e",
+    "_weight": 94
+  },
+  {
+    "report_id": "8c51ddfe-281c-4b32-b5fd-a9146c30592d",
+    "reported_at": "2026-08-29T06:16:04.085540+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "37086dfbc3445eb6",
+    "_weight": 86
+  },
+  {
+    "report_id": "9e70dccf-608b-4062-8a29-b7cb61fe537d",
+    "reported_at": "2026-08-29T06:16:09.900768+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "466e937210de59a8",
+    "_weight": 76
+  },
+  {
+    "report_id": "b6fd3e57-cea0-42f2-83cf-39974595097f",
+    "reported_at": "2026-08-29T06:16:14.953685+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e4a500e2ee059a18",
+    "_weight": 64
+  },
+  {
+    "report_id": "e9d8b9f5-6234-4e9c-901c-e71c0dd87f93",
+    "reported_at": "2026-08-29T06:16:24.579258+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-30",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5eb539003702f4bf",
+    "_weight": 63
+  },
+  {
+    "report_id": "c6f6ec1b-0cd1-4c04-bb50-68bc85e5350b",
+    "reported_at": "2026-08-29T06:16:29.757417+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-08-31",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "437373027c35e51e",
+    "_weight": 64
+  },
+  {
+    "report_id": "c0b09c00-aab7-4fbb-ba79-a8b2c5f98fd2",
+    "reported_at": "2026-08-29T06:16:35.601984+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-01",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "5cfbd1896aa11363",
+    "_weight": 76
+  },
+  {
+    "report_id": "f6c367ee-ac32-4a2b-ace2-b557504fcfa6",
+    "reported_at": "2026-08-29T06:16:42.266279+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-02",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "8e82a4925992339a",
+    "_weight": 86
+  },
+  {
+    "report_id": "02f23ef3-e63c-4c37-9bc4-9bd33a2f8da8",
+    "reported_at": "2026-08-29T06:16:49.548040+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-03",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "d9d7c367996caaa0",
+    "_weight": 94
+  },
+  {
+    "report_id": "882b297c-5eab-4c26-8d70-620cb56b9323",
+    "reported_at": "2026-08-29T06:16:57.351076+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-04",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "93df859c21d4fa06",
+    "_weight": 101
+  },
+  {
+    "report_id": "aeb585bb-692f-4ab6-bd89-363cad547be9",
+    "reported_at": "2026-08-29T06:17:05.363519+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-05",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1ec0df16949e8176",
+    "_weight": 105
+  },
+  {
+    "report_id": "a69b2928-4e8f-453b-ab8b-777906bafb1b",
+    "reported_at": "2026-08-29T06:17:13.976051+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-06",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "1410e638e1d597d9",
+    "_weight": 106
+  },
+  {
+    "report_id": "172e95ef-eeaf-4275-af1e-518eb9bac444",
+    "reported_at": "2026-08-29T06:17:22.338928+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-07",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "52a40fd72a6070bc",
+    "_weight": 105
+  },
+  {
+    "report_id": "504b569b-82f0-4dd7-a73f-35455bef2e5d",
+    "reported_at": "2026-08-29T06:17:30.660513+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-08",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "3849bfed60d6929b",
+    "_weight": 101
+  },
+  {
+    "report_id": "1762a303-2568-4027-b783-9d92a299b94e",
+    "reported_at": "2026-08-29T06:17:38.667981+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-09",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "173a59c7a1feb05e",
+    "_weight": 94
+  },
+  {
+    "report_id": "21c4b6e8-9d3b-44c9-b513-3858cedfc3a6",
+    "reported_at": "2026-08-29T06:17:46.188576+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-10",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "37086dfbc3445eb6",
+    "_weight": 86
+  },
+  {
+    "report_id": "c873f12d-73cf-415a-a86e-51420f5c1555",
+    "reported_at": "2026-08-29T06:17:53.149781+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-11",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "466e937210de59a8",
+    "_weight": 76
+  },
+  {
+    "report_id": "bf1ec45b-e3bc-4b59-bef8-d1e152c39409",
+    "reported_at": "2026-08-29T06:17:59.312605+00:00",
+    "node_id": "inst-d",
+    "zone_id": "zone-1",
+    "data_source": "pharmacy",
+    "age_band": "15-29",
+    "sex": "prefer_not_to_say",
+    "symptoms": [
+      "antipyretic"
+    ],
+    "syndromes": [
+      "acute_febrile_illness"
+    ],
+    "symptom_onset": "2026-09-12",
+    "severity": "mild",
+    "visit_type": null,
+    "consent_token": "e4a500e2ee059a18",
+    "_weight": 64
+  }
+]
